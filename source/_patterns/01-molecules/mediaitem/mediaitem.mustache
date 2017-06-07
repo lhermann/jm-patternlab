@@ -1,0 +1,17 @@
+<div class="o-media c-mediaitem {{ styleModifier }}">
+    <div class="o-media__img">
+        <a class="c-mediaitem__imglink" href="{{ url }}">
+            <img class="c-mediaitem__img" src="/images/fpo_16x9.png"/>
+            <div class="c-mediaitem__length">{{ length }}</div>
+        </a>
+    </div>
+    <div class="o-media__body">
+        <a class="c-mediaitem__title" href="{{ url }}">{{ title }}</a>
+        <div class="c-mediaitem__meta"><small>
+            <a href="{{ speaker.url }}">{{ speaker.name }}</a>
+            &middot; {{ date }}
+            {{# klicks }} &middot; {{ klicks }} Klicks{{/ klicks }}
+            {{# series }}&middot; Serie: <a href="{{ series.url }}">{{ series.title }}</a>{{/ series }}
+        </small></div>
+    </div>
+</div>

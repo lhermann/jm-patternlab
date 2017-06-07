@@ -1,0 +1,20 @@
+{
+  "name": "jm-patternlab",
+  "version": "1.0.0",
+  "description": "![license](https://img.shields.io/github/license/pattern-lab/patternlab-php.svg) [![Packagist](https://img.shields.io/packagist/v/pattern-lab/edition-mustache-standard.svg)](https://packagist.org/packages/pattern-lab/edition-mustache-standard) [![Gitter](https://img.shields.io/gitter/room/pattern-lab/php.svg)](https://gitter.im/pattern-lab/php)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postcss": "postcss"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "inuitcss": "^6.0.0-beta.4"
+  },
+  "author": "Lukas Hermann",
+  "license": "ISC",
+  "browserslist": [
+    "> 2%",
+    "last 2 versions"
+  ]
+}

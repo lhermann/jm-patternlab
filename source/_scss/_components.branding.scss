@@ -1,0 +1,26 @@
+/* ==========================================================================
+   #BRANDING
+   ========================================================================== */
+
+.c-branding {
+    display: table;
+    color: $c-textalt;
+    align-items: center;
+
+    > div {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+    .c-branding__img {
+        height: 38px;
+        width: 38px;
+    }
+
+    .c-branding__title {
+        padding-left: $unit-small;
+        font-family: $font-secondary;
+        font-size: inuit-rem(22px);
+        white-space: nowrap;
+    }

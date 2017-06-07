@@ -1,0 +1,26 @@
+/* ==========================================================================
+   #HEADER
+   ========================================================================== */
+
+.c-site-header {
+    border-bottom: 1px solid $c-border;
+}
+
+    .c-site-header__wrapper {
+        display: flex;
+        height: 56px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+        .c-site-header__item {
+            padding-right: $unit-large;
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+
+        .c-site-header__item--double {
+            flex-grow: 2;
+        }

@@ -1,0 +1,65 @@
+/* ==========================================================================
+   #MEDIAITEM
+   ========================================================================== */
+
+.c-mediaitem {
+    transition: $global-transition background-color;
+    border-radius: $global-radius;
+    padding: $unit-small;
+
+    &:hover {
+        background-color: rgba($c-black, .03);
+    }
+}
+
+    .c-mediaitem__imglink {
+        display: block;
+        position: relative;
+    }
+
+        .c-mediaitem__img {
+            transition: $global-transition box-shadow;
+            border-radius: $global-radius;
+            height: $unit-large;
+
+            .c-mediaitem:hover & {
+                box-shadow: 0 1px 2px rgba($c-black, .2);
+            }
+        }
+
+        .c-mediaitem__length {
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            opacity: .6;
+            border-radius: $global-radius 0;
+            background-color: $c-black;
+            padding: 2px $unit-tiny 0;
+            line-height: 1.3;
+            color: #fff;
+            font-size: 60%;
+            font-weight: 500;
+        }
+
+    .c-mediaitem__title {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: $c-text;
+    }
+
+    .c-mediaitem__meta {
+        color: $c-textmuted;
+
+        a {
+            color: $c-textmuted;
+
+            &:focus,
+            &:hover {
+                border-bottom: 1px dotted $c-textmuted;
+                color: $c-textalt;
+            }
+        }
+    }

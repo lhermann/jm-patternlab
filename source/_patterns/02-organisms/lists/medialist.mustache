@@ -1,0 +1,13 @@
+<section class="c-medialist">
+    <h2 class="c-medialist__title">
+        <a href="#">{{ title }}</a>
+    </h2>
+
+    <ul class="c-medialist__list">
+    	{{# mediaList }}
+    	<li class="c-medialist__item">
+            {{> molecules-mediaitem }}
+        </li>
+    	{{/ mediaList }}
+    </ul>
+</section>

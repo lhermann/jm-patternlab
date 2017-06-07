@@ -1,0 +1,8 @@
+.DS_Store
+export/*
+public/*
+source/styleguide/*
+source/node_modules
+source/.sass-cache
+vendor/*
+.sass-cache
