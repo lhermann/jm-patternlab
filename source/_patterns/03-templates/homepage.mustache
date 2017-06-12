@@ -5,6 +5,10 @@
 	   {{> organisms-slider }}
     {{/ slider }}
 
+    <section class="o-wrapper u-margin-top">
+        {{> organisms-promo-list }}
+    </section>
+
     <section class="o-wrapper u-margin-top-large">
         <div class="o-layout o-layout--large">
             <div class="o-layout__item u-1/3">
@@ -18,6 +22,10 @@
             </div>
         </div>
     </section>
+
+    {{# quoteslider }}
+       {{> organisms-quote-slider:u-margin-top-huge }}
+    {{/ quoteslider }}
 
 </main>
 {{> organisms-footer }}

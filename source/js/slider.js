@@ -4,22 +4,45 @@
  */
 
 /* Keep in sync with _components.slider.scss */
-var slideDuration   = 4000;
-var slideTransition = 600;
-var slideDelay      = 100;
+var sliders = [
+    {
+        slideDuration:   3000,
+        slideTransition: 800,
+        slideDelay:      200,
+        automatic:       "initial",
+        node:            $("#mainSlider"),
+        object:          false
+    },
+    {
+        slideDuration:   6000,
+        slideTransition: 800,
+        slideDelay:      200,
+        automatic:       "always",
+        node:            $("#quoteSlider"),
+        object:          false
+    }
+]
+
+var slideDuration   = 3000;
+var slideTransition = 800;
+var slideDelay      = 200;
+
+var mainSlider = $("#mainSlider");
+var quoteSlider = $("#quoteSlider");
 
 function mod(n, m) {
-        return ((n % m) + m) % m;
+    return ((n % m) + m) % m;
 }
 
 // holder class for each slide
 class Slide {
-    constructor(id, slide, nav) {
+    constructor(id, slide, nav, slideTransition) {
         this.id = id;
         this.slide = slide;
         this.nav = nav;
         this.class = "";
         this.zIndex = false;
+        this.slideTransition = typeof slideTransition === 'number' ? slideTransition : 800;
     }
 
     setZIndex(z) {
@@ -60,34 +83,57 @@ class Slide {
 
 // slider with its methods
 class Slider {
-    constructor(slider) {
-        var sliderList = $(slider).find('#sliderList').children();
-        var sliderNav = $(slider).find('#sliderNav').children();
+    constructor(slider, slideDelay, slideTransition) {
+        var sliderList = $(slider).find('.jsSliderList').children();
+        var sliderNav = $(slider).find('.jsSliderNav').children();
 
-        var slides = [];
+        // attach event handler to buttons
+        $(".jsSliderBtn").on( "click", this, function(event){
+            event.data.deactivateAutomatic();
+            if( $(this).attr('data') == 'next' ) {
+                event.data.nextSlide();
+            } else {
+                event.data.previousSlide();
+            }
+        });
+
+        // attach event handler to slider navigation
+        $(".jsSliderNav li").on( "click", this, function(event){
+            event.preventDefault();
+            event.data.deactivateAutomatic();
+            event.data.slide( $(this).attr('data') );
+        })
 
         // populate slides array
+        var slides = [];
         $(sliderList).each(function( index ) {
             slides.push(new Slide(
                 index+1,
                 this,
-                $(sliderNav[index]).get(0)
+                $(sliderNav[index]).get(0),
+                slideTransition
             ));
         })
 
+        // bring slide array into initial order
         slides
             .reverse()
             .unshift(slides.pop());
 
-        this.slider = slider;
-
+        // Slide Stack
         this.slideStack = slides;
         this.slideCount = slides.length;
         this.currentSlide = 1;
 
+        // slider
+        this.slider = slider;
         this.numChanged = 0;
         this.isAutomatic = true;
 
+        // timing
+        this.slideDelay = typeof slideDelay === 'number' ? slideDelay : 200;
+
+        // setup dom
         this.setZIndices();
         this.setActiveNav();
     }
@@ -109,7 +155,7 @@ class Slider {
         });
     }
 
-    changeSlides(direction) {
+    transitionSlide(direction) {
         this.setZIndices();
         this.setActiveNav();
 
@@ -120,36 +166,48 @@ class Slider {
         }
     }
 
+    /*
+     * Interval Function handles one single slide transition
+     */
+    intervalFunction(obj, id) {
+        if( obj.currentSlide == id ) {
+            clearInterval(obj.intervalId);
+            return true;
+        }
+
+        if( id > obj.currentSlide ) {
+            obj.slideStack.unshift( obj.slideStack.pop() );
+            obj.transitionSlide('forwards');
+        } else {
+            obj.slideStack.push( obj.slideStack.shift() );
+            obj.transitionSlide('backwards');
+        }
+
+        obj.currentSlide = obj.slideStack[0].id;
+
+        if( obj.currentSlide == id ) {
+            clearInterval(obj.intervalId);
+            return true;
+        }
+        return false;
+    }
+
+    /*
+     * Change to slide with id
+     */
     slide(id) {
 
-        var intervalId = setInterval( function(obj) {
-
-            if( obj.currentSlide == id ) {
-                clearInterval(intervalId);
-            }
-
-            if( id > obj.currentSlide ) {
-                obj.slideStack.unshift( obj.slideStack.pop() );
-                obj.changeSlides('forwards');
-            } else {
-                obj.slideStack.push( obj.slideStack.shift() );
-                obj.changeSlides('backwards');
-            }
-
-            obj.currentSlide = obj.slideStack[0].id;
-            // console.log(obj.slideStack);
-
-            if( obj.currentSlide == id ) {
-                clearInterval(intervalId);
-            }
-
-        }, slideDelay, this);
+        this.intervalFunction(this, id);
+        this.intervalId = setInterval( this.intervalFunction, this.slideDelay, this, id);
 
         if( this.numChanged++ >= this.slideCount - 1 ) {
             this.deactivateAutomatic();
         }
     }
 
+    /*
+     * Change to next slide
+     */
     nextSlide() {
         if( this.currentSlide == this.slideCount ) {
             this.slide( 1 )
@@ -158,6 +216,9 @@ class Slider {
         }
     }
 
+    /*
+     * Change to previous slide
+     */
     previousSlide() {
         if( this.currentSlide == 1 ) {
             this.slide( this.slideCount )
@@ -166,6 +227,9 @@ class Slider {
         }
     }
 
+    /*
+     * Deactivate automatic changing of slides
+     */
     deactivateAutomatic() {
         if( this.isAutomatic == true ) {
             $(this.slider).removeClass('is-automatic');
@@ -175,34 +239,78 @@ class Slider {
 
 }
 
-$('#sliderNav a').click(function( event ) {
+
+
+
+
+$(".jsSliderNav a").click(function( event ) {
     event.preventDefault();
 });
 
+sliders.forEach(function(slider) {
 
-if( $('#slider').length ) {
+    if( $(slider.node).length ) {
 
-    var slider = new Slider( $('#slider') );
+        slider.object = new Slider( slider.node, slider.slideDelay, slider.slideTransition );
 
-    $( "[name=sliderBtn]" ).on( "click", function(){
-        slider.deactivateAutomatic();
-        if( $(this).attr('data') == 'next' ) {
-            slider.nextSlide();
-        } else {
-            slider.previousSlide();
+        // $(".jsSliderBtn").on( "click", function(){
+        //     slider.deactivateAutomatic();
+        //     if( $(this).attr('data') == 'next' ) {
+        //         slider.nextSlide();
+        //     } else {
+        //         slider.previousSlide();
+        //     }
+        // });
+
+        // $(".jsSliderNav").children().on( "click", function(event){
+        //     event.preventDefault();
+        //     slider.deactivateAutomatic();
+        //     slider.slide( $(this).attr('data') );
+        // })
+
+        switch(slider.automatic) {
+            case "initial":
+                setInterval( function(){
+                    if( slider.object.isAutomatic ) {
+                        slider.object.nextSlide();
+                    }
+                }, slider.slideDuration );
+                break;
+
+            case "always":
+                setInterval( function(){
+                    slider.object.nextSlide();
+                }, slider.slideDuration );
+                break;
         }
-    });
 
-    $('#sliderNav').children().on( "click", function(event){
-        event.preventDefault();
-        slider.deactivateAutomatic();
-        slider.slide( $(this).attr('data') );
-    })
+    }
 
-    setInterval( function(){
-        if( slider.isAutomatic ) {
-            slider.nextSlide();
-        }
-    }, slideDuration );
+});
 
-}
+// if( $(mainSlider).length ) {
+
+//     var slider = new Slider( mainSlider );
+
+//     // $(".jsSliderBtn").on( "click", function(){
+//     //     slider.deactivateAutomatic();
+//     //     if( $(this).attr('data') == 'next' ) {
+//     //         slider.nextSlide();
+//     //     } else {
+//     //         slider.previousSlide();
+//     //     }
+//     // });
+
+//     // $(".jsSliderNav").children().on( "click", function(event){
+//     //     event.preventDefault();
+//     //     slider.deactivateAutomatic();
+//     //     slider.slide( $(this).attr('data') );
+//     // })
+
+//     setInterval( function(){
+//         if( slider.isAutomatic ) {
+//             slider.nextSlide();
+//         }
+//     }, slideDuration );
+
+// }

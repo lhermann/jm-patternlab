@@ -3,13 +3,32 @@
    ========================================================================== */
 
 .c-slide {
+    display: flex;
     position: relative;
-    background-image: url("../images/fpo_hero.png");
+    background-color: $c-background;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100%;
     overflow: hidden;
+    justify-content: center;
+    align-items: center;
+
+    &--top {
+        align-items: flex-start;
+    }
+
+    &--right {
+        justify-content: flex-end;
+    }
+
+    &--bottom {
+        align-items: flex-end;
+    }
+
+    &--left {
+        justify-content: flex-start;
+    }
 
     .is-entering & {
         animation: $slide-transition ease-in-out c-slide--enter;
@@ -29,35 +48,66 @@
 
     .c-slide__body {
         padding: $unit-large;
+        width: $unit * 26;
         text-align: center;
 
-        &--full {
-            padding: 0;
-            height: 100%;
-        }
+
     }
 
-        .c-slide__hero {
-            position: relative;
-            z-index: 30;
+    .c-slide__hero {
+        position: relative;
+        z-index: 30;
+    }
+
+        .c-slide__btn {
+            min-width: 50%;
         }
 
-            .c-slide__hero__content {
-                padding: $unit-huge;
+        .c-slide__hero__body {
+            padding: $unit-large;
+            width: $unit * 26;
+            text-align: center;
+        }
+
+        /*
+         * 1. horizontally align list with rest of page
+         */
+        .c-slide__hero__medialist {
+            margin-left: -$unit; /* 1 */
+            background-color: rgba($c-white, .7);
+            padding: 0 $unit;
+        }
+
+        .c-slide__quote {
+            position: relative;
+            color: $c-gray-6;
+
+            &:before,
+            &:after {
+                position: absolute;
+                line-height: 0;
+                color: $c-gray-3;
+                font-family: serif;
+                font-size: 500%;
             }
 
-            /*
-             * 1. vertically center list in container
-             * 2. horizontally align list with rest of page
-             */
-            .c-slide__hero__medialist {
-                display: flex; /* 1 */
-                margin-left: -$unit; /* 2 */
-                background-color: rgba($c-white, .7);
-                padding: 0 $unit;
-                text-align: left;
-                align-items: center; /* 1 */
+            &:before {
+                bottom: -$unit;
+                left: -$unit-large;
+                content: "\201D";
             }
+
+            &:after {
+                top: $unit;
+                right: -$unit-large;
+                content: "\201C";
+            }
+        }
+
+        .c-slide__credits {
+            margin-top: $unit;
+            color: $c-textmuted;
+        }
 
 
 
@@ -65,6 +115,7 @@
     0% {
         transform: translateX(-70%);
     }
+
     100% {
         transform: translateX(0);
     }
@@ -74,6 +125,7 @@
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-70%);
     }

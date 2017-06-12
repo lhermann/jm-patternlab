@@ -188,3 +188,20 @@ $btn-ghost-border-width: 1px;
         vertical-align: -2px;
     }
 }
+
+.c-btn--none {
+    background-color: transparent;
+    padding: $inuit-global-spacing-unit;
+
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: transparent;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $c-border;
+    }
+}

@@ -2,15 +2,17 @@
    #SLIDER
    ========================================================================== */
 
-/* Keep in sync with slider.js */
-$slide-transition: .5s;
-$slide-duration: 4s;
-
 .c-slider {
     position: relative;
     background-color: $c-background;
-    height: 460px;
+    height: $unit * 22;
     overflow: hidden;
+
+    &--quote {
+        border-top: 1px solid $c-border;
+        border-bottom: 1px solid $c-border;
+        height: $unit * 15;
+    }
 }
 
     .c-slider__btn {

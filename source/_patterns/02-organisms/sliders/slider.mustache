@@ -1,0 +1,42 @@
+<section id="{{slider.id}}" class="c-slider {{ styleModifier }} is-automatic">
+
+    <div class="c-slider__control c-slider__control--left">
+        <button class="c-btn c-btn--icon c-slider__btn jsSliderBtn" data="previous">
+            <span class="u-ic-keyboard-arrow-left"></span>
+        </button>
+    </div>
+
+    <div class="c-slider__control c-slider__control--right">
+        <button class="c-btn c-btn--icon c-slider__btn jsSliderBtn" data="next">
+            <span class="u-ic-keyboard-arrow-right"></span>
+        </button>
+    </div>
+
+    <ul class="c-slider__nav jsSliderNav">
+
+        {{# slider.slides }}
+
+        <li id="{{slider.id}}Nav{{id}}" data="{{id}}">
+            <a class="c-btn c-slider__btn" href="#slide{{id}}">
+                <div class="c-slider__btn__fill"></div>
+            </a>
+        </li>
+
+        {{/ slider.slides }}
+
+    </ul>
+
+    <ul class="c-slider__list jsSliderList">
+
+        {{# slider.slides }}
+
+        <li id="{{slider.id}}Slide{{id}}" class="c-slider__item">
+
+            {{> molecules-slide }}
+
+        </li>
+
+        {{/ slider.slides }}
+
+    </ul>
+</section>

@@ -1756,6 +1756,14 @@ small {
   .c-btn--icon > span {
     vertical-align: -2px; }
 
+.c-btn--none {
+  background-color: transparent;
+  padding: 21px; }
+  .c-btn--none, .c-btn--none:hover, .c-btn--none:active, .c-btn--none:focus {
+    background-color: transparent; }
+  .c-btn--none:hover, .c-btn--none:focus {
+    background-color: #e8e8e8; }
+
 /* ==========================================================================
    #BRANDING
    ========================================================================== */
@@ -1898,11 +1906,14 @@ small {
   font-size: 60%;
   font-weight: 500; }
 
-.c-mediaitem__title {
+.c-mediaitem__title,
+.c-mediaitem__meta {
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: nowrap; }
+
+.c-mediaitem__title {
   color: #4d4d4d; }
 
 .c-mediaitem__meta {
@@ -1914,14 +1925,60 @@ small {
       color: #666; }
 
 /* ==========================================================================
+   #PROMO
+   ========================================================================== */
+.c-promo__head {
+  position: relative; }
+
+.c-promo__title {
+  font-size: 18px;
+  font-size: 1.28571rem;
+  line-height: 1.16667;
+  display: block;
+  padding: 11px 21px;
+  width: 100%;
+  text-align: center;
+  color: #4d4d4d;
+  font-family: "Advent Sans", Sans-Serif; }
+
+.c-promo__btn {
+  font-size: 22px;
+  font-size: 1.57143rem;
+  line-height: 1;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -21px;
+  padding: 11px 0 11px 21px;
+  height: 42px;
+  color: #4d4d4d; }
+
+.c-promo__img {
+  display: block;
+  -webkit-transition: 0.33333s opacity;
+  transition: 0.33333s opacity; }
+  .c-promo__img > img {
+    border-radius: 3px;
+    width: 100%; }
+
+.c-promo__btn:hover, .c-promo__btn:focus,
+.c-promo__img:hover,
+.c-promo__img:focus {
+  opacity: .75; }
+
+/* Keep in sync with slider.js */
+/* ==========================================================================
    #SLIDER
    ========================================================================== */
-/* Keep in sync with slider.js */
 .c-slider {
   position: relative;
   background-color: #fbfbfa;
-  height: 460px;
+  height: 462px;
   overflow: hidden; }
+  .c-slider--quote {
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    height: 315px; }
 
 .c-slider__btn {
   opacity: .3;
@@ -1985,10 +2042,10 @@ small {
     -webkit-transform: translateX(0%);
             transform: translateX(0%); }
     .is-automatic .is-active .c-slider__btn__fill {
-      -webkit-transition: 4s -webkit-transform linear;
-      transition: 4s -webkit-transform linear;
-      transition: 4s transform linear;
-      transition: 4s transform linear, 4s -webkit-transform linear; }
+      -webkit-transition: 3s -webkit-transform linear;
+      transition: 3s -webkit-transform linear;
+      transition: 3s transform linear;
+      transition: 3s transform linear, 3s -webkit-transform linear; }
 
 .c-slider__list {
   margin: 0;
@@ -2003,11 +2060,11 @@ small {
   .c-slider__item:first-child {
     z-index: 20; }
   .c-slider__item.is-entering {
-    -webkit-animation: 0.5s ease-in-out c-slide-container--enter;
-            animation: 0.5s ease-in-out c-slide-container--enter; }
+    -webkit-animation: 0.7s ease-in-out c-slide-container--enter;
+            animation: 0.7s ease-in-out c-slide-container--enter; }
   .c-slider__item.is-leaving {
-    -webkit-animation: 0.5s ease-in-out c-slide-container--leave;
-            animation: 0.5s ease-in-out c-slide-container--leave; }
+    -webkit-animation: 0.7s ease-in-out c-slide-container--leave;
+            animation: 0.7s ease-in-out c-slide-container--leave; }
 
 @-webkit-keyframes c-slide-container--enter {
   0% {
@@ -2046,19 +2103,44 @@ small {
    #SLIDE
    ========================================================================== */
 .c-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
-  background-image: url("../images/fpo_hero.png");
+  background-color: #fbfbfa;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .c-slide--top {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .c-slide--right {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .c-slide--bottom {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+  .c-slide--left {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
   .is-entering .c-slide {
-    -webkit-animation: 0.5s ease-in-out c-slide--enter;
-            animation: 0.5s ease-in-out c-slide--enter; }
+    -webkit-animation: 0.7s ease-in-out c-slide--enter;
+            animation: 0.7s ease-in-out c-slide--enter; }
   .is-leaving .c-slide {
-    -webkit-animation: 0.5s ease-in-out c-slide--leave;
-            animation: 0.5s ease-in-out c-slide--leave; }
+    -webkit-animation: 0.7s ease-in-out c-slide--leave;
+            animation: 0.7s ease-in-out c-slide--leave; }
 
 .c-slide__link {
   display: block;
@@ -2068,36 +2150,51 @@ small {
 
 .c-slide__body {
   padding: 42px;
+  width: 546px;
   text-align: center; }
-  .c-slide__body--full {
-    padding: 0;
-    height: 100%; }
 
 .c-slide__hero {
   position: relative;
   z-index: 30; }
 
-.c-slide__hero__content {
-  padding: 84px; }
+.c-slide__btn {
+  min-width: 50%; }
+
+.c-slide__hero__body {
+  padding: 42px;
+  width: 546px;
+  text-align: center; }
 
 /*
- * 1. vertically center list in container
- * 2. horizontally align list with rest of page
+ * 1. horizontally align list with rest of page
  */
 .c-slide__hero__medialist {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  /* 1 */
   margin-left: -21px;
-  /* 2 */
+  /* 1 */
   background-color: rgba(255, 255, 255, 0.7);
-  padding: 0 21px;
-  text-align: left;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /* 1 */ }
+  padding: 0 21px; }
+
+.c-slide__quote {
+  position: relative;
+  color: #4d4d4d; }
+  .c-slide__quote:before, .c-slide__quote:after {
+    position: absolute;
+    line-height: 0;
+    color: #e8e8e8;
+    font-family: serif;
+    font-size: 500%; }
+  .c-slide__quote:before {
+    bottom: -21px;
+    left: -42px;
+    content: "\201D"; }
+  .c-slide__quote:after {
+    top: 21px;
+    right: -42px;
+    content: "\201C"; }
+
+.c-slide__credits {
+  margin-top: 21px;
+  color: #b6b6b6; }
 
 @-webkit-keyframes c-slide--enter {
   0% {
@@ -2835,6 +2932,49 @@ small {
 .u-ic-creative-commons:before {
   content: "\e906"; }
 
+/* ==========================================================================
+   #ORIENTATIONS
+   ========================================================================== */
+/**
+ * orient content of a block
+ *
+ *   <div class="u-orient u-orient--middle"></div>
+ */
+.u-orient {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important; }
+
+.u-orient--top {
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important; }
+
+.u-orient--middle {
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important; }
+
+.u-orient--bottom {
+  -webkit-box-align: end !important;
+      -ms-flex-align: end !important;
+          align-items: flex-end !important; }
+
+.u-orient--left {
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important; }
+
+.u-orient--center {
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important; }
+
+.u-orient--right {
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important; }
+
 .u-height-100 {
   height: 100%; }
 
@@ -2851,4 +2991,4 @@ small {
   font-size: 71.4% !important; }
 
 .u-muted {
-  opacity: .6; }
+  opacity: .5; }
