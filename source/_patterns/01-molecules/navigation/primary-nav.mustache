@@ -5,13 +5,18 @@
 		{{# primaryNav }}
 		<li class="c-primary-nav__item">
             <a href="{{ url }}" class="c-primary-nav__link">
-                {{# signal }}<span class="c-primary-nav__signal"></span>{{/ signal }}
+                {{# signal }}
+                    <span class="c-primary-nav__signal"></span>
+                {{/ signal }}
                 {{ label }} <span class="u-ic-keyboard-arrow-down"></span>
             </a>
             <ul class="c-primary-nav__dropdown">
                 {{# dropdown }}
                 <li class="c-primary-nav__dropdown__item">
-                    <a class="c-primary-nav__link c-primary-nav__link--dropdown" href="{{ url }}">{{ label }}</a>
+                    <a class="c-primary-nav__link c-primary-nav__link--dropdown
+                        u-eclipse" href="{{ url }}">
+                        {{ label }}
+                    </a>
                 </li>
                 {{/ dropdown }}
             </ul>

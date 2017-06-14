@@ -228,7 +228,7 @@ $slide-duration: 3s;
 // UTILITIES
 @import "../node_modules/inuitcss/utilities/utilities.clearfix";
 $inuit-offsets: false;
-$inuit-fractions: 1 2 3 4 5;
+$inuit-fractions: 1 2 3 4 5 7;
 @import "../node_modules/inuitcss/utilities/utilities.widths";
 @import "../node_modules/inuitcss/utilities/utilities.headings";
 @import "../node_modules/inuitcss/utilities/utilities.spacing";
@@ -241,6 +241,11 @@ $inuit-fractions: 1 2 3 4 5;
 
 .u-text-center {
     text-align: center;
+}
+
+.u-box-center {
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .u-height-100 {
@@ -269,4 +274,19 @@ $inuit-fractions: 1 2 3 4 5;
 
 .u-muted {
     opacity: .5;
+}
+
+.u-eclipse {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.u-spacer-top {
+    margin-top: $unit-large;
+
+    @include mq($from: tablet) {
+        margin-top: $unit-huge;
+    }
 }

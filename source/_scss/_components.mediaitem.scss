@@ -42,14 +42,6 @@
             font-weight: 500;
         }
 
-    .c-mediaitem__title,
-    .c-mediaitem__meta {
-        display: block;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-
     .c-mediaitem__title {
         color: $c-text;
     }

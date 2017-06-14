@@ -8,9 +8,11 @@
         </header>
     </a>
 
-    <footer class="c-media-article__footer u-small">
+    <footer class="c-media-article__footer u-small u-eclipse">
             <a href="{{author.url}}">{{author.name}}</a>
             &middot; <a href="#">{{date}}</a>
-            &middot; <a href="{{category.url}}">{{category.name}}</a>
+            <span class="u-hidden@until-desktop">
+                &middot; <a href="{{category.url}}">{{category.name}}</a>
+            </span>
     </footer>
 </article>

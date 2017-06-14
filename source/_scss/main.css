@@ -1977,13 +1977,6 @@ body:after {
   font-size: 60%;
   font-weight: 500; }
 
-.c-mediaitem__title,
-.c-mediaitem__meta {
-  display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap; }
-
 .c-mediaitem__title {
   color: #4d4d4d; }
 
@@ -2039,12 +2032,20 @@ body:after {
 /* ==========================================================================
    #ARTICLE-GRID
    ========================================================================== */
-.c-article-grid:before {
-  padding-bottom: 33.75%; }
+.c-article-grid {
+  margin-left: -21px; }
+  .c-article-grid:before {
+    padding-bottom: 33.75%; }
+    @media (max-width: 46.24em) {
+      .c-article-grid:before {
+        padding-bottom: 112.5%; } }
 
 .c-article-grid__col {
   float: left;
   height: 100%; }
+  @media (max-width: 46.24em) {
+    .c-article-grid__col {
+      height: 50%; } }
 
 .c-article-grid__row {
   height: 50%; }
@@ -2054,8 +2055,6 @@ body:after {
   padding-bottom: 21px;
   padding-left: 21px;
   height: 100%; }
-  .c-article-grid__item--hero {
-    padding-left: 0; }
 
 /* ==========================================================================
    #MEDIA-ARTICLE
@@ -2069,6 +2068,11 @@ body:after {
   width: 100%;
   height: 100%;
   text-align: center; }
+
+.c-media-article__link {
+  display: block;
+  height: 100%;
+  overflow: hidden; }
 
 .c-media-article__header {
   display: table;
@@ -2090,6 +2094,11 @@ body:after {
   color: #4d4d4d;
   font-family: "Roboto", Sans-Serif;
   font-weight: 600; }
+  @media (max-width: 61.24em) {
+    .c-media-article__title {
+      font-size: 12px;
+      font-size: 0.85714rem;
+      line-height: 1.5; } }
   .c-media-article--large .c-media-article__title {
     font-size: 21px;
     font-size: 1.5rem;
@@ -2129,14 +2138,24 @@ body:after {
   font-size: 1.28571rem;
   line-height: 1.16667; }
 
-.c-form__input-with-btn .c-form__input {
-  margin-right: -11px;
-  padding-right: 21px; }
-.c-form__input-with-btn .c-form__btn {
-  border-radius: 0 3px 3px 0;
-  padding: 5px 11px;
-  vertical-align: top;
-  line-height: 1.15; }
+/*
+ * 1. Don't break button from input
+ * 2. if 100% width is reached save exactly the space for a button with icon
+ */
+.c-form__input-with-btn {
+  white-space: nowrap;
+  /* 1 */ }
+  .c-form__input-with-btn .c-form__input {
+    margin-right: -11px;
+    padding-right: 21px;
+    max-width: calc(100% - 50px);
+    /* 2 */ }
+  .c-form__input-with-btn .c-form__btn {
+    border-radius: 0 3px 3px 0;
+    padding: 5px 11px;
+    vertical-align: top;
+    line-height: 1.15;
+    display: inline-block; }
 
 .c-form--large .c-form__input, .c-form--large
 .c-form__btn {
@@ -2434,6 +2453,27 @@ body:after {
 .u-5\/5 {
   width: 100% !important; }
 
+.u-1\/7 {
+  width: 14.28571% !important; }
+
+.u-2\/7 {
+  width: 28.57143% !important; }
+
+.u-3\/7 {
+  width: 42.85714% !important; }
+
+.u-4\/7 {
+  width: 57.14286% !important; }
+
+.u-5\/7 {
+  width: 71.42857% !important; }
+
+.u-6\/7 {
+  width: 85.71429% !important; }
+
+.u-7\/7 {
+  width: 100% !important; }
+
 /**
  * If we’re using Sass-MQ, automatically generate grid system(s) for each of our
  * defined breakpoints, and give them a Responsive Suffix, e.g.:
@@ -2484,6 +2524,27 @@ body:after {
     width: 80% !important; }
 
   .u-5\/5\@mobile {
+    width: 100% !important; }
+
+  .u-1\/7\@mobile {
+    width: 14.28571% !important; }
+
+  .u-2\/7\@mobile {
+    width: 28.57143% !important; }
+
+  .u-3\/7\@mobile {
+    width: 42.85714% !important; }
+
+  .u-4\/7\@mobile {
+    width: 57.14286% !important; }
+
+  .u-5\/7\@mobile {
+    width: 71.42857% !important; }
+
+  .u-6\/7\@mobile {
+    width: 85.71429% !important; }
+
+  .u-7\/7\@mobile {
     width: 100% !important; } }
 @media (min-width: 46.25em) {
   .u-1\/1\@tablet {
@@ -2529,6 +2590,27 @@ body:after {
     width: 80% !important; }
 
   .u-5\/5\@tablet {
+    width: 100% !important; }
+
+  .u-1\/7\@tablet {
+    width: 14.28571% !important; }
+
+  .u-2\/7\@tablet {
+    width: 28.57143% !important; }
+
+  .u-3\/7\@tablet {
+    width: 42.85714% !important; }
+
+  .u-4\/7\@tablet {
+    width: 57.14286% !important; }
+
+  .u-5\/7\@tablet {
+    width: 71.42857% !important; }
+
+  .u-6\/7\@tablet {
+    width: 85.71429% !important; }
+
+  .u-7\/7\@tablet {
     width: 100% !important; } }
 @media (min-width: 61.25em) {
   .u-1\/1\@desktop {
@@ -2574,6 +2656,27 @@ body:after {
     width: 80% !important; }
 
   .u-5\/5\@desktop {
+    width: 100% !important; }
+
+  .u-1\/7\@desktop {
+    width: 14.28571% !important; }
+
+  .u-2\/7\@desktop {
+    width: 28.57143% !important; }
+
+  .u-3\/7\@desktop {
+    width: 42.85714% !important; }
+
+  .u-4\/7\@desktop {
+    width: 57.14286% !important; }
+
+  .u-5\/7\@desktop {
+    width: 71.42857% !important; }
+
+  .u-6\/7\@desktop {
+    width: 85.71429% !important; }
+
+  .u-7\/7\@desktop {
     width: 100% !important; } }
 @media (min-width: 81.25em) {
   .u-1\/1\@wide {
@@ -2619,6 +2722,27 @@ body:after {
     width: 80% !important; }
 
   .u-5\/5\@wide {
+    width: 100% !important; }
+
+  .u-1\/7\@wide {
+    width: 14.28571% !important; }
+
+  .u-2\/7\@wide {
+    width: 28.57143% !important; }
+
+  .u-3\/7\@wide {
+    width: 42.85714% !important; }
+
+  .u-4\/7\@wide {
+    width: 57.14286% !important; }
+
+  .u-5\/7\@wide {
+    width: 71.42857% !important; }
+
+  .u-6\/7\@wide {
+    width: 85.71429% !important; }
+
+  .u-7\/7\@wide {
     width: 100% !important; } }
 /* ==========================================================================
    #HEADINGS
@@ -3020,6 +3144,12 @@ body:after {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.u-ic-mail:before {
+  content: "\e0e1"; }
+
+.u-ic-send:before {
+  content: "\e163"; }
+
 .u-ic-arrow-back:before {
   content: "\e5c4"; }
 
@@ -3161,6 +3291,10 @@ body:after {
 .u-text-center {
   text-align: center; }
 
+.u-box-center {
+  margin-right: auto;
+  margin-left: auto; }
+
 .u-height-100 {
   height: 100%; }
 
@@ -3187,3 +3321,15 @@ body:after {
 
 .u-muted {
   opacity: .5; }
+
+.u-eclipse {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.u-spacer-top {
+  margin-top: 42px; }
+  @media (min-width: 46.25em) {
+    .u-spacer-top {
+      margin-top: 84px; } }

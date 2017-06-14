@@ -3,14 +3,24 @@
    ========================================================================== */
 
 .c-article-grid {
+    margin-left: -$unit;
+
     &:before {
         padding-bottom: 33.75%;
+
+        @include mq($until: tablet) {
+             padding-bottom: 112.5%;
+        }
     }
 }
 
     .c-article-grid__col {
         float: left;
         height: 100%;
+
+        @include mq($until: tablet) {
+            height: 50%;
+        }
     }
 
         .c-article-grid__row {
@@ -22,9 +32,5 @@
                 padding-bottom: $unit;
                 padding-left: $unit;
                 height: 100%;
-
-                &--hero {
-                    padding-left: 0;
-                }
             }
 

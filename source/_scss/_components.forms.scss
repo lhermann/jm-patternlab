@@ -12,10 +12,17 @@
     }
 }
 
+    /*
+     * 1. Don't break button from input
+     * 2. if 100% width is reached save exactly the space for a button with icon
+     */
     .c-form__input-with-btn {
+        white-space: nowrap; /* 1 */
+
         .c-form__input {
             margin-right: -$unit-small;
             padding-right: $unit;
+            max-width: calc(100% - 50px); /* 2 */
         }
 
         .c-form__btn {
@@ -23,6 +30,7 @@
             padding: $unit-tiny $unit-small;
             vertical-align: top;
             line-height: 1.15;
+            display: inline-block;
         }
     }
 

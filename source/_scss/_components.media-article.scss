@@ -13,32 +13,42 @@
     text-align: center;
 }
 
-    .c-media-article__header {
-        display: table;
-        transition: $global-transition opacity;
-        background-color: rgba($c-white, .7);
-        padding: 0 $unit $unit;
-        width: 100%;
+    .c-media-article__link {
+        display: block;
         height: 100%;
-        justify-content: center;
-
-        &:hover {
-            opacity: 0;
-        }
+        overflow: hidden;
     }
 
-        .c-media-article__title {
-            @include inuit-font-size(16px, 1.5);
-            display: table-cell;
-            vertical-align: middle;
-            color: $c-text;
-            font-family: $font-primary;
-            font-weight: 600;
+        .c-media-article__header {
+            display: table;
+            transition: $global-transition opacity;
+            background-color: rgba($c-white, .7);
+            padding: 0 $unit $unit;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
 
-            .c-media-article--large & {
-                @include inuit-font-size(21px, 1.5);
+            &:hover {
+                opacity: 0;
             }
         }
+
+            .c-media-article__title {
+                @include inuit-font-size(16px, 1.5);
+                display: table-cell;
+                vertical-align: middle;
+                color: $c-text;
+                font-family: $font-primary;
+                font-weight: 600;
+
+                @include mq($until: desktop) {
+                    @include inuit-font-size(12px, 1.5);
+                }
+
+                .c-media-article--large & {
+                    @include inuit-font-size(21px, 1.5);
+                }
+            }
 
     .c-media-article__footer {
         position: absolute;
