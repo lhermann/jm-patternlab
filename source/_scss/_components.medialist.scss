@@ -8,11 +8,6 @@
 
     .c-medialist__title {
         padding-left: $unit-small;
-
-        a {
-            color: $c-text;
-            border-bottom: 1px dotted $c-textmuted;
-        }
     }
 
     .c-medialist__list {

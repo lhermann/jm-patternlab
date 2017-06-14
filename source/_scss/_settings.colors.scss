@@ -21,10 +21,12 @@ $c-red:         #ed1c24;
 
 
 $c-white:       #fff;
-$c-gray-1:      #fbfbfa;
+// $c-gray-1:      #fbfbfa;
+$c-gray-1:      #f8f8f8;
 $c-gray-2:      #f0f0f0;
 $c-gray-3:      #e8e8e8;
 $c-gray-4:      #b6b6b6;
+$c-gray-4-5:    #8e8e8e;
 $c-gray-5:      #666;
 $c-gray-6:      #4d4d4d;
 $c-gray-7:      #333;
@@ -43,6 +45,7 @@ $c-textalt:                     $c-gray-5;
 $c-textmuted:                   $c-gray-4;
 $c-accent:                      $c-brand-primary;
 $c-background:                  $c-gray-1;
+$c-background-transparent:      rgba($c-black, .04);
 $c-border:                      $c-gray-3;
 
 $c-link:                        $c-brand-primary;

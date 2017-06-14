@@ -4,14 +4,11 @@
 
 .c-slider {
     position: relative;
-    background-color: $c-background;
     height: $unit * 22;
     overflow: hidden;
 
     &--quote {
-        border-top: 1px solid $c-border;
-        border-bottom: 1px solid $c-border;
-        height: $unit * 15;
+        height: $unit * 12;
     }
 }
 

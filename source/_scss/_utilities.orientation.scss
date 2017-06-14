@@ -20,18 +20,19 @@ $orient-vertical: (
     bottom: "flex-end"
 );
 
-.u-orient {
+[class^="u-orient"],
+[class*=" u-orient"] {
     display: flex !important;
 }
 
 @each $key, $value in $orient-vertical {
-    .u-orient--#{$key} {
+    .u-orient-#{$key} {
         align-items: #{$value} !important;
     }
 }
 
 @each $key, $value in $orient-horizontal {
-    .u-orient--#{$key} {
+    .u-orient-#{$key} {
         justify-content: #{$value} !important;
     }
 }

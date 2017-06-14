@@ -1,0 +1,30 @@
+/* ==========================================================================
+   #ARTICLE-GRID
+   ========================================================================== */
+
+.c-article-grid {
+    &:before {
+        padding-bottom: 33.75%;
+    }
+}
+
+    .c-article-grid__col {
+        float: left;
+        height: 100%;
+    }
+
+        .c-article-grid__row {
+            height: 50%;
+        }
+
+            .c-article-grid__item {
+                float: left;
+                padding-bottom: $unit;
+                padding-left: $unit;
+                height: 100%;
+
+                &--hero {
+                    padding-left: 0;
+                }
+            }
+

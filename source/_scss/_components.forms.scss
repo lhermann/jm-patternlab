@@ -1,0 +1,38 @@
+/* ==========================================================================
+   #FOMRS
+   ========================================================================== */
+
+.c-form {
+    &--large {
+        @include inuit-font-size(16px);
+    }
+
+    &--huge {
+        @include inuit-font-size(18px);
+    }
+}
+
+    .c-form__input-with-btn {
+        .c-form__input {
+            margin-right: -$unit-small;
+            padding-right: $unit;
+        }
+
+        .c-form__btn {
+            border-radius: 0 $global-radius $global-radius 0;
+            padding: $unit-tiny $unit-small;
+            vertical-align: top;
+            line-height: 1.15;
+        }
+    }
+
+    .c-form__input,
+    .c-form__btn {
+        .c-form--large & {
+            padding: $unit-small $unit;
+        }
+
+        .c-form--huge & {
+            padding: $unit $unit-large;
+        }
+    }

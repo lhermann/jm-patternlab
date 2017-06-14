@@ -16,15 +16,9 @@
     .c-search-bar__input {
         border-width: 0;
         border-radius: $global-radius 0 0 $global-radius;
-        background-color: $c-background;
         padding-left: $unit;
         width: calc(100% - 36px);
         height: 36px;
-        font-weight: 300;
-
-        &::placeholder { color: $c-gray-5; }
-        &::-webkit-input-placeholder { color: $c-gray-5; }
-        &:-ms-input-placeholder { color: $c-gray-5; }
     }
 
     .c-search-bar__btn {

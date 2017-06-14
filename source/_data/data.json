@@ -8,12 +8,23 @@
     "htmlClass": "pl",
     "bodyClass": "body",
     "btnText" : "Button",
+    "placeholder": "Placeholder",
     "progress" : true,
     "max" : "100",
     "progressValue" : "85",
 	"alertText" : "An alert is messaging that tells the user some information. Alerts can be error, warning, success, or info messages",
     "quoteText" : "A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.",
     "quoteSource" : "<a href='https://en.wikipedia.org/wiki/Block_quotation'>Wikiepedia</a>",
+    "image": "../../images/fpo_16x9.png",
+    "author": {
+        "name": "Christopher Kramp",
+        "url": "#"
+    },
+    "category": {
+        "name": "Allgemein",
+        "url": "#"
+    },
+    "date": "7. März 2017",
     "img": {
         "landscape-4x3": {
             "src": "../../images/fpo_4x3.png",
@@ -470,5 +481,75 @@
             }
 
         ]
+    },
+    "article1": {
+        "title": "„Sola Veritas“ – Die neue große Serie zur Geschichte der Reformation",
+        "url": "#",
+        "image": "/images/slide-gray.jpg",
+        "author": {
+            "name": "Christopher Kramp",
+            "url": "#"
+        },
+        "category": {
+            "name": "Allgemein",
+            "url": "#"
+        },
+        "date": "7. März 2017"
+    },
+    "article2": {
+        "title": "Joel Media Spezial 2017: „Franziskus, Trump und die Reformation“ am 25. Februar",
+        "url": "#",
+        "image": "/images/slide-gray.jpg",
+        "author": {
+            "name": "Christopher Kramp",
+            "url": "#"
+        },
+        "category": {
+            "name": "Allgemein",
+            "url": "#"
+        },
+        "date": "7. März 2017"
+    },
+    "article3": {
+        "title": "Ausblick auf ein geschichtsträchtiges Jahr",
+        "url": "#",
+        "image": "/images/slide-gray.jpg",
+        "author": {
+            "name": "Christopher Kramp",
+            "url": "#"
+        },
+        "category": {
+            "name": "Allgemein",
+            "url": "#"
+        },
+        "date": "7. März 2017"
+    },
+    "article4": {
+        "title": "Missionsprojekt Hacksaw Ridge",
+        "url": "#",
+        "image": "/images/slide-gray.jpg",
+        "author": {
+            "name": "Christopher Kramp",
+            "url": "#"
+        },
+        "category": {
+            "name": "Allgemein",
+            "url": "#"
+        },
+        "date": "7. März 2017"
+    },
+    "article5": {
+        "title": "„Weltengeschichte“ – die neue Vortragsreihe live ab dem 23. September",
+        "url": "#",
+        "image": "/images/slide-gray.jpg",
+        "author": {
+            "name": "Christopher Kramp",
+            "url": "#"
+        },
+        "category": {
+            "name": "Allgemein",
+            "url": "#"
+        },
+        "date": "7. März 2017"
     }
 }

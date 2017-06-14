@@ -3,12 +3,12 @@
    ========================================================================== */
 
 .c-mobile-nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -24em;
     transform: translateX(0);
     transition: $global-transition transform ease;
-    z-index: 99;
+    z-index: 100;
     box-shadow: $global-shadow;
     background-color: $c-white;
     width: 90%;
@@ -78,4 +78,29 @@
                     color: $c-white;
                 }
             }
+
+/*
+ * Transparent overy while mobile nav is visible
+ */
+body:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: $global-transition background-color;
+    z-index: -99;
+    background-color: rgba($c-black, 0);
+    content: "";
+}
+
+.is-mobile-nav-open > body {
+    overflow: hidden;
+
+    &:after {
+        z-index: 99;
+        background-color: rgba($c-black, .5);
+    }
+}
 

@@ -1,5 +1,5 @@
 ---
-title: Tout List
+title: Newsletter Form
 ---
 
 [Insert description here]

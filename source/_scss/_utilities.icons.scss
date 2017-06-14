@@ -4,8 +4,8 @@
 
 @font-face {
   font-family: "icomoon";
-  src:  url("../fonts/icomoon/fonts/icomoon.eot?nc6s1");
-  src:  url("../fonts/icomoon/fonts/icomoon.eot?nc6s1#iefix") format("embedded-opentype"),
+  src: url("../fonts/icomoon/fonts/icomoon.eot?nc6s1");
+  src: url("../fonts/icomoon/fonts/icomoon.eot?nc6s1#iefix") format("embedded-opentype"),
     url("../fonts/icomoon/fonts/icomoon.ttf?nc6s1") format("truetype"),
     url("../fonts/icomoon/fonts/icomoon.woff?nc6s1") format("woff"),
     url("../fonts/icomoon/fonts/icomoon.svg?nc6s1#icomoon") format("svg");
@@ -13,15 +13,16 @@
   font-style: normal;
 }
 
-[class^="u-ic-"], [class*=" u-ic-"] {
+[class^="u-ic-"],
+[class*=" u-ic-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
   text-transform: none;
   line-height: 1;
+  font-family: "icomoon" !important;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  speak: none;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;

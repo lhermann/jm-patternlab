@@ -1,0 +1,26 @@
+/* ==========================================================================
+   #RESPONSIVE HIDE
+   ========================================================================== */
+
+/**
+ * .u-hidden@from-tablet
+ * .u-hidden@until-tablet
+ */
+
+$breakpoint-separator: \@;
+
+@each $bp-name, $bp-value in $mq-breakpoints {
+
+    .u-hidden#{$breakpoint-separator}from-#{$bp-name}{
+        @include mq($from: $bp-name) {
+            display: none;
+        }
+    }
+
+    .u-hidden#{$breakpoint-separator}until-#{$bp-name}{
+        @include mq($until: $bp-name) {
+            display: none;
+        }
+    }
+
+}

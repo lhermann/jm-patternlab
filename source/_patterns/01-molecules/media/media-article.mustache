@@ -1,0 +1,16 @@
+<article class="c-media-article {{ styleModifier }}" style="background-image: url('{{image}}')">
+
+    <a href="{{url}}" class="c-media-article__link">
+        <header class="c-media-article__header">
+            <h3 class="c-media-article__title">
+                {{title}}
+            </h3>
+        </header>
+    </a>
+
+    <footer class="c-media-article__footer u-small">
+            <a href="{{author.url}}">{{author.name}}</a>
+            &middot; <a href="#">{{date}}</a>
+            &middot; <a href="{{category.url}}">{{category.name}}</a>
+    </footer>
+</article>
