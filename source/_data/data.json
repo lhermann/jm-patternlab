@@ -67,7 +67,9 @@
         {
             "signal": false,
             "label": "Videoarchiv",
+            "shortLabel": "Archiv",
             "url": "link.pages-homepage",
+            "hasDropdown": true,
             "dropdown": [
                 {
                     "label": "Videos",
@@ -90,7 +92,9 @@
         {
             "signal": "green",
             "label": "Livestream",
+            "shortLabel": "Live",
             "url": "link.pages-homepage",
+            "hasDropdown": true,
             "dropdown": "livestream"
         }
     ],

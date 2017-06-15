@@ -8,15 +8,15 @@
             {{> molecules-branding }}
         </div>
 
-        <div class="c-site-header__item c-site-header__item--double">
-            {{> molecules-search-bar }}
+        <div class="c-site-header__item c-site-header__item--double u-hidden@until-mobile">
+            {{> molecules-search-bar:c-search-bar--primary }}
         </div>
 
-        <div class="c-site-header__item">
+        <div class="c-site-header__item u-hidden@until-tablet">
             {{> molecules-primary-nav }}
         </div>
 
-        <div class="c-site-header__item">
+        <div class="c-site-header__item c-site-header__item--hamburger">
             {{> molecules-hamburger }}
         </div>
 

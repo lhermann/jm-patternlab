@@ -3,13 +3,25 @@
    ========================================================================== */
 
 .c-search-bar {
+    @include inuit-font-size(18px);
     position: relative;
     width: 100%;
     color: $c-white;
-    font-size: 18px;
 
-    &--small {
-        font-size: 100%;
+    @include mq($until: desktop) {
+        @include inuit-font-size(14px);
+    }
+
+    &--primary {
+        @include mq($until: 30em) {
+            display: none;
+        }
+    }
+
+    &--mobile {
+        @include mq($from: 30em) {
+            display: none;
+        }
     }
 }
 

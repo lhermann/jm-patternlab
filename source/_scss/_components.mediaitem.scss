@@ -4,6 +4,7 @@
 
 .c-mediaitem {
     transition: $global-transition background-color;
+    margin-left: -$unit-small;
     border-radius: $global-radius;
     padding: $unit-small;
 

@@ -8,7 +8,9 @@
                 {{# signal }}
                     <span class="c-primary-nav__signal"></span>
                 {{/ signal }}
-                {{ label }} <span class="u-ic-keyboard-arrow-down"></span>
+                <span class="u-hidden@until-desktop">{{ label }}</span>
+                <span class="u-hidden@from-desktop">{{ shortLabel }}</span>
+                {{# hasDropdown }}<span class="u-ic-keyboard-arrow-down"></span>{{/ hasDropdown }}
             </a>
             <ul class="c-primary-nav__dropdown">
                 {{# dropdown }}

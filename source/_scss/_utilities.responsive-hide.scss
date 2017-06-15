@@ -13,13 +13,13 @@ $breakpoint-separator: \@;
 
     .u-hidden#{$breakpoint-separator}from-#{$bp-name}{
         @include mq($from: $bp-name) {
-            display: none;
+            display: none !important;
         }
     }
 
     .u-hidden#{$breakpoint-separator}until-#{$bp-name}{
         @include mq($until: $bp-name) {
-            display: none;
+            display: none !important;
         }
     }
 
