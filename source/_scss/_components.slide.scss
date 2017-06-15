@@ -3,7 +3,6 @@
    ========================================================================== */
 
 .c-slide {
-    display: flex;
     position: relative;
     background-color: $c-background;
     background-repeat: no-repeat;
@@ -11,23 +10,9 @@
     background-size: cover;
     height: 100%;
     overflow: hidden;
-    justify-content: center;
-    align-items: center;
 
-    &--top {
-        align-items: flex-start;
-    }
-
-    &--right {
-        justify-content: flex-end;
-    }
-
-    &--bottom {
-        align-items: flex-end;
-    }
-
-    &--left {
-        justify-content: flex-start;
+    &--white {
+        color: $c-white;
     }
 
     .is-entering & {
@@ -46,13 +31,34 @@
         height: 100%;
     }
 
-    .c-slide__body {
-        padding: $unit-large;
-        width: $unit * 26;
-        text-align: center;
+    .c-slide--wrapper {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
 
+        .c-slide--top & {
+            align-items: flex-start;
+        }
 
+        .c-slide--right & {
+            justify-content: flex-end;
+        }
+
+        .c-slide--bottom & {
+            align-items: flex-end;
+        }
+
+        .c-slide--left & {
+            justify-content: flex-start;
+        }
     }
+
+        .c-slide__body {
+            padding: $unit-large;
+            width: $unit * 26;
+            text-align: center;
+        }
 
     .c-slide__hero {
         position: relative;
@@ -74,7 +80,7 @@
          */
         .c-slide__hero__medialist {
             margin-left: -$unit; /* 1 */
-            background-color: rgba($c-white, .7);
+            background-color: rgba($c-white, .8);
             padding: 0 $unit;
         }
 

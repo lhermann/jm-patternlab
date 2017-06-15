@@ -1,0 +1,497 @@
+{
+    "slider": {
+        "id": "mainSlider",
+        "slides": [
+            {
+                "id": 1,
+                "background": "../../images/sample/slide-bg1.png",
+                "url": "link.pages-homepage",
+                "joelmedia": true,
+                "heading": "Joel Media Ministry e.V.",
+                "subheading": "... das ewige Evangelium für Stuttgart, Deutschland und die Welt",
+                "text": "Wöchentlich neue Videos über die Bibel,<br>Prophetie und Zeitgeschehen",
+                "button": "Erster Besuch? Hier geht's los",
+                "newVideosList": {
+                    "title": "Neue Videos",
+                    "medialist": [
+                        {
+                            "image": "/images/sample/video-thumb5-150x84.jpg",
+                            "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
+                            "length": "56:07",
+                            "speaker": {
+                                "name": "Matthias Ströck",
+                                "url": "#"
+                            },
+                            "date": "5. Juni 2017",
+                            "series": false,
+                            "klicks": false
+                        },
+                        {
+                            "image": "/images/sample/video-thumb1-150x84.jpg",
+                            "title": "Der Ersehnte: 63. „An der Zollstätte“",
+                            "length": "48:20",
+                            "speaker": {
+                                "name": "Christopher Kramp",
+                                "url": "#"
+                            },
+                            "date": "25. Mai 2017",
+                            "series": false,
+                            "klicks": false
+                        },
+                        {
+                            "image": "/images/sample/video-thumb3-150x84.jpg",
+                            "title": "Offenbarung 17:9",
+                            "length": "38:29",
+                            "speaker": {
+                                "name": "Christopher Kramp",
+                                "url": "#"
+                            },
+                            "date": "25. Mai 2017",
+                            "series": false,
+                            "klicks": false
+                        },
+                        {
+                            "image": "/images/sample/video-thumb4-150x84.jpg",
+                            "title": "Sola Veritas: 11. Neue Wege (1506)",
+                            "length": "51:26",
+                            "speaker": {
+                                "name": "Christopher Kramp",
+                                "url": "#"
+                            },
+                            "date": "25. Mai 2017",
+                            "series": false,
+                            "klicks": false
+                        },
+                        {
+                            "image": "/images/sample/video-thumb2-150x84.jpg",
+                            "title": "Mit Gott leben – Apostelgeschichte 17:25b",
+                            "length": "2:34",
+                            "speaker": {
+                                "name": "Christopher Kramp",
+                                "url": "#"
+                            },
+                            "date": "13. Mai 2017",
+                            "klicks": false,
+                            "series": false
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 2,
+                "background": "../../images/sample/slide-bg2.jpg",
+                "styleModifier": "c-slide--left",
+                "url": "link.pages-homepage",
+                "heading": "Sola Vertias",
+                "text": "2017 ist das Jahr der Reformation. Wird sie fortgeführt oder begraben? Wie verhalten sich Luthers Erben und was wird aus seinen (Wieder)entdeckungen?",
+                "button": "Serie ansehen"
+            },
+            {
+                "id": 3,
+                "background": "../../images/sample/slide-bg3.jpg",
+                "url": "link.pages-homepage",
+                "heading": "Joel Media in Wittenberg",
+                "text": "Vor 500 Jahren begann Martin Luther in Wittenberg ein Werk, das die Gesellschaft durch Gottes Wirken vollkommen beeinflusste und bis heute noch prägt.",
+                "button": "Artikel lesen"
+            }
+        ]
+    },
+    "promoList": [
+        {
+            "title": "Prophetie<br>&amp; Zeitgeschehen",
+            "url:": "#",
+            "imgLandscape": {
+                "src": "/images/sample/promo-prophecy-480x270.jpg",
+                "alt": ""
+            }
+        },
+        {
+            "title": "Erweckung<br>&amp; Evangelium",
+            "url:": "#",
+            "imgLandscape": {
+                "src": "/images/sample/promo-health-480x270.jpg",
+                "alt": ""
+            }
+        },
+        {
+            "title": "Gesundheit<br>&amp; Familie",
+            "url:": "#",
+            "imgLandscape": {
+                "src": "/images/sample/promo-family-480x270.jpg",
+                "alt": ""
+            }
+        },
+        {
+            "title": "T&auml;gliche<br> Andachten",
+            "url:": "#",
+            "imgLandscape": {
+                "src": "/images/sample/promo-devotional-480x270.jpg",
+                "alt": ""
+            }
+        },
+        {
+            "title": "Fragen<br> zur Bibel",
+            "url:": "#",
+            "imgLandscape": {
+                "src": "/images/sample/promo-bible-480x270.jpg",
+                "alt": ""
+            }
+        }
+    ],
+    "quoteslider": {
+        "id": "quoteSlider",
+        "slides": [
+            {
+                "id": 1,
+                "quote": "An dieser Stelle möchte ich Ihnen Christopher Kramp herzlichst danken, aber vor allem unserem Herrn, dass ER immer noch junge Männer beruft in seinen Dienst und sie mit seinen Geistlichen Gaben ausrüstet.",
+                "credits": "Manfred Conzelmann"
+            },
+            {
+                "id": 2,
+                "quote": "Herzlichen Dank für das was ich durch Sie lernen durfte! Ich fiebere von einer Predigt zur anderen und das schon seit Jahren.",
+                "credits": "Lothar Göbel"
+            },
+            {
+                "id": 3,
+                "quote": "Mein Hunger nach der Wahrheit und einem festen Fundament ist sehr groß und ich bin so froh das es euch gibt. [...] Ich verstehe endlich wie ich die Bibel lesen und verstehen kann.",
+                "credits": "Daniela Bremer"
+            },
+            {
+                "id": 4,
+                "quote": "Wir schätzen die Seite Joel Media Ministry wirklich überaus, auf welche wir hingeführt wurden: Sehr bereichernde und klärende Vorträge für eine ganz tiefe Bindung an den Schöpfer und seinen Sohn, am Ende der Offenbarungsprophetie.",
+                "credits": "Fam. Klempkow"
+            }
+
+        ]
+    },
+    "article1": {
+        "title": "„Sola Veritas“ – Die neue große Serie zur Geschichte der Reformation",
+        "url": "#",
+        "image": "/images/slide-gray.jpg",
+        "author": {
+            "name": "Christopher Kramp",
+            "url": "#"
+        },
+        "category": {
+            "name": "Allgemein",
+            "url": "#"
+        },
+        "date": "7. März 2017"
+    },
+    "article2": {
+        "title": "Joel Media Spezial 2017: „Franziskus, Trump und die Reformation“ am 25. Februar",
+        "url": "#",
+        "image": "/images/slide-gray.jpg",
+        "author": {
+            "name": "Christopher Kramp",
+            "url": "#"
+        },
+        "category": {
+            "name": "Allgemein",
+            "url": "#"
+        },
+        "date": "7. März 2017"
+    },
+    "article3": {
+        "title": "Ausblick auf ein geschichtsträchtiges Jahr",
+        "url": "#",
+        "image": "/images/slide-gray.jpg",
+        "author": {
+            "name": "Christopher Kramp",
+            "url": "#"
+        },
+        "category": {
+            "name": "Allgemein",
+            "url": "#"
+        },
+        "date": "7. März 2017"
+    },
+    "article4": {
+        "title": "Missionsprojekt Hacksaw Ridge",
+        "url": "#",
+        "image": "/images/slide-gray.jpg",
+        "author": {
+            "name": "Christopher Kramp",
+            "url": "#"
+        },
+        "category": {
+            "name": "Allgemein",
+            "url": "#"
+        },
+        "date": "7. März 2017"
+    },
+    "article5": {
+        "title": "„Weltengeschichte“ – die neue Vortragsreihe live ab dem 23. September",
+        "url": "#",
+        "image": "/images/slide-gray.jpg",
+        "author": {
+            "name": "Christopher Kramp",
+            "url": "#"
+        },
+        "category": {
+            "name": "Allgemein",
+            "url": "#"
+        },
+        "date": "7. März 2017"
+    },
+    "newVideosList": {
+        "title": "Neue Videos",
+        "medialist": [
+            {
+                "image": "/images/sample/video-thumb5-150x84.jpg",
+                "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
+                "length": "56:07",
+                "speaker": {
+                    "name": "Matthias Ströck",
+                    "url": "#"
+                },
+                "date": "5. Juni 2017",
+                "series": false,
+                "klicks": false
+            },
+            {
+                "image": "/images/sample/video-thumb1-150x84.jpg",
+                "title": "Der Ersehnte: 63. „An der Zollstätte“",
+                "length": "48:20",
+                "speaker": {
+                    "name": "Christopher Kramp",
+                    "url": "#"
+                },
+                "date": "25. Mai 2017",
+                "series": false,
+                "klicks": false
+            },
+            {
+                "image": "/images/sample/video-thumb3-150x84.jpg",
+                "title": "Offenbarung 17:9",
+                "length": "38:29",
+                "speaker": {
+                    "name": "Christopher Kramp",
+                    "url": "#"
+                },
+                "date": "25. Mai 2017",
+                "series": false,
+                "klicks": false
+            },
+            {
+                "image": "/images/sample/video-thumb4-150x84.jpg",
+                "title": "Sola Veritas: 11. Neue Wege (1506)",
+                "length": "51:26",
+                "speaker": {
+                    "name": "Christopher Kramp",
+                    "url": "#"
+                },
+                "date": "25. Mai 2017",
+                "series": false,
+                "klicks": false
+            },
+            {
+                "image": "/images/sample/video-thumb2-150x84.jpg",
+                "title": "Mit Gott leben – Apostelgeschichte 17:25b",
+                "length": "2:34",
+                "speaker": {
+                    "name": "Christopher Kramp",
+                    "url": "#"
+                },
+                "date": "13. Mai 2017",
+                "klicks": false,
+                "series": false
+            }
+        ]
+    },
+    "popularVideosList": {
+        "title": "Beliebte Videos",
+        "medialist": [
+            {
+                "image": "/images/sample/video-thumb5-150x84.jpg",
+                "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
+                "length": "56:07",
+                "speaker": {
+                    "name": "Matthias Ströck",
+                    "url": "#"
+                },
+                "date": "5. Juni 2017",
+                "series": false,
+                "klicks": false
+            },
+            {
+                "image": "/images/sample/video-thumb1-150x84.jpg",
+                "title": "Der Ersehnte: 63. „An der Zollstätte“",
+                "length": "48:20",
+                "speaker": {
+                    "name": "Christopher Kramp",
+                    "url": "#"
+                },
+                "date": "25. Mai 2017",
+                "series": false,
+                "klicks": false
+            },
+            {
+                "image": "/images/sample/video-thumb3-150x84.jpg",
+                "title": "Offenbarung 17:9",
+                "length": "38:29",
+                "speaker": {
+                    "name": "Christopher Kramp",
+                    "url": "#"
+                },
+                "date": "25. Mai 2017",
+                "series": false,
+                "klicks": false
+            },
+            {
+                "image": "/images/sample/video-thumb4-150x84.jpg",
+                "title": "Sola Veritas: 11. Neue Wege (1506)",
+                "length": "51:26",
+                "speaker": {
+                    "name": "Christopher Kramp",
+                    "url": "#"
+                },
+                "date": "25. Mai 2017",
+                "series": false,
+                "klicks": false
+            },
+            {
+                "image": "/images/sample/video-thumb2-150x84.jpg",
+                "title": "Mit Gott leben – Apostelgeschichte 17:25b",
+                "length": "2:34",
+                "speaker": {
+                    "name": "Christopher Kramp",
+                    "url": "#"
+                },
+                "date": "13. Mai 2017",
+                "klicks": false,
+                "series": false
+            }
+        ]
+    },
+    "newSeriesList": {
+        "title": "Neue Serien",
+        "medialist": [
+            {
+                "image": "/images/sample/video-thumb5-150x84.jpg",
+                "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
+                "length": "56:07",
+                "speaker": {
+                    "name": "Matthias Ströck",
+                    "url": "#"
+                },
+                "date": "5. Juni 2017",
+                "series": false,
+                "klicks": false
+            },
+            {
+                "image": "/images/sample/video-thumb1-150x84.jpg",
+                "title": "Der Ersehnte: 63. „An der Zollstätte“",
+                "length": "48:20",
+                "speaker": {
+                    "name": "Christopher Kramp",
+                    "url": "#"
+                },
+                "date": "25. Mai 2017",
+                "series": false,
+                "klicks": false
+            },
+            {
+                "image": "/images/sample/video-thumb3-150x84.jpg",
+                "title": "Offenbarung 17:9",
+                "length": "38:29",
+                "speaker": {
+                    "name": "Christopher Kramp",
+                    "url": "#"
+                },
+                "date": "25. Mai 2017",
+                "series": false,
+                "klicks": false
+            },
+            {
+                "image": "/images/sample/video-thumb4-150x84.jpg",
+                "title": "Sola Veritas: 11. Neue Wege (1506)",
+                "length": "51:26",
+                "speaker": {
+                    "name": "Christopher Kramp",
+                    "url": "#"
+                },
+                "date": "25. Mai 2017",
+                "series": false,
+                "klicks": false
+            },
+            {
+                "image": "/images/sample/video-thumb2-150x84.jpg",
+                "title": "Mit Gott leben – Apostelgeschichte 17:25b",
+                "length": "2:34",
+                "speaker": {
+                    "name": "Christopher Kramp",
+                    "url": "#"
+                },
+                "date": "13. Mai 2017",
+                "klicks": false,
+                "series": false
+            }
+        ]
+    },
+    "devotionalVideosList": {
+        "title": "Tägliche Andachten",
+        "medialist": [
+            {
+                "image": "/images/sample/video-thumb2-150x84.jpg",
+                "title": "Mit Gott leben – Psalm 37:3",
+                "length": "56:07",
+                "speaker": {
+                    "name": "Matthias Ströck",
+                    "url": "#"
+                },
+                "date": "5. Juni 2017",
+                "series": false,
+                "klicks": false
+            },
+            {
+                "image": "/images/sample/video-thumb2-150x84.jpg",
+                "title": "Mit Gott leben – Prediger 12:13",
+                "length": "48:20",
+                "speaker": {
+                    "name": "Christopher Kramp",
+                    "url": "#"
+                },
+                "date": "25. Mai 2017",
+                "series": false,
+                "klicks": false
+            },
+            {
+                "image": "/images/sample/video-thumb2-150x84.jpg",
+                "title": "Mit Gott leben – Matthäus 25:23",
+                "length": "38:29",
+                "speaker": {
+                    "name": "Christopher Kramp",
+                    "url": "#"
+                },
+                "date": "25. Mai 2017",
+                "series": false,
+                "klicks": false
+            },
+            {
+                "image": "/images/sample/video-thumb2-150x84.jpg",
+                "title": "Mit Gott leben – 1. Chronik 16:10",
+                "length": "51:26",
+                "speaker": {
+                    "name": "Christopher Kramp",
+                    "url": "#"
+                },
+                "date": "25. Mai 2017",
+                "series": false,
+                "klicks": false
+            },
+            {
+                "image": "/images/sample/video-thumb2-150x84.jpg",
+                "title": "Mit Gott leben – Apostelgeschichte 17:25b",
+                "length": "2:34",
+                "speaker": {
+                    "name": "Christopher Kramp",
+                    "url": "#"
+                },
+                "date": "13. Mai 2017",
+                "klicks": false,
+                "series": false
+            }
+        ]
+    }
+}

@@ -243,63 +243,27 @@
             "url:": "#"
         }
     ],
-    "mediaList": [
-        {
-            "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
-            "length": "56:07",
-            "speaker": {
-                "name": "Matthias Ströck",
-                "url": "#"
-            },
-            "date": "5. Juni 2017",
-            "series": false,
-            "klicks": false
-        },
-        {
-            "title": "Der Ersehnte: 63. „An der Zollstätte“",
-            "length": "48:20",
-            "speaker": {
-                "name": "Christopher Kramp",
-                "url": "#"
-            },
-            "date": "25. Mai 2017",
-            "series": false,
-            "klicks": false
-        },
-        {
-            "title": "Offenbarung 17:9",
-            "length": "38:29",
-            "speaker": {
-                "name": "Christopher Kramp",
-                "url": "#"
-            },
-            "date": "25. Mai 2017",
-            "series": false,
-            "klicks": false
-        },
-        {
-            "title": "Sola Veritas: 11. Neue Wege (1506)",
-            "length": "51:26",
-            "speaker": {
-                "name": "Christopher Kramp",
-                "url": "#"
-            },
-            "date": "25. Mai 2017",
-            "series": false,
-            "klicks": false
-        },
-        {
-            "title": "Mit Gott leben – Apostelgeschichte 17:25b",
-            "length": "2:34",
-            "speaker": {
-                "name": "Christopher Kramp",
-                "url": "#"
-            },
-            "date": "13. Mai 2017",
-            "klicks": false,
-            "series": false
-        }
+    "newVideosList": true,
+    "popularVideosList": true,
+    "newSeriesList": true,
+    "devotionalVideosList": true,
+    "medialist": [
+        {},
+        {},
+        {},
+        {},
+        {}
     ],
+    "speaker": {
+        "name": "Matthias Ströck",
+        "url": "#"
+    },
+    "series": {
+        "title": "Die Petrusbriefe (CSH 2017 Q2)",
+        "url": "#"
+    },
+    "length": "56:07",
+    "klicks": 41,
     "mediaListLong": [
         {
             "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
@@ -448,14 +412,6 @@
                 "background": "../../images/slide-gray.jpg",
                 "url": "link.pages-homepage",
                 "heading": "Slide Number 3",
-                "text": "Quo aut sapiente laboriosam laboriosam voluptatem qui minima quia.",
-                "button": "Button"
-            },
-            {
-                "id": 4,
-                "background": "../../images/slide-gray.jpg",
-                "url": "link.pages-homepage",
-                "heading": "Slide Number 4",
                 "text": "Quo aut sapiente laboriosam laboriosam voluptatem qui minima quia.",
                 "button": "Button"
             }

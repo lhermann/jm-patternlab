@@ -1,0 +1,38 @@
+<div class="c-slide c-slide--joel c-slide--white {{ styleModifier }}" style="background-image: url('{{background}}')">
+    <a href="{{url}}" class="c-slide__link"></a>
+
+        <div class="o-wrapper c-slide__hero u-height-100">
+            <div class="o-layout o-layout--large u-height-100">
+                <div class="o-layout__item u-1/2@tablet u-2/3@desktop u-1/1 u-height-100">
+
+                    <div class="u-orient u-orient-middle u-orient-center u-height-100">
+                        <div class="c-slide__hero__body">
+
+                            {{> atoms-logo-white:c-logo--hero }}
+                            <h1 class="u-margin-bottom-none u-margin-top-small">{{ heading }}</h1>
+                            <p class="u-muted"><small>{{ subheading }}</small></p>
+
+                            <p class="u-lead u-muted">{{{ text }}}</p>
+
+                            <button class="c-btn c-btn--tertiary c-slide__btn">{{ button }} <span class="u-ic-arrow-forward"></span></button>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                <div class="o-layout__item u-1/2@tablet u-1/3@desktop u-height-100 u-hidden@until-tablet">
+
+                    <div class="c-slide__hero__medialist u-orient u-orient-middle u-height-100">
+
+                        {{# newVideosList }}
+                            {{> organisms-medialist }}
+                        {{/ newVideosList }}
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+</div>

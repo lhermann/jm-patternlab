@@ -74,7 +74,6 @@
 }
 
 .c-btn--tertiary {
-  opacity: .4;
   background-color: $c-tertiary-btn;
 
   &,
@@ -87,7 +86,6 @@
 
   &:hover,
   &:focus {
-    opacity: .5;
     background-color: $c-tertiary-btn-hover;
   }
 
@@ -162,12 +160,12 @@ $btn-ghost-border-width: 1px;
 
   &.c-btn--tertiary {
     color: $c-tertiary-btn;
-    opacity: .3;
+    opacity: .5;
 
     &:hover,
     &:focus {
       color: $c-tertiary-btn-hover;
-      opacity: .5;
+      opacity: .6;
     }
 
   }

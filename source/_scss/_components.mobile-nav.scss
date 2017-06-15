@@ -2,6 +2,8 @@
    #MOBILE-NAV
    ========================================================================== */
 
+$menu-max-width: 24em;
+
 .c-mobile-nav {
     position: fixed;
     top: 0;
@@ -12,12 +14,12 @@
     box-shadow: $global-shadow;
     background-color: $c-white;
     width: 90%;
-    max-width: 24em;
+    max-width: $menu-max-width;
     height: 100%;
     overflow: hidden;
 
     .is-mobile-nav-open & {
-        transform: translateX(-100%);
+        transform: translateX(-$menu-max-width);
     }
 }
 

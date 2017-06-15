@@ -32,7 +32,12 @@
 
         <li id="{{slider.id}}Slide{{id}}" class="c-slider__item">
 
-            {{> molecules-slide }}
+            {{# joelmedia }}
+                {{> molecules-slide-joelmedia }}
+            {{/ joelmedia }}
+            {{^ joelmedia }}
+                {{> molecules-slide }}
+            {{/ joelmedia }}
 
         </li>
 

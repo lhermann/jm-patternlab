@@ -42,7 +42,7 @@ $c-black:       #000;
 /* Text colors */
 $c-text:                        $c-gray-6;
 $c-textalt:                     $c-gray-5;
-$c-textmuted:                   $c-gray-4;
+$c-textmuted:                   rgba($c-gray-6, .45);
 $c-accent:                      $c-brand-primary;
 $c-background:                  $c-gray-1;
 $c-background-transparent:      rgba($c-black, .04);
@@ -59,9 +59,9 @@ $c-secondary-btn-text:          $c-white;
 $c-secondary-btn:               $c-gray-6;
 $c-secondary-btn-hover:         $c-gray-7;
 
-$c-tertiary-btn-text:           #fff;
+$c-tertiary-btn-text:           $c-white;
 $c-tertiary-btn:                rgba($c-black, .5);
-$c-tertiary-btn-hover:          rgba($c-black, .5);
+$c-tertiary-btn-hover:          rgba($c-black, .6);
 
 
 
