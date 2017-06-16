@@ -2156,8 +2156,13 @@ body:after {
 /* ==========================================================================
    #MEDIA-ARTICLE
    ========================================================================== */
+/*
+ * 1. Fixes an overlow clipping issue with safari
+ */
 .c-media-article {
   position: relative;
+  z-index: 1;
+  /* 1 */
   border-radius: 3px;
   width: 100%;
   height: 100%;
@@ -2167,7 +2172,8 @@ body:after {
 .c-media-article__header {
   display: block;
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  /* 1 */
   height: 100%; }
 
 .c-media-article__link {
@@ -2216,6 +2222,7 @@ body:after {
   transition: 0.33333s transform;
   transition: 0.33333s transform, 0.33333s -webkit-transform;
   z-index: 0;
+  /* 1 */
   background-color: #f8f8f8;
   background-position: center;
   background-size: cover;
@@ -2230,7 +2237,8 @@ body:after {
   bottom: 0;
   -webkit-transition: 0.33333s opacity;
   transition: 0.33333s opacity;
-  z-index: 2;
+  z-index: 3;
+  /* 1 */
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding: 2.5px 21px;
   width: 100%;
