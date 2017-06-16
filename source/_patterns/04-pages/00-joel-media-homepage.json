@@ -493,5 +493,75 @@
                 "series": false
             }
         ]
+    },
+    "article1": {
+        "title": "„Sola Veritas“ – Die neue große Serie zur Geschichte der Reformation",
+        "url": "#",
+        "image": "/images/sample/article4-1280x720.jpg",
+        "author": {
+            "name": "Christopher Kramp",
+            "url": "#"
+        },
+        "category": {
+            "name": "Allgemein",
+            "url": "#"
+        },
+        "date": "7. März 2017"
+    },
+    "article2": {
+        "title": "Joel Media Spezial 2017: „Franziskus, Trump und die Reformation“ am 25. Februar",
+        "url": "#",
+        "image": "/images/sample/article2-1280x720.jpg",
+        "author": {
+            "name": "Christopher Kramp",
+            "url": "#"
+        },
+        "category": {
+            "name": "Livestream",
+            "url": "#"
+        },
+        "date": "22. Februar 2017"
+    },
+    "article3": {
+        "title": "Ausblick auf ein geschichtsträchtiges Jahr",
+        "url": "#",
+        "image": "/images/sample/article3-1280x720.jpg",
+        "author": {
+            "name": "Christopher Kramp",
+            "url": "#"
+        },
+        "category": {
+            "name": "Allgemein",
+            "url": "#"
+        },
+        "date": "19. Januar 2017"
+    },
+    "article4": {
+        "title": "Missionsprojekt Hacksaw Ridge",
+        "url": "#",
+        "image": "/images/sample/article1-1280x720.jpg",
+        "author": {
+            "name": "Christopher Kramp",
+            "url": "#"
+        },
+        "category": {
+            "name": "Missionsprojekt",
+            "url": "#"
+        },
+        "date": "18. November 2016"
+    },
+    "article5": {
+        "title": "„Weltengeschichte“ – die neue Vortragsreihe live ab dem 23. September",
+        "url": "#",
+        "image": "/images/sample/article5-1280x720.jpg",
+        "author": {
+            "name": "Christopher Kramp",
+            "url": "#"
+        },
+        "category": {
+            "name": "Livestream, Vortragsreihe",
+            "url": "#"
+        },
+        "date": "4. September 2016"
     }
 }

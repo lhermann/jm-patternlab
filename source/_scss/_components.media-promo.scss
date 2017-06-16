@@ -1,16 +1,24 @@
 /* ==========================================================================
-   #PROMO
+   #MEDIA-PROMO
    ========================================================================== */
 
-// .c-promo {
-// }
+.c-media-promo {
+    transition: $global-transition border-color;
+    border: 1px solid transparent;
+    border-radius: $global-radius;
 
-    .c-promo__head {
+    &:focus,
+    &:hover {
+        border-color: $c-border;
+    }
+}
+
+    .c-media-promo__head {
         position: relative;
     }
 
 
-        .c-promo__title {
+        .c-media-promo__title {
             @include inuit-font-size(18px);
             display: block;
             padding: $unit-small $unit;
@@ -20,18 +28,25 @@
             font-family: $font-secondary;
         }
 
-        .c-promo__btn {
+        .c-media-promo__btn {
             @include inuit-font-size(22px, 1);
             position: absolute;
             top: 50%;
             right: 0;
+            transform: translateX(-30%);
             margin-top: -$unit;
-            padding: $unit-small 0 $unit-small $unit;
+            padding: $unit-small;
             height: $unit-large;
-            color: $c-text;
+            color: transparent;
+
+            .c-media-promo:focus &,
+            .c-media-promo:hover & {
+                transform: translateX(0%);
+                color: $c-textmuted;
+            }
         }
 
-    .c-promo__img {
+    .c-media-promo__img {
         display: block;
         transition: $global-transition opacity;
 
@@ -39,12 +54,9 @@
             border-radius: $global-radius;
             width: 100%;
         }
-    }
 
-    .c-promo__btn,
-    .c-promo__img {
-        &:hover,
-        &:focus {
-            opacity: .75;
+        .c-media-promo:focus &,
+        .c-media-promo:hover & {
+            opacity: .8;
         }
     }

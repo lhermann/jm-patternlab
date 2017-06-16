@@ -1,5 +1,5 @@
 ---
-title: Tout List
+title: Medialist Section
 ---
 
 [Insert description here]

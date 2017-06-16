@@ -185,9 +185,21 @@ $inuit-list-inline-delimiter:   "\00A0\00A0\00b7\00A0\00A0";
 @import "../node_modules/inuitcss/objects/objects.pack";
 
 .o-layout--xscroll {
-    margin-right: -$unit;
     white-space: nowrap;
     overflow-x: scroll;
+
+    .o-wrapper {
+        margin-right: -$unit;
+    }
+}
+
+.o-box--natural {
+    padding: $unit-small $unit;
+}
+
+.o-break-wrapper {
+    margin-right: -$unit;
+    margin-left: -$unit;
 }
 
 
@@ -201,12 +213,13 @@ $inuit-list-inline-delimiter:   "\00A0\00A0\00b7\00A0\00A0";
 @import "components.primary-nav";
 @import "components.mobile-nav";
 @import "components.buttons";
+@import "components.badge";
 @import "components.branding";
 @import "components.search-bar";
 @import "components.hamburger";
 @import "components.medialist";
 @import "components.mediaitem";
-@import "components.promo";
+@import "components.media-promo";
 @import "components.article-grid";
 @import "components.media-article";
 @import "components.section";
@@ -247,6 +260,14 @@ $inuit-fractions: 1 2 3 4 5 7;
     text-align: center;
 }
 
+.u-text-bold {
+    font-weight: 600;
+}
+
+.u-text-slim {
+    font-weight: 300;
+}
+
 .u-box-center {
     margin-right: auto;
     margin-left: auto;
@@ -270,6 +291,10 @@ $inuit-fractions: 1 2 3 4 5 7;
 
 .u-lead {
     @include inuit-font-size(16px, $important: true);
+}
+
+.u-default {
+    @include inuit-font-size(14px, $important: true);
 }
 
 .u-small {

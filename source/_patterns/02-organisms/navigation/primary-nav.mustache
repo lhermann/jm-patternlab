@@ -1,9 +1,10 @@
-<nav id="nav" class="c-primary-nav">
+<nav id="nav" class="c-primary-nav {{ styleModifier }}">
 
 	<ul class="c-primary-nav__list">
 
 		{{# primaryNav }}
 		<li class="c-primary-nav__item">
+
             <a href="{{ url }}" class="c-primary-nav__link">
                 {{# signal }}
                     <span class="c-primary-nav__signal"></span>
@@ -12,16 +13,23 @@
                 <span class="u-hidden@from-desktop">{{ shortLabel }}</span>
                 {{# hasDropdown }}<span class="u-ic-keyboard-arrow-down"></span>{{/ hasDropdown }}
             </a>
+
+            {{# hasDropdown }}
             <ul class="c-primary-nav__dropdown">
                 {{# dropdown }}
-                <li class="c-primary-nav__dropdown__item">
+                <li class="c-primary-nav__dropdown__item u-text-center">
                     <a class="c-primary-nav__link c-primary-nav__link--dropdown
                         u-eclipse" href="{{ url }}">
                         {{ label }}
                     </a>
                 </li>
                 {{/ dropdown }}
+                {{# livestream }}
+                    {{> molecules-livestream-dropdown }}
+                {{/ livestream }}
             </ul>
+            {{/ hasDropdown }}
+
         </li>
 		{{/ primaryNav }}
 

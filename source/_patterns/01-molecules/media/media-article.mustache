@@ -1,14 +1,17 @@
-<article class="c-media-article {{ styleModifier }}" style="background-image: url('{{image}}')">
+<article class="c-media-article {{ styleModifier }}">
 
-    <a href="{{url}}" class="c-media-article__link">
-        <header class="c-media-article__header">
+    <header class="c-media-article__header">
+        <a href="{{url}}" class="c-media-article__link">
             <h3 class="c-media-article__title">
                 {{title}}
+                <br><small class="u-text-slim u-hidden@from-tablet" >{{date}}</small>
             </h3>
-        </header>
-    </a>
+        </a>
+    </header>
 
-    <footer class="c-media-article__footer u-small u-eclipse">
+    <div class="c-media-article__bg" style="background-image: url('{{image}}')"></div>
+
+    <footer class="c-media-article__footer u-small u-eclipse u-hidden@until-tablet">
             <a href="{{author.url}}">{{author.name}}</a>
             &middot; <a href="#">{{date}}</a>
             <span class="u-hidden@until-desktop">

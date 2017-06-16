@@ -1,0 +1,21 @@
+{{# newVideosList }}
+    {{> organisms-medialist:u-hidden@from-tablet }}
+{{/ newVideosList }}
+
+<div class="o-layout o-layout--large u-hidden@until-tablet">
+    <div class="o-layout__item u-1/3@desktop u-1/2@tablet u-1/1">
+        {{# popularVideosList }}
+            {{> organisms-medialist }}
+        {{/ popularVideosList }}
+    </div>
+    <div class="o-layout__item u-1/3@desktop u-1/2@tablet u-hidden@until-tablet">
+        {{# newSeriesList }}
+            {{> organisms-medialist }}
+        {{/ newSeriesList }}
+    </div>
+    <div class="o-layout__item u-1/3 u-hidden@until-desktop">
+        {{# devotionalVideosList }}
+            {{> organisms-medialist }}
+        {{/ devotionalVideosList }}
+    </div>
+</div>

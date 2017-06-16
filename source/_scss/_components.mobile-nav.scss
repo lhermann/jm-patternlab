@@ -16,73 +16,61 @@ $menu-max-width: 24em;
     width: 90%;
     max-width: $menu-max-width;
     height: 100%;
-    overflow: hidden;
+    overflow-y: scroll;
 
-    .is-mobile-nav-open & {
+    .is-mobile-nav-open &,
+    &.c-mobile-nav--active {
         transform: translateX(-$menu-max-width);
     }
 }
 
-.c-mobile-nav__wrapper {
-    transform: translateX(-50%);
-    transition: $global-transition transform ease;
-
-    .is-mobile-nav-open & {
-        transform: translateX(0);
-    }
-}
-
-    .c-mobile-nav__header {
-        display: flex;
-        margin-bottom: $unit;
+    .c-mobile-nav__wrapper {
+        transform: translateX(-50%);
+        transition: $global-transition transform ease;
         padding: 0 $unit;
-        height: 56px;
-        align-items: center;
-        justify-content: space-between;
+
+        .is-mobile-nav-open &,
+        .c-mobile-nav--active & {
+            transform: translateX(0);
+        }
     }
 
-        .c-mobile-nav__title {
-            display: inline-block;
-            margin-bottom: 0;
-            color: $c-textalt;
-            font-size: inuit-rem(22px);
-            font-weight: 400;
+        .c-mobile-nav__header {
+            display: flex;
+            height: 56px;
+            align-items: center;
+            justify-content: space-between;
         }
 
-    .c-mobile-nav__search {
-        margin-bottom: $unit;
-        padding: 0 $unit;
-    }
-
-    .c-mobile-nav__list {
-        margin-left: 0;
-        list-style: none;
-    }
-
-        .c-mobile-nav__item {
-
-            &:not(:last-child):after {
-                display: block;
-                margin: 0 $unit;
-                border-bottom: 1px solid $c-border;
-                content: "";
+            .c-mobile-nav__title {
+                display: inline-block;
+                margin-bottom: 0;
+                color: $c-textalt;
+                font-size: inuit-rem(22px);
+                font-weight: 400;
             }
 
+        .c-mobile-nav__search {
+            margin: $unit 0;
         }
 
-            .c-mobile-nav__link {
-                display: block;
-                padding: $unit-small $unit;
-                color: $c-text;
+        .c-mobile-nav__list {
+            list-style: none;
+        }
 
-                &:hover {
-                    background-color: $c-accent;
-                    color: $c-white;
+                .c-mobile-nav__link {
+                    display: block;
+                    padding: $unit-small $unit;
+                    color: $c-text;
+
+                    &:hover {
+                        background-color: $c-accent;
+                        color: $c-white;
+                    }
                 }
-            }
 
 /*
- * Transparent overy while mobile nav is visible
+ * Transparent overlay while mobile nav is visible
  */
 body:after {
     display: block;

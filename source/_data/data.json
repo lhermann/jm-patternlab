@@ -7,9 +7,9 @@
     "pageTitle": "Page Title",
     "htmlClass": "pl",
     "bodyClass": "body",
-    "btnText" : "Button",
-    "btnIcon": "u-ic-arrow-forward",
-    "placeholder": "Placeholder ...",
+    "btnText" : "Anmelden",
+    "btnIcon": "u-ic-mail",
+    "placeholder": "christian@beispiel.de",
     "progress" : true,
     "max" : "100",
     "progressValue" : "85",
@@ -95,7 +95,7 @@
             "shortLabel": "Live",
             "url": "link.pages-homepage",
             "hasDropdown": true,
-            "dropdown": "livestream"
+            "livestream": true
         }
     ],
     "mobileNav" : [

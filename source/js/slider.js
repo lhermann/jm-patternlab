@@ -14,7 +14,7 @@ var sliders = [
         object:          false
     },
     {
-        slideDuration:   6000,
+        slideDuration:   8000,
         slideTransition: 800,
         slideDelay:      200,
         automatic:       "always",

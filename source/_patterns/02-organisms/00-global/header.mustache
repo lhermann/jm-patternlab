@@ -1,6 +1,6 @@
-<header id="header" class="c-site-header" role="banner">
+<header id="header" class="c-site-header {{ styleModifier }}" role="banner">
 
-    {{> molecules-mobile-nav }}
+    {{> organisms-mobile-nav }}
 
     <div class="o-wrapper c-site-header__wrapper">
 
@@ -9,15 +9,15 @@
         </div>
 
         <div class="c-site-header__item c-site-header__item--double u-hidden@until-mobile">
-            {{> molecules-search-bar:c-search-bar--primary }}
+            {{> molecules-search-form:c-search-bar--primary }}
         </div>
 
         <div class="c-site-header__item u-hidden@until-tablet">
-            {{> molecules-primary-nav }}
+            {{> organisms-primary-nav }}
         </div>
 
         <div class="c-site-header__item c-site-header__item--hamburger">
-            {{> molecules-hamburger }}
+            {{> atoms-hamburger }}
         </div>
 
     </div>
