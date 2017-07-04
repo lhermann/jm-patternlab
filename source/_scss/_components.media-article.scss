@@ -48,12 +48,26 @@
                 font-family: $font-primary;
                 font-weight: 600;
 
-                @include mq($until: desktop) {
-                    @include inuit-font-size(12px, 1.5);
+                @include mq($from: tablet, $until: desktop) {
+                    font-size: 12px;
+                }
+
+                @include mq($until: tablet) {
+                    font-size: 10px;
+                    font-size: 2.2vw;
                 }
 
                 .c-media-article--large & {
                     @include inuit-font-size(24px, 1.5);
+
+                    @include mq($from: tablet, $until: desktop) {
+                        font-size: 18px;
+                    }
+
+                    @include mq($until: tablet) {
+                        font-size: 18px;
+                        font-size: 4vw;
+                    }
                 }
             }
 

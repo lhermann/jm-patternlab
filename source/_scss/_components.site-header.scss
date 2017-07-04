@@ -36,6 +36,6 @@
         .c-site-header__item--hamburger {
             @include mq($until: tablet) {
                 position: absolute;
-                right: -1px;
+                right: 0;
             }
         }

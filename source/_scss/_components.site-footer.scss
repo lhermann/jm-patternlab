@@ -9,7 +9,7 @@
 
     .c-site-footer__nav {
         position: relative;
-        padding: $unit-large;
+        padding: $unit-large $unit $unit-large $unit-large;
 
         @include mq($from: tablet) {
             &:after {
@@ -25,7 +25,7 @@
     }
 
         .c-site-footer__hr {
-            margin: $unit -#{$unit-huge};
+            margin: $unit -#{$unit};
             border-color: $c-gray-5;
         }
 

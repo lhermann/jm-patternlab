@@ -583,7 +583,9 @@ body {
   height: 100%;
   /* [2] */
   -webkit-font-smoothing: antialiased;
-  /* [3] */
+  /* [3] */ }
+
+main {
   overflow-x: hidden; }
 
 a {
@@ -1609,7 +1611,7 @@ textarea {
 @media (max-width: 46.24em) {
   .c-site-header__item--hamburger {
     position: absolute;
-    right: -1px; } }
+    right: 0; } }
 
 /* ==========================================================================
    #SITE-FOOTER
@@ -1620,7 +1622,7 @@ textarea {
 
 .c-site-footer__nav {
   position: relative;
-  padding: 42px; }
+  padding: 42px 21px 42px 42px; }
   @media (min-width: 46.25em) {
     .c-site-footer__nav:after {
       position: absolute;
@@ -1631,7 +1633,7 @@ textarea {
       top: 0; } }
 
 .c-site-footer__hr {
-  margin: 21px -84px;
+  margin: 21px -21px;
   border-color: #666; }
 
 .c-site-footer__copyright {
@@ -1999,12 +2001,14 @@ body:after {
 .c-hamburger {
   border: 0;
   border-left: 1px solid #e8e8e8;
-  border-right: 1px solid #e8e8e8;
   background-color: #f8f8f8;
   cursor: pointer;
   width: 56px;
   height: 56px;
   color: #666; }
+  @media (min-width: 46.25em) {
+    .c-hamburger {
+      border-right: 1px solid #e8e8e8; } }
   .c-hamburger:hover {
     background-color: #4c6dff;
     color: #fff; }
@@ -2192,15 +2196,24 @@ body:after {
   color: #fff;
   font-family: "Roboto", Sans-Serif;
   font-weight: 600; }
-  @media (max-width: 61.24em) {
+  @media (min-width: 46.25em) and (max-width: 61.24em) {
     .c-media-article__title {
-      font-size: 12px;
-      font-size: 0.85714rem;
-      line-height: 1.5; } }
+      font-size: 12px; } }
+  @media (max-width: 46.24em) {
+    .c-media-article__title {
+      font-size: 10px;
+      font-size: 2.2vw; } }
   .c-media-article--large .c-media-article__title {
     font-size: 24px;
     font-size: 1.71429rem;
     line-height: 1.5; }
+    @media (min-width: 46.25em) and (max-width: 61.24em) {
+      .c-media-article--large .c-media-article__title {
+        font-size: 18px; } }
+    @media (max-width: 46.24em) {
+      .c-media-article--large .c-media-article__title {
+        font-size: 18px;
+        font-size: 4vw; } }
 
 .c-media-article__bg {
   position: absolute;
