@@ -1546,13 +1546,21 @@ textarea {
     direction: ltr; }
 
 .o-layout--overflow {
-  white-space: nowrap;
+  white-space: nowrap; }
+
+.o-overflow {
   position: relative; }
   @media (min-width: 61.25em) {
-    .o-layout--overflow {
+    .o-overflow {
       overflow-x: scroll; } }
 
-.o-layout__overflow-nav {
+.o-overflow__content {
+  -webkit-transition: -webkit-transform 0.33333s;
+  transition: -webkit-transform 0.33333s;
+  transition: transform 0.33333s;
+  transition: transform 0.33333s, -webkit-transform 0.33333s; }
+
+.o-overflow__nav {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1562,21 +1570,21 @@ textarea {
   font-size: 21px;
   font-size: 1.5rem; }
   @media (min-width: 61.25em) {
-    .o-layout__overflow-nav {
+    .o-overflow__nav {
       display: none; } }
-  .o-layout__overflow-nav--left {
-    left: 21px;
+  .o-overflow__nav--left {
+    left: 0;
     padding-right: 42px;
     background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(40%), color-stop(90%, rgba(255, 255, 255, 0.05)), to(rgba(255, 255, 255, 0)));
     background-image: linear-gradient(to right, white, 40%, rgba(255, 255, 255, 0.05) 90%, rgba(255, 255, 255, 0)); }
-    .is-left .o-layout__overflow-nav--left {
+    .is-left .o-overflow__nav--left {
       display: none; }
-  .o-layout__overflow-nav--right {
+  .o-overflow__nav--right {
     right: 0;
     padding-left: 42px;
     background-image: -webkit-gradient(linear, right top, left top, from(white), color-stop(40%), color-stop(90%, rgba(255, 255, 255, 0.05)), to(rgba(255, 255, 255, 0)));
     background-image: linear-gradient(to left, white, 40%, rgba(255, 255, 255, 0.05) 90%, rgba(255, 255, 255, 0)); }
-    .is-right .o-layout__overflow-nav--right {
+    .is-right .o-overflow__nav--right {
       display: none; }
 
 .o-box--natural {

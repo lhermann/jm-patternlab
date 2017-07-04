@@ -187,6 +187,9 @@ $inuit-list-inline-delimiter: "\00A0\00A0\00b7\00A0\00A0";
 
 .o-layout--overflow {
     white-space: nowrap;
+}
+
+.o-overflow {
     position: relative;
 
     @include mq($from: desktop) {
@@ -194,7 +197,11 @@ $inuit-list-inline-delimiter: "\00A0\00A0\00b7\00A0\00A0";
     }
 }
 
-    .o-layout__overflow-nav {
+    .o-overflow__content {
+        transition: transform $global-transition;
+    }
+
+    .o-overflow__nav {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -212,7 +219,7 @@ $inuit-list-inline-delimiter: "\00A0\00A0\00b7\00A0\00A0";
         }
 
         &--left {
-            left: $unit;
+            left: 0;
             padding-right: $unit-large;
             background-image: linear-gradient(to right, rgba(255,255,255,1), 40%, rgba(255,255,255,.05) 90%, rgba(255,255,255,0));
 

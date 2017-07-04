@@ -253,21 +253,6 @@ sliders.forEach(function(slider) {
 
         slider.object = new Slider( slider.node, slider.slideDelay, slider.slideTransition );
 
-        // $(".jsSliderBtn").on( "click", function(){
-        //     slider.deactivateAutomatic();
-        //     if( $(this).attr('data') == 'next' ) {
-        //         slider.nextSlide();
-        //     } else {
-        //         slider.previousSlide();
-        //     }
-        // });
-
-        // $(".jsSliderNav").children().on( "click", function(event){
-        //     event.preventDefault();
-        //     slider.deactivateAutomatic();
-        //     slider.slide( $(this).attr('data') );
-        // })
-
         switch(slider.automatic) {
             case "initial":
                 setInterval( function(){
@@ -287,30 +272,3 @@ sliders.forEach(function(slider) {
     }
 
 });
-
-// if( $(mainSlider).length ) {
-
-//     var slider = new Slider( mainSlider );
-
-//     // $(".jsSliderBtn").on( "click", function(){
-//     //     slider.deactivateAutomatic();
-//     //     if( $(this).attr('data') == 'next' ) {
-//     //         slider.nextSlide();
-//     //     } else {
-//     //         slider.previousSlide();
-//     //     }
-//     // });
-
-//     // $(".jsSliderNav").children().on( "click", function(event){
-//     //     event.preventDefault();
-//     //     slider.deactivateAutomatic();
-//     //     slider.slide( $(this).attr('data') );
-//     // })
-
-//     setInterval( function(){
-//         if( slider.isAutomatic ) {
-//             slider.nextSlide();
-//         }
-//     }, slideDuration );
-
-// }

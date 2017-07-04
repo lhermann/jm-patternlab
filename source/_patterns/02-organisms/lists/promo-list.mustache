@@ -1,22 +1,23 @@
-<ul class="o-layout o-layout--overflow {{ styleModifier }}">
+<div class="o-overflow is-left {{ styleModifier }}">
+    <ul class="o-layout o-layout--overflow o-overflow__content" data-space-between="21">
 
-    {{# promoList }}
-    <li class="o-layout__item u-min-220 u-1/5">
-        {{> molecules-media-promo }}
-    </li>
-    {{/ promoList }}
+        {{# promoList }}
+        <li class="o-layout__item u-min-220 u-1/5">
+            {{> molecules-media-promo }}
+        </li>
+        {{/ promoList }}
 
-    <div class="o-layout__overflow-nav o-layout__overflow-nav--left">
-        <button class="c-btn c-btn--icon c-btn--secondary c-btn--left c-btn--wall">
+    </ul><!--end tout-list-->
+
+    <div class="o-overflow__nav o-overflow__nav--left">
+        <button class="c-btn c-btn--icon c-btn--secondary c-btn--left c-btn--wall jsNavLeft">
             <span class="u-ic-keyboard-arrow-left"></span>
         </button>
     </div>
 
-    <div class="o-layout__overflow-nav o-layout__overflow-nav--right">
-        <button class="c-btn c-btn--icon c-btn--secondary c-btn--right c-btn--wall">
+    <div class="o-overflow__nav o-overflow__nav--right">
+        <button class="c-btn c-btn--icon c-btn--secondary c-btn--right c-btn--wall jsNavRight">
             <span class="u-ic-keyboard-arrow-right"></span>
         </button>
     </div>
-
-</ul><!--end tout-list-->
-<!-- u-1/5@desktop u-1/4@tablet u-1/3@mobile -->
+</div>
