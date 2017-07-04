@@ -1532,11 +1532,37 @@ textarea {
   .o-pack--rev > .o-pack__item {
     direction: ltr; }
 
-.o-layout--xscroll {
+.o-layout--overflow {
   white-space: nowrap;
-  overflow-x: scroll; }
-  .o-layout--xscroll .o-wrapper {
-    margin-right: -21px; }
+  position: relative; }
+  @media (min-width: 61.25em) {
+    .o-layout--overflow {
+      overflow-x: scroll; } }
+
+.o-layout__overflow-nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 84px;
+  z-index: 11;
+  padding: 1px 0;
+  font-size: 21px;
+  font-size: 1.5rem; }
+  @media (min-width: 61.25em) {
+    .o-layout__overflow-nav {
+      display: none; } }
+  .o-layout__overflow-nav--left {
+    left: 21px;
+    padding-right: 42px;
+    background-image: linear-gradient(to right, white, 40%, rgba(255, 255, 255, 0.05) 90%, rgba(255, 255, 255, 0)); }
+    .is-left .o-layout__overflow-nav--left {
+      display: none; }
+  .o-layout__overflow-nav--right {
+    right: 0;
+    padding-left: 42px;
+    background-image: linear-gradient(to left, white, 40%, rgba(255, 255, 255, 0.05) 90%, rgba(255, 255, 255, 0)); }
+    .is-right .o-layout__overflow-nav--right {
+      display: none; }
 
 .o-box--natural {
   padding: 11px 21px; }
@@ -1544,6 +1570,10 @@ textarea {
 .o-break-wrapper {
   margin-right: -21px;
   margin-left: -21px; }
+
+.o-wrapper--no-padding {
+  padding-right: 0;
+  padding-left: 0; }
 
 /* ==========================================================================
    #HEADER
@@ -1860,6 +1890,15 @@ body:after {
   font-size: 128.6%; }
   .c-btn--icon > span {
     vertical-align: -2px; }
+
+.c-btn--wall {
+  height: 100%; }
+
+.c-btn--left {
+  border-radius: 0 3px 3px 0; }
+
+.c-btn--right {
+  border-radius: 3px 0 0 3px; }
 
 .c-btn--none {
   background-color: transparent;
@@ -2248,9 +2287,7 @@ body:after {
     height: 252px; }
 
 .c-slider__btn {
-  opacity: .3;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff; }
+  opacity: .3; }
   .c-slider__btn:focus, .c-slider__btn:hover {
     opacity: .5; }
 
@@ -2269,14 +2306,10 @@ body:after {
 .c-slider__control--left {
   left: 0;
   padding: 21px 21px 21px 0; }
-  .c-slider__control--left .c-slider__btn {
-    border-radius: 0 3px 3px 0; }
 
 .c-slider__control--right {
   right: 0;
   padding: 21px 0 21px 21px; }
-  .c-slider__control--right .c-slider__btn {
-    border-radius: 3px 0 0 3px; }
 
 .c-slider__nav {
   bottom: 0;

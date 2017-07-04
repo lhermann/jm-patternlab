@@ -170,12 +170,13 @@ hr {
 // OBJECTS
 //
 // Uncomment and add to this section as necessary.
+$inuit-wrapper-width: 1200px;
 @import "../node_modules/inuitcss/objects/objects.wrapper";
 @import "../node_modules/inuitcss/objects/objects.layout";
 @import "../node_modules/inuitcss/objects/objects.media";
 @import "../node_modules/inuitcss/objects/objects.flag";
 @import "../node_modules/inuitcss/objects/objects.list-bare";
-$inuit-list-inline-delimiter:   "\00A0\00A0\00b7\00A0\00A0";
+$inuit-list-inline-delimiter: "\00A0\00A0\00b7\00A0\00A0";
 @import "../node_modules/inuitcss/objects/objects.list-inline";
 @import "../node_modules/inuitcss/objects/objects.box";
 @import "../node_modules/inuitcss/objects/objects.block";
@@ -184,14 +185,52 @@ $inuit-list-inline-delimiter:   "\00A0\00A0\00b7\00A0\00A0";
 @import "../node_modules/inuitcss/objects/objects.tables";
 @import "../node_modules/inuitcss/objects/objects.pack";
 
-.o-layout--xscroll {
+.o-layout--overflow {
     white-space: nowrap;
-    overflow-x: scroll;
+    position: relative;
 
-    .o-wrapper {
-        margin-right: -$unit;
+    @include mq($from: desktop) {
+        overflow-x: scroll;
     }
 }
+
+    .o-layout__overflow-nav {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: $unit-huge;
+        z-index: 11;
+        padding: 1px 0;
+
+        @if ($inuit-use-markup-fix == false) {
+            font-size: $inuit-global-font-size * 1.5;
+            font-size: 1.5rem;
+        }
+
+        @include mq($from: desktop) {
+            display: none;
+        }
+
+        &--left {
+            left: $unit;
+            padding-right: $unit-large;
+            background-image: linear-gradient(to right, rgba(255,255,255,1), 40%, rgba(255,255,255,.05) 90%, rgba(255,255,255,0));
+
+            .is-left & {
+                display: none;
+            }
+        }
+
+        &--right {
+            right: 0;
+            padding-left: $unit-large;
+            background-image: linear-gradient(to left, rgba(255,255,255,1), 40%, rgba(255,255,255,.05) 90%, rgba(255,255,255,0));
+
+            .is-right & {
+                display: none;
+            }
+        }
+    }
 
 .o-box--natural {
     padding: $unit-small $unit;
@@ -200,6 +239,11 @@ $inuit-list-inline-delimiter:   "\00A0\00A0\00b7\00A0\00A0";
 .o-break-wrapper {
     margin-right: -$unit;
     margin-left: -$unit;
+}
+
+.o-wrapper--no-padding {
+    padding-right: 0;
+    padding-left: 0;
 }
 
 

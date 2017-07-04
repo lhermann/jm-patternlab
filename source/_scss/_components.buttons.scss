@@ -187,6 +187,18 @@ $btn-ghost-border-width: 1px;
     }
 }
 
+.c-btn--wall {
+    height: 100%;
+}
+
+.c-btn--left {
+    border-radius: 0 $global-radius $global-radius 0;
+}
+
+.c-btn--right {
+    border-radius: $global-radius 0 0 $global-radius;
+}
+
 .c-btn--none {
     background-color: transparent;
     padding: $inuit-global-spacing-unit;

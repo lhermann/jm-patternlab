@@ -14,8 +14,6 @@
 
     .c-slider__btn {
         opacity: .3;
-        background-color: rgba($c-black, .5);
-        color: $c-white;
 
         &:focus,
         &:hover {
@@ -42,19 +40,11 @@
         .c-slider__control--left {
             left: 0;
             padding: $unit $unit $unit 0;
-
-            .c-slider__btn {
-                border-radius: 0 $global-radius $global-radius 0;
-            }
         }
 
         .c-slider__control--right {
             right: 0;
             padding: $unit 0 $unit $unit;
-
-            .c-slider__btn {
-                border-radius: $global-radius 0 0 $global-radius;
-            }
         }
 
     .c-slider__nav {
