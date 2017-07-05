@@ -1547,11 +1547,20 @@ textarea {
   .o-pack--rev > .o-pack__item {
     direction: ltr; }
 
-.o-layout--overflow {
-  white-space: nowrap; }
-
+/* ==========================================================================
+   #OVERFLOW
+   ========================================================================== */
+/*
+ * This class will allow elements to overflow its box horizontally and adds
+ * navigational elements
+ *
+ * Works together with overflow.js
+ */
 .o-overflow {
-  position: relative; }
+  position: relative;
+  /*
+   * Add padding inside the overflow element
+   */ }
   @media (min-width: 61.25em) {
     .o-overflow {
       overflow-x: scroll; } }
@@ -1559,12 +1568,18 @@ textarea {
     padding-right: 21px;
     padding-left: 21px; }
 
+/*
+ * The content that flows over. Will be animated with javascript
+ */
 .o-overflow__content {
   -webkit-transition: -webkit-transform 0.33333s;
   transition: -webkit-transform 0.33333s;
   transition: transform 0.33333s;
   transition: transform 0.33333s, -webkit-transform 0.33333s; }
 
+/*
+ * Create a space for the buttons left and right
+ */
 .o-overflow__nav {
   position: absolute;
   top: 0;
@@ -1591,6 +1606,9 @@ textarea {
     background-image: linear-gradient(to left, white, 40%, rgba(255, 255, 255, 0.05) 90%, rgba(255, 255, 255, 0)); }
     .is-right .o-overflow__nav--right {
       display: none; }
+
+.o-layout--overflow {
+  white-space: nowrap; }
 
 .o-box--natural {
   padding: 11px 21px; }
