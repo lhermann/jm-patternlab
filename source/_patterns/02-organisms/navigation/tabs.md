@@ -1,5 +1,5 @@
 ---
-title: Medialist
+title: Tabs
 ---
 
 [Insert description here]

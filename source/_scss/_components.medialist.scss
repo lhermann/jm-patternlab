@@ -7,6 +7,9 @@
 }
 
     .c-medialist__title {
+        .c-medialist--notitle & {
+            display: none;
+        }
     }
 
     .c-medialist__list {

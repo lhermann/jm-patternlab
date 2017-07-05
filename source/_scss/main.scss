@@ -112,7 +112,7 @@ $unit-huge:     $inuit-global-spacing-unit-huge;
 /**
  * 1. Allow overflow-x: hidden to work
  * 2. Make containers default to 100% viewport height
- * 3. Fix safari transtion fort smoothing bug
+ * 3. Fix safari transition fort smoothing bug
  */
 html,
 body {
@@ -120,11 +120,14 @@ body {
     background-color: $c-white;
     height: 100%; /* [2] */
     -webkit-font-smoothing: antialiased; /* [3] */
-    // overflow-x: hidden;
 }
 
+/**
+ * 1. can not be applied to html or body because it messes with smooth scrolling
+ *    on the iPhone
+ */
 main {
-    overflow-x: hidden;
+    overflow-x: hidden; /* 1 */
 }
 
 a {
@@ -208,6 +211,16 @@ $inuit-list-inline-delimiter: "\00A0\00A0\00b7\00A0\00A0";
     padding-left: 0;
 }
 
+.o-list-inline--1pxgap {
+    font-size: 0;
+
+    > .o-list-inline__item {
+      font-size: $inuit-global-font-size;
+      font-size: 1rem;
+      margin-right: 1px;
+    }
+}
+
 
 
 
@@ -230,6 +243,7 @@ $inuit-list-inline-delimiter: "\00A0\00A0\00b7\00A0\00A0";
 @import "components.media-article";
 @import "components.section";
 @import "components.forms";
+@import "components.tabs";
 
 /* Keep in sync with slider.js */
 $slide-transition: .7s;
@@ -328,4 +342,8 @@ $inuit-fractions: 1 2 3 4 5 7;
     @include mq($from: tablet) {
         margin-top: $unit-huge;
     }
+}
+
+.u-border-left {
+    border-left: 1px solid $c-border;
 }

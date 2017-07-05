@@ -66,9 +66,11 @@
     color: $c-secondary-btn-text;
   }
 
+  &.is-active,
   &:hover,
   &:focus {
     background-color: $c-secondary-btn-hover;
+    color: $c-secondary-btn-hover-text;
   }
 
 }
@@ -178,12 +180,26 @@ $btn-ghost-border-width: 1px;
 
 .c-btn--icon {
     padding: unset;
-    width: $inuit-global-spacing-unit-large;
+    min-width: $inuit-global-spacing-unit-large;
     height: $inuit-global-spacing-unit-large;
     font-size: 128.6%;
 
     > span {
         vertical-align: -2px;
+    }
+}
+
+.c-btn--square {
+    padding-right: unset;
+    padding-left: unset;
+    width: $unit-small * 2 + $inuit-global-line-height;
+
+    &.c-btn--small {
+        width: $unit-tiny * 2 + $inuit-global-line-height;
+    }
+
+    &.c-btn--large {
+        width: $unit * 2 + $inuit-global-line-height;
     }
 }
 
@@ -197,6 +213,10 @@ $btn-ghost-border-width: 1px;
 
 .c-btn--right {
     border-radius: $global-radius 0 0 $global-radius;
+}
+
+.c-btn--edgy {
+    border-radius: 0;
 }
 
 .c-btn--none {

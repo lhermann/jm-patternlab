@@ -578,7 +578,7 @@ dd, ol, ul {
 /**
  * 1. Allow overflow-x: hidden to work
  * 2. Make containers default to 100% viewport height
- * 3. Fix safari transtion fort smoothing bug
+ * 3. Fix safari transition fort smoothing bug
  */
 html,
 body {
@@ -590,8 +590,13 @@ body {
   -webkit-font-smoothing: antialiased;
   /* [3] */ }
 
+/**
+ * 1. can not be applied to html or body because it messes with smooth scrolling
+ *    on the iPhone
+ */
 main {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  /* 1 */ }
 
 a {
   outline: 0;
@@ -1621,6 +1626,13 @@ textarea {
   padding-right: 0;
   padding-left: 0; }
 
+.o-list-inline--1pxgap {
+  font-size: 0; }
+  .o-list-inline--1pxgap > .o-list-inline__item {
+    font-size: 14px;
+    font-size: 1rem;
+    margin-right: 1px; }
+
 /* ==========================================================================
    #HEADER
    ========================================================================== */
@@ -1903,12 +1915,13 @@ body:after {
     background-color: #1943ff; }
 
 .c-btn--secondary {
-  background-color: #4d4d4d; }
+  background-color: #f8f8f8; }
   .c-btn--secondary, .c-btn--secondary:hover, .c-btn--secondary:active, .c-btn--secondary:focus {
     text-decoration: none;
+    color: #4d4d4d; }
+  .c-btn--secondary.is-active, .c-btn--secondary:hover, .c-btn--secondary:focus {
+    background-color: #4d4d4d;
     color: #fff; }
-  .c-btn--secondary:hover, .c-btn--secondary:focus {
-    background-color: #333; }
 
 .c-btn--tertiary {
   background-color: rgba(0, 0, 0, 0.5); }
@@ -1945,9 +1958,9 @@ body:after {
     .c-btn--ghost.c-btn--primary:hover, .c-btn--ghost.c-btn--primary:focus {
       color: #1943ff; }
   .c-btn--ghost.c-btn--secondary {
-    color: #4d4d4d; }
+    color: #f8f8f8; }
     .c-btn--ghost.c-btn--secondary:hover, .c-btn--ghost.c-btn--secondary:focus {
-      color: #333; }
+      color: #4d4d4d; }
   .c-btn--ghost.c-btn--tertiary {
     color: rgba(0, 0, 0, 0.5);
     opacity: .5; }
@@ -1959,11 +1972,20 @@ body:after {
    ========================================================================== */
 .c-btn--icon {
   padding: unset;
-  width: 42px;
+  min-width: 42px;
   height: 42px;
   font-size: 128.6%; }
   .c-btn--icon > span {
     vertical-align: -2px; }
+
+.c-btn--square {
+  padding-right: unset;
+  padding-left: unset;
+  width: 43px; }
+  .c-btn--square.c-btn--small {
+    width: 31px; }
+  .c-btn--square.c-btn--large {
+    width: 63px; }
 
 .c-btn--wall {
   height: 100%; }
@@ -1973,6 +1995,9 @@ body:after {
 
 .c-btn--right {
   border-radius: 3px 0 0 3px; }
+
+.c-btn--edgy {
+  border-radius: 0; }
 
 .c-btn--none {
   background-color: transparent;
@@ -2090,6 +2115,9 @@ body:after {
    ========================================================================== */
 .c-medialist {
   width: 100%; }
+
+.c-medialist--notitle .c-medialist__title {
+  display: none; }
 
 .c-medialist__list {
   margin: 0;
@@ -2379,6 +2407,38 @@ body:after {
 .c-form--huge .c-form__input, .c-form--huge
 .c-form__btn {
   padding: 21px 42px; }
+
+/* ==========================================================================
+   #TABS
+   ========================================================================== */
+.c-tabs__item {
+  -webkit-transition: background-color 0.33333s;
+  transition: background-color 0.33333s;
+  border-left: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  background-color: #f8f8f8; }
+  .c-tabs__item:hover {
+    background-color: transparent; }
+  .c-tabs__item.is-active:first-child {
+    border-left: 0; }
+  .c-tabs__item:last-child:not(.is-active) {
+    border-right: 1px solid #e8e8e8; }
+  .c-tabs__item.is-active {
+    border-bottom: 0;
+    background-color: transparent; }
+
+.c-tabs__link {
+  font-size: 18px;
+  font-size: 1.28571rem;
+  line-height: 63px;
+  display: inline-block;
+  -webkit-transition: color 0.33333s;
+  transition: color 0.33333s;
+  padding: 0 11px;
+  width: 100%;
+  color: rgba(77, 77, 77, 0.45); }
+  .is-active .c-tabs__link {
+    color: #4d4d4d; }
 
 /* Keep in sync with slider.js */
 /* ==========================================================================
@@ -3656,3 +3716,6 @@ body:after {
   @media (min-width: 46.25em) {
     .u-spacer-top {
       margin-top: 84px; } }
+
+.u-border-left {
+  border-left: 1px solid #e8e8e8; }

@@ -55,9 +55,10 @@ $c-primary-btn-text:            $c-white;
 $c-primary-btn:                 $c-brand-primary;
 $c-primary-btn-hover:           $c-brand-primary-darker;
 
-$c-secondary-btn-text:          $c-white;
-$c-secondary-btn:               $c-gray-6;
-$c-secondary-btn-hover:         $c-gray-7;
+$c-secondary-btn-text:          $c-text;
+$c-secondary-btn:               $c-gray-1;
+$c-secondary-btn-hover-text:    $c-white;
+$c-secondary-btn-hover:         $c-gray-6;
 
 $c-tertiary-btn-text:           $c-white;
 $c-tertiary-btn:                rgba($c-black, .5);

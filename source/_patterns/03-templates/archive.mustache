@@ -1,0 +1,33 @@
+{{> organisms-header }}
+
+<main role="main" class="o-wrapper">
+
+    {{> organisms-tabs }}
+
+    <section class="o-layout o-layout--flush u-margin-top">
+        <div class="o-layout__item u-1/4">
+            <h2 class="u-margin-left">Filter</h2>
+        </div>
+        <div class="o-layout__item u-3/4">
+
+            <div class="o-pack">
+                <div class="o-pack__item">
+                    <h2 class="u-margin-left">Videos</h2>
+                </div>
+                <div class="o-pack__item">
+
+                </div>
+            </div>
+
+            <div class="o-box u-border-left u-padding-top-none u-padding-bottom-none">
+                {{> organisms-medialist:c-medialist--notitle }}
+            </div>
+
+            {{> organisms-pagination:u-margin-left u-margin-top-large }}
+
+        </div>
+    </section>
+
+</main>
+
+{{> organisms-footer:u-margin-top-huge }}

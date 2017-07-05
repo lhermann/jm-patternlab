@@ -1,5 +1,5 @@
 ---
-title: Medialist
+title: Pagination
 ---
 
 [Insert description here]
