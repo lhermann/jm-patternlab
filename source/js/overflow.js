@@ -12,7 +12,7 @@ var overflowNavWidth = 42, /* 1 */
 class Overflow {
     constructor(container) {
         this.container     = container;
-        this.content       = $(container).children(".o-overflow__content").get(0);
+        this.content       = $(container).find(".o-overflow__content").get(0);
         this.count         = $(this.content).children().length;
         this.childrenWidth = $(this.content).children().first().width();
         this.spaceBetween  = $(this.content).data("space-between");
@@ -65,9 +65,12 @@ class Overflow {
         $(this.content).css( "transform", "translateX(-" + x + "px)" );
     }
 
+    /*
+     * Add a little bit of wiggle room
+     */
     updateContainerState() {
         $(this.container).removeClass( this.state );
-        if( this.currentPos === 0 ) {
+        if( this.currentPos <= 1 ) { /* 1 */
             $(this.container).addClass( "is-left" );
             this.state = "is-left";
         } else if( this.currentPos >= this.innerWidth - this.outerWidth ) {

@@ -1555,6 +1555,9 @@ textarea {
   @media (min-width: 61.25em) {
     .o-overflow {
       overflow-x: scroll; } }
+  .o-overflow--padding {
+    padding-right: 21px;
+    padding-left: 21px; }
 
 .o-overflow__content {
   -webkit-transition: -webkit-transform 0.33333s;
