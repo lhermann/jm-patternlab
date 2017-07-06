@@ -1,33 +1,39 @@
-{{> organisms-header }}
+{{> organisms-mobile-nav }}
 
-<main role="main" class="o-wrapper">
+<div id="siteWrapper" class="c-site-wrapper">
 
-    {{> organisms-tabs }}
+    {{> organisms-header }}
 
-    <section class="o-layout o-layout--flush u-margin-top">
-        <div class="o-layout__item u-1/4">
-            <h2 class="u-margin-left">Filter</h2>
-        </div>
-        <div class="o-layout__item u-3/4">
+    <main role="main" class="o-wrapper">
 
-            <div class="o-pack">
-                <div class="o-pack__item">
-                    <h2 class="u-margin-left">Videos</h2>
-                </div>
-                <div class="o-pack__item">
+        {{> molecules-tabs:o-break-wrapper@until-tablet }}
 
-                </div>
+        <section class="o-layout o-layout--flush u-margin-top">
+            <div class="o-layout__item u-1/4 u-hidden@until-tablet">
+                <h2 class="u-margin-left">Filter</h2>
             </div>
+            <div class="o-layout__item u-3/4@tablet">
 
-            <div class="o-box u-border-left u-padding-top-none u-padding-bottom-none">
-                {{> organisms-medialist:c-medialist--notitle }}
+                <div class="o-pack">
+                    <div class="o-pack__item">
+                        <h2 class="u-margin-left">Videos</h2>
+                    </div>
+                    <div class="o-pack__item">
+
+                    </div>
+                </div>
+
+                <div class="u-border-left u-padding-left">
+                    {{> organisms-medialist:c-medialist--notitle }}
+                </div>
+
+                {{> molecules-pagination:u-margin-left u-margin-top-large }}
+
             </div>
+        </section>
 
-            {{> organisms-pagination:u-margin-left u-margin-top-large }}
+    </main>
 
-        </div>
-    </section>
+    {{> organisms-footer:u-margin-top-huge }}
 
-</main>
-
-{{> organisms-footer:u-margin-top-huge }}
+</div><!-- .c-site-wrapper -->

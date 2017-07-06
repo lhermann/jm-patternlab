@@ -15,14 +15,16 @@ function toggleMobileNav( event ) {
     }
 }
 
-// Enable/Disable Scrolling in iPhone/iPad’s Safari
-document.ontouchmove = function (e) {
+/**
+ * Enable/Disable scrolling on #siteWrapper when mobile nav is open
+ * on iPhone/iPad’s Safari
+ */
+var siteWrapper = document.getElementById("siteWrapper");
+siteWrapper.ontouchmove = function (e) {
     if(allowScrolling) {
-        // Enable scrolling.
-        return true;
+        return true; // Enable scrolling.
     } else {
-        // Disable scrolling.
-        e.preventDefault();
+        e.preventDefault(); // Disable scrolling.
     }
 }
 

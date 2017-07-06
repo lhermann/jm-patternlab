@@ -1,36 +1,42 @@
-{{> organisms-header }}
+{{> organisms-mobile-nav }}
 
-<main role="main">
+<div id="siteWrapper" class="c-site-wrapper">
 
-    {{# slider }}
-    <section>
-	   {{> organisms-slider }}
-    </section>
-    {{/ slider }}
+    {{> organisms-header }}
 
-    <section class="o-wrapper o-wrapper--no-padding u-margin-top">
-        {{> organisms-promo-list:o-overflow--padding }}
-    </section>
+    <main role="main">
 
-    <section class="o-wrapper u-spacer-top">
-        {{> organisms-section-medialist }}
-    </section>
+        {{# slider }}
+        <section>
+           {{> organisms-slider }}
+        </section>
+        {{/ slider }}
 
-    {{# quoteslider }}
-    <section class="c-section c-section--bg u-spacer-top">
-       {{> organisms-quote-slider }}
-    </section>
-    {{/ quoteslider }}
+        <section class="o-wrapper o-wrapper--no-padding u-margin-top">
+            {{> organisms-promo-list:o-overflow--padding }}
+        </section>
 
-    <section class="o-wrapper u-spacer-top">
-        <h2><a href="#">Artikel</a></h2>
-        {{> organisms-article-grid }}
-    </section>
+        <section class="o-wrapper u-spacer-top">
+            {{> organisms-section-medialist }}
+        </section>
 
-    <section class="c-section c-section--bg u-spacer-top">
-       {{> organisms-newsletter-form }}
-    </section>
+        {{# quoteslider }}
+        <section class="c-section c-section--bg u-spacer-top">
+           {{> organisms-quote-slider }}
+        </section>
+        {{/ quoteslider }}
 
-</main>
+        <section class="o-wrapper u-spacer-top">
+            <h2><a href="#">Artikel</a></h2>
+            {{> organisms-article-grid }}
+        </section>
 
-{{> organisms-footer }}
+        <section class="c-section c-section--bg u-spacer-top">
+           {{> organisms-newsletter-form }}
+        </section>
+
+    </main>
+
+    {{> organisms-footer }}
+
+</div><!-- .c-site-wrapper -->

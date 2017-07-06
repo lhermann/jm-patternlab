@@ -1,5 +1,5 @@
 /* ==========================================================================
-   #MOBILE-NAV
+   #MOBILE-NAV and SITE-WRAPPER
    ========================================================================== */
 
 $menu-max-width: 24em;
@@ -17,6 +17,7 @@ $menu-max-width: 24em;
     max-width: $menu-max-width;
     height: 100%;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 
     .is-mobile-nav-open &,
     &.c-mobile-nav--active {
@@ -72,7 +73,13 @@ $menu-max-width: 24em;
 /*
  * Transparent overlay while mobile nav is visible
  */
-body:after {
+
+.c-site-wrapper {
+    position: relative;
+    height: 100%;
+}
+
+.c-site-wrapper:after {
     display: block;
     position: absolute;
     top: 0;
@@ -85,7 +92,7 @@ body:after {
     content: "";
 }
 
-.is-mobile-nav-open > body {
+.is-mobile-nav-open .c-site-wrapper {
     overflow: hidden;
 
     &:after {
