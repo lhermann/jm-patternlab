@@ -206,6 +206,13 @@ $inuit-list-inline-delimiter: "\00A0\00A0\00b7\00A0\00A0";
     margin-left: -$unit;
 }
 
+.o-break-wrapper\@until-tablet {
+    @include mq($until: tablet) {
+        margin-right: -$unit;
+        margin-left: -$unit;
+    }
+}
+
 .o-wrapper--no-padding {
     padding-right: 0;
     padding-left: 0;
@@ -224,13 +231,15 @@ $inuit-list-inline-delimiter: "\00A0\00A0\00b7\00A0\00A0";
 
 
 
-// COMPONENTS
-//
-// Build and include your project’s UI Compoments here.
+/**
+ * COMPONENTS
+ *
+ * 1. .c-site-wrapper is included with .c-mobile-nav
+ */
 @import "components.site-header";
 @import "components.site-footer";
 @import "components.primary-nav";
-@import "components.mobile-nav";
+@import "components.mobile-nav"; /* 1 */
 @import "components.buttons";
 @import "components.badge";
 @import "components.branding";

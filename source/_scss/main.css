@@ -1604,6 +1604,11 @@ textarea {
   margin-right: -21px;
   margin-left: -21px; }
 
+@media (max-width: 46.24em) {
+  .o-break-wrapper\@until-tablet {
+    margin-right: -21px;
+    margin-left: -21px; } }
+
 .o-wrapper--no-padding {
   padding-right: 0;
   padding-left: 0; }
@@ -1615,6 +1620,11 @@ textarea {
     font-size: 1rem;
     margin-right: 1px; }
 
+/**
+ * COMPONENTS
+ *
+ * 1. .c-site-wrapper is included with .c-mobile-nav
+ */
 /* ==========================================================================
    #HEADER
    ========================================================================== */
@@ -1750,7 +1760,7 @@ textarea {
     background-color: #f8f8f8; }
 
 /* ==========================================================================
-   #MOBILE-NAV
+   #MOBILE-NAV and SITE-WRAPPER
    ========================================================================== */
 .c-mobile-nav {
   position: fixed;
@@ -1764,7 +1774,8 @@ textarea {
   width: 90%;
   max-width: 24em;
   height: 100%;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; }
   .is-mobile-nav-open .c-mobile-nav, .c-mobile-nav.c-mobile-nav--active {
     transform: translateX(-24em); }
 
@@ -1805,7 +1816,11 @@ textarea {
 /*
  * Transparent overlay while mobile nav is visible
  */
-body:after {
+.c-site-wrapper {
+  position: relative;
+  height: 100%; }
+
+.c-site-wrapper:after {
   display: block;
   position: absolute;
   top: 0;
@@ -1817,12 +1832,13 @@ body:after {
   background-color: transparent;
   content: ""; }
 
-.is-mobile-nav-open > body {
+.is-mobile-nav-open .c-site-wrapper {
   overflow: hidden; }
-  .is-mobile-nav-open > body:after {
+  .is-mobile-nav-open .c-site-wrapper:after {
     z-index: 99;
     background-color: rgba(0, 0, 0, 0.5); }
 
+/* 1 */
 /* ==========================================================================
    #BUTTONS
    ========================================================================== */
