@@ -33,21 +33,8 @@
         }
 
             .c-primary-nav__link {
-                display: block;
                 padding: 0 $unit;
                 line-height: 56px;
-                white-space: nowrap;
-                color: $c-gray-5;
-
-                &:hover {
-                    background-color: $c-accent;
-                    color: $c-white;
-                }
-
-                &--dropdown {
-                    line-height: 1.5;
-                    padding: $unit-small $unit;
-                }
             }
 
             .c-primary-nav__dropdown {

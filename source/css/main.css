@@ -1644,6 +1644,368 @@ textarea {
  * 1. .c-site-wrapper is included with .c-mobile-nav
  */
 /* ==========================================================================
+#BUTTONS
+========================================================================== */
+/**
+* This is an example component. Extend inuitcss by building your own components
+* that make up your UI. Component classes are prefixed with a `c-`.
+*/
+/**
+* 1. Allow us to style box model properties.
+* 2. Line different sized buttons up a little nicer.
+* 3. Make buttons inherit font styles (often necessary when styling `input`s as
+*    buttons).
+* 4. Reset/normalize some styles.
+* 5. Force all button-styled elements to appear clickable.
+*/
+.c-btn {
+  display: inline-block;
+  /* [1] */
+  vertical-align: middle;
+  /* [2] */
+  font: inherit;
+  /* [3] */
+  text-align: center;
+  /* [4] */
+  margin: 0;
+  /* [4] */
+  cursor: pointer;
+  /* [5] */
+  padding: 11px 42px;
+  -webkit-transition: 0.33333s;
+  transition: 0.33333s;
+  border-radius: 3px;
+  border-width: 0;
+  font-family: "Advent Sans", Sans-Serif; }
+
+/* Style variants
+========================================================================== */
+.c-btn--primary {
+  background-color: #4c6dff; }
+  .c-btn--primary, .c-btn--primary:hover, .c-btn--primary:active, .c-btn--primary:focus {
+    text-decoration: none;
+    /* [4] */
+    color: #fff; }
+  .c-btn--primary:hover, .c-btn--primary:focus {
+    background-color: #1943ff; }
+
+.c-btn--secondary {
+  background-color: #f8f8f8; }
+  .c-btn--secondary, .c-btn--secondary:hover, .c-btn--secondary:active, .c-btn--secondary:focus {
+    text-decoration: none;
+    color: #4d4d4d; }
+  .c-btn--secondary.is-active, .c-btn--secondary:hover, .c-btn--secondary:focus {
+    background-color: #4d4d4d;
+    color: #fff; }
+
+.c-btn--tertiary {
+  background-color: rgba(0, 0, 0, 0.5); }
+  .c-btn--tertiary, .c-btn--tertiary:hover, .c-btn--tertiary:active, .c-btn--tertiary:focus {
+    text-decoration: none;
+    color: #fff; }
+  .c-btn--tertiary:hover, .c-btn--tertiary:focus {
+    background-color: rgba(0, 0, 0, 0.6); }
+
+.c-btn--blocky {
+  border: 1px solid #e8e8e8;
+  border-radius: 0;
+  background-color: #f8f8f8;
+  padding: 10px 41px; }
+  .c-btn--blocky, .c-btn--blocky:hover, .c-btn--blocky:active, .c-btn--blocky:focus {
+    text-decoration: none;
+    color: #4d4d4d; }
+  .c-btn--blocky:hover, .c-btn--blocky:focus {
+    background-color: #4c6dff;
+    color: #fff; }
+
+/* Size variants
+========================================================================== */
+.c-btn--small {
+  padding: 0.35714rem 1.5rem; }
+
+.c-btn--large {
+  padding: 1.5rem 3rem; }
+
+/* Ghost buttons
+========================================================================== */
+/**
+* Ghost buttons have see-through backgrounds and are bordered.
+*/
+.c-btn--ghost {
+  border: 1px solid currentColor;
+  padding: 10px 20px; }
+  .c-btn--ghost, .c-btn--ghost:hover, .c-btn--ghost:active, .c-btn--ghost:focus {
+    background: none; }
+  .c-btn--ghost.c-btn--small {
+    padding: 4px 10px; }
+  .c-btn--ghost.c-btn--large {
+    padding: 20px 41px; }
+  .c-btn--ghost.c-btn--primary {
+    color: #4c6dff; }
+    .c-btn--ghost.c-btn--primary:hover, .c-btn--ghost.c-btn--primary:focus {
+      color: #1943ff; }
+  .c-btn--ghost.c-btn--secondary {
+    color: #f8f8f8; }
+    .c-btn--ghost.c-btn--secondary:hover, .c-btn--ghost.c-btn--secondary:focus {
+      color: #4d4d4d; }
+  .c-btn--ghost.c-btn--tertiary {
+    color: rgba(0, 0, 0, 0.5);
+    opacity: .5; }
+    .c-btn--ghost.c-btn--tertiary:hover, .c-btn--ghost.c-btn--tertiary:focus {
+      color: rgba(0, 0, 0, 0.6);
+      opacity: .6; }
+
+/* Custom
+========================================================================== */
+.c-btn--icon:not(.c-btn--blocky) > span {
+  vertical-align: -2px;
+  font-size: 128.6%; }
+.c-btn--icon.c-btn--blocky {
+  padding-top: 0;
+  padding-bottom: 0; }
+  .c-btn--icon.c-btn--blocky > span {
+    line-height: 41px;
+    font-size: 28px; }
+
+.c-btn--square {
+  padding-right: unset;
+  padding-left: unset;
+  width: 43px;
+  height: 43px; }
+  .c-btn--square.c-btn--small {
+    width: 31px;
+    height: 31px; }
+  .c-btn--square.c-btn--large {
+    width: 63px;
+    height: 63px; }
+
+.c-btn--wall {
+  height: 100%; }
+
+.c-btn--left {
+  border-radius: 0 3px 3px 0; }
+
+.c-btn--right {
+  border-radius: 3px 0 0 3px; }
+
+.c-btn--edgy {
+  border-radius: 0; }
+
+.c-btn--none {
+  background-color: transparent;
+  padding: 21px; }
+  .c-btn--none, .c-btn--none:hover, .c-btn--none:active, .c-btn--none:focus {
+    background-color: transparent; }
+  .c-btn--none:hover, .c-btn--none:focus {
+    background-color: #e8e8e8; }
+
+/* ==========================================================================
+   #FLYIN
+   ========================================================================== */
+.c-flyin {
+  position: fixed;
+  top: 0;
+  right: -24em;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: 0.33333s -webkit-transform ease;
+  transition: 0.33333s -webkit-transform ease;
+  transition: 0.33333s transform ease;
+  transition: 0.33333s transform ease, 0.33333s -webkit-transform ease;
+  z-index: 100;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  width: 90%;
+  max-width: 24em;
+  height: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; }
+  .c-flyin.c-flyin--open {
+    -webkit-transform: translateX(-24em);
+            transform: translateX(-24em); }
+
+/*
+ * Wrapper around header and content
+ * responsible for the inner animation
+ */
+.c-flyin__inner {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: 0.33333s -webkit-transform ease;
+  transition: 0.33333s -webkit-transform ease;
+  transition: 0.33333s transform ease;
+  transition: 0.33333s transform ease, 0.33333s -webkit-transform ease; }
+  .c-flyin--open .c-flyin__inner {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+
+.c-flyin__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #e8e8e8;
+  padding-left: 21px;
+  height: 56px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.c-flyin__title {
+  display: inline-block;
+  margin-bottom: 0;
+  color: #666;
+  font-size: 1.57143rem;
+  font-weight: 400; }
+
+.c-flyin__btn {
+  border-width: 0 0 0 1px;
+  width: 56px;
+  height: 55px; }
+
+.c-flyin__content {
+  padding: 21px; }
+
+/*
+ * Transparent overlay while mobile nav is visible
+ */
+.c-site-wrapper {
+  position: relative;
+  height: 100%; }
+
+.c-site-wrapper:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: 0.33333s background-color;
+  transition: 0.33333s background-color;
+  z-index: -99;
+  background-color: transparent;
+  content: ""; }
+
+.c-site-wrapper--faded {
+  overflow: hidden; }
+  .c-site-wrapper--faded:after {
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.5); }
+
+/* 1 */
+/* ==========================================================================
+   #FOMRS
+   ========================================================================== */
+.c-form--large {
+  font-size: 16px;
+  font-size: 1.14286rem;
+  line-height: 1.3125; }
+.c-form--huge {
+  font-size: 18px;
+  font-size: 1.28571rem;
+  line-height: 1.16667; }
+
+/*
+ * 1. Don't break button from input
+ * 2. if 100% width is reached save exactly the space for a button with icon
+ */
+.c-form__input-with-btn {
+  white-space: nowrap;
+  /* 1 */ }
+  .c-form__input-with-btn .c-form__input {
+    margin-right: -11px;
+    padding-right: 21px;
+    max-width: calc(100% - 50px);
+    /* 2 */ }
+  .c-form__input-with-btn .c-form__btn {
+    border-radius: 0 3px 3px 0;
+    padding: 5px 11px;
+    vertical-align: top;
+    line-height: 1.15;
+    display: inline-block; }
+
+.c-form--large .c-form__input, .c-form--large
+.c-form__btn {
+  padding: 11px 21px; }
+.c-form--huge .c-form__input, .c-form--huge
+.c-form__btn {
+  padding: 21px 42px; }
+
+/* ==========================================================================
+   #TABS
+   ========================================================================== */
+.c-tabs__item {
+  -webkit-transition: background-color 0.33333s;
+  transition: background-color 0.33333s;
+  border-left: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  background-color: #f8f8f8; }
+  .c-tabs__item:hover {
+    background-color: transparent; }
+  .c-tabs__item.is-active:first-child {
+    border-left: 0; }
+  .c-tabs__item:last-child:not(.is-active) {
+    border-right: 1px solid #e8e8e8; }
+  .c-tabs__item.is-active {
+    border-bottom: 0;
+    background-color: transparent; }
+
+.c-tabs__link {
+  font-size: 18px;
+  font-size: 1.28571rem;
+  line-height: 63px;
+  display: inline-block;
+  -webkit-transition: color 0.33333s;
+  transition: color 0.33333s;
+  padding: 0 11px;
+  width: 100%;
+  color: rgba(77, 77, 77, 0.45); }
+  .is-active .c-tabs__link {
+    color: #4d4d4d; }
+
+/* ==========================================================================
+   #SECTION
+   ========================================================================== */
+.c-section {
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8; }
+  .c-section--bg {
+    background-color: #f8f8f8; }
+
+/* ==========================================================================
+   #BADGE
+   ========================================================================== */
+.c-badge {
+  font-size: 12px;
+  font-size: 0.85714rem;
+  line-height: 1.75;
+  border-radius: 3px;
+  background-color: #f8f8f8;
+  vertical-align: middle;
+  padding: 2.5px 11px;
+  font-weight: 600; }
+  .c-badge--success {
+    background-color: #39b54a;
+    color: #fff; }
+
+/* ==========================================================================
+   #LINKS
+   ========================================================================== */
+.c-link--block {
+  display: block;
+  padding: 11px 21px;
+  white-space: nowrap; }
+
+.c-link--primary {
+  color: #4d4d4d; }
+  .c-link--primary:active, .c-link--primary:hover {
+    background-color: #4c6dff;
+    color: #fff; }
+
+/* ==========================================================================
    #HEADER
    ========================================================================== */
 .c-site-header {
@@ -1662,7 +2024,7 @@ textarea {
           justify-content: space-between; }
   @media (max-width: 46.24em) {
     .c-site-header__wrapper {
-      padding-right: 42px; } }
+      padding-right: 0; } }
 
 .c-site-header__item {
   padding-right: 42px; }
@@ -1677,10 +2039,13 @@ textarea {
       -ms-flex-positive: 2;
           flex-grow: 2; }
 
-@media (max-width: 46.24em) {
-  .c-site-header__item--hamburger {
-    position: absolute;
-    right: 0; } }
+.c-site-header__hamburger {
+  border-width: 0 1px;
+  width: 56px;
+  height: 56px; }
+  @media (max-width: 46.24em) {
+    .c-site-header__hamburger {
+      border-right-width: 0; } }
 
 /* ==========================================================================
    #SITE-FOOTER
@@ -1753,17 +2118,8 @@ textarea {
     color: #fff; }
 
 .c-primary-nav__link {
-  display: block;
   padding: 0 21px;
-  line-height: 56px;
-  white-space: nowrap;
-  color: #666; }
-  .c-primary-nav__link:hover {
-    background-color: #4c6dff;
-    color: #fff; }
-  .c-primary-nav__link--dropdown {
-    line-height: 1.5;
-    padding: 11px 21px; }
+  line-height: 56px; }
 
 .c-primary-nav__dropdown {
   position: absolute;
@@ -1785,259 +2141,6 @@ textarea {
     border-bottom: 0; }
   .c-primary-nav__dropdown__item--alternate {
     background-color: #f8f8f8; }
-
-/* ==========================================================================
-   #MOBILE-NAV and SITE-WRAPPER
-   ========================================================================== */
-.c-mobile-nav {
-  position: fixed;
-  top: 0;
-  right: -24em;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transition: 0.33333s -webkit-transform ease;
-  transition: 0.33333s -webkit-transform ease;
-  transition: 0.33333s transform ease;
-  transition: 0.33333s transform ease, 0.33333s -webkit-transform ease;
-  z-index: 100;
-  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
-  width: 90%;
-  max-width: 24em;
-  height: 100%;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch; }
-  .is-mobile-nav-open .c-mobile-nav, .c-mobile-nav.c-mobile-nav--active {
-    -webkit-transform: translateX(-24em);
-            transform: translateX(-24em); }
-
-.c-mobile-nav__wrapper {
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-transition: 0.33333s -webkit-transform ease;
-  transition: 0.33333s -webkit-transform ease;
-  transition: 0.33333s transform ease;
-  transition: 0.33333s transform ease, 0.33333s -webkit-transform ease;
-  padding: 0 21px; }
-  .is-mobile-nav-open .c-mobile-nav__wrapper, .c-mobile-nav--active .c-mobile-nav__wrapper {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
-
-.c-mobile-nav__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 56px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.c-mobile-nav__title {
-  display: inline-block;
-  margin-bottom: 0;
-  color: #666;
-  font-size: 1.57143rem;
-  font-weight: 400; }
-
-.c-mobile-nav__search {
-  margin: 21px 0; }
-
-.c-mobile-nav__list {
-  list-style: none; }
-
-.c-mobile-nav__link {
-  display: block;
-  padding: 11px 21px;
-  color: #4d4d4d; }
-  .c-mobile-nav__link:hover {
-    background-color: #4c6dff;
-    color: #fff; }
-
-/*
- * Transparent overlay while mobile nav is visible
- */
-.c-site-wrapper {
-  position: relative;
-  height: 100%; }
-
-.c-site-wrapper:after {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  -webkit-transition: 0.33333s background-color;
-  transition: 0.33333s background-color;
-  z-index: -99;
-  background-color: transparent;
-  content: ""; }
-
-.is-mobile-nav-open .c-site-wrapper {
-  overflow: hidden; }
-  .is-mobile-nav-open .c-site-wrapper:after {
-    z-index: 99;
-    background-color: rgba(0, 0, 0, 0.5); }
-
-/* 1 */
-/* ==========================================================================
-   #BUTTONS
-   ========================================================================== */
-/**
- * This is an example component. Extend inuitcss by building your own components
- * that make up your UI. Component classes are prefixed with a `c-`.
- */
-/**
- * 1. Allow us to style box model properties.
- * 2. Line different sized buttons up a little nicer.
- * 3. Make buttons inherit font styles (often necessary when styling `input`s as
- *    buttons).
- * 4. Reset/normalize some styles.
- * 5. Force all button-styled elements to appear clickable.
- */
-.c-btn {
-  display: inline-block;
-  /* [1] */
-  vertical-align: middle;
-  /* [2] */
-  font: inherit;
-  /* [3] */
-  text-align: center;
-  /* [4] */
-  margin: 0;
-  /* [4] */
-  cursor: pointer;
-  /* [5] */
-  padding: 11px 42px;
-  -webkit-transition: 0.33333s;
-  transition: 0.33333s;
-  border-radius: 3px;
-  border-width: 0;
-  font-family: "Advent Sans", Sans-Serif; }
-
-/* Style variants
-   ========================================================================== */
-.c-btn--primary {
-  background-color: #4c6dff; }
-  .c-btn--primary, .c-btn--primary:hover, .c-btn--primary:active, .c-btn--primary:focus {
-    text-decoration: none;
-    /* [4] */
-    color: #fff; }
-  .c-btn--primary:hover, .c-btn--primary:focus {
-    background-color: #1943ff; }
-
-.c-btn--secondary {
-  background-color: #f8f8f8; }
-  .c-btn--secondary, .c-btn--secondary:hover, .c-btn--secondary:active, .c-btn--secondary:focus {
-    text-decoration: none;
-    color: #4d4d4d; }
-  .c-btn--secondary.is-active, .c-btn--secondary:hover, .c-btn--secondary:focus {
-    background-color: #4d4d4d;
-    color: #fff; }
-
-.c-btn--tertiary {
-  background-color: rgba(0, 0, 0, 0.5); }
-  .c-btn--tertiary, .c-btn--tertiary:hover, .c-btn--tertiary:active, .c-btn--tertiary:focus {
-    text-decoration: none;
-    color: #fff; }
-  .c-btn--tertiary:hover, .c-btn--tertiary:focus {
-    background-color: rgba(0, 0, 0, 0.6); }
-
-/* Size variants
-   ========================================================================== */
-.c-btn--small {
-  padding: 0.35714rem 1.5rem; }
-
-.c-btn--large {
-  padding: 1.5rem 3rem; }
-
-/* Ghost buttons
-   ========================================================================== */
-/**
- * Ghost buttons have see-through backgrounds and are bordered.
- */
-.c-btn--ghost {
-  border: 1px solid currentColor;
-  padding: 10px 20px; }
-  .c-btn--ghost, .c-btn--ghost:hover, .c-btn--ghost:active, .c-btn--ghost:focus {
-    background: none; }
-  .c-btn--ghost.c-btn--small {
-    padding: 4px 10px; }
-  .c-btn--ghost.c-btn--large {
-    padding: 20px 41px; }
-  .c-btn--ghost.c-btn--primary {
-    color: #4c6dff; }
-    .c-btn--ghost.c-btn--primary:hover, .c-btn--ghost.c-btn--primary:focus {
-      color: #1943ff; }
-  .c-btn--ghost.c-btn--secondary {
-    color: #f8f8f8; }
-    .c-btn--ghost.c-btn--secondary:hover, .c-btn--ghost.c-btn--secondary:focus {
-      color: #4d4d4d; }
-  .c-btn--ghost.c-btn--tertiary {
-    color: rgba(0, 0, 0, 0.5);
-    opacity: .5; }
-    .c-btn--ghost.c-btn--tertiary:hover, .c-btn--ghost.c-btn--tertiary:focus {
-      color: rgba(0, 0, 0, 0.6);
-      opacity: .6; }
-
-/* Custom
-   ========================================================================== */
-.c-btn--icon {
-  padding: unset;
-  min-width: 42px;
-  height: 42px;
-  font-size: 128.6%; }
-  .c-btn--icon > span {
-    vertical-align: -2px; }
-
-.c-btn--square {
-  padding-right: unset;
-  padding-left: unset;
-  width: 43px; }
-  .c-btn--square.c-btn--small {
-    width: 31px; }
-  .c-btn--square.c-btn--large {
-    width: 63px; }
-
-.c-btn--wall {
-  height: 100%; }
-
-.c-btn--left {
-  border-radius: 0 3px 3px 0; }
-
-.c-btn--right {
-  border-radius: 3px 0 0 3px; }
-
-.c-btn--edgy {
-  border-radius: 0; }
-
-.c-btn--none {
-  background-color: transparent;
-  padding: 21px; }
-  .c-btn--none, .c-btn--none:hover, .c-btn--none:active, .c-btn--none:focus {
-    background-color: transparent; }
-  .c-btn--none:hover, .c-btn--none:focus {
-    background-color: #e8e8e8; }
-
-/* ==========================================================================
-   #BADGE
-   ========================================================================== */
-.c-badge {
-  font-size: 12px;
-  font-size: 0.85714rem;
-  line-height: 1.75;
-  border-radius: 3px;
-  background-color: #f8f8f8;
-  vertical-align: middle;
-  padding: 2.5px 11px;
-  font-weight: 600; }
-  .c-badge--success {
-    background-color: #39b54a;
-    color: #fff; }
 
 /* ==========================================================================
    #BRANDING
@@ -2376,85 +2479,6 @@ textarea {
       color: white; }
   .c-media-article__header:hover ~ .c-media-article__footer {
     opacity: 0; }
-
-/* ==========================================================================
-   #SECTION
-   ========================================================================== */
-.c-section {
-  border-top: 1px solid #e8e8e8;
-  border-bottom: 1px solid #e8e8e8; }
-  .c-section--bg {
-    background-color: #f8f8f8; }
-
-/* ==========================================================================
-   #FOMRS
-   ========================================================================== */
-.c-form--large {
-  font-size: 16px;
-  font-size: 1.14286rem;
-  line-height: 1.3125; }
-.c-form--huge {
-  font-size: 18px;
-  font-size: 1.28571rem;
-  line-height: 1.16667; }
-
-/*
- * 1. Don't break button from input
- * 2. if 100% width is reached save exactly the space for a button with icon
- */
-.c-form__input-with-btn {
-  white-space: nowrap;
-  /* 1 */ }
-  .c-form__input-with-btn .c-form__input {
-    margin-right: -11px;
-    padding-right: 21px;
-    max-width: calc(100% - 50px);
-    /* 2 */ }
-  .c-form__input-with-btn .c-form__btn {
-    border-radius: 0 3px 3px 0;
-    padding: 5px 11px;
-    vertical-align: top;
-    line-height: 1.15;
-    display: inline-block; }
-
-.c-form--large .c-form__input, .c-form--large
-.c-form__btn {
-  padding: 11px 21px; }
-.c-form--huge .c-form__input, .c-form--huge
-.c-form__btn {
-  padding: 21px 42px; }
-
-/* ==========================================================================
-   #TABS
-   ========================================================================== */
-.c-tabs__item {
-  -webkit-transition: background-color 0.33333s;
-  transition: background-color 0.33333s;
-  border-left: 1px solid #e8e8e8;
-  border-bottom: 1px solid #e8e8e8;
-  background-color: #f8f8f8; }
-  .c-tabs__item:hover {
-    background-color: transparent; }
-  .c-tabs__item.is-active:first-child {
-    border-left: 0; }
-  .c-tabs__item:last-child:not(.is-active) {
-    border-right: 1px solid #e8e8e8; }
-  .c-tabs__item.is-active {
-    border-bottom: 0;
-    background-color: transparent; }
-
-.c-tabs__link {
-  font-size: 18px;
-  font-size: 1.28571rem;
-  line-height: 63px;
-  display: inline-block;
-  -webkit-transition: color 0.33333s;
-  transition: color 0.33333s;
-  padding: 0 11px;
-  width: 100%;
-  color: rgba(77, 77, 77, 0.45); }
-  .is-active .c-tabs__link {
-    color: #4d4d4d; }
 
 /* Keep in sync with slider.js */
 /* ==========================================================================

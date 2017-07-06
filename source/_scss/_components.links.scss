@@ -1,0 +1,23 @@
+/* ==========================================================================
+   #LINKS
+   ========================================================================== */
+
+// .c-link {
+
+// }
+
+.c-link--block {
+    display: block;
+    padding: $unit-small $unit;
+    white-space: nowrap;
+}
+
+.c-link--primary {
+    color: $c-text;
+
+    &:active,
+    &:hover {
+        background-color: $c-accent;
+        color: $c-white;
+    }
+}

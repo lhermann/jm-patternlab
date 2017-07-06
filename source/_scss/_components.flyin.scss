@@ -1,10 +1,10 @@
 /* ==========================================================================
-   #MOBILE-NAV and SITE-WRAPPER
+   #FLYIN
    ========================================================================== */
 
-$menu-max-width: 24em;
+$flyin-max-width: 24em;
 
-.c-mobile-nav {
+.c-flyin {
     position: fixed;
     top: 0;
     right: -24em;
@@ -14,36 +14,39 @@ $menu-max-width: 24em;
     box-shadow: $global-shadow;
     background-color: $c-white;
     width: 90%;
-    max-width: $menu-max-width;
+    max-width: $flyin-max-width;
     height: 100%;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
 
-    .is-mobile-nav-open &,
-    &.c-mobile-nav--active {
-        transform: translateX(-$menu-max-width);
+    &.c-flyin--open {
+        transform: translateX(-$flyin-max-width);
     }
 }
 
-    .c-mobile-nav__wrapper {
+    /*
+     * Wrapper around header and content
+     * responsible for the inner animation
+     */
+    .c-flyin__inner {
         transform: translateX(-50%);
         transition: $global-transition transform ease;
-        padding: 0 $unit;
 
-        .is-mobile-nav-open &,
-        .c-mobile-nav--active & {
+        .c-flyin--open & {
             transform: translateX(0);
         }
     }
 
-        .c-mobile-nav__header {
+        .c-flyin__header {
             display: flex;
-            height: 56px;
+            border-bottom: 1px solid $c-border;
+            padding-left: $unit;
+            height: $header-height;
             align-items: center;
             justify-content: space-between;
         }
 
-            .c-mobile-nav__title {
+            .c-flyin__title {
                 display: inline-block;
                 margin-bottom: 0;
                 color: $c-textalt;
@@ -51,24 +54,16 @@ $menu-max-width: 24em;
                 font-weight: 400;
             }
 
-        .c-mobile-nav__search {
-            margin: $unit 0;
+            .c-flyin__btn {
+                border-width: 0 0 0 1px;
+                width: $header-height;
+                height: $header-height - 1px;
+            }
+
+        .c-flyin__content {
+            padding: $unit;
         }
 
-        .c-mobile-nav__list {
-            list-style: none;
-        }
-
-                .c-mobile-nav__link {
-                    display: block;
-                    padding: $unit-small $unit;
-                    color: $c-text;
-
-                    &:hover {
-                        background-color: $c-accent;
-                        color: $c-white;
-                    }
-                }
 
 /*
  * Transparent overlay while mobile nav is visible
@@ -92,7 +87,7 @@ $menu-max-width: 24em;
     content: "";
 }
 
-.is-mobile-nav-open .c-site-wrapper {
+.c-site-wrapper--faded {
     overflow: hidden;
 
     &:after {

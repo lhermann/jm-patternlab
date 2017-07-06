@@ -8,12 +8,12 @@
 
     .c-site-header__wrapper {
         display: flex;
-        height: 56px;
+        height: $header-height;
         align-items: center;
         justify-content: space-between;
 
         @include mq($until: tablet) {
-            padding-right: $unit-large;
+            padding-right: 0;
         }
     }
 
@@ -33,9 +33,12 @@
             flex-grow: 2;
         }
 
-        .c-site-header__item--hamburger {
-            @include mq($until: tablet) {
-                position: absolute;
-                right: 0;
+            .c-site-header__hamburger {
+                border-width: 0 1px;
+                width: $header-height;
+                height: $header-height;
+
+                @include mq($until: tablet) {
+                    border-right-width: 0;
+                }
             }
-        }

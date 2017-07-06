@@ -236,12 +236,18 @@ $inuit-list-inline-delimiter: "\00A0\00A0\00b7\00A0\00A0";
  *
  * 1. .c-site-wrapper is included with .c-mobile-nav
  */
+$header-height: 56px;
+@import "components.buttons";
+@import "components.flyin"; /* 1 */
+@import "components.forms";
+@import "components.tabs";
+@import "components.section";
+@import "components.badge";
+@import "components.links";
+
 @import "components.site-header";
 @import "components.site-footer";
 @import "components.primary-nav";
-@import "components.mobile-nav"; /* 1 */
-@import "components.buttons";
-@import "components.badge";
 @import "components.branding";
 @import "components.search-bar";
 @import "components.hamburger";
@@ -250,9 +256,6 @@ $inuit-list-inline-delimiter: "\00A0\00A0\00b7\00A0\00A0";
 @import "components.media-promo";
 @import "components.article-grid";
 @import "components.media-article";
-@import "components.section";
-@import "components.forms";
-@import "components.tabs";
 
 /* Keep in sync with slider.js */
 $slide-transition: .7s;
