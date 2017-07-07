@@ -27,7 +27,12 @@
     transition: $global-transition;
     border-radius: $global-radius;
     border-width: 0;
-    font-family: $font-secondary;
+    // font-family: $font-secondary;
+
+    > [class^="u-ic-"],
+    > [class*=" u-ic-"] {
+        vertical-align: -2px;
+    }
 }
 
 
@@ -122,6 +127,10 @@
 /* Size variants
 ========================================================================== */
 
+.c-btn--tiny {
+    padding: inuit-rem($inuit-global-spacing-unit-tiny/2) inuit-rem($inuit-global-spacing-unit-small);
+}
+
 .c-btn--small {
     padding: inuit-rem($inuit-global-spacing-unit-tiny) inuit-rem($inuit-global-spacing-unit);
 }
@@ -154,6 +163,10 @@ $btn-ghost-border-width: 1px;
         background: none;
     }
 
+    &.c-btn--tiny {
+        padding: ($inuit-global-spacing-unit-tiny/2 - $btn-ghost-border-width) ($inuit-global-spacing-unit-small - $btn-ghost-border-width);
+    }
+
     &.c-btn--small {
         padding: ($inuit-global-spacing-unit-tiny - $btn-ghost-border-width) ($inuit-global-spacing-unit-small - $btn-ghost-border-width);
     }
@@ -173,7 +186,7 @@ $btn-ghost-border-width: 1px;
     }
 
     &.c-btn--secondary {
-        color: $c-secondary-btn;
+        color: $c-textmuted;
 
         &:hover,
         &:focus {
@@ -201,38 +214,33 @@ $btn-ghost-border-width: 1px;
 ========================================================================== */
 
 .c-btn--icon {
-    // font-size: 128.6%;
-
-    &:not(.c-btn--blocky) > span {
-        vertical-align: -2px;
+    > span {
+        // vertical-align: -2px;
         font-size: 128.6%;
     }
+}
 
-    &.c-btn--blocky {
-        padding-top: 0;
-        padding-bottom: 0;
+.c-btn--bigicon {
+    padding-top: 0;
+    padding-bottom: 0;
 
-        > span {
-            line-height: $unit-small * 2 + $inuit-global-line-height - 2px;
-            font-size: $inuit-global-font-size * 2;
-        }
+    > span {
+        line-height: inuit-rem($unit-small * 2 + $inuit-global-line-height - 2px);
+        font-size: inuit-rem($inuit-global-font-size * 2);
     }
 }
 
 .c-btn--square {
     padding-right: unset;
     padding-left: unset;
-    width: $unit-small * 2 + $inuit-global-line-height;
-    height: $unit-small * 2 + $inuit-global-line-height;
+    width: inuit-rem($unit-small * 2 + $inuit-global-line-height);
 
     &.c-btn--small {
-        width: $unit-tiny * 2 + $inuit-global-line-height;
-        height: $unit-tiny * 2 + $inuit-global-line-height;
+        width: inuit-rem($unit-tiny * 2 + $inuit-global-line-height);
     }
 
     &.c-btn--large {
-        width: $unit * 2 + $inuit-global-line-height;
-        height: $unit * 2 + $inuit-global-line-height;
+        width: inuit-rem($unit * 2 + $inuit-global-line-height);
     }
 }
 
@@ -240,16 +248,16 @@ $btn-ghost-border-width: 1px;
     height: 100%;
 }
 
-.c-btn--left {
-    border-radius: 0 $global-radius $global-radius 0;
+.c-btn--edgy {
+    border-radius: 0;
 }
 
 .c-btn--right {
-    border-radius: $global-radius 0 0 $global-radius;
+    border-radius: 0 $global-radius $global-radius 0;
 }
 
-.c-btn--edgy {
-    border-radius: 0;
+.c-btn--left {
+    border-radius: $global-radius 0 0 $global-radius;
 }
 
 .c-btn--none {

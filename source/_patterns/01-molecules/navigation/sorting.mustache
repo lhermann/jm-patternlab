@@ -1,0 +1,16 @@
+<ul class="o-list-inline o-list-inline--1pxgap u-margin-bottom-none {{ styleModifier }}">
+
+    <li class="o-list-inline__item u-margin-right-small">
+        Sortieren nach
+    </li>
+
+    {{# sortOptions }}
+    <li class="o-list-inline__item">
+        <button class="c-btn c-btn--secondary c-btn--tiny c-btn--edgy {{class}}">
+            {{label}}
+            {{# direction }}<span class="u-ic-keyboard-arrow-{{direction}}"></span>{{/ direction }}
+        </button>
+    </li>
+    {{/ sortOptions }}
+
+</ul>

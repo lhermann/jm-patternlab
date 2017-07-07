@@ -555,5 +555,22 @@
         {
             "number": 23
         }
+    ],
+    "sortOptions": [
+        {
+            "label": "Datum",
+            "direction": "down",
+            "class": "c-btn--left is-active"
+        },
+        {
+            "label": "Sprecher"
+        },
+        {
+            "label": "Serie"
+        },
+        {
+            "label": "Beliebtheit",
+            "class": "c-btn--right"
+        }
     ]
 }

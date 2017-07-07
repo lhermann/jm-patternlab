@@ -20,16 +20,14 @@
         white-space: nowrap; /* 1 */
 
         .c-form__input {
-            margin-right: -$unit-small;
             padding-right: $unit;
             max-width: calc(100% - 50px); /* 2 */
+            border-radius: $global-radius 0 0 $global-radius;
         }
 
         .c-form__btn {
-            border-radius: 0 $global-radius $global-radius 0;
-            padding: $unit-tiny $unit-small;
             vertical-align: top;
-            line-height: 1.15;
+            line-height: 1.15; // same as input
             display: inline-block;
         }
     }

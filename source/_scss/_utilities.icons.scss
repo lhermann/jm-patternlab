@@ -29,6 +29,22 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.u-ic-plus:before {
+  content: "\e145";
+}
+.u-ic-minus:before {
+  content: "\e15b";
+}
+.u-ic-checkbox:before {
+  content: "\e907";
+}
+.u-ic-checkbox-checked:before {
+  content: "\e908";
+}
+.u-ic-checkbox-indeterminate:before {
+  content: "\e901";
+}
 .u-ic-mail:before {
   content: "\e0e1";
 }

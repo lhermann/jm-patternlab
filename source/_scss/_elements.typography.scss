@@ -51,6 +51,7 @@ $font-secondary: "Advent Sans", Sans-Serif;
 html {
     font-family: $font-primary;
     font-weight: 300;
+    color: $c-text;
 
     @include mq($until: tablet) {
         font-size: 12px;

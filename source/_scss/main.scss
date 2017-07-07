@@ -192,6 +192,7 @@ $inuit-list-inline-delimiter: "\00A0\00A0\00b7\00A0\00A0";
 @import "../node_modules/inuitcss/objects/objects.tables";
 @import "../node_modules/inuitcss/objects/objects.pack";
 @import "objects.overflow";
+@import "objects.owl";
 
 .o-layout--overflow {
     white-space: nowrap;
@@ -286,11 +287,8 @@ $inuit-fractions: 1 2 3 4 5 7;
 @import "utilities.animation";
 @import "utilities.icons";
 @import "utilities.orientation";
+@import "utilities.text-align";
 @import "utilities.responsive-hide";
-
-.u-text-center {
-    text-align: center;
-}
 
 .u-text-bold {
     font-weight: 600;
@@ -335,6 +333,10 @@ $inuit-fractions: 1 2 3 4 5 7;
 
 .u-smaller {
     @include inuit-font-size(10px, $important: true);
+}
+
+.u-textmuted {
+    color: $c-textmuted;
 }
 
 .u-muted {
