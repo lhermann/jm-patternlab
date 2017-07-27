@@ -1,6 +1,7 @@
 .DS_Store
 export/*
 public/*
+public.backup
 source/styleguide/*
 source/node_modules
 source/.sass-cache
