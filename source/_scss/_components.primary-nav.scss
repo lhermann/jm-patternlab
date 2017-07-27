@@ -23,8 +23,8 @@
     }
 
         .c-primary-nav__item {
+            @include inuit-font-size(18px, false);
             display: inline-block;
-            font-size: inuit-rem(18px);
 
             &:hover > .c-primary-nav__link {
                 background-color: $c-accent;

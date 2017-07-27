@@ -560,17 +560,46 @@
         {
             "label": "Datum",
             "direction": "down",
-            "class": "c-btn--left is-active"
+            "btnClass": "c-btn--left is-active",
+            "mobile": true
+        },
+        {
+            "label": "Beliebtheit",
+            "mobile": true
         },
         {
             "label": "Sprecher"
         },
         {
-            "label": "Serie"
+            "label": "Serie",
+            "btnClass": "c-btn--right"
+        }
+    ],
+    "items": [
+        {
+            "url": "#",
+            "label": "Lorem ipsum dolor",
+            "count": "12"
         },
         {
-            "label": "Beliebtheit",
-            "class": "c-btn--right"
+            "url": "#",
+            "label": "Mollitia accusamus",
+            "count": "43"
+        },
+        {
+            "url": "#",
+            "label": "Aliquid adipisci Perspiciatis",
+            "count": "8"
+        },
+        {
+            "url": "#",
+            "label": "Adipisicing elit",
+            "count": "17"
+        },
+        {
+            "url": "#",
+            "label": "Sit amet",
+            "count": "3"
         }
     ]
 }

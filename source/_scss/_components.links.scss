@@ -3,7 +3,16 @@
    ========================================================================== */
 
 .c-link {
+    display: inline-block;
+    width: 100%;
     color: $c-text;
+}
+
+.c-link--touch {
+    @include mq($until: desktop) {
+        padding-top: $unit-tiny;
+        padding-bottom: $unit-tiny;
+    }
 }
 
 .c-link--block {
@@ -21,3 +30,11 @@
         color: $c-white;
     }
 }
+
+    .c-link__float-right {
+        float: right;
+        margin-top: -$inuit-global-line-height;
+        @include mq($until: tablet) {
+            margin-top: -18px;
+        }
+    }

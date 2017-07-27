@@ -128,15 +128,15 @@
 ========================================================================== */
 
 .c-btn--tiny {
-    padding: inuit-rem($inuit-global-spacing-unit-tiny/2) inuit-rem($inuit-global-spacing-unit-small);
+    padding: $inuit-global-spacing-unit-tiny/2 $inuit-global-spacing-unit-small;
 }
 
 .c-btn--small {
-    padding: inuit-rem($inuit-global-spacing-unit-tiny) inuit-rem($inuit-global-spacing-unit);
+  padding: $inuit-global-spacing-unit-tiny $inuit-global-spacing-unit-small;
 }
 
 .c-btn--large {
-    padding: inuit-rem($inuit-global-spacing-unit) inuit-rem($inuit-global-spacing-unit-large);
+  padding: $inuit-global-spacing-unit $inuit-global-spacing-unit-large;
 }
 
 
@@ -215,7 +215,6 @@ $btn-ghost-border-width: 1px;
 
 .c-btn--icon {
     > span {
-        // vertical-align: -2px;
         font-size: 128.6%;
     }
 }
@@ -225,22 +224,22 @@ $btn-ghost-border-width: 1px;
     padding-bottom: 0;
 
     > span {
-        line-height: inuit-rem($unit-small * 2 + $inuit-global-line-height - 2px);
-        font-size: inuit-rem($inuit-global-font-size * 2);
+        line-height: $unit-small * 2 + $inuit-global-line-height - 2px;
+        font-size: $inuit-global-font-size * 2;
     }
 }
 
 .c-btn--square {
     padding-right: unset;
     padding-left: unset;
-    width: inuit-rem($unit-small * 2 + $inuit-global-line-height);
+    width: $unit-small * 2 + $inuit-global-line-height;
 
     &.c-btn--small {
-        width: inuit-rem($unit-tiny * 2 + $inuit-global-line-height);
+        width: $unit-tiny * 2 + $inuit-global-line-height;
     }
 
     &.c-btn--large {
-        width: inuit-rem($unit * 2 + $inuit-global-line-height);
+        width: $unit * 2 + $inuit-global-line-height;
     }
 }
 

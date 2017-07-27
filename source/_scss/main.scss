@@ -92,7 +92,7 @@ $unit-huge:     $inuit-global-spacing-unit-huge;
 
 
 // TOOLS
-@import "../node_modules/inuitcss/tools/tools.rem";
+// @import "../node_modules/inuitcss/tools/tools.rem";
 @import "../node_modules/inuitcss/tools/tools.font-size";
 @import "../node_modules/inuitcss/tools/tools.clearfix";
 @import "../node_modules/inuitcss/tools/tools.hidden";
@@ -189,7 +189,7 @@ $inuit-list-inline-delimiter: "\00A0\00A0\00b7\00A0\00A0";
 @import "../node_modules/inuitcss/objects/objects.block";
 @import "../node_modules/inuitcss/objects/objects.ratio";
 @import "../node_modules/inuitcss/objects/objects.crop";
-@import "../node_modules/inuitcss/objects/objects.tables";
+// @import "../node_modules/inuitcss/objects/objects.tables";
 @import "../node_modules/inuitcss/objects/objects.pack";
 @import "objects.overflow";
 @import "objects.owl";
@@ -226,7 +226,15 @@ $inuit-list-inline-delimiter: "\00A0\00A0\00b7\00A0\00A0";
       font-size: $inuit-global-font-size;
       font-size: 1rem;
       margin-right: 1px;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
+}
+
+.o-pack--1px {
+    border-spacing: 1px;
 }
 
 
@@ -281,7 +289,27 @@ $inuit-offsets: false;
 $inuit-fractions: 1 2 3 4 5 7;
 @import "../node_modules/inuitcss/utilities/utilities.widths";
 @import "../node_modules/inuitcss/utilities/utilities.headings";
-@import "../node_modules/inuitcss/utilities/utilities.spacing";
+// $inuit-responsive-spacing-directions: (
+//   null: null,
+//   "-top": "-top",
+//   "-right": "-right",
+//   "-bottom": "-bottom",
+//   "-left": "-left"
+// );
+// $inuit-responsive-spacing-properties: (
+//   "margin": "margin",
+//   "padding": "padding"
+// );
+// $inuit-responsive-spacing-sizes: (
+//   null: $inuit-global-spacing-unit,
+//   '-tiny': $unit-tiny,
+//   '-small': $unit-small,
+//   '-large': $unit-large,
+//   '-huge': $unit-huge,
+//   '-none': 0
+// );
+// @import "../node_modules/inuitcss/utilities/utilities.responsive-spacings";
+@import "utilities.responsive-spacings";
 @import "../node_modules/inuitcss/utilities/utilities.print";
 @import "../node_modules/inuitcss/utilities/utilities.hide";
 @import "utilities.animation";
@@ -360,4 +388,16 @@ $inuit-fractions: 1 2 3 4 5 7;
 
 .u-border-left {
     border-left: 1px solid $c-border;
+}
+
+.u-hover {
+    margin-right: -$unit-tiny;
+    margin-left: -$unit-tiny;
+    border-radius: $global-radius;
+    padding-right: $unit-tiny;
+    padding-left: $unit-tiny;
+}
+
+.u-hover:hover {
+    background-color: rgba(0, 0, 0, .03);
 }

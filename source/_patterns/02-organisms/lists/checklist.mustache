@@ -1,0 +1,18 @@
+<h3 class="u-h4">{{title}}</h3>
+<ul class="o-list-bare">
+    {{# items }}
+    <li class="u-hover">
+        <a class="c-link c-link--touch" href="{{url}}">
+            <div class="u-eclipse u-margin-right">
+                <span class="u-ic-checkbox"></span>
+                {{label}}
+            </div>
+            <small class="c-link__float-right u-smaller u-textmuted">{{count}}</small>
+        </a>
+    </li>
+    {{/ items }}
+</ul>
+<button class="c-btn c-btn--secondary c-btn--tiny c-btn--ghost">
+    <span class="u-ic-plus"></span>
+    <small>mehr anzeigen</small>
+</button>

@@ -11,69 +11,49 @@
 
                 <h2 class="u-margin-left u-margin-bottom-large">Filter</h2>
 
-                <div class="o-owl o-owl--small u-border-left u-padding-left u-padding-right">
-                    <h3 class="u-h4">Serien</h3>
-                    <ul class="o-list-bare">
-                        <li>
-                            <a class="c-link" href="#">
-                                <span class="u-ic-checkbox"></span>
-                                Sola Veritas
-                                <small class="u-smaller u-textmuted">12 Videos</small>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="c-link" href="#">
-                                <span class="u-ic-checkbox"></span>
-                                Die Kriese und das Kreuz
-                                <small class="u-smaller u-textmuted">4 Videos</small>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="c-link" href="#">
-                                <span class="u-ic-checkbox"></span>
-                                Offenbarung Vers für Vers
-                                <small class="u-smaller u-textmuted">89 Videos</small>
-                            </a>
-                        </li>
-                    </ul>
-                    <button class="c-btn c-btn--secondary c-btn--tiny c-btn--ghost">
-                        <span class="u-ic-plus"></span>
-                        mehr anzeigen ...
-                    </button>
+                <div class="o-owl o-owl--small u-border-left u-padding-left
+                    u-padding-right u-padding-right-large@desktop">
+                    {{> organisms-checklist }}
                 </div>
 
-                <div class="u-border-left u-padding-left u-padding-right">
-                    <p>Debitis, repudiandae, eligendi?</p>
+                <div class="o-owl o-owl--small u-border-left u-padding-left
+                    u-padding-right u-padding-right-large@desktop">
+                    {{> organisms-checklist }}
                 </div>
 
-                <div class="u-border-left u-padding-left u-padding-right">
-                    <p>Possimus, hic, nulla.</p>
+                <div class="o-owl o-owl--small u-border-left u-padding-left
+                    u-padding-right u-padding-right-large@desktop">
+                    {{> organisms-checklist }}
                 </div>
 
             </aside>
             <div class="o-layout__item u-3/4@tablet">
 
 
-                <header class="o-pack o-pack--auto o-pack--middle u-padding-left u-margin-bottom-large">
-                    <div class="o-pack__item">
-                        <h2 class="u-margin-bottom-none">Videos</h2>
+                <header class="u-padding-left u-margin-bottom-large">
+                    <div class="o-pack o-pack--auto o-pack--middle">
+                        <div class="o-pack__item">
+                            <h2 class="u-margin-bottom-none">Videos</h2>
+                        </div>
+                        <div class="o-pack__item u-text-right u-hidden@until-tablet">
+                            {{> molecules-sorting }}
+                        </div>
+                        <div class="o-pack__item u-text-right u-padding-right u-hidden@from-tablet">
+                            <button class="c-btn c-btn--secondary jsFlyinBtn"
+                                data-target="filterFlyin" data-action="open">
+                                Filter
+                            </button>
+                        </div>
                     </div>
-                    <div class="o-pack__item u-text-right u-hidden@until-tablet">
-                        {{> molecules-sorting }}
-                    </div>
-                    <div class="o-pack__item u-text-right u-padding-right u-hidden@from-tablet">
-                        <button class="c-btn c-btn--secondary jsFlyinBtn"
-                            data-target="filterFlyin" data-action="open">
-                            Filter
-                        </button>
-                    </div>
+
+                    {{> molecules-sorting-mobile:u-margin-top u-hidden@from-tablet }}
+
                 </header>
 
                 <div class="u-border-left u-padding-left u-padding-right">
                     {{> organisms-medialist:c-medialist--notitle }}
+                    {{> molecules-pagination:u-margin-top-large }}
                 </div>
-
-                {{> molecules-pagination:u-margin-left u-margin-top-large }}
 
             </div>
         </section>
@@ -100,8 +80,18 @@
             </button>
         </header>
 
-        <div class="c-flyin__content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cupiditate consectetur, minima quos quasi, expedita. Sunt cum commodi, dicta qui architecto quis minus ipsam modi.</p>
+        <div class="o-owl o-owl--small c-flyin__content">
+
+            {{> organisms-checklist }}
+
+            <hr class="o-break-wrapper u-margin-top">
+
+            {{> organisms-checklist }}
+
+            <hr class="o-break-wrapper u-margin-top">
+
+            {{> organisms-checklist }}
+
         </div>
 
     </div>
