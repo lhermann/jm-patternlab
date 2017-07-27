@@ -4,6 +4,6 @@ public/*
 source/styleguide/*
 source/node_modules
 source/.sass-cache
-source/pid_file
 vendor/*
 .sass-cache
+pid_file
