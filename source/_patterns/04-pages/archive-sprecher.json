@@ -25,23 +25,23 @@
         "title": "Anzahl Videos",
         "items": [
             {
-                "label": "bis 15 min",
+                "label": "bis 5",
                 "count": "26"
             },
             {
-                "label": "15-30 min",
+                "label": "5-10",
                 "count": "128"
             },
             {
-                "label": "30-45 min",
+                "label": "10-20",
                 "count": "356"
             },
             {
-                "label": "45-60",
+                "label": "20-100",
                 "count": "56"
             },
             {
-                "label": "über 60 min",
+                "label": "über 100",
                 "count": "27"
             }
         ],
@@ -95,18 +95,15 @@
     },
     "sortOptions": [
         {
-            "label": "Alphabet",
+            "label": "Name",
             "direction": "down",
             "btnClass": "c-btn--left is-active",
             "mobile": true
         },
         {
-            "label": "Anzahl",
+            "label": "Anzahl Videos",
+            "btnClass": "c-btn--right",
             "mobile": true
-        },
-        {
-            "label": "Datum",
-            "btnClass": "c-btn--right"
         }
     ],
     "medialist": [

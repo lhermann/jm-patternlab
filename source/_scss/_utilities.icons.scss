@@ -30,7 +30,9 @@
   vertical-align: -0.1em;
 }
 
-
+.u-ic-folder:before {
+  content: "\e2c7";
+}
 .u-ic-plus:before {
   content: "\e145";
 }

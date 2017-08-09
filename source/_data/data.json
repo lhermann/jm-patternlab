@@ -277,8 +277,6 @@
         {},
         {}
     ],
-    "length": "56:07",
-    "klicks": 41,
     "mediaListLong": [
         {
             "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
@@ -508,11 +506,8 @@
         },
         {
             "label": "Ipsum",
+            "btnClass": "c-btn--right",
             "mobile": true
-        },
-        {
-            "label": "Dolor",
-            "btnClass": "c-btn--right"
         }
     ],
     "items": [

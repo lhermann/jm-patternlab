@@ -1,7 +1,12 @@
 <div class="o-media c-mediaitem {{# type }}c-mediaitem--{{ type }}{{/ type }} {{ styleModifier }}">
     <div class="o-media__img c-mediaitem__img">
         <a class="c-mediaitem__imglink" href="{{ url }}">
+            {{# image }}
             <img class="c-mediaitem__img" src="{{ image }}"/>
+            {{/ image }}
+            {{^ image }}
+            <span class="u-ic-folder"></span>
+            {{/ image }}
             {{# length }}
             <div class="c-mediaitem__length">
                 <div>{{{ length }}}</div>

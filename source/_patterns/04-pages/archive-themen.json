@@ -26,23 +26,23 @@
         "title": "Anzahl Videos",
         "items": [
             {
-                "label": "bis 15 min",
+                "label": "bis 5",
                 "count": "26"
             },
             {
-                "label": "15-30 min",
+                "label": "5-10",
                 "count": "128"
             },
             {
-                "label": "30-45 min",
+                "label": "10-20",
                 "count": "356"
             },
             {
-                "label": "45-60",
+                "label": "20-100",
                 "count": "56"
             },
             {
-                "label": "über 60 min",
+                "label": "über 100",
                 "count": "27"
             }
         ],
@@ -102,140 +102,167 @@
     },
     "sortOptions": [
         {
-            "label": "Alphabet",
+            "label": "Name",
             "direction": "down",
             "btnClass": "c-btn--left is-active",
             "mobile": true
         },
         {
-            "label": "Anzahl",
-            "mobile": true
-        },
-        {
-            "label": "Datum",
+            "label": "Anzahl Videos",
+            "mobile": true,
             "btnClass": "c-btn--right"
         }
     ],
     "medialist": [
         {
-            "image": "/images/sample/video-5-160x90.jpg",
-            "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
-            "length": "56:07",
-            "speaker": {
-                "name": "Matthias Ströck",
-                "url": "#"
-            },
-            "date": "5. Juni 2017",
-            "series": false,
-            "klicks": false
+            "type": "thema",
+            "image": false,
+            "title": "Andachten",
+            "meta": [
+                {
+                    "label": "Keine Unterthemen",
+                    "url": false
+                },
+                {
+                    "label": "33 Videos",
+                    "url": false
+                }
+            ]
         },
         {
-            "image": "/images/sample/video-1-160x90.jpg",
-            "title": "Der Ersehnte: 63. „An der Zollstätte“",
-            "length": "48:20",
-            "speaker": {
-                "name": "Christopher Kramp",
-                "url": "#"
-            },
-            "date": "25. Mai 2017",
-            "series": false,
-            "klicks": false
+            "type": "thema",
+            "image": false,
+            "title": "Altes Testament",
+            "meta": [
+                {
+                    "label": "19 Unterthemen",
+                    "url": false
+                },
+                {
+                    "label": "67 Videos",
+                    "url": false
+                }
+            ]
         },
         {
-            "image": "/images/sample/video-3-160x90.jpg",
-            "title": "Offenbarung 17:9",
-            "length": "38:29",
-            "speaker": {
-                "name": "Christopher Kramp",
-                "url": "#"
-            },
-            "date": "25. Mai 2017",
-            "series": false,
-            "klicks": false
+            "type": "thema",
+            "image": false,
+            "title": "Cannstatt Study Hour",
+            "meta": [
+                {
+                    "label": "Keine Unterthemen",
+                    "url": false
+                },
+                {
+                    "label": "207 Videos",
+                    "url": false
+                }
+            ]
         },
         {
-            "image": "/images/sample/video-4-160x90.jpg",
-            "title": "Sola Veritas: 11. Neue Wege (1506)",
-            "length": "51:26",
-            "speaker": {
-                "name": "Christopher Kramp",
-                "url": "#"
-            },
-            "date": "25. Mai 2017",
-            "series": false,
-            "klicks": false
+            "type": "thema",
+            "image": false,
+            "title": "Evangelium",
+            "meta": [
+                {
+                    "label": "3 Unterthemen",
+                    "url": false
+                },
+                {
+                    "label": "98 Videos",
+                    "url": false
+                }
+            ]
         },
         {
-            "image": "/images/sample/video-2-160x90.jpg",
-            "title": "Mit Gott leben – Apostelgeschichte 17:25b",
-            "length": "2:34",
-            "speaker": {
-                "name": "Christopher Kramp",
-                "url": "#"
-            },
-            "date": "13. Mai 2017",
-            "klicks": false,
-            "series": false
+            "type": "thema",
+            "image": false,
+            "title": "Evangelistische Vorträge",
+            "meta": [
+                {
+                    "label": "Keine Unterthemen",
+                    "url": false
+                },
+                {
+                    "label": "103 Videos",
+                    "url": false
+                }
+            ]
         },
         {
-            "image": "/images/sample/video-5-160x90.jpg",
-            "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
-            "length": "56:07",
-            "speaker": {
-                "name": "Matthias Ströck",
-                "url": "#"
-            },
-            "date": "5. Juni 2017",
-            "series": false,
-            "klicks": false
+            "type": "thema",
+            "image": false,
+            "title": "Erweckungspredigten",
+            "meta": [
+                {
+                    "label": "Keine Unterthemen",
+                    "url": false
+                },
+                {
+                    "label": "33 Videos",
+                    "url": false
+                }
+            ]
         },
         {
-            "image": "/images/sample/video-1-160x90.jpg",
-            "title": "Der Ersehnte: 63. „An der Zollstätte“",
-            "length": "48:20",
-            "speaker": {
-                "name": "Christopher Kramp",
-                "url": "#"
-            },
-            "date": "25. Mai 2017",
-            "series": false,
-            "klicks": false
+            "type": "thema",
+            "image": false,
+            "title": "Familie, Ehe und Erziehung",
+            "meta": [
+                {
+                    "label": "3 Unterthemen",
+                    "url": false
+                },
+                {
+                    "label": "27 Videos",
+                    "url": false
+                }
+            ]
         },
         {
-            "image": "/images/sample/video-3-160x90.jpg",
-            "title": "Offenbarung 17:9",
-            "length": "38:29",
-            "speaker": {
-                "name": "Christopher Kramp",
-                "url": "#"
-            },
-            "date": "25. Mai 2017",
-            "series": false,
-            "klicks": false
+            "type": "thema",
+            "image": false,
+            "title": "Gesundheit",
+            "meta": [
+                {
+                    "label": "7 Unterthemen",
+                    "url": false
+                },
+                {
+                    "label": "51 Videos",
+                    "url": false
+                }
+            ]
         },
         {
-            "image": "/images/sample/video-4-160x90.jpg",
-            "title": "Sola Veritas: 11. Neue Wege (1506)",
-            "length": "51:26",
-            "speaker": {
-                "name": "Christopher Kramp",
-                "url": "#"
-            },
-            "date": "25. Mai 2017",
-            "series": false,
-            "klicks": false
+            "type": "thema",
+            "image": false,
+            "title": "Glaubenspunkte",
+            "meta": [
+                {
+                    "label": "12 Unterthemen",
+                    "url": false
+                },
+                {
+                    "label": "370 Videos",
+                    "url": false
+                }
+            ]
         },
         {
-            "image": "/images/sample/video-2-160x90.jpg",
-            "title": "Mit Gott leben – Apostelgeschichte 17:25b",
-            "length": "2:34",
-            "speaker": {
-                "name": "Christopher Kramp",
-                "url": "#"
-            },
-            "date": "13. Mai 2017",
-            "klicks": false,
-            "series": false
+            "type": "thema",
+            "image": false,
+            "title": "Neues Testament",
+            "meta": [
+                {
+                    "label": "13 Unterthemen",
+                    "url": false
+                },
+                {
+                    "label": "56 Videos",
+                    "url": false
+                }
+            ]
         }
     ]
 }
