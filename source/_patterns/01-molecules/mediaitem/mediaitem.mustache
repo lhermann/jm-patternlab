@@ -2,8 +2,11 @@
     <div class="o-media__img c-mediaitem__img">
         <a class="c-mediaitem__imglink" href="{{ url }}">
             <img class="c-mediaitem__img" src="{{ image }}"/>
-            {{# length }}<div class="c-mediaitem__length">{{ length }}</div>{{/ length }}
-            {{# count }}<div class="c-mediaitem__count">{{ count }}</div>{{/ count }}
+            {{# length }}
+            <div class="c-mediaitem__length">
+                <div>{{{ length }}}</div>
+            </div>
+            {{/ length }}
         </a>
     </div>
     <div class="o-media__body c-mediaitem__body">

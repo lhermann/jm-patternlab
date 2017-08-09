@@ -2345,6 +2345,20 @@ textarea {
   color: #fff;
   font-size: 60%;
   font-weight: 500; }
+  .c-mediaitem--serie .c-mediaitem__length {
+    left: 0;
+    top: 0;
+    right: 70%;
+    border-radius: 3px 0 0 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .c-mediaitem--serie .c-mediaitem__length > div {
+      width: 100%;
+      text-align: center; }
 
 .c-mediaitem__title {
   color: #4d4d4d; }

@@ -63,6 +63,20 @@
             color: #fff;
             font-size: 60%;
             font-weight: 500;
+
+            .c-mediaitem--serie & {
+                left: 0;
+                top: 0;
+                right: 70%;
+                border-radius: $global-radius 0 0 $global-radius;
+                display: flex;
+                align-items: center;
+
+                > div {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
         }
 
     .c-mediaitem__title {
