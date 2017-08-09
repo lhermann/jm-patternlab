@@ -1,17 +1,20 @@
-<div class="o-media c-mediaitem {{ styleModifier }}">
-    <div class="o-media__img">
+<div class="o-media c-mediaitem {{# type }}c-mediaitem--{{ type }}{{/ type }} {{ styleModifier }}">
+    <div class="o-media__img c-mediaitem__img">
         <a class="c-mediaitem__imglink" href="{{ url }}">
             <img class="c-mediaitem__img" src="{{ image }}"/>
-            <div class="c-mediaitem__length">{{ length }}</div>
+            {{# length }}<div class="c-mediaitem__length">{{ length }}</div>{{/ length }}
+            {{# count }}<div class="c-mediaitem__count">{{ count }}</div>{{/ count }}
         </a>
     </div>
-    <div class="o-media__body">
+    <div class="o-media__body c-mediaitem__body">
         <a class="c-mediaitem__title u-eclipse" href="{{ url }}">{{ title }}</a>
-        <div class="c-mediaitem__meta u-eclipse"><small>
-            <a href="{{ speaker.url }}">{{ speaker.name }}</a>
-            &middot; {{ date }}
-            {{# klicks }} &middot; {{ klicks }} Klicks{{/ klicks }}
-            {{# series }}&middot; Serie: <a href="{{ series.url }}">{{ series.title }}</a>{{/ series }}
-        </small></div>
+        <ul class="c-mediaitem__meta u-eclipse">
+            {{# meta }}
+                <li>
+                    {{# url }}<a href="{{ url }}">{{ label }}</a>{{/ url }}
+                    {{^ url }}{{ label }}{{/ url }}
+                </li>
+            {{/ meta }}
+        </ul>
     </div>
 </div>

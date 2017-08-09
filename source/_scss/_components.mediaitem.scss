@@ -2,29 +2,51 @@
    #MEDIAITEM
    ========================================================================== */
 
+/*
+ * Thumbnail dimensions:
+ * Video:       80x45
+ * Serie:       96x54
+ * Sprecher:    80x80
+ */
+
+/**
+ * 1. Overwriting o-media with flexbox for vertical centering
+ */
 .c-mediaitem {
+    display: flex; /* 1 */
     transition: $global-transition background-color;
     margin-left: -$unit-small;
     border-radius: $global-radius;
     padding: $unit-small;
+    align-items: center; /* 1 */
 
     &:hover {
         background-color: rgba($c-black, .03);
     }
 }
 
-    .c-mediaitem__imglink {
-        display: block;
-        position: relative;
+    .c-mediaitem__img {
+        width: 80px;
+        flex-basis: 80px;
+        flex-shrink: 0;
+
+        .c-mediaitem--serie & {
+            width: 128px;
+            flex-basis: 128px;
+        }
     }
 
-        .c-mediaitem__img {
-            transition: $global-transition box-shadow;
-            border-radius: $global-radius;
-            height: $unit-large;
+        .c-mediaitem__imglink {
+            display: block;
+            position: relative;
 
-            .c-mediaitem:hover & {
-                box-shadow: 0 1px 2px rgba($c-black, .2);
+            > img {
+                transition: $global-transition box-shadow;
+                border-radius: $global-radius;
+
+                .c-mediaitem:hover & {
+                    box-shadow: 0 1px 2px rgba($c-black, .2);
+                }
             }
         }
 
@@ -49,6 +71,16 @@
 
     .c-mediaitem__meta {
         color: $c-textmuted;
+        font-size: 80%;
+        margin-left: 0;
+
+        > li {
+            display: inline-block;
+
+            &:not(:last-child):after {
+                content: "\a0\b7"; /* \b7 is a middot, \a0 is a space */
+            }
+        }
 
         a {
             color: $c-textmuted;

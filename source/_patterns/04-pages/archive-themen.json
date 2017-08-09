@@ -1,0 +1,241 @@
+{
+    "tabs": [
+        {
+            "label": "Videos",
+            "url": "link.pages-archive-videos",
+            "state": ""
+        },
+        {
+            "label": "Serien",
+            "url": "link.pages-archive-serien",
+            "state": ""
+        },
+        {
+            "label": "Sprecher",
+            "url": "link.pages-archive-sprecher",
+            "state": ""
+        },
+        {
+            "label": "Themen",
+            "url": "link.pages-archive-themen",
+            "state": "is-active"
+        }
+    ],
+    "title": "Themen",
+    "filter1": {
+        "title": "Anzahl Videos",
+        "items": [
+            {
+                "label": "bis 15 min",
+                "count": "26"
+            },
+            {
+                "label": "15-30 min",
+                "count": "128"
+            },
+            {
+                "label": "30-45 min",
+                "count": "356"
+            },
+            {
+                "label": "45-60",
+                "count": "56"
+            },
+            {
+                "label": "über 60 min",
+                "count": "27"
+            }
+        ],
+        "showMore?": false
+    },
+    "filter2": {
+        "title": "Sprecher",
+        "items": [
+            {
+                "label": "Christopher Kramp",
+                "count": "1201"
+            },
+            {
+                "label": "Ronny Schreiber",
+                "count": "36"
+            },
+            {
+                "label": "Lukas Hermann",
+                "count": "28"
+            },
+            {
+                "label": "Emanuel Baek",
+                "count": "20"
+            },
+            {
+                "label": "Bogdan Tanase",
+                "count": "17"
+            }
+        ],
+        "showMore?": true
+    },
+    "filter3": {
+        "title": "Serie",
+        "items": [
+            {
+                "label": "Sola Vertias",
+                "count": "26"
+            },
+            {
+                "label": "Jedes Wort",
+                "count": "356"
+            },
+            {
+                "label": "Offenbarung Vers für Vers",
+                "count": "128"
+            },
+            {
+                "label": "Der Ersehnte",
+                "count": "56"
+            },
+            {
+                "label": "Ausweg 2012",
+                "count": "27"
+            }
+        ],
+        "showMore?": true
+    },
+    "sortOptions": [
+        {
+            "label": "Alphabet",
+            "direction": "down",
+            "btnClass": "c-btn--left is-active",
+            "mobile": true
+        },
+        {
+            "label": "Anzahl",
+            "mobile": true
+        },
+        {
+            "label": "Datum",
+            "btnClass": "c-btn--right"
+        }
+    ],
+    "medialist": [
+        {
+            "image": "/images/sample/video-5-160x90.jpg",
+            "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
+            "length": "56:07",
+            "speaker": {
+                "name": "Matthias Ströck",
+                "url": "#"
+            },
+            "date": "5. Juni 2017",
+            "series": false,
+            "klicks": false
+        },
+        {
+            "image": "/images/sample/video-1-160x90.jpg",
+            "title": "Der Ersehnte: 63. „An der Zollstätte“",
+            "length": "48:20",
+            "speaker": {
+                "name": "Christopher Kramp",
+                "url": "#"
+            },
+            "date": "25. Mai 2017",
+            "series": false,
+            "klicks": false
+        },
+        {
+            "image": "/images/sample/video-3-160x90.jpg",
+            "title": "Offenbarung 17:9",
+            "length": "38:29",
+            "speaker": {
+                "name": "Christopher Kramp",
+                "url": "#"
+            },
+            "date": "25. Mai 2017",
+            "series": false,
+            "klicks": false
+        },
+        {
+            "image": "/images/sample/video-4-160x90.jpg",
+            "title": "Sola Veritas: 11. Neue Wege (1506)",
+            "length": "51:26",
+            "speaker": {
+                "name": "Christopher Kramp",
+                "url": "#"
+            },
+            "date": "25. Mai 2017",
+            "series": false,
+            "klicks": false
+        },
+        {
+            "image": "/images/sample/video-2-160x90.jpg",
+            "title": "Mit Gott leben – Apostelgeschichte 17:25b",
+            "length": "2:34",
+            "speaker": {
+                "name": "Christopher Kramp",
+                "url": "#"
+            },
+            "date": "13. Mai 2017",
+            "klicks": false,
+            "series": false
+        },
+        {
+            "image": "/images/sample/video-5-160x90.jpg",
+            "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
+            "length": "56:07",
+            "speaker": {
+                "name": "Matthias Ströck",
+                "url": "#"
+            },
+            "date": "5. Juni 2017",
+            "series": false,
+            "klicks": false
+        },
+        {
+            "image": "/images/sample/video-1-160x90.jpg",
+            "title": "Der Ersehnte: 63. „An der Zollstätte“",
+            "length": "48:20",
+            "speaker": {
+                "name": "Christopher Kramp",
+                "url": "#"
+            },
+            "date": "25. Mai 2017",
+            "series": false,
+            "klicks": false
+        },
+        {
+            "image": "/images/sample/video-3-160x90.jpg",
+            "title": "Offenbarung 17:9",
+            "length": "38:29",
+            "speaker": {
+                "name": "Christopher Kramp",
+                "url": "#"
+            },
+            "date": "25. Mai 2017",
+            "series": false,
+            "klicks": false
+        },
+        {
+            "image": "/images/sample/video-4-160x90.jpg",
+            "title": "Sola Veritas: 11. Neue Wege (1506)",
+            "length": "51:26",
+            "speaker": {
+                "name": "Christopher Kramp",
+                "url": "#"
+            },
+            "date": "25. Mai 2017",
+            "series": false,
+            "klicks": false
+        },
+        {
+            "image": "/images/sample/video-2-160x90.jpg",
+            "title": "Mit Gott leben – Apostelgeschichte 17:25b",
+            "length": "2:34",
+            "speaker": {
+                "name": "Christopher Kramp",
+                "url": "#"
+            },
+            "date": "13. Mai 2017",
+            "klicks": false,
+            "series": false
+        }
+    ]
+}

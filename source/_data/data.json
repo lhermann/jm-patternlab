@@ -17,6 +17,7 @@
     "quoteText" : "A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.",
     "quoteSource" : "<a href='https://en.wikipedia.org/wiki/Block_quotation'>Wikiepedia</a>",
     "image": "../../images/fpo_16x9.png",
+    "label": "Lorem Ipsum",
     "author": {
         "name": "Christopher Kramp",
         "url": "#"
@@ -68,24 +69,24 @@
             "signal": false,
             "label": "Videoarchiv",
             "shortLabel": "Archiv",
-            "url": "link.pages-homepage",
+            "url": "link.pages-archive-videos",
             "hasDropdown": true,
             "dropdown": [
                 {
                     "label": "Videos",
-                    "url": "link.pages-homepage"
+                    "url": "link.pages-archive-videos"
                 },
                 {
                     "label": "Serien",
-                    "url": "link.pages-homepage"
+                    "url": "link.pages-archive-serien"
                 },
                 {
                     "label": "Sprecher",
-                    "url": "link.pages-homepage"
+                    "url": "link.pages-archive-sprecher"
                 },
                 {
                     "label": "Themen",
-                    "url": "link.pages-homepage"
+                    "url": "link.pages-archive-themen"
                 }
             ]
         },
@@ -276,86 +277,28 @@
         {},
         {}
     ],
-    "speaker": {
-        "name": "Matthias Ströck",
-        "url": "#"
-    },
-    "series": {
-        "title": "Die Petrusbriefe (CSH 2017 Q2)",
-        "url": "#"
-    },
     "length": "56:07",
     "klicks": 41,
     "mediaListLong": [
         {
             "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
-            "speaker": {
-                "name": "Matthias Ströck",
-                "url": "#"
-            },
-            "series": {
-                "title": "Die Petrusbriefe (CSH 2017 Q2)",
-                "url": "#"
-            },
-            "date": "5. Juni 2017",
-            "length": "56:07",
-            "klicks": 41
+            "length": "56:07"
         },
         {
             "title": "Der Ersehnte: 63. „An der Zollstätte“",
-            "speaker": {
-                "name": "Christopher Kramp",
-                "url": "#"
-            },
-            "series": {
-                "title": "Der Ersehnte",
-                "url": "#"
-            },
-            "date": "25. Mai 2017",
-            "length": "48:20",
-            "klicks": 311
+            "length": "48:20"
         },
         {
             "title": "Offenbarung 17:9",
-            "speaker": {
-                "name": "Christopher Kramp",
-                "url": "#"
-            },
-            "series": {
-                "title": "Offenbarung Vers für Vers",
-                "url": "#"
-            },
-            "date": "25. Mai 2017",
-            "length": "38:29",
-            "klicks": 269
+            "length": "38:29"
         },
         {
             "title": "Sola Veritas: 11. Neue Wege (1506)",
-            "speaker": {
-                "name": "Christopher Kramp",
-                "url": "#"
-            },
-            "series": {
-                "title": "Sola Veritas - Die wahre Chronik der Reformation",
-                "url": "#"
-            },
-            "date": "25. Mai 2017",
-            "length": "51:26",
-            "klicks": 360
+            "length": "51:26"
         },
         {
             "title": "Mit Gott leben – Apostelgeschichte 17:25b",
-            "speaker": {
-                "name": "Christopher Kramp",
-                "url": "#"
-            },
-            "series": {
-                "title": "Mit Gott Leben",
-                "url": "#"
-            },
-            "date": "13. Mai 2017",
-            "length": "2:34",
-            "klicks": 63
+            "length": "2:34"
         }
     ],
     "blockFeature": true,
@@ -558,48 +501,64 @@
     ],
     "sortOptions": [
         {
-            "label": "Datum",
+            "label": "Lorem",
             "direction": "down",
             "btnClass": "c-btn--left is-active",
             "mobile": true
         },
         {
-            "label": "Beliebtheit",
+            "label": "Ipsum",
             "mobile": true
         },
         {
-            "label": "Sprecher"
-        },
-        {
-            "label": "Serie",
+            "label": "Dolor",
             "btnClass": "c-btn--right"
         }
     ],
     "items": [
         {
-            "url": "#",
             "label": "Lorem ipsum dolor",
-            "count": "12"
+            "count": "197",
+            "checked?": true
         },
         {
-            "url": "#",
             "label": "Mollitia accusamus",
-            "count": "43"
+            "count": "156"
         },
         {
-            "url": "#",
             "label": "Aliquid adipisci Perspiciatis",
-            "count": "8"
+            "count": "83"
         },
         {
-            "url": "#",
             "label": "Adipisicing elit",
-            "count": "17"
+            "count": "47"
         },
         {
-            "url": "#",
             "label": "Sit amet",
+            "count": "26"
+        },
+        {
+            "label": "Voluptates similique",
+            "count": "18"
+        },
+        {
+            "label": "Fugiat ad magnum",
+            "count": "11"
+        },
+        {
+            "label": "Non voluptas",
             "count": "3"
+        }
+    ],
+    "showMore?": true,
+    "meta": [
+        {
+            "label": "Matthias Ströck",
+            "url": "#"
+        },
+        {
+            "label": "5. Juni 2017",
+            "url": false
         }
     ]
 }

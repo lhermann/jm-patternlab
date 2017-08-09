@@ -1,18 +1,28 @@
 <h3 class="u-h4">{{title}}</h3>
-<ul class="o-list-bare">
+<ul class="o-list-bare {{# showMore? }}u-show-more{{/ showMore? }}">
     {{# items }}
-    <li class="u-hover">
-        <a class="c-link c-link--touch" href="{{url}}">
+    <li class="u-hover {{# checked? }}u-active{{/ checked? }}">
+        <button class="c-link c-link--touch">
             <div class="u-eclipse u-margin-right">
-                <span class="u-ic-checkbox"></span>
+                {{# checked? }}<span class="u-ic-checkbox-checked"></span>{{/ checked? }}
+                {{^ checked? }}<span class="u-ic-checkbox"></span>{{/ checked? }}
                 {{label}}
             </div>
             <small class="c-link__float-right u-smaller u-textmuted">{{count}}</small>
-        </a>
+        </button>
     </li>
     {{/ items }}
 </ul>
-<button class="c-btn c-btn--secondary c-btn--tiny c-btn--ghost">
-    <span class="u-ic-plus"></span>
-    <small>mehr anzeigen</small>
+{{# showMore? }}
+<button class="c-btn c-btn--secondary c-btn--tiny c-btn--ghost jsToggle"
+    data-target=".u-show-more" data-class="is-visible">
+    <span>
+        <span class="u-ic-plus"></span>
+        <small>mehr anzeigen</small>
+    </span>
+    <span class="u-hidden">
+        <span class="u-ic-minus"></span>
+        <small>verbergen</small>
+    </span>
 </button>
+{{/ showMore? }}

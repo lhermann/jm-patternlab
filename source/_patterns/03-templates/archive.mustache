@@ -13,17 +13,30 @@
 
                 <div class="o-owl o-owl--small u-border-left u-padding-left
                     u-padding-right u-padding-right-large@desktop">
-                    {{> organisms-checklist }}
+                    {{# filter1 }}
+                        {{> organisms-checklist }}
+                    {{/ filter1 }}
                 </div>
 
                 <div class="o-owl o-owl--small u-border-left u-padding-left
                     u-padding-right u-padding-right-large@desktop">
-                    {{> organisms-checklist }}
+                    {{# filter2 }}
+                        {{> organisms-checklist }}
+                    {{/ filter2 }}
                 </div>
 
                 <div class="o-owl o-owl--small u-border-left u-padding-left
                     u-padding-right u-padding-right-large@desktop">
-                    {{> organisms-checklist }}
+                    {{# filter3 }}
+                        {{> organisms-checklist }}
+                    {{/ filter3 }}
+                </div>
+
+                <div class="o-owl o-owl--small u-border-left u-padding-left
+                    u-padding-right u-padding-right-large@desktop">
+                    {{# filter4 }}
+                        {{> organisms-checklist }}
+                    {{/ filter4 }}
                 </div>
 
             </aside>
@@ -33,7 +46,7 @@
                 <header class="u-padding-left u-margin-bottom-large">
                     <div class="o-pack o-pack--auto o-pack--middle">
                         <div class="o-pack__item">
-                            <h2 class="u-margin-bottom-none">Videos</h2>
+                            <h2 class="u-margin-bottom-none">{{title}}</h2>
                         </div>
                         <div class="o-pack__item u-text-right u-hidden@until-tablet">
                             {{> molecules-sorting }}
@@ -51,8 +64,11 @@
                 </header>
 
                 <div class="u-border-left u-padding-left u-padding-right">
+
                     {{> organisms-medialist:c-medialist--notitle }}
+
                     {{> molecules-pagination:u-margin-top-large }}
+
                 </div>
 
             </div>

@@ -390,7 +390,8 @@ $inuit-fractions: 1 2 3 4 5 7;
     border-left: 1px solid $c-border;
 }
 
-.u-hover {
+.u-hover,
+.u-active {
     margin-right: -$unit-tiny;
     margin-left: -$unit-tiny;
     border-radius: $global-radius;
@@ -398,6 +399,30 @@ $inuit-fractions: 1 2 3 4 5 7;
     padding-left: $unit-tiny;
 }
 
+.u-active {
+    background-color: rgba($c-green, .3);
+}
+
 .u-hover:hover {
     background-color: rgba(0, 0, 0, .03);
+
+    &.u-active {
+        background-color: rgba($c-green, .5);
+    }
 }
+
+/**
+ * Hide all list elements except the first five
+ */
+.u-show-more {
+    > li:nth-child(n + 6) {
+        display: none;
+    }
+
+    &.is-visible {
+        > li {
+            display: initial;
+        }
+    }
+}
+

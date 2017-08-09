@@ -1,3 +1,8 @@
+/**
+ * Overflow controlls horizontal content that is cut off because of the width of
+ * the screen and provides controlls for it
+ */
+
 
 /*
  * Initiate variables

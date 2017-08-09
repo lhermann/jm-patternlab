@@ -1,0 +1,277 @@
+{
+    "tabs": [
+        {
+            "label": "Videos",
+            "url": "link.pages-archive-videos",
+            "state": "is-active"
+        },
+        {
+            "label": "Serien",
+            "url": "link.pages-archive-serien",
+            "state": ""
+        },
+        {
+            "label": "Sprecher",
+            "url": "link.pages-archive-sprecher",
+            "state": ""
+        },
+        {
+            "label": "Themen",
+            "url": "link.pages-archive-themen",
+            "state": ""
+        }
+    ],
+    "title": "Videos",
+    "filter1": {
+        "title": "Serie",
+        "items": [
+            {
+                "checked?": true,
+                "label": "Sola Vertias",
+                "count": "26"
+            },
+            {
+                "label": "Jedes Wort",
+                "count": "356"
+            },
+            {
+                "label": "Offenbarung Vers für Vers",
+                "count": "128"
+            },
+            {
+                "label": "Der Ersehnte",
+                "count": "56"
+            },
+            {
+                "label": "Ausweg 2012",
+                "count": "27"
+            },
+            {
+                "label": "Belebe uns neu",
+                "count": "17"
+            },
+            {
+                "label": "Das Lächeln der Schlange",
+                "count": "5"
+            },
+            {
+                "label": "Das letzte Glied der prophetischen Kette",
+                "count": "4"
+            },
+            {
+                "label": "Der Galaterbrief",
+                "count": "3"
+            },
+            {
+                "label": "Der gesunde Umgang mit Krankheiten",
+                "count": "3"
+            }
+        ],
+        "showMore?": true
+    },
+    "filter2": {
+        "title": "Sprecher",
+        "items": [
+            {
+                "label": "Christopher Kramp",
+                "count": "1201"
+            },
+            {
+                "label": "Ronny Schreiber",
+                "count": "36"
+            },
+            {
+                "label": "Lukas Hermann",
+                "count": "28"
+            },
+            {
+                "label": "Emanuel Baek",
+                "count": "20"
+            },
+            {
+                "label": "Bogdan Tanase",
+                "count": "17"
+            },
+            {
+                "label": "Daniel Pel",
+                "count": "11"
+            },
+            {
+                "label": "Frank Schleipfenbauer",
+                "count": "11"
+            },
+            {
+                "label": "David Meiß",
+                "count": "10"
+            },
+            {
+                "label": "Thomas Kasunic",
+                "count": "10"
+            }
+        ],
+        "showMore?": true
+    },
+    "filter3": {
+        "title": "Thema",
+        "items": [
+            {
+                "label": "Bibel",
+                "count": "521"
+            },
+            {
+                "label": "Bibelstudium",
+                "count": "387"
+            },
+            {
+                "label": "Prophetie",
+                "count": "162"
+            },
+            {
+                "label": "Jesus",
+                "count": "139"
+            },
+            {
+                "label": "Erweckung",
+                "count": "121"
+            },
+            {
+                "label": "Adventgeschichte",
+                "count": "111"
+            },
+            {
+                "label": "Grundlehren der Bibel",
+                "count": "92"
+            },
+            {
+                "label": "Gemeinde",
+                "count": "87"
+            },
+            {
+                "label": "Mission",
+                "count": "83"
+            },
+            {
+                "label": "Theologie",
+                "count": "81"
+            },
+            {
+                "label": "Gesundheit",
+                "count": "61"
+            },
+            {
+                "label": "Christlicher Lebensstil",
+                "count": "28"
+            },
+            {
+                "label": "Zeugnis",
+                "count": "20"
+            },
+            {
+                "label": "Ausbildung",
+                "count": "11"
+            },
+            {
+                "label": "Archäologie",
+                "count": "2"
+            }
+        ],
+        "showMore?": true
+    },
+    "filter4": {
+        "title": "Länge",
+        "items": [
+            {
+                "label": "bis 15 min",
+                "count": "26"
+            },
+            {
+                "label": "15-30 min",
+                "count": "128"
+            },
+            {
+                "label": "30-45 min",
+                "count": "356"
+            },
+            {
+                "label": "45-60",
+                "count": "56"
+            },
+            {
+                "label": "über 60 min",
+                "count": "27"
+            }
+        ],
+        "showMore?": false
+    },
+    "sortOptions": [
+        {
+            "label": "Datum",
+            "direction": "down",
+            "btnClass": "c-btn--left is-active",
+            "mobile": true
+        },
+        {
+            "label": "Beliebtheit",
+            "mobile": true
+        },
+        {
+            "label": "Name"
+        },
+        {
+            "label": "Länge",
+            "btnClass": "c-btn--right"
+        }
+    ],
+    "medialist": [
+        {
+            "image": "/images/sample/video-5-160x90.jpg",
+            "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
+            "length": "56:07"
+        },
+        {
+            "image": "/images/sample/video-1-160x90.jpg",
+            "title": "Der Ersehnte: 63. „An der Zollstätte“",
+            "length": "48:20"
+        },
+        {
+            "image": "/images/sample/video-3-160x90.jpg",
+            "title": "Offenbarung 17:9",
+            "length": "38:29"
+        },
+        {
+            "image": "/images/sample/video-4-160x90.jpg",
+            "title": "Sola Veritas: 11. Neue Wege (1506)",
+            "length": "51:26"
+        },
+        {
+            "image": "/images/sample/video-2-160x90.jpg",
+            "title": "Mit Gott leben – Apostelgeschichte 17:25b",
+            "length": "2:34"
+        },
+        {
+            "image": "/images/sample/video-5-160x90.jpg",
+            "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
+            "length": "56:07"
+        },
+        {
+            "image": "/images/sample/video-1-160x90.jpg",
+            "title": "Der Ersehnte: 63. „An der Zollstätte“",
+            "length": "48:20"
+        },
+        {
+            "image": "/images/sample/video-3-160x90.jpg",
+            "title": "Offenbarung 17:9",
+            "length": "38:29"
+        },
+        {
+            "image": "/images/sample/video-4-160x90.jpg",
+            "title": "Sola Veritas: 11. Neue Wege (1506)",
+            "length": "51:26"
+        },
+        {
+            "image": "/images/sample/video-2-160x90.jpg",
+            "title": "Mit Gott leben – Apostelgeschichte 17:25b",
+            "length": "2:34"
+        }
+    ]
+}

@@ -1,14 +1,22 @@
 {
     "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
-    "speaker": {
-        "name": "Matthias Ströck",
-        "url": "#"
-    },
-    "series": {
-        "title": "Die Petrusbriefe (CSH 2017 Q2)",
-        "url": "#"
-    },
-    "date": "5. Juni 2017",
     "length": "56:07",
-    "klicks": 41
+    "meta": [
+        {
+            "label": "Matthias Ströck",
+            "url": "#"
+        },
+        {
+            "label": "5. Juni 2017",
+            "url": false
+        },
+        {
+            "label": "41 Klicks",
+            "url": false
+        },
+        {
+            "label": "Serie: 213 Die Petrusbriefe (CSH 2017 Q2)",
+            "url": "#"
+        }
+    ]
 }

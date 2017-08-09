@@ -2,10 +2,20 @@
    #LINKS
    ========================================================================== */
 
+/**
+ * 1. Remove button styling
+ */
 .c-link {
     display: inline-block;
+    border: 0;            /* 1 */
+    background: none;     /* 1 */
+    cursor: pointer;      /* 1 */
+    padding: 0;           /* 1 */
     width: 100%;
+    text-align: inherit;  /* 1 */
+    line-height: inherit; /* 1 */
     color: $c-text;
+    font-weight: inherit; /* 1 */
 }
 
 .c-link--touch {

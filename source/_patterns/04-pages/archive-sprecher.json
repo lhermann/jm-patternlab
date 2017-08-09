@@ -1,0 +1,274 @@
+{
+    "tabs": [
+        {
+            "label": "Videos",
+            "url": "link.pages-archive-videos",
+            "state": ""
+        },
+        {
+            "label": "Serien",
+            "url": "link.pages-archive-serien",
+            "state": ""
+        },
+        {
+            "label": "Sprecher",
+            "url": "link.pages-archive-sprecher",
+            "state": "is-active"
+        },
+        {
+            "label": "Themen",
+            "url": "link.pages-archive-themen"
+        }
+    ],
+    "title": "Sprecher",
+    "filter1": {
+        "title": "Anzahl Videos",
+        "items": [
+            {
+                "label": "bis 15 min",
+                "count": "26"
+            },
+            {
+                "label": "15-30 min",
+                "count": "128"
+            },
+            {
+                "label": "30-45 min",
+                "count": "356"
+            },
+            {
+                "label": "45-60",
+                "count": "56"
+            },
+            {
+                "label": "über 60 min",
+                "count": "27"
+            }
+        ],
+        "showMore?": false
+    },
+    "filter2": {
+        "title": "Serie",
+        "items": [
+            {
+                "label": "Sola Vertias",
+                "count": "26"
+            },
+            {
+                "label": "Jedes Wort",
+                "count": "356"
+            },
+            {
+                "label": "Offenbarung Vers für Vers",
+                "count": "128"
+            },
+            {
+                "label": "Der Ersehnte",
+                "count": "56"
+            },
+            {
+                "label": "Ausweg 2012",
+                "count": "27"
+            },
+            {
+                "label": "Belebe uns neu",
+                "count": "17"
+            },
+            {
+                "label": "Das Lächeln der Schlange",
+                "count": "5"
+            },
+            {
+                "label": "Das letzte Glied der prophetischen Kette",
+                "count": "4"
+            },
+            {
+                "label": "Der Galaterbrief",
+                "count": "3"
+            },
+            {
+                "label": "Der gesunde Umgang mit Krankheiten",
+                "count": "3"
+            }
+        ],
+        "showMore?": true
+    },
+    "sortOptions": [
+        {
+            "label": "Alphabet",
+            "direction": "down",
+            "btnClass": "c-btn--left is-active",
+            "mobile": true
+        },
+        {
+            "label": "Anzahl",
+            "mobile": true
+        },
+        {
+            "label": "Datum",
+            "btnClass": "c-btn--right"
+        }
+    ],
+    "medialist": [
+        {
+            "type": "sprecher",
+            "image": "/images/sample/sprecher-1-160x160.jpg",
+            "title": "Christopher Kramp",
+            "length": false,
+            "meta": [
+                {
+                    "label": "1214 Videos",
+                    "url": "#"
+                },
+                {
+                    "label": "50 Serien",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "type": "sprecher",
+            "image": "/images/sample/sprecher-2-160x160.jpg",
+            "title": "Eric Flickenger",
+            "length": false,
+            "meta": [
+                {
+                    "label": "3 Videos",
+                    "url": "#"
+                },
+                {
+                    "label": "1 Serie",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "type": "sprecher",
+            "image": "/images/sample/sprecher-3-160x160.jpg",
+            "title": "Laura Fantasia",
+            "length": false,
+            "meta": [
+                {
+                    "label": "1 Video",
+                    "url": "#"
+                },
+                {
+                    "label": "1 Serie",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "type": "sprecher",
+            "image": "/images/sample/sprecher-4-160x160.jpg",
+            "title": "Ronny Schreiber",
+            "length": false,
+            "meta": [
+                {
+                    "label": "36 Videos",
+                    "url": "#"
+                },
+                {
+                    "label": "12 Serien",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "type": "sprecher",
+            "image": "/images/sample/sprecher-5-160x160.jpg",
+            "title": "Steven Bohr",
+            "length": false,
+            "meta": [
+                {
+                    "label": "3 Videos",
+                    "url": "#"
+                },
+                {
+                    "label": "1 Serie",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "type": "sprecher",
+            "image": "/images/sample/sprecher-1-160x160.jpg",
+            "title": "Christopher Kramp",
+            "length": false,
+            "meta": [
+                {
+                    "label": "1214 Videos",
+                    "url": "#"
+                },
+                {
+                    "label": "50 Serien",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "type": "sprecher",
+            "image": "/images/sample/sprecher-2-160x160.jpg",
+            "title": "Eric Flickenger",
+            "length": false,
+            "meta": [
+                {
+                    "label": "3 Videos",
+                    "url": "#"
+                },
+                {
+                    "label": "1 Serie",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "type": "sprecher",
+            "image": "/images/sample/sprecher-3-160x160.jpg",
+            "title": "Laura Fantasia",
+            "length": false,
+            "meta": [
+                {
+                    "label": "1 Video",
+                    "url": "#"
+                },
+                {
+                    "label": "1 Serie",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "type": "sprecher",
+            "image": "/images/sample/sprecher-4-160x160.jpg",
+            "title": "Ronny Schreiber",
+            "length": false,
+            "meta": [
+                {
+                    "label": "36 Videos",
+                    "url": "#"
+                },
+                {
+                    "label": "12 Serien",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "type": "sprecher",
+            "image": "/images/sample/sprecher-5-160x160.jpg",
+            "title": "Steven Bohr",
+            "length": false,
+            "meta": [
+                {
+                    "label": "3 Videos",
+                    "url": "#"
+                },
+                {
+                    "label": "1 Serie",
+                    "url": "#"
+                }
+            ]
+        }
+    ]
+}

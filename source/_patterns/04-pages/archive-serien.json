@@ -1,0 +1,385 @@
+{
+    "tabs": [
+        {
+            "label": "Videos",
+            "url": "link.pages-archive-videos",
+            "state": ""
+        },
+        {
+            "label": "Serien",
+            "url": "link.pages-archive-serien",
+            "state": "is-active"
+        },
+        {
+            "label": "Sprecher",
+            "url": "link.pages-archive-sprecher"
+        },
+        {
+            "label": "Themen",
+            "url": "link.pages-archive-themen"
+        }
+    ],
+    "title": "Serien",
+    "filter1": {
+        "title": "Sprecher",
+        "items": [
+            {
+                "label": "Christopher Kramp",
+                "count": "1201"
+            },
+            {
+                "label": "Ronny Schreiber",
+                "count": "36"
+            },
+            {
+                "label": "Lukas Hermann",
+                "count": "28"
+            },
+            {
+                "label": "Emanuel Baek",
+                "count": "20"
+            },
+            {
+                "label": "Bogdan Tanase",
+                "count": "17"
+            },
+            {
+                "label": "Daniel Pel",
+                "count": "11"
+            },
+            {
+                "label": "Frank Schleipfenbauer",
+                "count": "11"
+            },
+            {
+                "label": "David Meiß",
+                "count": "10"
+            },
+            {
+                "label": "Thomas Kasunic",
+                "count": "10"
+            }
+        ],
+        "showMore?": true
+    },
+    "filter2": {
+        "title": "Thema",
+        "items": [
+            {
+                "label": "Bibel",
+                "count": "521"
+            },
+            {
+                "label": "Bibelstudium",
+                "count": "387"
+            },
+            {
+                "label": "Prophetie",
+                "count": "162"
+            },
+            {
+                "label": "Jesus",
+                "count": "139"
+            },
+            {
+                "label": "Erweckung",
+                "count": "121"
+            },
+            {
+                "label": "Adventgeschichte",
+                "count": "111"
+            },
+            {
+                "label": "Grundlehren der Bibel",
+                "count": "92"
+            },
+            {
+                "label": "Gemeinde",
+                "count": "87"
+            },
+            {
+                "label": "Mission",
+                "count": "83"
+            },
+            {
+                "label": "Theologie",
+                "count": "81"
+            },
+            {
+                "label": "Gesundheit",
+                "count": "61"
+            },
+            {
+                "label": "Christlicher Lebensstil",
+                "count": "28"
+            },
+            {
+                "label": "Zeugnis",
+                "count": "20"
+            },
+            {
+                "label": "Ausbildung",
+                "count": "11"
+            },
+            {
+                "label": "Archäologie",
+                "count": "2"
+            }
+        ],
+        "showMore?": true
+    },
+    "filter3": {
+        "title": "Anzahl Videos",
+        "items": [
+            {
+                "label": "bis 15 min",
+                "count": "26"
+            },
+            {
+                "label": "15-30 min",
+                "count": "128"
+            },
+            {
+                "label": "30-45 min",
+                "count": "356"
+            },
+            {
+                "label": "45-60",
+                "count": "56"
+            },
+            {
+                "label": "über 60 min",
+                "count": "27"
+            }
+        ],
+        "showMore?": false
+    },
+    "sortOptions": [
+        {
+            "label": "Name",
+            "direction": "down",
+            "btnClass": "c-btn--left is-active",
+            "mobile": true
+        },
+        {
+            "label": "Anzahl Videos",
+            "mobile": true
+        },
+        {
+            "label": "Neuheit",
+            "btnClass": "c-btn--right"
+        }
+    ],
+    "medialist": [
+        {
+            "type": "serie",
+            "image": "/images/sample/serie-6-256x144.jpg",
+            "title": "Schafft Wissen schaft Wissen?",
+            "meta": [
+                {
+                    "label": "3 Videos",
+                    "url": false
+                },
+                {
+                    "label": "Ronny Schreiber",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "type": "serie",
+            "image": "/images/sample/serie-7-256x144.jpg",
+            "title": "Auswerg 2012",
+            "meta": [
+                {
+                    "label": "27 Videos",
+                    "url": false
+                },
+                {
+                    "label": "Christopher Kramp",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "type": "serie",
+            "image": "/images/sample/serie-8-256x144.jpg",
+            "title": "Belebe uns neu",
+            "meta": [
+                {
+                    "label": "12 Videos",
+                    "url": false
+                },
+                {
+                    "label": "Taj Pacleb",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "type": "serie",
+            "image": "/images/sample/serie-1-256x144.jpg",
+            "title": "Der Ersehnte",
+            "meta": [
+                {
+                    "label": "56 Videos",
+                    "url": false
+                },
+                {
+                    "label": "Christopher Kramp",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "type": "serie",
+            "image": "/images/sample/serie-2-256x144.jpg",
+            "title": "Mit Gott leben",
+            "meta": [
+                {
+                    "label": "129 Videos",
+                    "url": false
+                },
+                {
+                    "label": "Christopher Kramp",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "type": "serie",
+            "image": "/images/sample/serie-3-256x144.jpg",
+            "title": "Offenbarung Vers für Vers",
+            "meta": [
+                {
+                    "label": "187 Videos",
+                    "url": false
+                },
+                {
+                    "label": "Christopher Kramp",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "type": "serie",
+            "image": "/images/sample/serie-4-256x144.jpg",
+            "title": "Sola Veritas",
+            "meta": [
+                {
+                    "label": "36 Videos",
+                    "url": false
+                },
+                {
+                    "label": "Christopher Kramp",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "type": "serie",
+            "image": "/images/sample/serie-6-256x144.jpg",
+            "title": "Schafft Wissen schaft Wissen?",
+            "meta": [
+                {
+                    "label": "3 Videos",
+                    "url": false
+                },
+                {
+                    "label": "Ronny Schreiber",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "type": "serie",
+            "image": "/images/sample/serie-7-256x144.jpg",
+            "title": "Auswerg 2012",
+            "meta": [
+                {
+                    "label": "27 Videos",
+                    "url": false
+                },
+                {
+                    "label": "Christopher Kramp",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "type": "serie",
+            "image": "/images/sample/serie-8-256x144.jpg",
+            "title": "Belebe uns neu",
+            "meta": [
+                {
+                    "label": "12 Videos",
+                    "url": false
+                },
+                {
+                    "label": "Taj Pacleb",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "type": "serie",
+            "image": "/images/sample/serie-1-256x144.jpg",
+            "title": "Der Ersehnte",
+            "meta": [
+                {
+                    "label": "56 Videos",
+                    "url": false
+                },
+                {
+                    "label": "Christopher Kramp",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "type": "serie",
+            "image": "/images/sample/serie-2-256x144.jpg",
+            "title": "Mit Gott leben",
+            "meta": [
+                {
+                    "label": "129 Videos",
+                    "url": false
+                },
+                {
+                    "label": "Christopher Kramp",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "type": "serie",
+            "image": "/images/sample/serie-3-256x144.jpg",
+            "title": "Offenbarung Vers für Vers",
+            "meta": [
+                {
+                    "label": "187 Videos",
+                    "url": false
+                },
+                {
+                    "label": "Christopher Kramp",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "type": "serie",
+            "image": "/images/sample/serie-4-256x144.jpg",
+            "title": "Sola Veritas",
+            "meta": [
+                {
+                    "label": "36 Videos",
+                    "url": false
+                },
+                {
+                    "label": "Christopher Kramp",
+                    "url": "#"
+                }
+            ]
+        }
+    ]
+}
