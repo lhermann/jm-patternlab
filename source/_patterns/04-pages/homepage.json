@@ -15,79 +15,29 @@
                     "title": "Neue Videos",
                     "medialist": [
                         {
-                            "image": "/images/sample/video-5-160x90.jpg",
-                            "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
-                            "length": "56:07",
-                            "meta": [
-                                {
-                                    "label": "Matthias Ströck",
-                                    "url": "#"
-                                },
-                                {
-                                    "label": "5. Juni 2017",
-                                    "url": false
-                                }
-                            ]
+                            "image": "/images/sample/video-1-192x108.jpg",
+                            "title": "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
+                            "length": "56:07"
                         },
                         {
-                            "image": "/images/sample/video-1-160x90.jpg",
-                            "title": "Der Ersehnte: 63. „An der Zollstätte“",
-                            "length": "48:20",
-                            "meta": [
-                                {
-                                    "label": "Christopher Kramp",
-                                    "url": "#"
-                                },
-                                {
-                                    "label": "25. Mai 2017",
-                                    "url": false
-                                }
-                            ]
-                        },
-                        {
-                            "image": "/images/sample/video-3-160x90.jpg",
-                            "title": "Offenbarung 17:9",
-                            "length": "38:29",
-                            "meta": [
-                                {
-                                    "label": "Christopher Kramp",
-                                    "url": "#"
-                                },
-                                {
-                                    "label": "24. Mai 2017",
-                                    "url": false
-                                }
-                            ]
-                        },
-                        {
-                            "image": "/images/sample/video-4-160x90.jpg",
+                            "image": "/images/sample/video-2-192x108.jpg",
                             "title": "Sola Veritas: 11. Neue Wege (1506)",
-                            "length": "51:26",
-                            "meta": [
-                                {
-                                    "label": "Christopher Kramp",
-                                    "url": "#"
-                                },
-                                {
-                                    "label": "11. Mai 2017",
-                                    "url": false
-                                }
-                            ]
+                            "length": "48:20"
                         },
                         {
-                            "image": "/images/sample/video-2-160x90.jpg",
+                            "image": "/images/sample/video-3-192x108.jpg",
+                            "title": "Offenbarung 17:9",
+                            "length": "38:29"
+                        },
+                        {
+                            "image": "/images/sample/video-4-192x108.jpg",
                             "title": "Mit Gott leben – Apostelgeschichte 17:25b",
-                            "length": "2:34",
-                            "meta": [
-                                {
-                                    "label": "Christopher Kramp",
-                                    "url": "#"
-                                },
-                                {
-                                    "label": "13. Feb 2017",
-                                    "url": false
-                                }
-                            ]
+                            "length": "51:26"
+                        },
+                        {
+                            "image": "/images/sample/video-5-192x108.jpg",
+                            "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
+                            "length": "2:34"
                         }
                     ]
                 }
@@ -249,62 +199,32 @@
         },
         "date": "7. März 2017"
     },
-    "newVideosList": {
-        "title": "Neue Videos",
-        "medialist": [
-            {
-                "image": "/images/sample/video-5-160x90.jpg",
-                "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
-                "length": "56:07"
-            },
-            {
-                "image": "/images/sample/video-1-160x90.jpg",
-                "title": "Der Ersehnte: 63. „An der Zollstätte“",
-                "length": "48:20"
-            },
-            {
-                "image": "/images/sample/video-3-160x90.jpg",
-                "title": "Offenbarung 17:9",
-                "length": "38:29"
-            },
-            {
-                "image": "/images/sample/video-4-160x90.jpg",
-                "title": "Sola Veritas: 11. Neue Wege (1506)",
-                "length": "51:26"
-            },
-            {
-                "image": "/images/sample/video-2-160x90.jpg",
-                "title": "Mit Gott leben – Apostelgeschichte 17:25b",
-                "length": "2:34"
-            }
-        ]
-    },
     "popularVideosList": {
         "title": "Beliebte Videos",
         "medialist": [
             {
-                "image": "/images/sample/video-5-160x90.jpg",
-                "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
+                "image": "/images/sample/video-1-192x108.jpg",
+                "title": "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
                 "length": "56:07"
             },
             {
-                "image": "/images/sample/video-1-160x90.jpg",
-                "title": "Der Ersehnte: 63. „An der Zollstätte“",
+                "image": "/images/sample/video-2-192x108.jpg",
+                "title": "Sola Veritas: 11. Neue Wege (1506)",
                 "length": "48:20"
             },
             {
-                "image": "/images/sample/video-3-160x90.jpg",
+                "image": "/images/sample/video-3-192x108.jpg",
                 "title": "Offenbarung 17:9",
                 "length": "38:29"
             },
             {
-                "image": "/images/sample/video-4-160x90.jpg",
-                "title": "Sola Veritas: 11. Neue Wege (1506)",
+                "image": "/images/sample/video-4-192x108.jpg",
+                "title": "Mit Gott leben – Apostelgeschichte 17:25b",
                 "length": "51:26"
             },
             {
-                "image": "/images/sample/video-2-160x90.jpg",
-                "title": "Mit Gott leben – Apostelgeschichte 17:25b",
+                "image": "/images/sample/video-5-192x108.jpg",
+                "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
                 "length": "2:34"
             }
         ]
@@ -313,29 +233,68 @@
         "title": "Neue Serien",
         "medialist": [
             {
-                "image": "/images/sample/video-5-160x90.jpg",
-                "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
-                "length": "56:07"
+                "type": "serie",
+                "image": "/images/sample/serie-6-256x144.jpg",
+                "title": "Schafft Wissen schaft Wissen?",
+                "length": "<strong class=\"u-default\">3</strong> Videos",
+                "meta": [
+                    {
+                        "label": "3 Videos",
+                        "url": false
+                    },
+                    {
+                        "label": "Ronny Schreiber",
+                        "url": "#"
+                    }
+                ]
             },
             {
-                "image": "/images/sample/video-1-160x90.jpg",
-                "title": "Der Ersehnte: 63. „An der Zollstätte“",
-                "length": "48:20"
+                "type": "serie",
+                "image": "/images/sample/serie-7-256x144.jpg",
+                "title": "Auswerg 2012",
+                "length": "<strong class=\"u-default\">27</strong> Videos",
+                "meta": [
+                    {
+                        "label": "27 Videos",
+                        "url": false
+                    },
+                    {
+                        "label": "Christopher Kramp",
+                        "url": "#"
+                    }
+                ]
             },
             {
-                "image": "/images/sample/video-3-160x90.jpg",
-                "title": "Offenbarung 17:9",
-                "length": "38:29"
+                "type": "serie",
+                "image": "/images/sample/serie-8-256x144.jpg",
+                "title": "Belebe uns neu",
+                "length": "<strong class=\"u-default\">12</strong> Videos",
+                "meta": [
+                    {
+                        "label": "12 Videos",
+                        "url": false
+                    },
+                    {
+                        "label": "Taj Pacleb",
+                        "url": "#"
+                    }
+                ]
             },
             {
-                "image": "/images/sample/video-4-160x90.jpg",
-                "title": "Sola Veritas: 11. Neue Wege (1506)",
-                "length": "51:26"
-            },
-            {
-                "image": "/images/sample/video-2-160x90.jpg",
-                "title": "Mit Gott leben – Apostelgeschichte 17:25b",
-                "length": "2:34"
+                "type": "serie",
+                "image": "/images/sample/serie-1-256x144.jpg",
+                "title": "Der Ersehnte",
+                "length": "<strong class=\"u-default\">56</strong> Videos",
+                "meta": [
+                    {
+                        "label": "56 Videos",
+                        "url": false
+                    },
+                    {
+                        "label": "Christopher Kramp",
+                        "url": "#"
+                    }
+                ]
             }
         ]
     },
@@ -343,27 +302,27 @@
         "title": "Tägliche Andachten",
         "medialist": [
             {
-                "image": "/images/sample/video-2-160x90.jpg",
+                "image": "/images/sample/video-4-192x108.jpg",
                 "title": "Mit Gott leben – Psalm 37:3",
                 "length": "56:07"
             },
             {
-                "image": "/images/sample/video-2-160x90.jpg",
+                "image": "/images/sample/video-4-192x108.jpg",
                 "title": "Mit Gott leben – Prediger 12:13",
                 "length": "48:20"
             },
             {
-                "image": "/images/sample/video-2-160x90.jpg",
+                "image": "/images/sample/video-4-192x108.jpg",
                 "title": "Mit Gott leben – Matthäus 25:23",
                 "length": "38:29"
             },
             {
-                "image": "/images/sample/video-2-160x90.jpg",
+                "image": "/images/sample/video-4-192x108.jpg",
                 "title": "Mit Gott leben – 1. Chronik 16:10",
                 "length": "51:26"
             },
             {
-                "image": "/images/sample/video-2-160x90.jpg",
+                "image": "/images/sample/video-4-192x108.jpg",
                 "title": "Mit Gott leben – Apostelgeschichte 17:25b",
                 "length": "2:34"
             }

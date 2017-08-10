@@ -23,32 +23,6 @@
     ],
     "title": "Themen",
     "filter1": {
-        "title": "Anzahl Videos",
-        "items": [
-            {
-                "label": "bis 5",
-                "count": "26"
-            },
-            {
-                "label": "5-10",
-                "count": "128"
-            },
-            {
-                "label": "10-20",
-                "count": "356"
-            },
-            {
-                "label": "20-100",
-                "count": "56"
-            },
-            {
-                "label": "über 100",
-                "count": "27"
-            }
-        ],
-        "showMore?": false
-    },
-    "filter2": {
         "title": "Sprecher",
         "items": [
             {
@@ -74,7 +48,7 @@
         ],
         "showMore?": true
     },
-    "filter3": {
+    "filter2": {
         "title": "Serie",
         "items": [
             {
@@ -99,6 +73,32 @@
             }
         ],
         "showMore?": true
+    },
+    "filter3": {
+        "title": "Anzahl Videos",
+        "items": [
+            {
+                "label": "bis 5",
+                "count": "26"
+            },
+            {
+                "label": "5-10",
+                "count": "128"
+            },
+            {
+                "label": "10-20",
+                "count": "356"
+            },
+            {
+                "label": "20-100",
+                "count": "56"
+            },
+            {
+                "label": "über 100",
+                "count": "27"
+            }
+        ],
+        "showMore?": false
     },
     "sortOptions": [
         {

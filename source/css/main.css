@@ -2284,9 +2284,9 @@ textarea {
    ========================================================================== */
 /*
  * Thumbnail dimensions:
- * Video:       80x45
- * Serie:       96x54
- * Sprecher:    80x80
+ * Video:       96x54       192x108
+ * Serie:       128x72      256x144
+ * Sprecher:    80x80       160x160
  */
 /**
  * 1. Overwriting o-media with flexbox for vertical centering
@@ -2310,15 +2310,22 @@ textarea {
 
 .c-mediaitem__img {
   margin-right: 21px;
-  width: 80px;
-  -ms-flex-preferred-size: 80px;
-      flex-basis: 80px;
+  width: 96px;
+  -ms-flex-preferred-size: 96px;
+      flex-basis: 96px;
   -ms-flex-negative: 0;
-      flex-shrink: 0; }
+      flex-shrink: 0;
+  height: 54px; }
   .c-mediaitem--serie .c-mediaitem__img {
     width: 128px;
     -ms-flex-preferred-size: 128px;
-        flex-basis: 128px; }
+        flex-basis: 128px;
+    height: 72px; }
+  .c-mediaitem--sprecher .c-mediaitem__img {
+    width: 80px;
+    -ms-flex-preferred-size: 80px;
+        flex-basis: 80px;
+    height: 80px; }
   .c-mediaitem--thema .c-mediaitem__img {
     width: auto;
     -ms-flex-preferred-size: auto;

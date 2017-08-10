@@ -9,7 +9,7 @@ ie:
     - swp
 # ignore directories
 id:
-    - scss
+    - .git
     - .svn
     - .sass-cache
     - node_modules

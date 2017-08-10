@@ -4,10 +4,13 @@
 
 /*
  * Thumbnail dimensions:
- * Video:       80x45
- * Serie:       96x54
- * Sprecher:    80x80
+ * Video:       96x54       192x108
+ * Serie:       128x72      256x144
+ * Sprecher:    80x80       160x160
  */
+$width-video:    (96px 54px);
+$width-serie:    (128px 72px);
+$width-sprecher: (80px 80px);
 
 /**
  * 1. Overwriting o-media with flexbox for vertical centering
@@ -27,13 +30,21 @@
 
     .c-mediaitem__img {
         margin-right: $unit;
-        width: 80px;
-        flex-basis: 80px;
+        width: nth($width-video, 1);
+        flex-basis: nth($width-video, 1);
         flex-shrink: 0;
+        height: nth($width-video, 2);
 
         .c-mediaitem--serie & {
-            width: 128px;
-            flex-basis: 128px;
+            width: nth($width-serie, 1);
+            flex-basis: nth($width-serie, 1);
+            height: nth($width-serie, 2);
+        }
+
+        .c-mediaitem--sprecher & {
+            width: nth($width-sprecher, 1);
+            flex-basis: nth($width-sprecher, 1);
+            height: nth($width-sprecher, 2);
         }
 
         .c-mediaitem--thema & {
