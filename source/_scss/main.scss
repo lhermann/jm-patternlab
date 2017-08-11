@@ -289,26 +289,6 @@ $inuit-offsets: false;
 $inuit-fractions: 1 2 3 4 5 7;
 @import "../node_modules/inuitcss/utilities/utilities.widths";
 @import "../node_modules/inuitcss/utilities/utilities.headings";
-// $inuit-responsive-spacing-directions: (
-//   null: null,
-//   "-top": "-top",
-//   "-right": "-right",
-//   "-bottom": "-bottom",
-//   "-left": "-left"
-// );
-// $inuit-responsive-spacing-properties: (
-//   "margin": "margin",
-//   "padding": "padding"
-// );
-// $inuit-responsive-spacing-sizes: (
-//   null: $inuit-global-spacing-unit,
-//   '-tiny': $unit-tiny,
-//   '-small': $unit-small,
-//   '-large': $unit-large,
-//   '-huge': $unit-huge,
-//   '-none': 0
-// );
-// @import "../node_modules/inuitcss/utilities/utilities.responsive-spacings";
 @import "utilities.responsive-spacings";
 @import "../node_modules/inuitcss/utilities/utilities.print";
 @import "../node_modules/inuitcss/utilities/utilities.hide";

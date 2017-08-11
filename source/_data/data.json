@@ -18,6 +18,7 @@
     "quoteSource" : "<a href='https://en.wikipedia.org/wiki/Block_quotation'>Wikiepedia</a>",
     "image": "../../images/fpo_16x9.png",
     "label": "Lorem Ipsum",
+    "class": "",
     "author": {
         "name": "Christopher Kramp",
         "url": "#"

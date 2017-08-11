@@ -2016,6 +2016,8 @@ textarea {
   color: #4d4d4d;
   font-weight: inherit;
   /* 1 */ }
+  .c-link.is-active {
+    font-weight: 500; }
 
 @media (max-width: 61.24em) {
   .c-link--touch {
@@ -2095,11 +2097,11 @@ textarea {
   @media (min-width: 46.25em) {
     .c-site-footer__nav:after {
       position: absolute;
-      content: "";
+      top: 0;
+      left: 73%;
       border-left: 1px solid #666;
       height: 100%;
-      left: 73%;
-      top: 0; } }
+      content: ""; } }
 
 .c-site-footer__hr {
   margin: 21px -21px;
@@ -2113,9 +2115,9 @@ textarea {
   font-size: 18px;
   font-size: 1.28571rem;
   line-height: 1.16667;
-  font-weight: 600;
   margin-bottom: 11px;
-  color: #f0f0f0; }
+  color: #f0f0f0;
+  font-weight: 600; }
 
 .c-site-footer__list {
   margin-left: 0;
@@ -2124,6 +2126,11 @@ textarea {
     color: #b6b6b6; }
     .c-site-footer__list a:focus, .c-site-footer__list a:hover {
       color: #e8e8e8; }
+  .c-site-footer__list--inline > li {
+    display: inline-block; }
+  .c-site-footer__list--middot > li:not(:last-child):after {
+    padding: 0 5px;
+    content: "\0a\b7"; }
 
 /* ==========================================================================
    #PRIMARY-NAV
