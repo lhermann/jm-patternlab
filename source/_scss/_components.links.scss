@@ -16,6 +16,10 @@
     line-height: inherit; /* 1 */
     color: $c-text;
     font-weight: inherit; /* 1 */
+
+    &.is-active {
+        font-weight: 500;
+    }
 }
 
 .c-link--touch {
