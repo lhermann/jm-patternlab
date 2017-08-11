@@ -2335,11 +2335,13 @@ textarea {
    #MEDIA-PROMO
    ========================================================================== */
 .c-media-promo {
-  transition: 0.33333s border-color;
+  transition: 0.33333s border-color, 0.33333s opacity;
   border: 1px solid transparent;
   border-radius: 3px; }
   .c-media-promo:focus, .c-media-promo:hover {
     border-color: #e8e8e8; }
+  .c-media-promo.is-faded {
+    opacity: .25; }
 
 .c-media-promo__head {
   position: relative; }
@@ -2377,8 +2379,6 @@ textarea {
   .c-media-promo__img > img {
     border-radius: 3px;
     width: 100%; }
-  .c-media-promo:focus .c-media-promo__img, .c-media-promo:hover .c-media-promo__img {
-    opacity: .8; }
 
 /* ==========================================================================
    #ARTICLE-GRID
