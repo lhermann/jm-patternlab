@@ -281,8 +281,6 @@ $slide-duration: 3s;
 
 // UTILITIES
 @import "../node_modules/inuitcss/utilities/utilities.clearfix";
-$inuit-offsets: false;
-$inuit-fractions: 1 2 3 4 5 7;
 @import "../node_modules/inuitcss/utilities/utilities.widths";
 @import "../node_modules/inuitcss/utilities/utilities.headings";
 @import "utilities.responsive-spacings";

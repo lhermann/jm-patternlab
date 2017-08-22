@@ -10,8 +10,8 @@ $global-transition: (1/3) + s !default;
 $global-shadow: 0 2px 3px rgba(0, 0, 0, .2) !default;
 
 $inuit-offsets: true;
+$inuit-fractions: 1 2 3 4 5 6 7;
 $inuit-wrapper-width: 1200px;
-$inuit-fractions: 1 2 3 4 5 !default;
 
 $inuit-responsive-spacing-directions: (
   null: null,
