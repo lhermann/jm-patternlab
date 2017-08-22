@@ -177,19 +177,16 @@ hr {
 // OBJECTS
 //
 // Uncomment and add to this section as necessary.
-$inuit-wrapper-width: 1200px;
 @import "../node_modules/inuitcss/objects/objects.wrapper";
 @import "../node_modules/inuitcss/objects/objects.layout";
 @import "../node_modules/inuitcss/objects/objects.media";
 @import "../node_modules/inuitcss/objects/objects.flag";
 @import "../node_modules/inuitcss/objects/objects.list-bare";
-$inuit-list-inline-delimiter: "\00A0\00A0\00b7\00A0\00A0";
 @import "../node_modules/inuitcss/objects/objects.list-inline";
 @import "../node_modules/inuitcss/objects/objects.box";
 @import "../node_modules/inuitcss/objects/objects.block";
 @import "../node_modules/inuitcss/objects/objects.ratio";
 @import "../node_modules/inuitcss/objects/objects.crop";
-// @import "../node_modules/inuitcss/objects/objects.tables";
 @import "../node_modules/inuitcss/objects/objects.pack";
 @import "objects.overflow";
 @import "objects.owl";
@@ -253,7 +250,6 @@ $header-height: 56px;
 @import "components.section";
 @import "components.badge";
 @import "components.links";
-
 @import "components.site-header";
 @import "components.site-footer";
 @import "components.primary-nav";

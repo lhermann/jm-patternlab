@@ -6,34 +6,30 @@
 
         {{> molecules-tabs:o-break-wrapper@until-tablet }}
 
-        <section class="o-layout o-layout--flush u-margin-top o-break-wrapper@until-tablet">
+        <section class="o-layout o-layout--flush u-mt o-break-wrapper@until-tablet">
             <aside class="o-layout__item o-owl u-1/4 u-hidden@until-tablet">
 
-                <h2 class="u-margin-left u-margin-bottom-large">Filter</h2>
+                <h2 class="u-ml u-mb+">Filter</h2>
 
-                <div class="o-owl o-owl--small u-border-left u-padding-left
-                    u-padding-right u-padding-right-large@desktop">
+                <div class="o-owl o-owl--small u-border-left u-ph u-pr+@desktop">
                     {{# filter1 }}
                         {{> organisms-checklist }}
                     {{/ filter1 }}
                 </div>
 
-                <div class="o-owl o-owl--small u-border-left u-padding-left
-                    u-padding-right u-padding-right-large@desktop">
+                <div class="o-owl o-owl--small u-border-left u-ph u-pr+@desktop">
                     {{# filter2 }}
                         {{> organisms-checklist }}
                     {{/ filter2 }}
                 </div>
 
-                <div class="o-owl o-owl--small u-border-left u-padding-left
-                    u-padding-right u-padding-right-large@desktop">
+                <div class="o-owl o-owl--small u-border-left u-ph u-pr+@desktop">
                     {{# filter3 }}
                         {{> organisms-checklist }}
                     {{/ filter3 }}
                 </div>
 
-                <div class="o-owl o-owl--small u-border-left u-padding-left
-                    u-padding-right u-padding-right-large@desktop">
+                <div class="o-owl o-owl--small u-border-left u-ph u-pr+@desktop">
                     {{# filter4 }}
                         {{> organisms-checklist }}
                     {{/ filter4 }}
@@ -43,15 +39,15 @@
             <div class="o-layout__item u-3/4@tablet">
 
 
-                <header class="u-padding-left u-margin-bottom-large">
+                <header class="u-pl u-mb+">
                     <div class="o-pack o-pack--auto o-pack--middle">
                         <div class="o-pack__item">
-                            <h2 class="u-margin-bottom-none">{{title}}</h2>
+                            <h2 class="u-mb0">{{title}}</h2>
                         </div>
                         <div class="o-pack__item u-text-right u-hidden@until-tablet">
                             {{> molecules-sorting }}
                         </div>
-                        <div class="o-pack__item u-text-right u-padding-right u-hidden@from-tablet">
+                        <div class="o-pack__item u-text-right u-pr u-hidden@from-tablet">
                             <button class="c-btn c-btn--secondary jsFlyinBtn"
                                 data-target="filterFlyin" data-action="open">
                                 Filter
@@ -59,15 +55,15 @@
                         </div>
                     </div>
 
-                    {{> molecules-sorting-mobile:u-margin-top u-hidden@from-tablet }}
+                    {{> molecules-sorting-mobile:u-mt u-hidden@from-tablet }}
 
                 </header>
 
-                <div class="u-border-left u-padding-left u-padding-right">
+                <div class="u-border-left u-ph">
 
                     {{> organisms-medialist:c-medialist--notitle }}
 
-                    {{> molecules-pagination:u-margin-top-large }}
+                    {{> molecules-pagination:u-mt+ }}
 
                 </div>
 
@@ -76,7 +72,7 @@
 
     </main>
 
-    {{> organisms-footer:u-margin-top-huge }}
+    {{> organisms-footer:u-mt++ }}
 
 </div><!-- .c-site-wrapper -->
 
@@ -100,11 +96,11 @@
 
             {{> organisms-checklist }}
 
-            <hr class="o-break-wrapper u-margin-top">
+            <hr class="o-break-wrapper u-mt">
 
             {{> organisms-checklist }}
 
-            <hr class="o-break-wrapper u-margin-top">
+            <hr class="o-break-wrapper u-mt">
 
             {{> organisms-checklist }}
 

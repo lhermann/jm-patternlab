@@ -64,12 +64,16 @@ $inuit-responsive-breakpoints: (
 // Generatere normal spacings
 @each $property-namespace, $property in $inuit-responsive-spacing-properties {
 
-  @each $direction-namespace, $direction in $inuit-responsive-spacing-directions {
+  @each $direction-namespace, $direction-rules in $inuit-responsive-spacing-directions {
 
     @each $size-namespace, $size in $inuit-responsive-spacing-sizes {
 
       .u-#{$property-namespace}#{$direction-namespace}#{$size-namespace} {
-        #{$property}#{$direction}: $size !important;
+
+        @each $direction in $direction-rules {
+          #{$property}#{$direction}: $size !important;
+        }
+
       }
 
     }
