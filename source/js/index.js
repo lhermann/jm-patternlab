@@ -7,4 +7,6 @@ import './slider.js';
 import './overflow.js';
 import './toggle.js';
 import './fadeSiblings.js';
-import 'tooltip.js';
+import './dropdown.js';
+import Popper from "popper.js";
+window.Popper = Popper;

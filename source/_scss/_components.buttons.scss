@@ -275,3 +275,10 @@ $btn-ghost-border-width: 1px;
         background-color: $c-border;
     }
 }
+
+.c-btn--dropdown:after {
+    display: inline-block;
+    vertical-align: -.1em;
+    font-family: "icomoon";
+    content: "\e313";
+}

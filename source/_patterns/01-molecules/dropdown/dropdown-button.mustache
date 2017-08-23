@@ -1,0 +1,17 @@
+<button id="{{ id }}" class="c-btn c-btn--dropdown {{ class }} {{ styleModifier }} jsDropdownBtn"
+    aria-haspopup="true" aria-expanded="false">
+    {{{ label }}}
+</button>
+
+<ul class="c-dropdown c-dropdown--round u-hidden jsDropdown"
+    aria-labelledby="{{ id }}">
+
+    {{# dropdown }}
+    <li class="c-dropdown__item">
+        <a class="c-link c-link--block c-link--secondary" href="#">
+            {{{ label }}}
+        </a>
+    </li>
+    {{/ dropdown }}
+
+</ul>

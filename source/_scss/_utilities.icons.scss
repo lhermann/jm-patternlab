@@ -30,6 +30,18 @@
   vertical-align: -0.1em;
 }
 
+.u-ic-download:before {
+  content: "\e884";
+}
+.u-ic-visibility:before {
+  content: "\e8f4";
+}
+.u-ic-reply:before {
+  content: "\e15e";
+}
+.u-ic-share:before {
+  content: "\e80d";
+}
 .u-ic-folder:before {
   content: "\e2c7";
 }

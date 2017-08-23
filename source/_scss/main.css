@@ -1663,7 +1663,7 @@ textarea {
     background-color: #1943ff; }
 
 .c-btn--secondary {
-  background-color: #f8f8f8; }
+  background-color: #f0f0f0; }
   .c-btn--secondary, .c-btn--secondary:hover, .c-btn--secondary:active, .c-btn--secondary:focus {
     text-decoration: none;
     color: #4d4d4d; }
@@ -1773,6 +1773,12 @@ textarea {
     background-color: transparent; }
   .c-btn--none:hover, .c-btn--none:focus {
     background-color: #e8e8e8; }
+
+.c-btn--dropdown:after {
+  display: inline-block;
+  vertical-align: -.1em;
+  font-family: "icomoon";
+  content: "\e313"; }
 
 /* ==========================================================================
    #FLYIN
@@ -1987,6 +1993,11 @@ textarea {
   .c-link--primary:active, .c-link--primary:hover {
     background-color: #4c6dff;
     color: #fff; }
+
+.c-link--secondary {
+  color: #4d4d4d; }
+  .c-link--secondary:active, .c-link--secondary:hover {
+    background-color: #f0f0f0; }
 
 .c-link__float-right {
   float: right;
@@ -2498,6 +2509,26 @@ textarea {
       color: white; }
   .c-media-article__header:hover ~ .c-media-article__footer {
     opacity: 0; }
+
+/* ==========================================================================
+#DROPDOWNS
+========================================================================== */
+.c-dropdown {
+  z-index: 98;
+  margin: 0;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  list-style: none; }
+  .c-dropdown--round {
+    border-radius: 3px;
+    overflow: hidden; }
+
+.c-dropdown__item {
+  border-bottom: 1px solid #e8e8e8;
+  text-align: left; }
+  .c-dropdown__item:last-child {
+    border-bottom: 0; }
 
 /* Keep in sync with slider.js */
 /* ==========================================================================
@@ -4026,6 +4057,18 @@ textarea {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   vertical-align: -0.1em; }
+
+.u-ic-download:before {
+  content: "\e884"; }
+
+.u-ic-visibility:before {
+  content: "\e8f4"; }
+
+.u-ic-reply:before {
+  content: "\e15e"; }
+
+.u-ic-share:before {
+  content: "\e80d"; }
 
 .u-ic-folder:before {
   content: "\e2c7"; }

@@ -45,6 +45,15 @@
     }
 }
 
+.c-link--secondary {
+    color: $c-text;
+
+    &:active,
+    &:hover {
+        background-color: $c-gray-2;
+    }
+}
+
     .c-link__float-right {
         float: right;
         margin-top: -$inuit-global-line-height;
