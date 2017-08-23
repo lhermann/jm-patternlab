@@ -277,7 +277,10 @@ $slide-duration: 3s;
 }
 
 
-
+// STATES
+.is-faded {
+    opacity: .25;
+}
 
 // UTILITIES
 @import "../node_modules/inuitcss/utilities/utilities.clearfix";
@@ -398,5 +401,9 @@ $slide-duration: 3s;
             display: initial;
         }
     }
+}
+
+.u-transition {
+    transition: $global-transition;
 }
 

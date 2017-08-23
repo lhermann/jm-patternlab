@@ -3,6 +3,9 @@
  * the screen and provides controlls for it
  */
 
+import $ from 'cash-dom';
+// import $ from 'jquery-slim';
+
 
 /*
  * Initiate variables
@@ -14,66 +17,66 @@ var overflowNavWidth = 42, /* 1 */
 /*
  * Class for .o-overflow objects
  */
-class Overflow {
-    constructor(container) {
-        this.container     = container;
-        this.content       = $(container).find(".o-overflow__content").get(0);
-        this.count         = $(this.content).children().length;
-        this.childrenWidth = $(this.content).children().first().width();
-        this.spaceBetween  = $(this.content).data("space-between");
-        this.innerWidth    = this.count * this.childrenWidth + (this.count - 1) * this.spaceBetween;
-        this.currentPos    = 0;
-        this.state         = "is-left";
-        this.updateContainerWidth();
+function Overflow(container) {
+    this.container     = container;
+    this.content       = $(container).find(".o-overflow__content").get(0);
+    this.count         = $(this.content).children().length;
+    this.childrenWidth = parseInt($(this.content).children().first().width());
+    this.spaceBetween  = parseInt($(this.content).data("space-between"));
+    this.innerWidth    = parseInt(this.count * this.childrenWidth + this.spaceBetween);
+    this.outerWidth    = parseInt($(this.container).width());
+    this.currentPos    = 0;
+    this.state         = "is-left";
+    // console.log( "this.childrenWidth " + this.childrenWidth );
+    // console.log( "this.spaceBetween " + this.spaceBetween );
+    // console.log( "this.innerWidth " + this.innerWidth );
+    // console.log( "this.outerWidth " + this.outerWidth );
 
-        $(container).find(".jsNavLeft").on( "click", this, function(event){
-            event.data.shiftLeft();
-        });
+    this.getShiftWidth = function(direction) {
+        var shiftCount = Math.round( (this.outerWidth - overflowNavWidth) / this.childrenWidth ),
+            shiftWidth = this.childrenWidth * shiftCount;
 
-        $(container).find(".jsNavRight").on( "click", this, function(event){
-            event.data.shiftRight();
-        });
-    }
-
-    getShiftWidth() {
-        var shiftCount = Math.round( (this.outerWidth - overflowNavWidth) / (this.childrenWidth + this.spaceBetween));
-        if( this.state == "is-left" || this.state == "is-right" ) {
-            return (this.childrenWidth + this.spaceBetween) * shiftCount - (overflowNavWidth + this.spaceBetween/2);
-        } else {
-            return (this.childrenWidth + this.spaceBetween) * shiftCount;
+        switch (direction) {
+          case "left":
+            if( this.currentPos - shiftWidth >= 0 ) {
+                return shiftWidth;
+            } else {
+                return this.currentPos;
+            }
+            break;
+          case "right":
+          default:
+            if( this.currentPos + shiftWidth + this.outerWidth <= this.innerWidth ) {
+                return shiftWidth;
+            } else {
+                return this.innerWidth - this.outerWidth - this.currentPos;
+            }
+            break;
         }
-    }
+    };
 
-    shiftRight() {
-        var shift = this.getShiftWidth();
-        if( this.currentPos + shift >= this.innerWidth - this.outerWidth ) {
-            this.currentPos = this.innerWidth - this.outerWidth;
-        } else {
-            this.currentPos += shift;
-        }
+    this.shiftRight = function() {
+        var shift = this.getShiftWidth("right");
+        this.currentPos += shift
+        this.setContentX( this.currentPos );
+        this.updateContainerState();
+    };
+
+    this.shiftLeft = function() {
+        var shift = this.getShiftWidth("left");
+        this.currentPos -= shift;
         this.setContentX( this.currentPos );
         this.updateContainerState();
     }
 
-    shiftLeft() {
-        var shift = this.getShiftWidth();
-        if( this.currentPos - shift <= 0 ) {
-            this.currentPos = 0;
-        } else {
-            this.currentPos -= shift;
-        }
-        this.setContentX( this.currentPos );
-        this.updateContainerState();
-    }
-
-    setContentX(x) {
+    this.setContentX = function(x) {
         $(this.content).css( "transform", "translateX(-" + x + "px)" );
-    }
+    };
 
     /*
      * Add a little bit of wiggle room
      */
-    updateContainerState() {
+    this.updateContainerState = function() {
         $(this.container).removeClass( this.state );
         if( this.currentPos <= 1 ) { /* 1 */
             $(this.container).addClass( "is-left" );
@@ -85,29 +88,40 @@ class Overflow {
             $(this.container).addClass( "is-middle" );
             this.state = "is-middle";
         }
-    }
+    };
 
-    updateContainerWidth() {
-        this.outerWidth = $(this.container).width();
+    this.updateContainerWidth = function() {
         if( this.currentPos > this.innerWidth - this.outerWidth ) {
             this.currentPos = this.innerWidth - this.outerWidth;
             this.setContentX( this.currentPos );
         }
         this.updateContainerState();
-    }
+    };
+
+    this.updateContainerWidth();
 }
 
 /*
  * Initiate objects for overflow elements
  */
-$(".o-overflow").each( function(i, element) {
+$(".o-overflow").each( function(element, i) {
+
     overflowArray.push( new Overflow(element) );
+
+    $(overflowArray[i].container).find(".jsNavLeft").on( "click", function(event){
+        overflowArray[i].shiftLeft();
+    });
+
+    $(overflowArray[i].container).find(".jsNavRight").on( "click", function(event){
+        overflowArray[i].shiftRight();
+    });
+
 });
 
 /*
  * Adapt responsively to viewport changes
  */
-$( window ).resize(function() {
+$( window ).on("resize", function() {
     overflowArray.forEach( function(overflow) {
         overflow.updateContainerWidth();
     })

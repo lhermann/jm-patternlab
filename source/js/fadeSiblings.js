@@ -3,13 +3,11 @@
  *
  */
 
-$(".jsFadeSiblings").on("mouseenter mouseleave", function(e){
-    var siblings = $(this).siblings(".jsFadeSiblings");
-    if( !siblings[0] ) siblings = $(this).parent().siblings().children(".jsFadeSiblings");
-    if( e.type == "mouseenter" ) {
-        $(siblings).addClass("is-faded");
-    } else {
-        $(siblings).removeClass("is-faded");
-    }
+import $ from 'cash-dom';
+// import $ from 'jquery-slim';
 
+$(".jsFadeSiblings").on("mouseenter", function(e){
+    $(this).siblings().addClass("is-faded");
+}).on("mouseleave", function(e){
+    $(this).siblings().removeClass("is-faded");
 });

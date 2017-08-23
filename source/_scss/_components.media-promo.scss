@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .c-media-promo {
-    transition: $global-transition border-color, $global-transition opacity;
+    transition: $global-transition border-color;
     border: 1px solid transparent;
     border-radius: $global-radius;
 
@@ -11,11 +11,6 @@
     &:hover {
         border-color: $c-border;
     }
-
-    &.is-faded {
-        opacity: .25;
-    }
-
 }
 
     .c-media-promo__head {

@@ -1,3 +1,6 @@
+import $ from 'cash-dom';
+// import $ from 'jquery-slim';
+
 var siteWrapper = document.getElementById("siteWrapper"),
     allowScrolling = true;
 

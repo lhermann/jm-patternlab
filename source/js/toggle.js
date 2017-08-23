@@ -12,6 +12,9 @@
  * </button>
  */
 
+import $ from 'cash-dom';
+// import $ from 'jquery-slim';
+
 $(".jsToggle").on("click", function(e){
     var target = $(this).attr("data-target"),
         css = $(this).attr("data-class"),

@@ -3,6 +3,9 @@
  * @author: Lukas Hermann
  */
 
+import $ from 'cash-dom';
+// import $ from 'jquery-slim';
+
 /* Keep in sync with _components.slider.scss */
 var sliders = [
     {
@@ -35,117 +38,98 @@ function mod(n, m) {
 }
 
 // holder class for each slide
-class Slide {
-    constructor(id, slide, nav, slideTransition) {
-        this.id = id;
-        this.slide = slide;
-        this.nav = nav;
-        this.class = "";
-        this.zIndex = false;
-        this.slideTransition = typeof slideTransition === 'number' ? slideTransition : 800;
-    }
+function Slide(id, slide, nav, slideTransition) {
 
-    setZIndex(z) {
+    this.id = id;
+    this.slide = slide;
+    this.nav = nav;
+    this.class = "";
+    this.zIndex = false;
+    this.slideTransition = typeof slideTransition === 'number' ? slideTransition : 800;
+
+    this.setZIndex = function(z) {
         $(this.slide).css( "z-index", z );
         this.zIndex = z;
-    }
+    };
 
-    activateNav() {
+    this.activateNav = function() {
         $(this.nav).addClass('is-active');
-    }
+    };
 
-    deactivateNav() {
+    this.deactivateNav = function() {
         $(this.nav).removeClass('is-active');
-    }
+    };
 
-    animateEnter() {
+    this.animateEnter = function() {
         this.add('is-entering');
         setTimeout(function(obj) {
             obj.rm('is-entering');
         }, slideTransition, this);
-    }
+    };
 
-    animateLeave() {
+    this.animateLeave = function() {
         this.add('is-leaving');
         setTimeout(function(obj) {
             obj.rm('is-leaving');
         }, slideTransition, this);
-    }
+    };
 
-    add(cssClass) {
+    this.add = function(cssClass) {
         $(this.slide).addClass(cssClass);
-    }
+    };
 
-    rm(cssClass) {
+    this.rm = function(cssClass) {
         $(this.slide).removeClass(cssClass);
-    }
+    };
 }
 
 // slider with its methods
-class Slider {
-    constructor(slider, slideDelay, slideTransition) {
-        var sliderList = $(slider).find('.jsSliderList').children();
-        var sliderNav = $(slider).find('.jsSliderNav').children();
+function Slider(slider, slideDelay, slideTransition) {
 
-        // attach event handler to buttons
-        $(".jsSliderBtn").on( "click", this, function(event){
-            event.data.deactivateAutomatic();
-            if( $(this).attr('data') == 'next' ) {
-                event.data.nextSlide();
-            } else {
-                event.data.previousSlide();
-            }
-        });
+    var sliderList = $(slider).find('.jsSliderList').children();
+    var sliderNav = $(slider).find('.jsSliderNav').children();
 
-        // attach event handler to slider navigation
-        $(".jsSliderNav li").on( "click", this, function(event){
-            event.preventDefault();
-            event.data.deactivateAutomatic();
-            event.data.slide( $(this).attr('data') );
-        })
+    // populate slides array
+    var slides = [];
+    $(sliderList).each(function( value, index ) {
+        slides.push( new Slide(
+            index+1,
+            this,
+            $(sliderNav[index]).get(0),
+            slideTransition
+        ));
+    })
 
-        // populate slides array
-        var slides = [];
-        $(sliderList).each(function( index ) {
-            slides.push(new Slide(
-                index+1,
-                this,
-                $(sliderNav[index]).get(0),
-                slideTransition
-            ));
-        })
+    // bring slide array into initial order
+    slides
+        .reverse()
+        .unshift(slides.pop());
 
-        // bring slide array into initial order
-        slides
-            .reverse()
-            .unshift(slides.pop());
+    // Slide Stack
+    this.slideStack = slides;
+    this.slideCount = slides.length;
+    this.currentSlide = 1;
 
-        // Slide Stack
-        this.slideStack = slides;
-        this.slideCount = slides.length;
-        this.currentSlide = 1;
+    // slider
+    this.slider = slider;
+    this.numChanged = 0;
+    this.isAutomatic = true;
+    this.intervalId = 0;
 
-        // slider
-        this.slider = slider;
-        this.numChanged = 0;
-        this.isAutomatic = true;
+    // timing
+    this.slideDelay = typeof slideDelay === 'number' ? slideDelay : 200;
 
-        // timing
-        this.slideDelay = typeof slideDelay === 'number' ? slideDelay : 200;
+    // setup dom
 
-        // setup dom
-        this.setZIndices();
-        this.setActiveNav();
-    }
-
-    setZIndices() {
+    this.setZIndices = function() {
         var slideCount = this.slideCount;
         this.slideStack.forEach( function(slide, index) {
             slide.setZIndex( slideCount - index );
         });
     }
+    this.setZIndices();
 
-    setActiveNav() {
+    this.setActiveNav = function() {
         this.slideStack.forEach( function(slide, index) {
             if( index == 0 ) {
                 slide.activateNav();
@@ -154,8 +138,9 @@ class Slider {
             }
         });
     }
+    this.setActiveNav();
 
-    transitionSlide(direction) {
+    this.transitionSlide = function(direction) {
         this.setZIndices();
         this.setActiveNav();
 
@@ -169,7 +154,8 @@ class Slider {
     /*
      * Interval Function handles one single slide transition
      */
-    intervalFunction(obj, id) {
+    this.intervalFunction = function(obj, id) {
+        console.log("currentSlide " + obj.currentSlide);
         if( obj.currentSlide == id ) {
             clearInterval(obj.intervalId);
             return true;
@@ -183,6 +169,7 @@ class Slider {
             obj.transitionSlide('backwards');
         }
 
+        console.log(obj.slideStack);
         obj.currentSlide = obj.slideStack[0].id;
 
         if( obj.currentSlide == id ) {
@@ -195,7 +182,8 @@ class Slider {
     /*
      * Change to slide with id
      */
-    slide(id) {
+    this.slide = function(id) {
+        console.log("target id " + id);
 
         this.intervalFunction(this, id);
         this.intervalId = setInterval( this.intervalFunction, this.slideDelay, this, id);
@@ -208,7 +196,7 @@ class Slider {
     /*
      * Change to next slide
      */
-    nextSlide() {
+    this.nextSlide = function() {
         if( this.currentSlide == this.slideCount ) {
             this.slide( 1 )
         } else {
@@ -219,7 +207,7 @@ class Slider {
     /*
      * Change to previous slide
      */
-    previousSlide() {
+    this.previousSlide = function() {
         if( this.currentSlide == 1 ) {
             this.slide( this.slideCount )
         } else {
@@ -230,7 +218,7 @@ class Slider {
     /*
      * Deactivate automatic changing of slides
      */
-    deactivateAutomatic() {
+    this.deactivateAutomatic = function() {
         if( this.isAutomatic == true ) {
             $(this.slider).removeClass('is-automatic');
             this.isAutomatic = false;
@@ -242,33 +230,61 @@ class Slider {
 
 
 
+$(document).ready( function() {
 
-$(".jsSliderNav a").click(function( event ) {
-    event.preventDefault();
-});
+    $(".jsSliderNav a").on("click", function( event ) {
+        event.preventDefault();
+    });
 
-sliders.forEach(function(slider) {
+    /*
+     * A little timeout is necessary otherwise the animation classes will be
+     * added before css is done parsing, thus not showing transition effects
+     */
+    setTimeout(function() {
 
-    if( $(slider.node).length ) {
+        sliders.forEach(function(slider) {
 
-        slider.object = new Slider( slider.node, slider.slideDelay, slider.slideTransition );
+            if( $(slider.node).length ) {
 
-        switch(slider.automatic) {
-            case "initial":
-                setInterval( function(){
-                    if( slider.object.isAutomatic ) {
+                slider.object = new Slider( slider.node, slider.slideDelay, slider.slideTransition );
+
+                // attach event handler to buttons
+                $(".jsSliderBtn").on( "click", function(event){
+                    slider.object.deactivateAutomatic();
+                    if( $(this).attr('data') == 'next' ) {
                         slider.object.nextSlide();
+                    } else {
+                        slider.object.previousSlide();
                     }
-                }, slider.slideDuration );
-                break;
+                });
 
-            case "always":
-                setInterval( function(){
-                    slider.object.nextSlide();
-                }, slider.slideDuration );
-                break;
-        }
+                // attach event handler to slider navigation
+                $(".jsSliderNav li").on( "click", function(event){
+                    event.preventDefault();
+                    slider.object.deactivateAutomatic();
+                    slider.object.slide( $(this).attr('data') );
+                })
 
-    }
+                switch(slider.automatic) {
+                    case "initial":
+                        setInterval( function(){
+                            if( slider.object.isAutomatic ) {
+                                slider.object.nextSlide();
+                            }
+                        }, slider.slideDuration );
+                        break;
+
+                    case "always":
+                        setInterval( function(){
+                            slider.object.nextSlide();
+                        }, slider.slideDuration );
+                        break;
+                }
+
+            }
+
+        });
+
+    }, 300);
 
 });
