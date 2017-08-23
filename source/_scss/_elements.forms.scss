@@ -32,9 +32,9 @@ textarea {
     color: $c-text;
     font-weight: 300;
 
-    &::placeholder { color: $c-gray-5; }
-    &::-webkit-input-placeholder { color: $c-gray-5; }
-    &:-ms-input-placeholder { color: $c-gray-5; }
+    &::placeholder { color: $c-gray-6; }
+    &::-webkit-input-placeholder { color: $c-gray-6; }
+    &:-ms-input-placeholder { color: $c-gray-6; }
 
     // &[type="text"],
     // &[type="tel"],

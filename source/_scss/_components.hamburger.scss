@@ -9,7 +9,7 @@
     cursor: pointer;
     width: 56px;
     height: 56px;
-    color: $c-gray-5;
+    color: $c-gray-6;
 
     @include mq($from: tablet) {
         border-right: 1px solid $c-border;
