@@ -29,13 +29,32 @@
                     </div>
                     <div class="o-pack__item u-text-center">
                         {{# download-button }}
-                            {{> molecules-dropdown-button }}
+                            {{> molecules-dropdown-button:u-text-left }}
                         {{/ download-button }}
                     </div>
                     <div class="o-pack__item u-text-right">
-                        {{# share-button }}
-                            {{> molecules-dropdown-button }}
-                        {{/ share-button }}
+
+                        <button id="share-button" class="c-btn c-btn--dropdown c-btn--small c-btn--secondary jsDropdownBtn"
+                            aria-haspopup="true" aria-expanded="false">
+                            <span class="u-ic-share"></span> Teilen
+                        </button>
+
+                        <ul class="c-dropdown c-dropdown--round u-hidden u-text-left jsDropdown"
+                            aria-labelledby="share-button" data-placement="bottom-end">
+
+                            <li class="c-dropdown__item">
+                                <a class="c-link c-link--block c-link--secondary" href="http://www.facebook.com/sharer/sharer.php?u=#" title="Auf Facebook teilen" target="_blank">
+                                    Auf Facebook teilen
+                                </a>
+                            </li>
+
+                            <li class="c-dropdown__item u-ph u-pv-">
+                                <p class="u-mb--">Video-Player in die eigene Website einbetten:</p>
+                                <input class="u-1/1" type="text" value="<iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://embed.joelmediatv.de/16245&quot; frameborder=&quot;0&quot; allowfullscreen></iframe>" onclick="this.select()" readonly="readonly">
+                            </li>
+
+                        </ul>
+
                     </div>
                 </div>
 

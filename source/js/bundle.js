@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1035,575 +1035,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;
 
 /***/ }),
 /* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__flyin_js__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__slider_js__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__overflow_js__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__toggle_js__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__fadeSiblings_js__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dropdown_js__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_popper_js__ = __webpack_require__(8);
-// import 'jquery-3.2.1.slim.min.js';
-// import 'flyin.js';
-// import 'tooltip.js';
-
-
-
-
-
-
-
-
-window.Popper = __WEBPACK_IMPORTED_MODULE_6_popper_js__["a" /* default */];
-
-
-/***/ }),
-/* 2 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cash_dom__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cash_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_cash_dom__);
-
-// import $ from 'jquery-slim';
-
-var siteWrapper = document.getElementById("siteWrapper"),
-    allowScrolling = true;
-
-/**
- * open and close mobile nav
- */
-__WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(".jsFlyinBtn").on( "click", toggleFlyin );
-
-function toggleFlyin( event ) {
-    var target = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).attr('data-target');
-    if( __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).attr('data-action') == 'open' ) {
-        __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()('#'+target).addClass('c-flyin--open');
-        __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(siteWrapper).addClass('c-site-wrapper--faded');
-        allowScrolling = false;
-    } else {
-        __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()('#'+target).removeClass('c-flyin--open');
-        __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(siteWrapper).removeClass('c-site-wrapper--faded');
-        allowScrolling = true;
-    }
-}
-
-/**
- * Enable/Disable scrolling on #siteWrapper when mobile nav is open
- * on iPhone/iPad’s Safari
- */
-if( siteWrapper ) {
-    siteWrapper.ontouchmove = function (e) {
-        if(allowScrolling) {
-            return true; // Enable scrolling.
-        } else {
-            e.preventDefault(); // Disable scrolling.
-        }
-    }
-}
-
-
-
-
-/***/ }),
-/* 3 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cash_dom__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cash_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_cash_dom__);
-/*
- * Joel Media Slider
- * @author: Lukas Hermann
- */
-
-
-// import $ from 'jquery-slim';
-
-/* Keep in sync with _components.slider.scss */
-var sliders = [
-    {
-        slideDuration:   3000,
-        slideTransition: 800,
-        slideDelay:      200,
-        automatic:       "initial",
-        node:            __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()("#mainSlider"),
-        object:          false
-    },
-    {
-        slideDuration:   8000,
-        slideTransition: 800,
-        slideDelay:      200,
-        automatic:       "always",
-        node:            __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()("#quoteSlider"),
-        object:          false
-    }
-]
-
-var slideDuration   = 3000;
-var slideTransition = 800;
-var slideDelay      = 200;
-
-var mainSlider = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()("#mainSlider");
-var quoteSlider = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()("#quoteSlider");
-
-function mod(n, m) {
-    return ((n % m) + m) % m;
-}
-
-// holder class for each slide
-function Slide(id, slide, nav, slideTransition) {
-
-    this.id = id;
-    this.slide = slide;
-    this.nav = nav;
-    this.class = "";
-    this.zIndex = false;
-    this.slideTransition = typeof slideTransition === 'number' ? slideTransition : 800;
-
-    this.setZIndex = function(z) {
-        __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.slide).css( "z-index", z );
-        this.zIndex = z;
-    };
-
-    this.activateNav = function() {
-        __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.nav).addClass('is-active');
-    };
-
-    this.deactivateNav = function() {
-        __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.nav).removeClass('is-active');
-    };
-
-    this.animateEnter = function() {
-        this.add('is-entering');
-        setTimeout(function(obj) {
-            obj.rm('is-entering');
-        }, slideTransition, this);
-    };
-
-    this.animateLeave = function() {
-        this.add('is-leaving');
-        setTimeout(function(obj) {
-            obj.rm('is-leaving');
-        }, slideTransition, this);
-    };
-
-    this.add = function(cssClass) {
-        __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.slide).addClass(cssClass);
-    };
-
-    this.rm = function(cssClass) {
-        __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.slide).removeClass(cssClass);
-    };
-}
-
-// slider with its methods
-function Slider(slider, slideDelay, slideTransition) {
-
-    var sliderList = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(slider).find('.jsSliderList').children();
-    var sliderNav = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(slider).find('.jsSliderNav').children();
-
-    // populate slides array
-    var slides = [];
-    __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(sliderList).each(function( value, index ) {
-        slides.push( new Slide(
-            index+1,
-            this,
-            __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(sliderNav[index]).get(0),
-            slideTransition
-        ));
-    })
-
-    // bring slide array into initial order
-    slides
-        .reverse()
-        .unshift(slides.pop());
-
-    // Slide Stack
-    this.slideStack = slides;
-    this.slideCount = slides.length;
-    this.currentSlide = 1;
-
-    // slider
-    this.slider = slider;
-    this.numChanged = 0;
-    this.isAutomatic = true;
-    this.intervalId = 0;
-
-    // timing
-    this.slideDelay = typeof slideDelay === 'number' ? slideDelay : 200;
-
-    // setup dom
-
-    this.setZIndices = function() {
-        var slideCount = this.slideCount;
-        this.slideStack.forEach( function(slide, index) {
-            slide.setZIndex( slideCount - index );
-        });
-    }
-    this.setZIndices();
-
-    this.setActiveNav = function() {
-        this.slideStack.forEach( function(slide, index) {
-            if( index == 0 ) {
-                slide.activateNav();
-            } else {
-                slide.deactivateNav();
-            }
-        });
-    }
-    this.setActiveNav();
-
-    this.transitionSlide = function(direction) {
-        this.setZIndices();
-        this.setActiveNav();
-
-        if(direction == 'backwards') {
-            (this.slideStack[ this.slideStack.length - 1 ]).animateLeave();
-        } else {
-            (this.slideStack[0]).animateEnter();
-        }
-    }
-
-    /*
-     * Interval Function handles one single slide transition
-     */
-    this.intervalFunction = function(obj, id) {
-        console.log("currentSlide " + obj.currentSlide);
-        if( obj.currentSlide == id ) {
-            clearInterval(obj.intervalId);
-            return true;
-        }
-
-        if( id > obj.currentSlide ) {
-            obj.slideStack.unshift( obj.slideStack.pop() );
-            obj.transitionSlide('forwards');
-        } else {
-            obj.slideStack.push( obj.slideStack.shift() );
-            obj.transitionSlide('backwards');
-        }
-
-        console.log(obj.slideStack);
-        obj.currentSlide = obj.slideStack[0].id;
-
-        if( obj.currentSlide == id ) {
-            clearInterval(obj.intervalId);
-            return true;
-        }
-        return false;
-    }
-
-    /*
-     * Change to slide with id
-     */
-    this.slide = function(id) {
-        console.log("target id " + id);
-
-        this.intervalFunction(this, id);
-        this.intervalId = setInterval( this.intervalFunction, this.slideDelay, this, id);
-
-        if( this.numChanged++ >= this.slideCount - 1 ) {
-            this.deactivateAutomatic();
-        }
-    }
-
-    /*
-     * Change to next slide
-     */
-    this.nextSlide = function() {
-        if( this.currentSlide == this.slideCount ) {
-            this.slide( 1 )
-        } else {
-            this.slide( this.currentSlide + 1 )
-        }
-    }
-
-    /*
-     * Change to previous slide
-     */
-    this.previousSlide = function() {
-        if( this.currentSlide == 1 ) {
-            this.slide( this.slideCount )
-        } else {
-            this.slide( this.currentSlide - 1 )
-        }
-    }
-
-    /*
-     * Deactivate automatic changing of slides
-     */
-    this.deactivateAutomatic = function() {
-        if( this.isAutomatic == true ) {
-            __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.slider).removeClass('is-automatic');
-            this.isAutomatic = false;
-        }
-    }
-
-}
-
-
-
-
-__WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(document).ready( function() {
-
-    __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(".jsSliderNav a").on("click", function( event ) {
-        event.preventDefault();
-    });
-
-    /*
-     * A little timeout is necessary otherwise the animation classes will be
-     * added before css is done parsing, thus not showing transition effects
-     */
-    setTimeout(function() {
-
-        sliders.forEach(function(slider) {
-
-            if( __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(slider.node).length ) {
-
-                slider.object = new Slider( slider.node, slider.slideDelay, slider.slideTransition );
-
-                // attach event handler to buttons
-                __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(".jsSliderBtn").on( "click", function(event){
-                    slider.object.deactivateAutomatic();
-                    if( __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).attr('data') == 'next' ) {
-                        slider.object.nextSlide();
-                    } else {
-                        slider.object.previousSlide();
-                    }
-                });
-
-                // attach event handler to slider navigation
-                __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(".jsSliderNav li").on( "click", function(event){
-                    event.preventDefault();
-                    slider.object.deactivateAutomatic();
-                    slider.object.slide( __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).attr('data') );
-                })
-
-                switch(slider.automatic) {
-                    case "initial":
-                        setInterval( function(){
-                            if( slider.object.isAutomatic ) {
-                                slider.object.nextSlide();
-                            }
-                        }, slider.slideDuration );
-                        break;
-
-                    case "always":
-                        setInterval( function(){
-                            slider.object.nextSlide();
-                        }, slider.slideDuration );
-                        break;
-                }
-
-            }
-
-        });
-
-    }, 300);
-
-});
-
-
-/***/ }),
-/* 4 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cash_dom__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cash_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_cash_dom__);
-/**
- * Overflow controlls horizontal content that is cut off because of the width of
- * the screen and provides controlls for it
- */
-
-
-// import $ from 'jquery-slim';
-
-
-/*
- * Initiate variables
- * 1. Width of one of the nav buttons
- */
-var overflowNavWidth = 42, /* 1 */
-    overflowArray = [];
-
-/*
- * Class for .o-overflow objects
- */
-function Overflow(container) {
-    this.container     = container;
-    this.content       = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(container).find(".o-overflow__content").get(0);
-    this.count         = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.content).children().length;
-    this.childrenWidth = parseInt(__WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.content).children().first().width());
-    this.spaceBetween  = parseInt(__WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.content).data("space-between"));
-    this.innerWidth    = parseInt(this.count * this.childrenWidth + this.spaceBetween);
-    this.outerWidth    = parseInt(__WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.container).width());
-    this.currentPos    = 0;
-    this.state         = "is-left";
-    // console.log( "this.childrenWidth " + this.childrenWidth );
-    // console.log( "this.spaceBetween " + this.spaceBetween );
-    // console.log( "this.innerWidth " + this.innerWidth );
-    // console.log( "this.outerWidth " + this.outerWidth );
-
-    this.getShiftWidth = function(direction) {
-        var shiftCount = Math.round( (this.outerWidth - overflowNavWidth) / this.childrenWidth ),
-            shiftWidth = this.childrenWidth * shiftCount;
-
-        switch (direction) {
-          case "left":
-            if( this.currentPos - shiftWidth >= 0 ) {
-                return shiftWidth;
-            } else {
-                return this.currentPos;
-            }
-            break;
-          case "right":
-          default:
-            if( this.currentPos + shiftWidth + this.outerWidth <= this.innerWidth ) {
-                return shiftWidth;
-            } else {
-                return this.innerWidth - this.outerWidth - this.currentPos;
-            }
-            break;
-        }
-    };
-
-    this.shiftRight = function() {
-        var shift = this.getShiftWidth("right");
-        this.currentPos += shift
-        this.setContentX( this.currentPos );
-        this.updateContainerState();
-    };
-
-    this.shiftLeft = function() {
-        var shift = this.getShiftWidth("left");
-        this.currentPos -= shift;
-        this.setContentX( this.currentPos );
-        this.updateContainerState();
-    }
-
-    this.setContentX = function(x) {
-        __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.content).css( "transform", "translateX(-" + x + "px)" );
-    };
-
-    /*
-     * Add a little bit of wiggle room
-     */
-    this.updateContainerState = function() {
-        __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.container).removeClass( this.state );
-        if( this.currentPos <= 1 ) { /* 1 */
-            __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.container).addClass( "is-left" );
-            this.state = "is-left";
-        } else if( this.currentPos >= this.innerWidth - this.outerWidth ) {
-            __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.container).addClass( "is-right" );
-            this.state = "is-right";
-        } else {
-            __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.container).addClass( "is-middle" );
-            this.state = "is-middle";
-        }
-    };
-
-    this.updateContainerWidth = function() {
-        if( this.currentPos > this.innerWidth - this.outerWidth ) {
-            this.currentPos = this.innerWidth - this.outerWidth;
-            this.setContentX( this.currentPos );
-        }
-        this.updateContainerState();
-    };
-
-    this.updateContainerWidth();
-}
-
-/*
- * Initiate objects for overflow elements
- */
-__WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(".o-overflow").each( function(element, i) {
-
-    overflowArray.push( new Overflow(element) );
-
-    __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(overflowArray[i].container).find(".jsNavLeft").on( "click", function(event){
-        overflowArray[i].shiftLeft();
-    });
-
-    __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(overflowArray[i].container).find(".jsNavRight").on( "click", function(event){
-        overflowArray[i].shiftRight();
-    });
-
-});
-
-/*
- * Adapt responsively to viewport changes
- */
-__WEBPACK_IMPORTED_MODULE_0_cash_dom___default()( window ).on("resize", function() {
-    overflowArray.forEach( function(overflow) {
-        overflow.updateContainerWidth();
-    })
-});
-
-
-/***/ }),
-/* 5 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cash_dom__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cash_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_cash_dom__);
-/**
- * Have a button toggle a class on a target
- *
- * data-target - the target selector ".o-example". Target must be
- *               sibling of button.
- * data-class  - the class that is being toggled on the target
- *
- * Toggles the "is-hidden" class on its own children if it exists, eg:
- * <button class="jsToggle">
- *   <span>more</span>
- *   <span class="u-hidden">less</span>
- * </button>
- */
-
-
-// import $ from 'jquery-slim';
-
-__WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(".jsToggle").on("click", function(e){
-    var target = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).attr("data-target"),
-        css = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).attr("data-class"),
-        children = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).children();
-    __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).siblings(target).toggleClass(css);
-    if( __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(children).hasClass("u-hidden") ) {
-        __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(children).toggleClass("u-hidden");
-    }
-});
-
-
-/***/ }),
-/* 6 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cash_dom__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cash_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_cash_dom__);
-/**
- * Add class .is-faded to all Siblings during hover
- *
- */
-
-
-// import $ from 'jquery-slim';
-
-__WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(".jsFadeSiblings").on("mouseenter", function(e){
-    __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).siblings().addClass("is-faded");
-}).on("mouseleave", function(e){
-    __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).siblings().removeClass("is-faded");
-});
-
-
-/***/ }),
-/* 7 */,
-/* 8 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4051,6 +3482,624 @@ Popper.Defaults = Defaults;
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(9)))
 
 /***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__flyin_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__slider_js__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__overflow_js__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__toggle_js__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__fadeSiblings_js__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dropdown_js__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_popper_js__ = __webpack_require__(1);
+// import 'jquery-3.2.1.slim.min.js';
+// import 'flyin.js';
+// import 'tooltip.js';
+
+
+
+
+
+
+
+
+window.Popper = __WEBPACK_IMPORTED_MODULE_6_popper_js__["a" /* default */];
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cash_dom__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cash_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_cash_dom__);
+
+// import $ from 'jquery-slim';
+
+var siteWrapper = document.getElementById("siteWrapper"),
+    allowScrolling = true;
+
+/**
+ * open and close mobile nav
+ */
+__WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(".jsFlyinBtn").on( "click", toggleFlyin );
+
+function toggleFlyin( event ) {
+    var target = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).attr('data-target');
+    if( __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).attr('data-action') == 'open' ) {
+        __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()('#'+target).addClass('c-flyin--open');
+        __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(siteWrapper).addClass('c-site-wrapper--faded');
+        allowScrolling = false;
+    } else {
+        __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()('#'+target).removeClass('c-flyin--open');
+        __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(siteWrapper).removeClass('c-site-wrapper--faded');
+        allowScrolling = true;
+    }
+}
+
+/**
+ * Enable/Disable scrolling on #siteWrapper when mobile nav is open
+ * on iPhone/iPad’s Safari
+ */
+if( siteWrapper ) {
+    siteWrapper.ontouchmove = function (e) {
+        if(allowScrolling) {
+            return true; // Enable scrolling.
+        } else {
+            e.preventDefault(); // Disable scrolling.
+        }
+    }
+}
+
+
+
+
+/***/ }),
+/* 4 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cash_dom__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cash_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_cash_dom__);
+/*
+ * Joel Media Slider
+ * @author: Lukas Hermann
+ */
+
+
+// import $ from 'jquery-slim';
+
+/* Keep in sync with _components.slider.scss */
+var sliders = [
+    {
+        slideDuration:   3000,
+        slideTransition: 800,
+        slideDelay:      200,
+        automatic:       "initial",
+        node:            __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()("#mainSlider"),
+        object:          false
+    },
+    {
+        slideDuration:   8000,
+        slideTransition: 800,
+        slideDelay:      200,
+        automatic:       "always",
+        node:            __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()("#quoteSlider"),
+        object:          false
+    }
+]
+
+var slideDuration   = 3000;
+var slideTransition = 800;
+var slideDelay      = 200;
+
+var mainSlider = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()("#mainSlider");
+var quoteSlider = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()("#quoteSlider");
+
+function mod(n, m) {
+    return ((n % m) + m) % m;
+}
+
+// holder class for each slide
+function Slide(id, slide, nav, slideTransition) {
+
+    this.id = id;
+    this.slide = slide;
+    this.nav = nav;
+    this.class = "";
+    this.zIndex = false;
+    this.slideTransition = typeof slideTransition === 'number' ? slideTransition : 800;
+
+    this.setZIndex = function(z) {
+        __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.slide).css( "z-index", z );
+        this.zIndex = z;
+    };
+
+    this.activateNav = function() {
+        __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.nav).addClass('is-active');
+    };
+
+    this.deactivateNav = function() {
+        __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.nav).removeClass('is-active');
+    };
+
+    this.animateEnter = function() {
+        this.add('is-entering');
+        setTimeout(function(obj) {
+            obj.rm('is-entering');
+        }, slideTransition, this);
+    };
+
+    this.animateLeave = function() {
+        this.add('is-leaving');
+        setTimeout(function(obj) {
+            obj.rm('is-leaving');
+        }, slideTransition, this);
+    };
+
+    this.add = function(cssClass) {
+        __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.slide).addClass(cssClass);
+    };
+
+    this.rm = function(cssClass) {
+        __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.slide).removeClass(cssClass);
+    };
+}
+
+// slider with its methods
+function Slider(slider, slideDelay, slideTransition) {
+
+    var sliderList = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(slider).find('.jsSliderList').children();
+    var sliderNav = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(slider).find('.jsSliderNav').children();
+
+    // populate slides array
+    var slides = [];
+    __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(sliderList).each(function( value, index ) {
+        slides.push( new Slide(
+            index+1,
+            this,
+            __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(sliderNav[index]).get(0),
+            slideTransition
+        ));
+    })
+
+    // bring slide array into initial order
+    slides
+        .reverse()
+        .unshift(slides.pop());
+
+    // Slide Stack
+    this.slideStack = slides;
+    this.slideCount = slides.length;
+    this.currentSlide = 1;
+
+    // slider
+    this.slider = slider;
+    this.numChanged = 0;
+    this.isAutomatic = true;
+    this.intervalId = 0;
+
+    // timing
+    this.slideDelay = typeof slideDelay === 'number' ? slideDelay : 200;
+
+    // setup dom
+
+    this.setZIndices = function() {
+        var slideCount = this.slideCount;
+        this.slideStack.forEach( function(slide, index) {
+            slide.setZIndex( slideCount - index );
+        });
+    }
+    this.setZIndices();
+
+    this.setActiveNav = function() {
+        this.slideStack.forEach( function(slide, index) {
+            if( index == 0 ) {
+                slide.activateNav();
+            } else {
+                slide.deactivateNav();
+            }
+        });
+    }
+    this.setActiveNav();
+
+    this.transitionSlide = function(direction) {
+        this.setZIndices();
+        this.setActiveNav();
+
+        if(direction == 'backwards') {
+            (this.slideStack[ this.slideStack.length - 1 ]).animateLeave();
+        } else {
+            (this.slideStack[0]).animateEnter();
+        }
+    }
+
+    /*
+     * Interval Function handles one single slide transition
+     */
+    this.intervalFunction = function(obj, id) {
+        console.log("currentSlide " + obj.currentSlide);
+        if( obj.currentSlide == id ) {
+            clearInterval(obj.intervalId);
+            return true;
+        }
+
+        if( id > obj.currentSlide ) {
+            obj.slideStack.unshift( obj.slideStack.pop() );
+            obj.transitionSlide('forwards');
+        } else {
+            obj.slideStack.push( obj.slideStack.shift() );
+            obj.transitionSlide('backwards');
+        }
+
+        console.log(obj.slideStack);
+        obj.currentSlide = obj.slideStack[0].id;
+
+        if( obj.currentSlide == id ) {
+            clearInterval(obj.intervalId);
+            return true;
+        }
+        return false;
+    }
+
+    /*
+     * Change to slide with id
+     */
+    this.slide = function(id) {
+        console.log("target id " + id);
+
+        this.intervalFunction(this, id);
+        this.intervalId = setInterval( this.intervalFunction, this.slideDelay, this, id);
+
+        if( this.numChanged++ >= this.slideCount - 1 ) {
+            this.deactivateAutomatic();
+        }
+    }
+
+    /*
+     * Change to next slide
+     */
+    this.nextSlide = function() {
+        if( this.currentSlide == this.slideCount ) {
+            this.slide( 1 )
+        } else {
+            this.slide( this.currentSlide + 1 )
+        }
+    }
+
+    /*
+     * Change to previous slide
+     */
+    this.previousSlide = function() {
+        if( this.currentSlide == 1 ) {
+            this.slide( this.slideCount )
+        } else {
+            this.slide( this.currentSlide - 1 )
+        }
+    }
+
+    /*
+     * Deactivate automatic changing of slides
+     */
+    this.deactivateAutomatic = function() {
+        if( this.isAutomatic == true ) {
+            __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.slider).removeClass('is-automatic');
+            this.isAutomatic = false;
+        }
+    }
+
+}
+
+
+
+
+__WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(document).ready( function() {
+
+    __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(".jsSliderNav a").on("click", function( event ) {
+        event.preventDefault();
+    });
+
+    /*
+     * A little timeout is necessary otherwise the animation classes will be
+     * added before css is done parsing, thus not showing transition effects
+     */
+    setTimeout(function() {
+
+        sliders.forEach(function(slider) {
+
+            if( __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(slider.node).length ) {
+
+                slider.object = new Slider( slider.node, slider.slideDelay, slider.slideTransition );
+
+                // attach event handler to buttons
+                __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(".jsSliderBtn").on( "click", function(event){
+                    slider.object.deactivateAutomatic();
+                    if( __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).attr('data') == 'next' ) {
+                        slider.object.nextSlide();
+                    } else {
+                        slider.object.previousSlide();
+                    }
+                });
+
+                // attach event handler to slider navigation
+                __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(".jsSliderNav li").on( "click", function(event){
+                    event.preventDefault();
+                    slider.object.deactivateAutomatic();
+                    slider.object.slide( __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).attr('data') );
+                })
+
+                switch(slider.automatic) {
+                    case "initial":
+                        setInterval( function(){
+                            if( slider.object.isAutomatic ) {
+                                slider.object.nextSlide();
+                            }
+                        }, slider.slideDuration );
+                        break;
+
+                    case "always":
+                        setInterval( function(){
+                            slider.object.nextSlide();
+                        }, slider.slideDuration );
+                        break;
+                }
+
+            }
+
+        });
+
+    }, 300);
+
+});
+
+
+/***/ }),
+/* 5 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cash_dom__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cash_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_cash_dom__);
+/**
+ * Overflow controlls horizontal content that is cut off because of the width of
+ * the screen and provides controlls for it
+ */
+
+
+// import $ from 'jquery-slim';
+
+
+/*
+ * Initiate variables
+ * 1. Width of one of the nav buttons
+ */
+var overflowNavWidth = 42, /* 1 */
+    overflowArray = [];
+
+/*
+ * Class for .o-overflow objects
+ */
+function Overflow(container) {
+    this.container     = container;
+    this.content       = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(container).find(".o-overflow__content").get(0);
+    this.count         = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.content).children().length;
+    this.childrenWidth = parseInt(__WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.content).children().first().width());
+    this.spaceBetween  = parseInt(__WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.content).data("space-between"));
+    this.innerWidth    = parseInt(this.count * this.childrenWidth + this.spaceBetween);
+    this.outerWidth    = parseInt(__WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.container).width());
+    this.currentPos    = 0;
+    this.state         = "is-left";
+    // console.log( "this.childrenWidth " + this.childrenWidth );
+    // console.log( "this.spaceBetween " + this.spaceBetween );
+    // console.log( "this.innerWidth " + this.innerWidth );
+    // console.log( "this.outerWidth " + this.outerWidth );
+
+    this.getShiftWidth = function(direction) {
+        var shiftCount = Math.round( (this.outerWidth - overflowNavWidth) / this.childrenWidth ),
+            shiftWidth = this.childrenWidth * shiftCount;
+
+        switch (direction) {
+          case "left":
+            if( this.currentPos - shiftWidth >= 0 ) {
+                return shiftWidth;
+            } else {
+                return this.currentPos;
+            }
+            break;
+          case "right":
+          default:
+            if( this.currentPos + shiftWidth + this.outerWidth <= this.innerWidth ) {
+                return shiftWidth;
+            } else {
+                return this.innerWidth - this.outerWidth - this.currentPos;
+            }
+            break;
+        }
+    };
+
+    this.shiftRight = function() {
+        var shift = this.getShiftWidth("right");
+        this.currentPos += shift
+        this.setContentX( this.currentPos );
+        this.updateContainerState();
+    };
+
+    this.shiftLeft = function() {
+        var shift = this.getShiftWidth("left");
+        this.currentPos -= shift;
+        this.setContentX( this.currentPos );
+        this.updateContainerState();
+    }
+
+    this.setContentX = function(x) {
+        __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.content).css( "transform", "translateX(-" + x + "px)" );
+    };
+
+    /*
+     * Add a little bit of wiggle room
+     */
+    this.updateContainerState = function() {
+        __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.container).removeClass( this.state );
+        if( this.currentPos <= 1 ) { /* 1 */
+            __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.container).addClass( "is-left" );
+            this.state = "is-left";
+        } else if( this.currentPos >= this.innerWidth - this.outerWidth ) {
+            __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.container).addClass( "is-right" );
+            this.state = "is-right";
+        } else {
+            __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this.container).addClass( "is-middle" );
+            this.state = "is-middle";
+        }
+    };
+
+    this.updateContainerWidth = function() {
+        if( this.currentPos > this.innerWidth - this.outerWidth ) {
+            this.currentPos = this.innerWidth - this.outerWidth;
+            this.setContentX( this.currentPos );
+        }
+        this.updateContainerState();
+    };
+
+    this.updateContainerWidth();
+}
+
+/*
+ * Initiate objects for overflow elements
+ */
+__WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(".o-overflow").each( function(element, i) {
+
+    overflowArray.push( new Overflow(element) );
+
+    __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(overflowArray[i].container).find(".jsNavLeft").on( "click", function(event){
+        overflowArray[i].shiftLeft();
+    });
+
+    __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(overflowArray[i].container).find(".jsNavRight").on( "click", function(event){
+        overflowArray[i].shiftRight();
+    });
+
+});
+
+/*
+ * Adapt responsively to viewport changes
+ */
+__WEBPACK_IMPORTED_MODULE_0_cash_dom___default()( window ).on("resize", function() {
+    overflowArray.forEach( function(overflow) {
+        overflow.updateContainerWidth();
+    })
+});
+
+
+/***/ }),
+/* 6 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cash_dom__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cash_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_cash_dom__);
+/**
+ * Have a button toggle a class on a target
+ *
+ * data-target - the target selector ".o-example". Target must be
+ *               sibling of button.
+ * data-class  - the class that is being toggled on the target
+ *
+ * Toggles the "is-hidden" class on its own children if it exists, eg:
+ * <button class="jsToggle">
+ *   <span>more</span>
+ *   <span class="u-hidden">less</span>
+ * </button>
+ */
+
+
+// import $ from 'jquery-slim';
+
+__WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(".jsToggle").on("click", function(e){
+    var target = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).attr("data-target"),
+        css = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).attr("data-class"),
+        children = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).children();
+    __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).siblings(target).toggleClass(css);
+    if( __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(children).hasClass("u-hidden") ) {
+        __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(children).toggleClass("u-hidden");
+    }
+});
+
+
+/***/ }),
+/* 7 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cash_dom__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cash_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_cash_dom__);
+/**
+ * Add class .is-faded to all Siblings during hover
+ *
+ */
+
+
+// import $ from 'jquery-slim';
+
+__WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(".jsFadeSiblings").on("mouseenter", function(e){
+    __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).siblings().addClass("is-faded");
+}).on("mouseleave", function(e){
+    __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).siblings().removeClass("is-faded");
+});
+
+
+/***/ }),
+/* 8 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cash_dom__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cash_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_cash_dom__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_popper_js__ = __webpack_require__(1);
+
+
+
+
+__WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(document).ready(function(){
+
+    __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(".jsDropdown").each( function(dropdown, i) {
+
+        var btn = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(dropdown).parent().find(".jsDropdownBtn").get(0),
+            placement = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(dropdown).attr("data-placement");
+
+            console.log( (placement ? placement : 'bottom-start') );
+
+        var popper = new __WEBPACK_IMPORTED_MODULE_1_popper_js__["a" /* default */](
+            btn,
+            dropdown,
+            {
+                placement: (placement ? placement : 'bottom-start')
+            }
+        );
+
+        __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(btn).on("click", function(){
+
+            __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(dropdown).toggleClass("u-hidden");
+
+            // update again on click since the first update might have happened
+            // when the dropdown was not rendered yet
+            popper.update();
+
+            if( __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).attr("aria-expanded") == "false" ) {
+                __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).attr("aria-expanded", "true");
+            } else {
+                __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).attr("aria-expanded", "false");
+            }
+
+        });
+
+    });
+
+});
+
+
+/***/ }),
 /* 9 */
 /***/ (function(module, exports) {
 
@@ -4075,46 +4124,6 @@ try {
 // easier to handle this case. if(!global) { ...}
 
 module.exports = g;
-
-
-/***/ }),
-/* 10 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cash_dom__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cash_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_cash_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_popper_js__ = __webpack_require__(8);
-
-
-
-
-__WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(document).ready(function(){
-
-    __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(".jsDropdown").each( function(dropdown, i) {
-
-        var btn = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(dropdown).parent().find(".jsDropdownBtn").get(0);
-
-        __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(btn).on("click", function(){
-            __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(dropdown).toggleClass("u-hidden");
-            if( __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).attr("aria-expanded") == "false" ) {
-                __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).attr("aria-expanded", "true");
-            } else {
-                __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).attr("aria-expanded", "false");
-            }
-        });
-
-        var popper = new __WEBPACK_IMPORTED_MODULE_1_popper_js__["a" /* default */](
-            btn,
-            dropdown,
-            {
-                placement: 'bottom-start'
-            }
-        );
-
-    });
-
-});
 
 
 /***/ })

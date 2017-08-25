@@ -577,16 +577,16 @@
         "class": "c-btn--small c-btn--secondary",
         "dropdown": [
             {
-                "label": "<span class=\"u-ic-videocam\"><span> <strong>HD</strong> 307 MB <small class=\"u-muted\">MP4 720p</small>"
+                "label": "<span class=\"u-ic-videocam\"><span> <strong>HD</strong> 307 MB <small class=\"u-muted\">– MP4 720p</small>"
             },
             {
-                "label": "<span class=\"u-ic-videocam\"><span> <strong>SD</strong> 127 MB <small class=\"u-muted\">MP4 360p</small>"
+                "label": "<span class=\"u-ic-videocam\"><span> <strong>SD</strong> 127 MB <small class=\"u-muted\">– MP4 360p</small>"
             },
             {
-                "label": "<span class=\"u-ic-headset\"><span> <strong>HQ</strong> 36 MB <small class=\"u-muted\">MP3 56k/bs</small>"
+                "label": "<span class=\"u-ic-headset\"><span> <strong>HQ</strong> 36 MB <small class=\"u-muted\">– MP3 56kb/s</small>"
             },
             {
-                "label": "<span class=\"u-ic-headset\"><span> <strong>LQ</strong> 16 MB <small class=\"u-muted\">MP3 32k/bs</small>"
+                "label": "<span class=\"u-ic-headset\"><span> <strong>LQ</strong> 16 MB <small class=\"u-muted\">– MP3 32kb/s</small>"
             }
         ]
     },

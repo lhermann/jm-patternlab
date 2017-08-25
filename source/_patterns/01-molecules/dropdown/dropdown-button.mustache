@@ -1,9 +1,9 @@
-<button id="{{ id }}" class="c-btn c-btn--dropdown {{ class }} {{ styleModifier }} jsDropdownBtn"
+<button id="{{ id }}" class="c-btn c-btn--dropdown {{ class }} jsDropdownBtn"
     aria-haspopup="true" aria-expanded="false">
     {{{ label }}}
 </button>
 
-<ul class="c-dropdown c-dropdown--round u-hidden jsDropdown"
+<ul class="c-dropdown c-dropdown--round u-hidden {{ styleModifier }} jsDropdown"
     aria-labelledby="{{ id }}">
 
     {{# dropdown }}

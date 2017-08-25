@@ -25,7 +25,8 @@ fieldset {
 
 input,
 textarea {
-    border: 0;
+    transition: border-color $global-transition;
+    border: 1px solid $c-border;
     border-radius: $global-radius;
     background-color: $c-background-transparent;
     padding: $unit-tiny $unit-small;
@@ -35,6 +36,10 @@ textarea {
     &::placeholder { color: $c-gray-6; }
     &::-webkit-input-placeholder { color: $c-gray-6; }
     &:-ms-input-placeholder { color: $c-gray-6; }
+
+    &:focus {
+        border-color: $c-accent;
+    }
 
     // &[type="text"],
     // &[type="tel"],

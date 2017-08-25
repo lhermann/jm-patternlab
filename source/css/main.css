@@ -779,7 +779,9 @@ fieldset {
 
 input,
 textarea {
-  border: 0;
+  -webkit-transition: border-color 0.33333s;
+  transition: border-color 0.33333s;
+  border: 1px solid #e8e8e8;
   border-radius: 3px;
   background-color: rgba(0, 0, 0, 0.04);
   padding: 5px 11px;
@@ -800,6 +802,9 @@ textarea {
   input:-ms-input-placeholder,
   textarea:-ms-input-placeholder {
     color: #666; }
+  input:focus,
+  textarea:focus {
+    border-color: #4c6dff; }
   input[type="radio"], input[type="checkbox"],
   textarea[type="radio"],
   textarea[type="checkbox"] {
@@ -1875,32 +1880,6 @@ textarea {
 .c-flyin__content {
   padding: 21px; }
 
-/*
- * Transparent overlay while mobile nav is visible
- */
-.c-site-wrapper {
-  position: relative;
-  height: 100%; }
-
-.c-site-wrapper:after {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  -webkit-transition: 0.33333s background-color;
-  transition: 0.33333s background-color;
-  z-index: -99;
-  background-color: transparent;
-  content: ""; }
-
-.c-site-wrapper--faded {
-  overflow: hidden; }
-  .c-site-wrapper--faded:after {
-    z-index: 99;
-    background-color: rgba(0, 0, 0, 0.5); }
-
 /* 1 */
 /* ==========================================================================
    #FOMRS
@@ -2139,6 +2118,35 @@ textarea {
   .c-site-footer__list--middot > li:not(:last-child):after {
     padding: 0 5px;
     content: "\0a\b7"; }
+
+/* ==========================================================================
+   #FLYIN
+   ========================================================================== */
+.c-site-wrapper {
+  position: relative;
+  height: 100%; }
+
+.c-site-wrapper:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: 0.33333s background-color;
+  transition: 0.33333s background-color;
+  z-index: -99;
+  background-color: transparent;
+  content: ""; }
+
+/*
+ * Transparent overlay while mobile nav is visible
+ */
+.c-site-wrapper--faded {
+  overflow: hidden; }
+  .c-site-wrapper--faded:after {
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.5); }
 
 /* ==========================================================================
    #PRIMARY-NAV
@@ -2602,7 +2610,7 @@ textarea {
 ========================================================================== */
 .c-dropdown {
   z-index: 98;
-  margin: 0;
+  margin: 3px 0;
   border: 1px solid #e8e8e8;
   -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
@@ -2613,8 +2621,7 @@ textarea {
     overflow: hidden; }
 
 .c-dropdown__item {
-  border-bottom: 1px solid #e8e8e8;
-  text-align: left; }
+  border-bottom: 1px solid #e8e8e8; }
   .c-dropdown__item:last-child {
     border-bottom: 0; }
 
