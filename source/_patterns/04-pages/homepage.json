@@ -11,7 +11,7 @@
                 "subheading": "... das ewige Evangelium für Stuttgart, Deutschland und die Welt",
                 "text": "Wöchentlich neue Videos über die Bibel,<br>Prophetie und Zeitgeschehen",
                 "button": "Erster Besuch? Hier geht's los",
-                "newVideosList": {
+                "medialist": {
                     "title": "Neue Videos",
                     "medialist": [
                         {
@@ -39,7 +39,8 @@
                             "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
                             "length": "2:34"
                         }
-                    ]
+                    ],
+                    "button": false
                 }
             },
             {
@@ -199,7 +200,7 @@
         },
         "date": "7. März 2017"
     },
-    "newVideosList": {
+    "medialist": {
         "title": "Neue Videos",
         "medialist": [
             {
@@ -227,9 +228,10 @@
                 "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
                 "length": "2:34"
             }
-        ]
+        ],
+        "button": false
     },
-    "popularVideosList": {
+    "medialist1": {
         "title": "Beliebte Videos",
         "medialist": [
             {
@@ -257,9 +259,10 @@
                 "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
                 "length": "2:34"
             }
-        ]
+        ],
+        "button": false
     },
-    "newSeriesList": {
+    "medialist2": {
         "title": "Neue Serien",
         "medialist": [
             {
@@ -326,9 +329,10 @@
                     }
                 ]
             }
-        ]
+        ],
+        "button": false
     },
-    "devotionalVideosList": {
+    "medialist3": {
         "title": "Tägliche Andachten",
         "medialist": [
             {
@@ -356,7 +360,8 @@
                 "title": "Mit Gott leben – Apostelgeschichte 17:25b",
                 "length": "2:34"
             }
-        ]
+        ],
+        "button": false
     },
     "article1": {
         "title": "„Sola Veritas“ – Die neue große Serie zur Geschichte der Reformation",

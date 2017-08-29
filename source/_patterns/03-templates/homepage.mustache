@@ -15,7 +15,13 @@
         </section>
 
         <section class="o-wrapper u-spacer-top">
-            {{> organisms-section-medialist }}
+
+            {{# medialist }}
+                {{> organisms-medialist:u-hidden@from-tablet }}
+            {{/ medialist }}
+
+            {{> organisms-medialist-3-columns }}
+
         </section>
 
         {{# quoteslider }}
@@ -25,7 +31,7 @@
         {{/ quoteslider }}
 
         <section class="o-wrapper u-spacer-top">
-            <h2><a href="#">Artikel</a></h2>
+            <h2><a class="c-link c-link--dotted" href="#">Artikel</a></h2>
             {{> organisms-article-grid }}
         </section>
 

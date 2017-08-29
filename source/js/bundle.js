@@ -4068,8 +4068,6 @@ __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(document).ready(function(){
         var btn = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(dropdown).parent().find(".jsDropdownBtn").get(0),
             placement = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(dropdown).attr("data-placement");
 
-            console.log( (placement ? placement : 'bottom-start') );
-
         var popper = new __WEBPACK_IMPORTED_MODULE_1_popper_js__["a" /* default */](
             btn,
             dropdown,

@@ -4,13 +4,13 @@
 </button>
 
 <ul class="c-dropdown c-dropdown--round u-hidden {{ styleModifier }} jsDropdown"
-    aria-labelledby="{{ id }}">
+    aria-labelledby="{{ id }}" {{# placement }}data-placement="{{ placement }}"{{/ placement }}>
 
     {{# dropdown }}
-    <li class="c-dropdown__item">
-        <a class="c-link c-link--block c-link--secondary" href="#">
+    <li class="c-dropdown__item {{ class }}">
+        {{# url }}<a class="c-link c-link--block c-link--secondary" href="{{ url }}">{{/ url }}
             {{{ label }}}
-        </a>
+        {{# url }}</a>{{/ url }}
     </li>
     {{/ dropdown }}
 

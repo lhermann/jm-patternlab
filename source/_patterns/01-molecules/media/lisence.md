@@ -1,5 +1,5 @@
 ---
-title: Medialist Section
+title: Lisence
 ---
 
 [Insert description here]

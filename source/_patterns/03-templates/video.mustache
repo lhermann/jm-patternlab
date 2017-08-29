@@ -2,14 +2,14 @@
 
     {{> organisms-header }}
 
-    <main role="main" class="u-pv+">
+    <main role="main" class="u-mb u-mb++@tablet">
 
-        <div id="background-box">
+        <div id="background-box" class="c-header-bg u-pt+" style="background-image: url('{{background}}');">
             <div class="o-wrapper">
                 <div class="u-box-center u-2/3@tablet">
-                    <header class="u-mb+">
-                        <h1 class="u-h2 u-mb0">Sola Veritas: 6. Magdeburg und Eisenach (1497-1498)</h1>
-                        <a href="#">Christopher Kramp</a> &middot; <a href="#">Sola Veritas – Die Wahre Chronik der Reformation</a>
+                    <header class="u-white u-mb u-mb+@tablet">
+                        <h1 class="u-h-responsive u-mb0">{{ title }}</h1>
+                        <a class="c-link c-link--dotted c-link--white" href="#">Christopher Kramp</a> &middot; <a class="c-link c-link--dotted c-link--white" href="#">Sola Veritas – Die Wahre Chronik der Reformation</a>
                     </header>
 
                     {{> molecules-video }}
@@ -22,45 +22,74 @@
 
                 <div class="o-pack o-pack--middle o-pack--auto u-mv">
                     <div class="o-pack__item">
-                        Veröffentlicht am <strong>29. Mai 2017</strong>
+                        <span class="u-hidden@until-desktop">Veröffentlicht am</span> <strong>29. Mai 2017</strong>
                     </div>
                     <div class="o-pack__item">
-                        <span class="u-ic-visibility"></span> 297 Klicks
+                        <span class="u-ic-visibility"></span> 297 <span class="u-hidden@until-desktop">Klicks</span>
                     </div>
-                    <div class="o-pack__item u-text-center">
+                    <div class="o-pack__item u-text-right">
                         {{# download-button }}
                             {{> molecules-dropdown-button:u-text-left }}
                         {{/ download-button }}
                     </div>
-                    <div class="o-pack__item u-text-right">
-
-                        <button id="share-button" class="c-btn c-btn--dropdown c-btn--small c-btn--secondary jsDropdownBtn"
-                            aria-haspopup="true" aria-expanded="false">
-                            <span class="u-ic-share"></span> Teilen
-                        </button>
-
-                        <ul class="c-dropdown c-dropdown--round u-hidden u-text-left jsDropdown"
-                            aria-labelledby="share-button" data-placement="bottom-end">
-
-                            <li class="c-dropdown__item">
-                                <a class="c-link c-link--block c-link--secondary" href="http://www.facebook.com/sharer/sharer.php?u=#" title="Auf Facebook teilen" target="_blank">
-                                    Auf Facebook teilen
-                                </a>
-                            </li>
-
-                            <li class="c-dropdown__item u-ph u-pv-">
-                                <p class="u-mb--">Video-Player in die eigene Website einbetten:</p>
-                                <input class="u-1/1" type="text" value="<iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://embed.joelmediatv.de/16245&quot; frameborder=&quot;0&quot; allowfullscreen></iframe>" onclick="this.select()" readonly="readonly">
-                            </li>
-
-                        </ul>
-
+                    <div class="o-pack__item u-text-right u-hidden@until-tablet">
+                        {{# share-button }}
+                            {{> molecules-dropdown-button:u-text-left }}
+                        {{/ share-button }}
                     </div>
                 </div>
 
                 <hr/>
 
-                <p class="u-mt+">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore nobis neque sunt similique itaque optio quis ipsa eius quod mollitia tenetur quos dicta sed, illum dolore odit, porro odio, deleniti voluptate. Eum unde nulla atque repellat dolores vero quam deserunt incidunt totam ex odit aperiam, ducimus doloribus nam excepturi officiis fugiat vitae omnis ipsum cum asperiores nostrum odio consequuntur. Eius dolore, ea porro. Maiores eum quas, voluptate veniam obcaecati ullam quod sed, hic illo. Error mollitia placeat minima quibusdam quisquam, iure numquam incidunt totam sed! Delectus porro assumenda sequi, nostrum! Nisi quas ipsum necessitatibus, similique facilis accusantium repellendus voluptatum iste.</p>
+                <div class="u-mv+ u-text-center">
+
+                    <div class="u-text-left u-mb- {{# showMore? }}u-show-more{{/ showMore? }}">
+                        {{{ htmlText }}}
+                    </div>
+
+                    {{# showMore? }}
+                    <button class="c-btn c-btn--ghost c-btn--none c-btn--tiny u-ph jsToggle"
+                        data-target=".u-show-more" data-class="is-visible">
+                        <span>
+                            <span class="u-ic-plus"></span> alles anzeigen
+                        </span>
+                        <span class="u-hidden">
+                            <span class="u-ic-minus"></span> verbergen
+                        </span>
+                    </button>
+                    {{/ showMore? }}
+
+                </div>
+
+                <hr/>
+
+                <h2 class="u-h5">
+                    <span style="vertical-align: middle;">Nächstes Video</span>
+                    <a class="c-btn c-btn--ghost c-btn--secondary c-btn--tiny u-default u-ml-" href="#">Ganze Serie anzeigen</a>
+                </h2>
+
+                {{# mediaitem }}
+                    {{> molecules-mediaitem:c-mediaitem--standalone }}
+                {{/ mediaitem }}
+
+                <hr class="u-mt"/>
+
+                <div class="o-layout o-layout--large u-mv">
+                    <div class="o-layout__item u-1/2@tablet u-mb+ u-mb0@tablet">
+                        {{# medialist1 }}
+                            {{> organisms-medialist }}
+                        {{/ medialist1 }}
+                    </div>
+                    <div class="o-layout__item u-1/2@tablet">
+                        {{# medialist2 }}
+                            {{> organisms-medialist }}
+                        {{/ medialist2 }}
+                    </div>
+                </div>
+
+                <hr/>
+
+                {{> molecules-lisence }}
 
             </div>
         </div>

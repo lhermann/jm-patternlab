@@ -9,8 +9,6 @@ $(document).ready(function(){
         var btn = $(dropdown).parent().find(".jsDropdownBtn").get(0),
             placement = $(dropdown).attr("data-placement");
 
-            console.log( (placement ? placement : 'bottom-start') );
-
         var popper = new Popper(
             btn,
             dropdown,

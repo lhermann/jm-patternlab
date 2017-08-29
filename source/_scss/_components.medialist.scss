@@ -14,5 +14,7 @@
 
     .c-medialist__list {
         margin: 0;
+        margin-right: -$unit-small;
+        margin-left: -$unit-small;
         list-style: none;
     }

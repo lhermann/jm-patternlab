@@ -1,0 +1,118 @@
+{
+    "title": "Sola Veritas: 6. Magdeburg und Eisenach (1497-1498)",
+    "background": "/images/header-dawn.svg",
+    "player": "/images/sample/sola-veritas-player.jpg",
+    "download-button": {
+        "label": "<span class=\"u-ic-download\"></span> Download",
+        "id": "download-button",
+        "class": "c-btn--small c-btn--secondary",
+        "placement": "bottom-end",
+        "dropdown": [
+            {
+                "label": "<span class=\"u-ic-videocam\"><span> <strong>HD</strong> 307 MB <small class=\"u-muted\">– MP4 720p</small>",
+                "class": false
+            },
+            {
+                "label": "<span class=\"u-ic-videocam\"><span> <strong>SD</strong> 127 MB <small class=\"u-muted\">– MP4 360p</small>",
+                "class": false
+            },
+            {
+                "label": "<span class=\"u-ic-headset\"><span> <strong>HQ</strong> 36 MB <small class=\"u-muted\">– MP3 56kb/s</small>",
+                "class": false
+            },
+            {
+                "label": "<span class=\"u-ic-headset\"><span> <strong>LQ</strong> 16 MB <small class=\"u-muted\">– MP3 32kb/s</small>",
+                "class": false
+            }
+        ]
+    },
+    "share-button": {
+        "label": "<span class=\"u-ic-share\"></span> Teilen",
+        "id": "share-button",
+        "class": "c-btn--small c-btn--secondary",
+        "placement": "bottom-end",
+        "dropdown": [
+            {
+                "label": "Auf Facebook teilen",
+                "url": "http://www.facebook.com/sharer/sharer.php?u=#",
+                "class": false
+            },
+            {
+                "label": "<p class=\"u-mb--\">Video-Player in die eigene Website einbetten:</p><input class=\"u-1/1\" type=\"text\" value=\"<iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://embed.joelmediatv.de/16245&quot; frameborder=&quot;0&quot; allowfullscreen></iframe>\" onclick=\"this.select()\" readonly=\"readonly\">",
+                "url": false,
+                "class": "u-ph u-pv-"
+            }
+        ]
+    },
+    "mediaitem": {
+        "image": "/images/sample/video-2-192x108.jpg",
+        "title": "Sola Veritas: 1. Funken im Dunkel (1482-1484)",
+        "length": "56:07"
+    },
+    "medialist1": {
+        "title": false,
+        "url": false,
+        "titleClass": "u-h5",
+        "medialist": [
+            {
+                "image": "/images/sample/video-2-192x108.jpg",
+                "title": "Sola Veritas: 1. Funken im Dunkel (1482-1484)",
+                "length": "56:07"
+            },
+            {
+                "image": "/images/sample/video-2-192x108.jpg",
+                "title": "Sola Veritas: 2. Prägende Ereignisse (1485-1487)",
+                "length": "48:20"
+            },
+            {
+                "image": "/images/sample/video-2-192x108.jpg",
+                "title": "Sola Veritas: 3. Bedrängnis (1488-1490)",
+                "length": "48:29"
+            },
+            {
+                "image": "/images/sample/video-2-192x108.jpg",
+                "title": "Sola Veritas: 4. Zeitalter der Entdeckungen (1491-1493)",
+                "length": "51:26"
+            },
+            {
+                "image": "/images/sample/video-2-192x108.jpg",
+                "title": "Sola Veritas: 5. Feuer und Frevel (1494-1496)",
+                "length": "52:34"
+            }
+        ],
+        "button": false
+    },
+    "medialist2": {
+        "title": false,
+        "url": false,
+        "titleClass": "u-h5",
+        "medialist": [
+            {
+                "image": "/images/sample/video-1-192x108.jpg",
+                "title": "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
+                "length": "56:07"
+            },
+            {
+                "image": "/images/sample/video-2-192x108.jpg",
+                "title": "Sola Veritas: 11. Neue Wege (1506)",
+                "length": "48:20"
+            },
+            {
+                "image": "/images/sample/video-3-192x108.jpg",
+                "title": "Offenbarung 17:9",
+                "length": "38:29"
+            },
+            {
+                "image": "/images/sample/video-4-192x108.jpg",
+                "title": "Mit Gott leben – Apostelgeschichte 17:25b",
+                "length": "51:26"
+            },
+            {
+                "image": "/images/sample/video-5-192x108.jpg",
+                "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
+                "length": "2:34"
+            }
+        ],
+        "button": false
+    }
+}

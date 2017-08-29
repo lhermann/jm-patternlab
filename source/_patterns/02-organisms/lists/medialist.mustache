@@ -1,7 +1,8 @@
 <section class="c-medialist {{ styleModifier }}">
     {{# title }}
-    <h2 class="c-medialist__title">
-        <a href="#">{{ title }}</a>
+    <h2 class="c-medialist__title {{ titleClass }}">
+        {{# url }}<a class="c-link c-link--dotted" href="{{ url }}">{{ title }}</a>{{/ url }}
+        {{^ url }}{{ title }}{{/ url }}
     </h2>
     {{/ title }}
 
@@ -12,4 +13,8 @@
         </li>
         {{/ medialist }}
     </ul>
+
+    {{# button }}
+    <a class="c-btn c-btn--ghost c-btn--secondary c-btn--tiny u-mt {{ class }}" href="{{ url }}">{{ label }}</a>
+    {{/ button }}
 </section>

@@ -16,7 +16,9 @@
     "alertText" : "An alert is messaging that tells the user some information. Alerts can be error, warning, success, or info messages",
     "quoteText" : "A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.",
     "quoteSource" : "<a href='https://en.wikipedia.org/wiki/Block_quotation'>Wikiepedia</a>",
-    "image": "../../images/fpo_16x9.png",
+    "image": "/images/fpo_16x9.png",
+    "background": "/images/header.svg",
+    "player": "/images/player-16x9.jpg",
     "label": "Lorem Ipsum",
     "class": "",
     "author": {
@@ -25,6 +27,10 @@
     },
     "category": {
         "name": "Allgemein",
+        "url": "#"
+    },
+    "button": {
+        "label": "Button",
         "url": "#"
     },
     "date": "7. März 2017",
@@ -64,6 +70,7 @@
         "medium" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "long" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
+    "htmlText" : "<p>Wie bereits erwähnt, erteilt CC BY eine unbeschränkte Lizenz zur Nutzung des jeweiligen Inhalts. Wie der Inhalt genutzt wird, z. B. im Original oder in geänderter Form, von wem oder für welchen Zweck, ist ohne Belang. Gemäß Abschnitt 3a des Rechtstextes sind folgende Verpflichtungen einzuhalten: # Autor und zu nennende Dritte müssen so genannt werden, wie es der Lizenzgeber verlangt, sofern diese Form der Nennung angemessen ist.</p><ol><li>Sofern vom Lizenzgeber zur Verfügung gestellt, müssen Urheberrechtshinweise, ein Verweis auf die CC-Lizenz (vorzugsweise als Link auf die CC-Webseite), ein Verweis, der sich auf den Garantie- und Haftungsausschluss bezieht, und ein Link zur Originalquelle angegeben werden.</li><li>Wird das Werk in einer veränderten Version geteilt, muss angegeben werden, dass es sich um eine geänderte Version handelt. Bereits enthaltene Änderungshinweise müssen (wenn das Werk schon zuvor modifiziert wurde) beibehalten werden (siehe Abschnitt 3.a.1.B des Rechtstextes).</li><li>Soweit der Lizenzgeber dies fordert und es angemessen ist, ist der Nutzer verpflichtet, die unter Ziffer 2 genannten Informationen zu entfernen.</li><li>Der Lizenznehmer darf nicht den Eindruck erwecken, dass seine Nutzung vom Lizenzgeber oder einem Dritten, der Anspruch auf Namensnennung hat, in irgendeiner Weise unterstützt wird (siehe Abschnitt 2.a.6 des Rechtstextes).</li></ol>",
     "number" : "12",
     "primaryNav" : [
         {
@@ -97,6 +104,7 @@
             "shortLabel": "Live",
             "url": "link.pages-homepage",
             "hasDropdown": true,
+            "dropdown": false,
             "livestream": true
         }
     ],
@@ -155,7 +163,6 @@
         }
     ],
     "url" : "#",
-    "htmlText" : "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, unde, dolore? Ex fugit, necessitatibus tempore neque ullam nostrum ducimus alias beatae voluptatibus iusto, perspiciatis tenetur consectetur reprehenderit, harum quae rerum!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit corrupti fuga, quas quisquam perspiciatis. Consequatur, atque ducimus dolores natus officia qui rerum consectetur repellat ullam accusantium laboriosam, reprehenderit nemo deleniti</p>",
     "form" : true,
     "field" : {
         "id" : "field-id",
@@ -175,76 +182,6 @@
     },
     "hero": true,
     "alert": true,
-    "latestPosts" : {
-        "mediaList": [
-            {
-            },
-            {
-            },
-            {
-            }
-        ],
-        "textButton" : false,
-        "pagination" : true
-    },
-    "featuredPosts" : {
-        "mediaList": [
-            {
-                "styleModifier" : "small"
-            },
-            {
-                "styleModifier" : "small"
-            },
-            {
-                "styleModifier" : "small"
-            }
-        ],
-        "pagination" : false
-    },
-    "featuredChallenges" : {
-        "mediaList": [
-            {},
-            {},
-            {},
-            {}
-        ],
-        "textButton" : false,
-        "pagination" : true
-    },
-    "featuredPeople" : {
-        "mediaList": [
-            {
-                "styleModifier" : "small"
-            },
-            {
-                "styleModifier" : "small"
-            },
-            {
-                "styleModifier" : "small"
-            }
-        ],
-        "pagination" : false
-    },
-    "featuredHikes" : {
-        "mediaList": [
-            {
-                "styleModifier" : "small"
-            },
-            {
-                "styleModifier" : "small"
-            },
-            {
-                "styleModifier" : "small"
-            }
-        ],
-        "pagination" : false
-    },
-
-    "toutList": [
-        { },
-        { },
-        { }
-    ],
     "promoList": [
         {
             "title": "Prophetie<br>&amp; Zeitgeschehen",
@@ -267,10 +204,11 @@
             "url:": "#"
         }
     ],
-    "newVideosList": true,
-    "popularVideosList": true,
-    "newSeriesList": true,
-    "devotionalVideosList": true,
+    "mediaitem": true,
+    "medialist1": true,
+    "medialist2": true,
+    "medialist3": true,
+    "medialist4": true,
     "medialist": [
         {},
         {},
@@ -560,15 +498,13 @@
     "dropdown": [
         {
             "label": "Some link",
-            "url": "#"
+            "url": "#",
+            "class": false
         },
         {
             "label": "Another longer link",
-            "url": "#"
-        },
-        {
-            "label": "The last link",
-            "url": "#"
+            "url": "#",
+            "class": false
         }
     ],
     "download-button": {
@@ -590,20 +526,5 @@
             }
         ]
     },
-    "share-button": {
-        "label": "<span class=\"u-ic-share\"></span> Share",
-        "id": "share-button",
-        "class": "c-btn--small c-btn--secondary",
-        "dropdown": [
-            {
-                "label": "Some link"
-            },
-            {
-                "label": "Another longer link"
-            },
-            {
-                "label": "The last link"
-            }
-        ]
-    }
+    "share-button": true
 }

@@ -18,15 +18,15 @@
 
 .c-btn {
     display: inline-block; /* [1] */
-    vertical-align: middle; /* [2] */
-    font: inherit; /* [3] */
-    text-align: center; /* [4] */
+    transition: $global-transition;
     margin: 0; /* [4] */
+    border-width: 0;
+    border-radius: $global-radius;
     cursor: pointer; /* [5] */
     padding: $inuit-global-spacing-unit-small $inuit-global-spacing-unit-large;
-    transition: $global-transition;
-    border-radius: $global-radius;
-    border-width: 0;
+    vertical-align: middle; /* [2] */
+    text-align: center; /* [4] */
+    font: inherit; /* [3] */
     // font-family: $font-secondary;
 
     > [class^="u-ic-"],
@@ -120,6 +120,22 @@
 
 }
 
+.c-btn--none {
+    background-color: transparent;
+
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: transparent;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $c-border;
+    }
+}
+
 
 
 
@@ -132,7 +148,7 @@
 }
 
 .c-btn--small {
-  padding: $inuit-global-spacing-unit-tiny $inuit-global-spacing-unit-small;
+  padding: $inuit-global-spacing-unit-tiny $inuit-global-spacing-unit;
 }
 
 .c-btn--large {
@@ -187,24 +203,33 @@ $btn-ghost-border-width: 1px;
 
     &.c-btn--secondary {
         color: $c-textmuted;
+        border-color: $c-secondary-btn;
 
         &:hover,
         &:focus {
             color: $c-secondary-btn-hover;
+            border-color: $c-textmuted;
         }
 
     }
 
     &.c-btn--tertiary {
         color: $c-tertiary-btn;
-        opacity: .5;
 
         &:hover,
         &:focus {
             color: $c-tertiary-btn-hover;
-            opacity: .6;
         }
 
+    }
+
+    &.c-btn--none {
+        border-color: transparent;
+
+        &:hover,
+        &:focus {
+            border-color: $c-text;
+        }
     }
 
 }
@@ -224,8 +249,12 @@ $btn-ghost-border-width: 1px;
     padding-bottom: 0;
 
     > span {
-        line-height: $unit-small * 2 + $inuit-global-line-height - 2px;
+        line-height: $unit-small * 2 + $inuit-global-line-height;
         font-size: $inuit-global-font-size * 2;
+    }
+
+    &.c-btn--ghost > span {
+        line-height: $unit-small * 2 + $inuit-global-line-height - 2px;
     }
 }
 
@@ -251,29 +280,18 @@ $btn-ghost-border-width: 1px;
     border-radius: 0;
 }
 
+.c-btn--center {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .c-btn--right {
     border-radius: 0 $global-radius $global-radius 0;
 }
 
 .c-btn--left {
     border-radius: $global-radius 0 0 $global-radius;
-}
-
-.c-btn--none {
-    background-color: transparent;
-    padding: $inuit-global-spacing-unit;
-
-    &,
-    &:hover,
-    &:active,
-    &:focus {
-        background-color: transparent;
-    }
-
-    &:hover,
-    &:focus {
-        background-color: $c-border;
-    }
 }
 
 .c-btn--dropdown:after {
