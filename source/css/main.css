@@ -597,9 +597,6 @@ a {
   a:hover, a:focus {
     color: #4d4d4d; }
 
-/*
- * Heading links
- */
 hr {
   border: 0;
   border-top: 1px solid #e8e8e8; }
@@ -2924,7 +2921,7 @@ textarea {
 .c-header-bg {
   background-image: url("/images/header.svg");
   background-size: cover;
-  background-position: center -30px;
+  background-position: center bottom 30px;
   background-repeat: no-repeat; }
 
 .c-player {

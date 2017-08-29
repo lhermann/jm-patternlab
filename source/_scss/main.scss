@@ -148,21 +148,6 @@ a {
     }
 }
 
-/*
- * Heading links
- */
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-//     > a {
-//         border-bottom: 1px dotted $c-textmuted;
-//         color: $c-text;
-//     }
-// }
-
 hr {
     border: 0;
     border-top: 1px solid $c-border;
@@ -293,7 +278,7 @@ $slide-duration: 3s;
 .c-header-bg {
     background-image: url("/images/header.svg");
     background-size: cover;
-    background-position: center -30px;
+    background-position: center bottom 30px;
     background-repeat: no-repeat;
 }
 
