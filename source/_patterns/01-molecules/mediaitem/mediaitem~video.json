@@ -3,13 +3,19 @@
     "length": "56:07",
     "meta": [
         {
-            "label": "",
-            "link": "Matthias Ströck",
+            "label": "Matthias Ströck",
             "url": "#"
         },
         {
             "label": "5. Juni 2017",
-            "link": "",
+            "url": false
+        },
+        {
+            "label": "41 Klicks",
+            "url": false
+        },
+        {
+            "label": "Serie: 213 Die Petrusbriefe (CSH 2017 Q2)",
             "url": "#"
         }
     ]

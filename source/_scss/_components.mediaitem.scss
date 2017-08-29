@@ -17,45 +17,63 @@ $width-sprecher: (80px 80px);
  */
 .c-mediaitem {
     display: flex; /* 1 */
-    transition: $global-transition background-color;
+    transition: $global-transition;
     margin-left: -$unit-small;
     border-radius: $global-radius;
     padding: $unit-small;
     align-items: center; /* 1 */
+    position: relative;
+    transform: translateY(0);
 
     &:hover {
         background-color: rgba($c-black, .03);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .08);
+        transform: translateY(-2px);
     }
 }
+
+    .c-mediaitem__link {
+        position: absolute;
+        width: 100%;
+        display: block;
+        height: 100%;
+        z-index: -1;
+        top: 0;
+    }
 
     .c-mediaitem__img {
         margin-right: $unit;
         width: nth($width-video, 1);
+        height: nth($width-video, 2);
         flex-basis: nth($width-video, 1);
         flex-shrink: 0;
-        height: nth($width-video, 2);
+        position: relative;
 
         .c-mediaitem--serie & {
             width: nth($width-serie, 1);
-            flex-basis: nth($width-serie, 1);
             height: nth($width-serie, 2);
+            flex-basis: nth($width-serie, 1);
         }
 
         .c-mediaitem--sprecher & {
             width: nth($width-sprecher, 1);
-            flex-basis: nth($width-sprecher, 1);
             height: nth($width-sprecher, 2);
+            flex-basis: nth($width-sprecher, 1);
         }
 
         .c-mediaitem--thema & {
             width: auto;
+            height: $unit-large;
             flex-basis: auto;
+        }
+
+        img {
+            border-radius: $global-radius;
         }
     }
 
         .c-mediaitem__imglink {
             display: block;
-            position: relative;
             transition: $global-transition color;
             color: $c-gray-3;
 
@@ -64,19 +82,9 @@ $width-sprecher: (80px 80px);
                 font-size: $unit-large;
             }
 
-            &:focus,
-            &:hover,
-            .c-mediaitem:hover & {
+            .c-mediaitem:hover &,
+            .c-mediaitem:focus & {
                 color: $c-gray-6;
-            }
-
-            > img {
-                transition: $global-transition box-shadow;
-                border-radius: $global-radius;
-
-                .c-mediaitem:hover & {
-                    box-shadow: 0 1px 2px rgba($c-black, .2);
-                }
             }
         }
 
