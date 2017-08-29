@@ -2380,6 +2380,10 @@ textarea {
       flex-basis: 96px;
   -ms-flex-negative: 0;
       flex-shrink: 0; }
+  .c-mediaitem--audio .c-mediaitem__img {
+    width: 54px;
+    -ms-flex-preferred-size: 54px;
+        flex-basis: 54px; }
   .c-mediaitem--serie .c-mediaitem__img {
     width: 128px;
     height: 72px;

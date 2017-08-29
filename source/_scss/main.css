@@ -2314,6 +2314,9 @@ textarea {
   height: 54px;
   flex-basis: 96px;
   flex-shrink: 0; }
+  .c-mediaitem--audio .c-mediaitem__img {
+    width: 54px;
+    flex-basis: 54px; }
   .c-mediaitem--serie .c-mediaitem__img {
     width: 128px;
     height: 72px;

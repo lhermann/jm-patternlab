@@ -9,6 +9,7 @@
  * Sprecher:    80x80       160x160
  */
 $width-video:    (96px 54px);
+$width-audio:    (54px 54px);
 $width-serie:    (128px 72px);
 $width-sprecher: (80px 80px);
 
@@ -52,6 +53,11 @@ $width-sprecher: (80px 80px);
         height: nth($width-video, 2);
         flex-basis: nth($width-video, 1);
         flex-shrink: 0;
+
+        .c-mediaitem--audio & {
+            width: nth($width-audio, 1);
+            flex-basis: nth($width-audio, 1);
+        }
 
         .c-mediaitem--serie & {
             width: nth($width-serie, 1);
