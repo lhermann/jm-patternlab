@@ -1,21 +1,25 @@
 <header id="header" class="c-site-header {{ styleModifier }}" role="banner">
 
-    <div class="o-wrapper c-site-header__wrapper">
+    <div class="o-wrapper">
 
-        <div class="c-site-header__item">
-            {{> molecules-branding }}
-        </div>
+        <div class="o-pack o-pack--middle c-site-header__wrapper">
 
-        <div class="c-site-header__item c-site-header__item--double">
-            {{> molecules-search-form:c-search-bar--primary }}
-        </div>
+            <div class="o-pack__item c-site-header__item">
+                {{> molecules-branding }}
+            </div>
 
-        <div class="c-site-header__item u-hidden@until-tablet">
-            {{> organisms-primary-nav }}
-        </div>
+            <div class="o-pack__item c-site-header__item c-site-header__item--double">
+                {{> molecules-search-form:c-search-bar--primary }}
+            </div>
 
-        <div class="c-site-header__item">
-            {{> atoms-hamburger:c-site-header__hamburger }}
+            <div class="o-pack__item c-site-header__item u-hidden@until-tablet">
+                {{> organisms-primary-nav }}
+            </div>
+
+            <div class="o-pack__item c-site-header__item u-text-right">
+                {{> atoms-hamburger:c-site-header__hamburger }}
+            </div>
+
         </div>
 
     </div>

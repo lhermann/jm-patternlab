@@ -140,11 +140,11 @@ main {
 a {
     outline: 0;
     text-decoration: none;
-    color: $c-accent;
+    color: $c-link;
 
     &:hover,
     &:focus {
-        color: $c-text;
+        color: $c-link-hover;
     }
 }
 
@@ -395,6 +395,7 @@ $slide-duration: 3s;
 }
 
 .u-h-responsive {
+    font-size: 1.5em;
     font-size: calc(1.5rem + .6vw);
 }
 

@@ -593,9 +593,9 @@ main {
 a {
   outline: 0;
   text-decoration: none;
-  color: #061375; }
+  color: #0B5EE5; }
   a:hover, a:focus {
-    color: #4d4d4d; }
+    color: #061375; }
 
 hr {
   border: 0;
@@ -2043,9 +2043,6 @@ textarea {
   border-bottom: 1px solid #e8e8e8; }
 
 .c-site-header__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   height: 56px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2072,6 +2069,10 @@ textarea {
 
 .c-site-header__hamburger {
   border-width: 0 1px;
+  padding-right: 0;
+  /* IE9 */
+  padding-left: 0;
+  /* IE9 */
   width: 56px;
   height: 56px; }
   @media (max-width: 46.24em) {
@@ -3705,6 +3706,7 @@ textarea {
   transition: 0.33333s; }
 
 .u-h-responsive {
+  font-size: 1.5em;
   font-size: calc(1.5rem + .6vw); }
 
 .u-box-shadow {

@@ -7,7 +7,7 @@
 }
 
     .c-site-header__wrapper {
-        display: flex;
+        // display: flex;
         height: $header-height;
         align-items: center;
         justify-content: space-between;
@@ -35,6 +35,8 @@
 
             .c-site-header__hamburger {
                 border-width: 0 1px;
+                padding-right: 0; /* IE9 */
+                padding-left: 0; /* IE9 */
                 width: $header-height;
                 height: $header-height;
 
