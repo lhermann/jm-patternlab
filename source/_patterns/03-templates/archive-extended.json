@@ -1,0 +1,45 @@
+{
+    "primaryNav" : [
+        {
+            "signal": false,
+            "label": "Videoarchiv",
+            "shortLabel": "Archiv",
+            "url": "link.pages-archive-videos",
+            "class": "is-active",
+            "hasDropdown": true,
+            "dropdown": [
+                {
+                    "label": "Videos",
+                    "url": "link.pages-archive-videos",
+                    "class": ""
+                },
+                {
+                    "label": "Serien",
+                    "url": "link.pages-archive-serien",
+                    "class": ""
+                },
+                {
+                    "label": "Sprecher",
+                    "url": "link.pages-archive-sprecher",
+                    "class": ""
+                },
+                {
+                    "label": "Themen",
+                    "url": "link.pages-archive-themen",
+                    "class": ""
+                }
+            ]
+        },
+        {
+            "signal": "green",
+            "label": "Livestream",
+            "shortLabel": "Live",
+            "url": "link.pages-homepage",
+            "hasDropdown": true,
+            "livestream": true
+        }
+    ],
+    "filter1": true,
+    "filter2": true,
+    "filter3": true
+}

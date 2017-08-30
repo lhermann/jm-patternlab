@@ -146,166 +146,338 @@
             "mobile": true
         }
     ],
-    "medialist": [
-        {
-            "type": "sprecher",
-            "image": "/images/sample/sprecher-1-160x160.jpg",
-            "title": "Christopher Kramp",
-            "length": false,
-            "meta": [
-                {
-                    "label": "1214 Videos",
-                    "url": "#"
-                },
-                {
-                    "label": "50 Serien",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "type": "sprecher",
-            "image": "/images/sample/sprecher-2-160x160.jpg",
-            "title": "Eric Flickenger",
-            "length": false,
-            "meta": [
-                {
-                    "label": "3 Videos",
-                    "url": "#"
-                },
-                {
-                    "label": "1 Serie",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "type": "sprecher",
-            "image": "/images/sample/sprecher-3-160x160.jpg",
-            "title": "Laura Fantasia",
-            "length": false,
-            "meta": [
-                {
-                    "label": "1 Video",
-                    "url": "#"
-                },
-                {
-                    "label": "1 Serie",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "type": "sprecher",
-            "image": "/images/sample/sprecher-4-160x160.jpg",
-            "title": "Ronny Schreiber",
-            "length": false,
-            "meta": [
-                {
-                    "label": "36 Videos",
-                    "url": "#"
-                },
-                {
-                    "label": "12 Serien",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "type": "sprecher",
-            "image": "/images/sample/sprecher-5-160x160.jpg",
-            "title": "Steven Bohr",
-            "length": false,
-            "meta": [
-                {
-                    "label": "3 Videos",
-                    "url": "#"
-                },
-                {
-                    "label": "1 Serie",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "type": "sprecher",
-            "image": "/images/sample/sprecher-1-160x160.jpg",
-            "title": "Christopher Kramp",
-            "length": false,
-            "meta": [
-                {
-                    "label": "1214 Videos",
-                    "url": "#"
-                },
-                {
-                    "label": "50 Serien",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "type": "sprecher",
-            "image": "/images/sample/sprecher-2-160x160.jpg",
-            "title": "Eric Flickenger",
-            "length": false,
-            "meta": [
-                {
-                    "label": "3 Videos",
-                    "url": "#"
-                },
-                {
-                    "label": "1 Serie",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "type": "sprecher",
-            "image": "/images/sample/sprecher-3-160x160.jpg",
-            "title": "Laura Fantasia",
-            "length": false,
-            "meta": [
-                {
-                    "label": "1 Video",
-                    "url": "#"
-                },
-                {
-                    "label": "1 Serie",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "type": "sprecher",
-            "image": "/images/sample/sprecher-4-160x160.jpg",
-            "title": "Ronny Schreiber",
-            "length": false,
-            "meta": [
-                {
-                    "label": "36 Videos",
-                    "url": "#"
-                },
-                {
-                    "label": "12 Serien",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "type": "sprecher",
-            "image": "/images/sample/sprecher-5-160x160.jpg",
-            "title": "Steven Bohr",
-            "length": false,
-            "meta": [
-                {
-                    "label": "3 Videos",
-                    "url": "#"
-                },
-                {
-                    "label": "1 Serie",
-                    "url": "#"
-                }
-            ]
-        }
-    ]
+    "2columns?": true,
+    "medialist1": {
+        "title": false,
+        "medialist": [
+            {
+                "type": "sprecher",
+                "image": "/images/sample/sprecher-1-160x160.jpg",
+                "title": "Christopher Kramp",
+                "length": false,
+                "meta": [
+                    {
+                        "label": "1214 Videos",
+                        "url": "#"
+                    },
+                    {
+                        "label": "50 Serien",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "sprecher",
+                "image": "/images/sample/sprecher-2-160x160.jpg",
+                "title": "Eric Flickenger",
+                "length": false,
+                "meta": [
+                    {
+                        "label": "3 Videos",
+                        "url": "#"
+                    },
+                    {
+                        "label": "1 Serie",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "sprecher",
+                "image": "/images/sample/sprecher-3-160x160.jpg",
+                "title": "Laura Fantasia",
+                "length": false,
+                "meta": [
+                    {
+                        "label": "1 Video",
+                        "url": "#"
+                    },
+                    {
+                        "label": "1 Serie",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "sprecher",
+                "image": "/images/sample/sprecher-4-160x160.jpg",
+                "title": "Ronny Schreiber",
+                "length": false,
+                "meta": [
+                    {
+                        "label": "36 Videos",
+                        "url": "#"
+                    },
+                    {
+                        "label": "12 Serien",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "sprecher",
+                "image": "/images/sample/sprecher-5-160x160.jpg",
+                "title": "Steven Bohr",
+                "length": false,
+                "meta": [
+                    {
+                        "label": "3 Videos",
+                        "url": "#"
+                    },
+                    {
+                        "label": "1 Serie",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "sprecher",
+                "image": "/images/sample/sprecher-1-160x160.jpg",
+                "title": "Christopher Kramp",
+                "length": false,
+                "meta": [
+                    {
+                        "label": "1214 Videos",
+                        "url": "#"
+                    },
+                    {
+                        "label": "50 Serien",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "sprecher",
+                "image": "/images/sample/sprecher-2-160x160.jpg",
+                "title": "Eric Flickenger",
+                "length": false,
+                "meta": [
+                    {
+                        "label": "3 Videos",
+                        "url": "#"
+                    },
+                    {
+                        "label": "1 Serie",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "sprecher",
+                "image": "/images/sample/sprecher-3-160x160.jpg",
+                "title": "Laura Fantasia",
+                "length": false,
+                "meta": [
+                    {
+                        "label": "1 Video",
+                        "url": "#"
+                    },
+                    {
+                        "label": "1 Serie",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "sprecher",
+                "image": "/images/sample/sprecher-4-160x160.jpg",
+                "title": "Ronny Schreiber",
+                "length": false,
+                "meta": [
+                    {
+                        "label": "36 Videos",
+                        "url": "#"
+                    },
+                    {
+                        "label": "12 Serien",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "sprecher",
+                "image": "/images/sample/sprecher-5-160x160.jpg",
+                "title": "Steven Bohr",
+                "length": false,
+                "meta": [
+                    {
+                        "label": "3 Videos",
+                        "url": "#"
+                    },
+                    {
+                        "label": "1 Serie",
+                        "url": "#"
+                    }
+                ]
+            }
+        ],
+        "button": false
+    },
+    "medialist2": {
+        "title": false,
+        "medialist": [
+            {
+                "type": "sprecher",
+                "image": "/images/sample/sprecher-3-160x160.jpg",
+                "title": "Laura Fantasia",
+                "length": false,
+                "meta": [
+                    {
+                        "label": "1 Video",
+                        "url": "#"
+                    },
+                    {
+                        "label": "1 Serie",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "sprecher",
+                "image": "/images/sample/sprecher-4-160x160.jpg",
+                "title": "Ronny Schreiber",
+                "length": false,
+                "meta": [
+                    {
+                        "label": "36 Videos",
+                        "url": "#"
+                    },
+                    {
+                        "label": "12 Serien",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "sprecher",
+                "image": "/images/sample/sprecher-5-160x160.jpg",
+                "title": "Steven Bohr",
+                "length": false,
+                "meta": [
+                    {
+                        "label": "3 Videos",
+                        "url": "#"
+                    },
+                    {
+                        "label": "1 Serie",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "sprecher",
+                "image": "/images/sample/sprecher-1-160x160.jpg",
+                "title": "Christopher Kramp",
+                "length": false,
+                "meta": [
+                    {
+                        "label": "1214 Videos",
+                        "url": "#"
+                    },
+                    {
+                        "label": "50 Serien",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "sprecher",
+                "image": "/images/sample/sprecher-2-160x160.jpg",
+                "title": "Eric Flickenger",
+                "length": false,
+                "meta": [
+                    {
+                        "label": "3 Videos",
+                        "url": "#"
+                    },
+                    {
+                        "label": "1 Serie",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "sprecher",
+                "image": "/images/sample/sprecher-3-160x160.jpg",
+                "title": "Laura Fantasia",
+                "length": false,
+                "meta": [
+                    {
+                        "label": "1 Video",
+                        "url": "#"
+                    },
+                    {
+                        "label": "1 Serie",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "sprecher",
+                "image": "/images/sample/sprecher-4-160x160.jpg",
+                "title": "Ronny Schreiber",
+                "length": false,
+                "meta": [
+                    {
+                        "label": "36 Videos",
+                        "url": "#"
+                    },
+                    {
+                        "label": "12 Serien",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "sprecher",
+                "image": "/images/sample/sprecher-5-160x160.jpg",
+                "title": "Steven Bohr",
+                "length": false,
+                "meta": [
+                    {
+                        "label": "3 Videos",
+                        "url": "#"
+                    },
+                    {
+                        "label": "1 Serie",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "sprecher",
+                "image": "/images/sample/sprecher-1-160x160.jpg",
+                "title": "Christopher Kramp",
+                "length": false,
+                "meta": [
+                    {
+                        "label": "1214 Videos",
+                        "url": "#"
+                    },
+                    {
+                        "label": "50 Serien",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "sprecher",
+                "image": "/images/sample/sprecher-2-160x160.jpg",
+                "title": "Eric Flickenger",
+                "length": false,
+                "meta": [
+                    {
+                        "label": "3 Videos",
+                        "url": "#"
+                    },
+                    {
+                        "label": "1 Serie",
+                        "url": "#"
+                    }
+                ]
+            }
+        ],
+        "button": false
+    },
+    "pagination?": true
 }

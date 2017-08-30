@@ -251,247 +251,256 @@
             "mobile": true
         },
         {
-            "label": "Beliebtheit",
-            "mobile": true
-        },
-        {
-            "label": "Name"
+            "label": "Name",
+            "mobile": false,
+            "btnClass": ""
         },
         {
             "label": "Länge",
+            "mobile": false,
+            "btnClass": ""
+        },
+        {
+            "label": "Beliebtheit",
+            "mobile": true,
             "btnClass": "c-btn--right"
         }
     ],
-    "medialist": [
-        {
-            "image": "/images/sample/video-1-192x108.jpg",
-            "title": "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
-            "length": "56:07",
-            "meta": [
-                {
-                    "label": "Matthias Ströck",
-                    "url": "#"
-                },
-                {
-                    "label": "5. Juni 2017",
-                    "url": false
-                },
-                {
-                    "label": "321 Klicks",
-                    "url": false
-                },
-                {
-                    "label": "Serie: Erster und zweiter Petrusbrief (CSH 2017 Q2)",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "image": "/images/sample/video-2-192x108.jpg",
-            "title": "Sola Veritas: 11. Neue Wege (1506)",
-            "length": "48:20",
-            "meta": [
-                {
-                    "label": "Christopher Kramp",
-                    "url": "#"
-                },
-                {
-                    "label": "4. Juni 2017",
-                    "url": false
-                },
-                {
-                    "label": "94 Klicks",
-                    "url": false
-                },
-                {
-                    "label": "Serie: Der Ersehnte",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "image": "/images/sample/video-3-192x108.jpg",
-            "title": "Offenbarung 17:9",
-            "length": "38:29",
-            "meta": [
-                {
-                    "label": "Christopher Kramp",
-                    "url": "#"
-                },
-                {
-                    "label": "3. Juni 2017",
-                    "url": false
-                },
-                {
-                    "label": "104 Klicks",
-                    "url": false
-                },
-                {
-                    "label": "Serie: Offenbarung Vers für Vers",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "image": "/images/sample/video-4-192x108.jpg",
-            "title": "Mit Gott leben – Apostelgeschichte 17:25b",
-            "length": "51:26",
-            "meta": [
-                {
-                    "label": "Thomas Kasunic",
-                    "url": "#"
-                },
-                {
-                    "label": "2. Juni 2017",
-                    "url": false
-                },
-                {
-                    "label": "187 Klicks",
-                    "url": false
-                },
-                {
-                    "label": "Serie: Sola Veritas",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "image": "/images/sample/video-5-192x108.jpg",
-            "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
-            "length": "2:34",
-            "meta": [
-                {
-                    "label": "Christopher Kramp",
-                    "url": "#"
-                },
-                {
-                    "label": "1. Juni 2017",
-                    "url": false
-                },
-                {
-                    "label": "123 Klicks",
-                    "url": false
-                },
-                {
-                    "label": "Serie: Mit Gott leben",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "image": "/images/sample/video-1-192x108.jpg",
-            "title": "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
-            "length": "56:07",
-            "meta": [
-                {
-                    "label": "Matthias Ströck",
-                    "url": "#"
-                },
-                {
-                    "label": "5. Juni 2017",
-                    "url": false
-                },
-                {
-                    "label": "321 Klicks",
-                    "url": false
-                },
-                {
-                    "label": "Serie: Erster und zweiter Petrusbrief (CSH 2017 Q2)",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "image": "/images/sample/video-2-192x108.jpg",
-            "title": "Sola Veritas: 11. Neue Wege (1506)",
-            "length": "48:20",
-            "meta": [
-                {
-                    "label": "Christopher Kramp",
-                    "url": "#"
-                },
-                {
-                    "label": "4. Juni 2017",
-                    "url": false
-                },
-                {
-                    "label": "94 Klicks",
-                    "url": false
-                },
-                {
-                    "label": "Serie: Der Ersehnte",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "image": "/images/sample/video-3-192x108.jpg",
-            "title": "Offenbarung 17:9",
-            "length": "38:29",
-            "meta": [
-                {
-                    "label": "Christopher Kramp",
-                    "url": "#"
-                },
-                {
-                    "label": "3. Juni 2017",
-                    "url": false
-                },
-                {
-                    "label": "104 Klicks",
-                    "url": false
-                },
-                {
-                    "label": "Serie: Offenbarung Vers für Vers",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "image": "/images/sample/video-4-192x108.jpg",
-            "title": "Mit Gott leben – Apostelgeschichte 17:25b",
-            "length": "51:26",
-            "meta": [
-                {
-                    "label": "Thomas Kasunic",
-                    "url": "#"
-                },
-                {
-                    "label": "2. Juni 2017",
-                    "url": false
-                },
-                {
-                    "label": "187 Klicks",
-                    "url": false
-                },
-                {
-                    "label": "Serie: Sola Veritas",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "image": "/images/sample/video-5-192x108.jpg",
-            "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
-            "length": "2:34",
-            "meta": [
-                {
-                    "label": "Christopher Kramp",
-                    "url": "#"
-                },
-                {
-                    "label": "1. Juni 2017",
-                    "url": false
-                },
-                {
-                    "label": "123 Klicks",
-                    "url": false
-                },
-                {
-                    "label": "Serie: Mit Gott leben",
-                    "url": "#"
-                }
-            ]
-        }
-    ]
+    "medialist1": {
+        "title": false,
+        "medialist": [
+            {
+                "image": "/images/sample/video-1-192x108.jpg",
+                "title": "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
+                "length": "56:07",
+                "meta": [
+                    {
+                        "label": "Matthias Ströck",
+                        "url": "#"
+                    },
+                    {
+                        "label": "5. Juni 2017",
+                        "url": false
+                    },
+                    {
+                        "label": "321 Klicks",
+                        "url": false
+                    },
+                    {
+                        "label": "Serie: Erster und zweiter Petrusbrief (CSH 2017 Q2)",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "image": "/images/sample/video-2-192x108.jpg",
+                "title": "Sola Veritas: 11. Neue Wege (1506)",
+                "length": "48:20",
+                "meta": [
+                    {
+                        "label": "Christopher Kramp",
+                        "url": "#"
+                    },
+                    {
+                        "label": "4. Juni 2017",
+                        "url": false
+                    },
+                    {
+                        "label": "94 Klicks",
+                        "url": false
+                    },
+                    {
+                        "label": "Serie: Der Ersehnte",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "image": "/images/sample/video-3-192x108.jpg",
+                "title": "Offenbarung 17:9",
+                "length": "38:29",
+                "meta": [
+                    {
+                        "label": "Christopher Kramp",
+                        "url": "#"
+                    },
+                    {
+                        "label": "3. Juni 2017",
+                        "url": false
+                    },
+                    {
+                        "label": "104 Klicks",
+                        "url": false
+                    },
+                    {
+                        "label": "Serie: Offenbarung Vers für Vers",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "image": "/images/sample/video-4-192x108.jpg",
+                "title": "Mit Gott leben – Apostelgeschichte 17:25b",
+                "length": "51:26",
+                "meta": [
+                    {
+                        "label": "Thomas Kasunic",
+                        "url": "#"
+                    },
+                    {
+                        "label": "2. Juni 2017",
+                        "url": false
+                    },
+                    {
+                        "label": "187 Klicks",
+                        "url": false
+                    },
+                    {
+                        "label": "Serie: Sola Veritas",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "image": "/images/sample/video-5-192x108.jpg",
+                "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
+                "length": "2:34",
+                "meta": [
+                    {
+                        "label": "Christopher Kramp",
+                        "url": "#"
+                    },
+                    {
+                        "label": "1. Juni 2017",
+                        "url": false
+                    },
+                    {
+                        "label": "123 Klicks",
+                        "url": false
+                    },
+                    {
+                        "label": "Serie: Mit Gott leben",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "image": "/images/sample/video-1-192x108.jpg",
+                "title": "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
+                "length": "56:07",
+                "meta": [
+                    {
+                        "label": "Matthias Ströck",
+                        "url": "#"
+                    },
+                    {
+                        "label": "5. Juni 2017",
+                        "url": false
+                    },
+                    {
+                        "label": "321 Klicks",
+                        "url": false
+                    },
+                    {
+                        "label": "Serie: Erster und zweiter Petrusbrief (CSH 2017 Q2)",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "image": "/images/sample/video-2-192x108.jpg",
+                "title": "Sola Veritas: 11. Neue Wege (1506)",
+                "length": "48:20",
+                "meta": [
+                    {
+                        "label": "Christopher Kramp",
+                        "url": "#"
+                    },
+                    {
+                        "label": "4. Juni 2017",
+                        "url": false
+                    },
+                    {
+                        "label": "94 Klicks",
+                        "url": false
+                    },
+                    {
+                        "label": "Serie: Der Ersehnte",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "image": "/images/sample/video-3-192x108.jpg",
+                "title": "Offenbarung 17:9",
+                "length": "38:29",
+                "meta": [
+                    {
+                        "label": "Christopher Kramp",
+                        "url": "#"
+                    },
+                    {
+                        "label": "3. Juni 2017",
+                        "url": false
+                    },
+                    {
+                        "label": "104 Klicks",
+                        "url": false
+                    },
+                    {
+                        "label": "Serie: Offenbarung Vers für Vers",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "image": "/images/sample/video-4-192x108.jpg",
+                "title": "Mit Gott leben – Apostelgeschichte 17:25b",
+                "length": "51:26",
+                "meta": [
+                    {
+                        "label": "Thomas Kasunic",
+                        "url": "#"
+                    },
+                    {
+                        "label": "2. Juni 2017",
+                        "url": false
+                    },
+                    {
+                        "label": "187 Klicks",
+                        "url": false
+                    },
+                    {
+                        "label": "Serie: Sola Veritas",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "image": "/images/sample/video-5-192x108.jpg",
+                "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
+                "length": "2:34",
+                "meta": [
+                    {
+                        "label": "Christopher Kramp",
+                        "url": "#"
+                    },
+                    {
+                        "label": "1. Juni 2017",
+                        "url": false
+                    },
+                    {
+                        "label": "123 Klicks",
+                        "url": false
+                    },
+                    {
+                        "label": "Serie: Mit Gott leben",
+                        "url": "#"
+                    }
+                ]
+            }
+        ],
+        "button": false
+    },
+    "pagination?": true
 }

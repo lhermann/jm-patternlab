@@ -210,230 +210,370 @@
             "btnClass": "c-btn--right"
         }
     ],
-    "medialist": [
-        {
-            "type": "serie",
-            "image": "/images/sample/serie-6-256x144.jpg",
-            "title": "Schafft Wissen schaft Wissen?",
-            "length": "<strong class=\"u-default\">3</strong> Videos",
-            "meta": [
-                {
-                    "label": "3 Videos",
-                    "url": false
-                },
-                {
-                    "label": "Ronny Schreiber",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "type": "serie",
-            "image": "/images/sample/serie-7-256x144.jpg",
-            "title": "Auswerg 2012",
-            "length": "<strong class=\"u-default\">27</strong> Videos",
-            "meta": [
-                {
-                    "label": "27 Videos",
-                    "url": false
-                },
-                {
-                    "label": "Christopher Kramp",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "type": "serie",
-            "image": "/images/sample/serie-8-256x144.jpg",
-            "title": "Belebe uns neu",
-            "length": "<strong class=\"u-default\">12</strong> Videos",
-            "meta": [
-                {
-                    "label": "12 Videos",
-                    "url": false
-                },
-                {
-                    "label": "Taj Pacleb",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "type": "serie",
-            "image": "/images/sample/serie-1-256x144.jpg",
-            "title": "Der Ersehnte",
-            "length": "<strong class=\"u-default\">56</strong> Videos",
-            "meta": [
-                {
-                    "label": "56 Videos",
-                    "url": false
-                },
-                {
-                    "label": "Christopher Kramp",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "type": "serie",
-            "image": "/images/sample/serie-2-256x144.jpg",
-            "title": "Mit Gott leben",
-            "length": "<strong class=\"u-default\">129</strong> Videos",
-            "meta": [
-                {
-                    "label": "129 Videos",
-                    "url": false
-                },
-                {
-                    "label": "Christopher Kramp",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "type": "serie",
-            "image": "/images/sample/serie-3-256x144.jpg",
-            "title": "Offenbarung Vers für Vers",
-            "length": "<strong class=\"u-default\">187</strong> Videos",
-            "meta": [
-                {
-                    "label": "187 Videos",
-                    "url": false
-                },
-                {
-                    "label": "Christopher Kramp",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "type": "serie",
-            "image": "/images/sample/serie-4-256x144.jpg",
-            "title": "Sola Veritas",
-            "length": "<strong class=\"u-default\">36</strong> Videos",
-            "meta": [
-                {
-                    "label": "36 Videos",
-                    "url": false
-                },
-                {
-                    "label": "Christopher Kramp",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "type": "serie",
-            "image": "/images/sample/serie-6-256x144.jpg",
-            "title": "Schafft Wissen schaft Wissen?",
-            "length": "<strong class=\"u-default\">3</strong> Videos",
-            "meta": [
-                {
-                    "label": "3 Videos",
-                    "url": false
-                },
-                {
-                    "label": "Ronny Schreiber",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "type": "serie",
-            "image": "/images/sample/serie-7-256x144.jpg",
-            "title": "Auswerg 2012",
-            "length": "<strong class=\"u-default\">27</strong> Videos",
-            "meta": [
-                {
-                    "label": "27 Videos",
-                    "url": false
-                },
-                {
-                    "label": "Christopher Kramp",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "type": "serie",
-            "image": "/images/sample/serie-8-256x144.jpg",
-            "title": "Belebe uns neu",
-            "length": "<strong class=\"u-default\">12</strong> Videos",
-            "meta": [
-                {
-                    "label": "12 Videos",
-                    "url": false
-                },
-                {
-                    "label": "Taj Pacleb",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "type": "serie",
-            "image": "/images/sample/serie-1-256x144.jpg",
-            "title": "Der Ersehnte",
-            "length": "<strong class=\"u-default\">56</strong> Videos",
-            "meta": [
-                {
-                    "label": "56 Videos",
-                    "url": false
-                },
-                {
-                    "label": "Christopher Kramp",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "type": "serie",
-            "image": "/images/sample/serie-2-256x144.jpg",
-            "title": "Mit Gott leben",
-            "length": "<strong class=\"u-default\">129</strong> Videos",
-            "meta": [
-                {
-                    "label": "129 Videos",
-                    "url": false
-                },
-                {
-                    "label": "Christopher Kramp",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "type": "serie",
-            "image": "/images/sample/serie-3-256x144.jpg",
-            "title": "Offenbarung Vers für Vers",
-            "length": "<strong class=\"u-default\">187</strong> Videos",
-            "meta": [
-                {
-                    "label": "187 Videos",
-                    "url": false
-                },
-                {
-                    "label": "Christopher Kramp",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "type": "serie",
-            "image": "/images/sample/serie-4-256x144.jpg",
-            "title": "Sola Veritas",
-            "length": "<strong class=\"u-default\">36</strong> Videos",
-            "meta": [
-                {
-                    "label": "36 Videos",
-                    "url": false
-                },
-                {
-                    "label": "Christopher Kramp",
-                    "url": "#"
-                }
-            ]
-        }
-    ]
+    "2columns?": true,
+    "medialist1": {
+        "title": false,
+        "medialist": [
+            {
+                "type": "serie",
+                "image": "/images/sample/serie-6-256x144.jpg",
+                "title": "Schafft Wissen schaft Wissen?",
+                "length": "<strong class=\"u-default\">3</strong> Videos",
+                "meta": [
+                    {
+                        "label": "3 Videos",
+                        "url": false
+                    },
+                    {
+                        "label": "Ronny Schreiber",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "serie",
+                "image": "/images/sample/serie-7-256x144.jpg",
+                "title": "Auswerg 2012",
+                "length": "<strong class=\"u-default\">27</strong> Videos",
+                "meta": [
+                    {
+                        "label": "27 Videos",
+                        "url": false
+                    },
+                    {
+                        "label": "Christopher Kramp",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "serie",
+                "image": "/images/sample/serie-8-256x144.jpg",
+                "title": "Belebe uns neu",
+                "length": "<strong class=\"u-default\">12</strong> Videos",
+                "meta": [
+                    {
+                        "label": "12 Videos",
+                        "url": false
+                    },
+                    {
+                        "label": "Taj Pacleb",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "serie",
+                "image": "/images/sample/serie-1-256x144.jpg",
+                "title": "Der Ersehnte",
+                "length": "<strong class=\"u-default\">56</strong> Videos",
+                "meta": [
+                    {
+                        "label": "56 Videos",
+                        "url": false
+                    },
+                    {
+                        "label": "Christopher Kramp",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "serie",
+                "image": "/images/sample/serie-2-256x144.jpg",
+                "title": "Mit Gott leben",
+                "length": "<strong class=\"u-default\">129</strong> Videos",
+                "meta": [
+                    {
+                        "label": "129 Videos",
+                        "url": false
+                    },
+                    {
+                        "label": "Christopher Kramp",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "serie",
+                "image": "/images/sample/serie-3-256x144.jpg",
+                "title": "Offenbarung Vers für Vers",
+                "length": "<strong class=\"u-default\">187</strong> Videos",
+                "meta": [
+                    {
+                        "label": "187 Videos",
+                        "url": false
+                    },
+                    {
+                        "label": "Christopher Kramp",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "serie",
+                "image": "/images/sample/serie-4-256x144.jpg",
+                "title": "Sola Veritas",
+                "length": "<strong class=\"u-default\">36</strong> Videos",
+                "meta": [
+                    {
+                        "label": "36 Videos",
+                        "url": false
+                    },
+                    {
+                        "label": "Christopher Kramp",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "serie",
+                "image": "/images/sample/serie-6-256x144.jpg",
+                "title": "Schafft Wissen schaft Wissen?",
+                "length": "<strong class=\"u-default\">3</strong> Videos",
+                "meta": [
+                    {
+                        "label": "3 Videos",
+                        "url": false
+                    },
+                    {
+                        "label": "Ronny Schreiber",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "serie",
+                "image": "/images/sample/serie-7-256x144.jpg",
+                "title": "Auswerg 2012",
+                "length": "<strong class=\"u-default\">27</strong> Videos",
+                "meta": [
+                    {
+                        "label": "27 Videos",
+                        "url": false
+                    },
+                    {
+                        "label": "Christopher Kramp",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "serie",
+                "image": "/images/sample/serie-8-256x144.jpg",
+                "title": "Belebe uns neu",
+                "length": "<strong class=\"u-default\">12</strong> Videos",
+                "meta": [
+                    {
+                        "label": "12 Videos",
+                        "url": false
+                    },
+                    {
+                        "label": "Taj Pacleb",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "serie",
+                "image": "/images/sample/serie-1-256x144.jpg",
+                "title": "Der Ersehnte",
+                "length": "<strong class=\"u-default\">56</strong> Videos",
+                "meta": [
+                    {
+                        "label": "56 Videos",
+                        "url": false
+                    },
+                    {
+                        "label": "Christopher Kramp",
+                        "url": "#"
+                    }
+                ]
+            }
+        ],
+        "button": false
+    },
+    "medialist2": {
+        "title": false,
+        "medialist": [
+            {
+                "type": "serie",
+                "image": "/images/sample/serie-1-256x144.jpg",
+                "title": "Der Ersehnte",
+                "length": "<strong class=\"u-default\">56</strong> Videos",
+                "meta": [
+                    {
+                        "label": "56 Videos",
+                        "url": false
+                    },
+                    {
+                        "label": "Christopher Kramp",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "serie",
+                "image": "/images/sample/serie-2-256x144.jpg",
+                "title": "Mit Gott leben",
+                "length": "<strong class=\"u-default\">129</strong> Videos",
+                "meta": [
+                    {
+                        "label": "129 Videos",
+                        "url": false
+                    },
+                    {
+                        "label": "Christopher Kramp",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "serie",
+                "image": "/images/sample/serie-3-256x144.jpg",
+                "title": "Offenbarung Vers für Vers",
+                "length": "<strong class=\"u-default\">187</strong> Videos",
+                "meta": [
+                    {
+                        "label": "187 Videos",
+                        "url": false
+                    },
+                    {
+                        "label": "Christopher Kramp",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "serie",
+                "image": "/images/sample/serie-4-256x144.jpg",
+                "title": "Sola Veritas",
+                "length": "<strong class=\"u-default\">36</strong> Videos",
+                "meta": [
+                    {
+                        "label": "36 Videos",
+                        "url": false
+                    },
+                    {
+                        "label": "Christopher Kramp",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "serie",
+                "image": "/images/sample/serie-6-256x144.jpg",
+                "title": "Schafft Wissen schaft Wissen?",
+                "length": "<strong class=\"u-default\">3</strong> Videos",
+                "meta": [
+                    {
+                        "label": "3 Videos",
+                        "url": false
+                    },
+                    {
+                        "label": "Ronny Schreiber",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "serie",
+                "image": "/images/sample/serie-7-256x144.jpg",
+                "title": "Auswerg 2012",
+                "length": "<strong class=\"u-default\">27</strong> Videos",
+                "meta": [
+                    {
+                        "label": "27 Videos",
+                        "url": false
+                    },
+                    {
+                        "label": "Christopher Kramp",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "serie",
+                "image": "/images/sample/serie-8-256x144.jpg",
+                "title": "Belebe uns neu",
+                "length": "<strong class=\"u-default\">12</strong> Videos",
+                "meta": [
+                    {
+                        "label": "12 Videos",
+                        "url": false
+                    },
+                    {
+                        "label": "Taj Pacleb",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "serie",
+                "image": "/images/sample/serie-1-256x144.jpg",
+                "title": "Der Ersehnte",
+                "length": "<strong class=\"u-default\">56</strong> Videos",
+                "meta": [
+                    {
+                        "label": "56 Videos",
+                        "url": false
+                    },
+                    {
+                        "label": "Christopher Kramp",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "serie",
+                "image": "/images/sample/serie-2-256x144.jpg",
+                "title": "Mit Gott leben",
+                "length": "<strong class=\"u-default\">129</strong> Videos",
+                "meta": [
+                    {
+                        "label": "129 Videos",
+                        "url": false
+                    },
+                    {
+                        "label": "Christopher Kramp",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "serie",
+                "image": "/images/sample/serie-3-256x144.jpg",
+                "title": "Offenbarung Vers für Vers",
+                "length": "<strong class=\"u-default\">187</strong> Videos",
+                "meta": [
+                    {
+                        "label": "187 Videos",
+                        "url": false
+                    },
+                    {
+                        "label": "Christopher Kramp",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "type": "serie",
+                "image": "/images/sample/serie-4-256x144.jpg",
+                "title": "Sola Veritas",
+                "length": "<strong class=\"u-default\">36</strong> Videos",
+                "meta": [
+                    {
+                        "label": "36 Videos",
+                        "url": false
+                    },
+                    {
+                        "label": "Christopher Kramp",
+                        "url": "#"
+                    }
+                ]
+            }
+        ],
+        "button": false
+    },
+    "pagination?": true
 }

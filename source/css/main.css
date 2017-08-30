@@ -593,7 +593,7 @@ main {
 a {
   outline: 0;
   text-decoration: none;
-  color: #4c6dff; }
+  color: #061375; }
   a:hover, a:focus {
     color: #4d4d4d; }
 
@@ -799,7 +799,7 @@ textarea {
     color: #666; }
   input:focus,
   textarea:focus {
-    border-color: #4c6dff; }
+    border-color: #061375; }
   input[type="radio"], input[type="checkbox"],
   textarea[type="radio"],
   textarea[type="checkbox"] {
@@ -1608,15 +1608,6 @@ textarea {
 .o-box--natural {
   padding: 11px 21px; }
 
-.o-break-wrapper {
-  margin-right: -21px;
-  margin-left: -21px; }
-
-@media (max-width: 46.24em) {
-  .o-break-wrapper\@until-tablet {
-    margin-right: -21px;
-    margin-left: -21px; } }
-
 .o-wrapper--no-padding {
   padding-right: 0;
   padding-left: 0; }
@@ -1681,13 +1672,13 @@ textarea {
 /* Style variants
 ========================================================================== */
 .c-btn--primary {
-  background-color: #4c6dff; }
+  background-color: #061375; }
   .c-btn--primary, .c-btn--primary:hover, .c-btn--primary:active, .c-btn--primary:focus {
     text-decoration: none;
     /* [4] */
     color: #fff; }
   .c-btn--primary:hover, .c-btn--primary:focus {
-    background-color: #1943ff; }
+    background-color: #040b44; }
 
 .c-btn--secondary {
   background-color: #f0f0f0; }
@@ -1715,7 +1706,7 @@ textarea {
     text-decoration: none;
     color: #4d4d4d; }
   .c-btn--blocky:hover, .c-btn--blocky:focus {
-    background-color: #4c6dff;
+    background-color: #061375;
     color: #fff; }
 
 .c-btn--none {
@@ -1753,9 +1744,9 @@ textarea {
   .c-btn--ghost.c-btn--large {
     padding: 20px 41px; }
   .c-btn--ghost.c-btn--primary {
-    color: #4c6dff; }
+    color: #061375; }
     .c-btn--ghost.c-btn--primary:hover, .c-btn--ghost.c-btn--primary:focus {
-      color: #1943ff; }
+      color: #040b44; }
   .c-btn--ghost.c-btn--secondary {
     color: rgba(77, 77, 77, 0.45);
     border-color: #f0f0f0; }
@@ -2032,7 +2023,7 @@ textarea {
 .c-link--primary {
   color: #4d4d4d; }
   .c-link--primary:active, .c-link--primary:hover {
-    background-color: #4c6dff;
+    background-color: #061375;
     color: #fff; }
 
 .c-link--secondary {
@@ -2191,7 +2182,7 @@ textarea {
   font-size: 1.28571rem;
   display: inline-block; }
   .c-primary-nav__item:hover > .c-primary-nav__link {
-    background-color: #4c6dff;
+    background-color: #061375;
     color: #fff; }
 
 .c-primary-nav__link {
@@ -2301,7 +2292,7 @@ textarea {
     .c-hamburger {
       border-right: 1px solid #e8e8e8; } }
   .c-hamburger:hover {
-    background-color: #4c6dff;
+    background-color: #061375;
     color: #fff; }
 
 .c-hamburger__icon {
@@ -2312,9 +2303,6 @@ textarea {
    ========================================================================== */
 .c-medialist {
   width: 100%; }
-
-.c-medialist--notitle .c-medialist__title {
-  display: none; }
 
 .c-medialist__list {
   margin: 0;
@@ -2340,8 +2328,8 @@ textarea {
   display: flex;
   /* 1 */
   position: relative;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
   -webkit-transition: 0.33333s;
   transition: 0.33333s;
   border-radius: 3px;
@@ -2351,8 +2339,8 @@ textarea {
           align-items: center;
   /* 1 */ }
   .c-mediaitem:hover {
-    -webkit-transform: translateY(-2px);
-            transform: translateY(-2px);
+    -webkit-transform: translate(-1px, -4px);
+            transform: translate(-1px, -4px);
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
     background-color: rgba(0, 0, 0, 0.03); }
@@ -3254,6 +3242,478 @@ textarea {
   line-height: 1.3125 !important; }
 
 /* ==========================================================================
+   #PRINT
+   ========================================================================== */
+/**
+ * Very crude, reset-like styles taken from the HTML5 Boilerplate:
+ * https://github.com/h5bp/html5-boilerplate/blob/5.3.0/dist/doc/css.md#print-styles
+ * https://github.com/h5bp/html5-boilerplate/blob/master/dist/css/main.css#L205-L282
+ */
+@media print {
+  /**
+   * 1. Black prints faster: http://www.sanbeiji.com/archives/953
+   */
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  *:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    /* [1] */
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    text-shadow: none !important; }
+
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /**
+   * Don't show links that are fragment identifiers, or use the `javascript:`
+   * pseudo protocol.
+   */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: ""; }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  /**
+   * Printing Tables: http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group; }
+
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+/* ==========================================================================
+   #HIDE
+   ========================================================================== */
+/**
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+.u-hidden-visually {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(50%) !important;
+          clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important; }
+
+/**
+ * Hide visually and from screen readers.
+ */
+.u-hidden {
+  display: none !important; }
+
+/* ==========================================================================
+   #ANIMATION
+   ========================================================================== */
+/**
+ * .u-ani
+ * .u-ani--hover .u-ani--start .u-ani--infinite
+ * .u-ani--zoom
+ */
+.u-ani {
+  -webkit-transition: 0.33333s ease;
+  transition: 0.33333s ease; }
+  .u-ani--delay1 {
+    -webkit-transition: 0.33333s 150ms;
+    transition: 0.33333s 150ms; }
+  .u-ani--delay2 {
+    -webkit-transition: 0.33333s 300ms;
+    transition: 0.33333s 300ms; }
+  .u-ani--delay3 {
+    -webkit-transition: 0.33333s 450ms;
+    transition: 0.33333s 450ms; }
+
+/**
+ * It is recommended to apply 'overflow: hidden;' to the parrent
+ */
+.u-ani--zoom {
+  -webkit-transform: scale(1);
+          transform: scale(1); }
+  .u-ani--zoom.u-ani--start, .u-ani--zoom.u-ani--hover:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
+
+.u-ani--fade-in {
+  opacity: 0; }
+  .u-ani--fade-in.u-ani--start, .u-ani--fade-in.u-ani--hover:hover {
+    opacity: 1; }
+
+.u-ani--fade-out {
+  opacity: 1; }
+  .u-ani--fade-out.u-ani--start, .u-ani--fade-out.u-ani--hover:hover {
+    opacity: 0; }
+
+.u-ani--move-left {
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px); }
+  .u-ani--move-left.u-ani--start, .u-ani--move-left.u-ani--hover:hover {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+
+.u-ani--move-right {
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px); }
+  .u-ani--move-right.u-ani--start, .u-ani--move-right.u-ani--hover:hover {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+
+.u-ani--move-up {
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px); }
+  .u-ani--move-up.u-ani--start, .u-ani--move-up.u-ani--hover:hover {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+
+/* ==========================================================================
+   #ICONS
+   ========================================================================== */
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon/fonts/icomoon.eot?nc6s1");
+  src: url("../fonts/icomoon/fonts/icomoon.eot?nc6s1#iefix") format("embedded-opentype"), url("../fonts/icomoon/fonts/icomoon.ttf?nc6s1") format("truetype"), url("../fonts/icomoon/fonts/icomoon.woff?nc6s1") format("woff"), url("../fonts/icomoon/fonts/icomoon.svg?nc6s1#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="u-ic-"],
+[class*=" u-ic-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  text-transform: none;
+  line-height: 1;
+  font-family: "icomoon" !important;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  speak: none;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: -0.1em; }
+
+.u-ic-download:before {
+  content: "\e884"; }
+
+.u-ic-visibility:before {
+  content: "\e8f4"; }
+
+.u-ic-reply:before {
+  content: "\e15e"; }
+
+.u-ic-share:before {
+  content: "\e80d"; }
+
+.u-ic-folder:before {
+  content: "\e2c7"; }
+
+.u-ic-plus:before {
+  content: "\e145"; }
+
+.u-ic-minus:before {
+  content: "\e15b"; }
+
+.u-ic-checkbox:before {
+  content: "\e907"; }
+
+.u-ic-checkbox-checked:before {
+  content: "\e908"; }
+
+.u-ic-checkbox-indeterminate:before {
+  content: "\e901"; }
+
+.u-ic-mail:before {
+  content: "\e0e1"; }
+
+.u-ic-send:before {
+  content: "\e163"; }
+
+.u-ic-arrow-back:before {
+  content: "\e5c4"; }
+
+.u-ic-arrow-downward:before {
+  content: "\e5db"; }
+
+.u-ic-arrow-forward:before {
+  content: "\e5c8"; }
+
+.u-ic-arrow-upward:before {
+  content: "\e5d8"; }
+
+.u-ic-headset:before {
+  content: "\e310"; }
+
+.u-ic-keyboard-arrow-down:before {
+  content: "\e313"; }
+
+.u-ic-keyboard-arrow-left:before {
+  content: "\e314"; }
+
+.u-ic-keyboard-arrow-right:before {
+  content: "\e315"; }
+
+.u-ic-keyboard-arrow-up:before {
+  content: "\e316"; }
+
+.u-ic-menu:before {
+  content: "\e5d2"; }
+
+.u-ic-search:before {
+  content: "\e8b6"; }
+
+.u-ic-videocam:before {
+  content: "\e04b"; }
+
+.u-ic-facebook:before {
+  content: "\ea91"; }
+
+.u-ic-youtube:before {
+  content: "\ea9d"; }
+
+.u-ic-link:before {
+  content: "\e157"; }
+
+.u-ic-close:before {
+  content: "\e5cd"; }
+
+.u-ic-closed-caption:before {
+  content: "\e01c"; }
+
+.u-ic-creative-commons-sharealike:before {
+  content: "\e900"; }
+
+.u-ic-creative-commons-noncommercial-us:before {
+  content: "\e902"; }
+
+.u-ic-creative-commons-noncommercial-eu:before {
+  content: "\e903"; }
+
+.u-ic-creative-commons-noderivs:before {
+  content: "\e904"; }
+
+.u-ic-creative-commons-attribution:before {
+  content: "\e905"; }
+
+.u-ic-creative-commons:before {
+  content: "\e906"; }
+
+/* ==========================================================================
+   #ORIENTATIONS
+   ========================================================================== */
+/**
+ * orient content of a block
+ *
+ *   <div class="u-orient u-orient--middle"></div>
+ */
+[class^="u-orient"],
+[class*=" u-orient"] {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important; }
+
+.u-orient-top {
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important; }
+
+.u-orient-middle {
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important; }
+
+.u-orient-bottom {
+  -webkit-box-align: end !important;
+      -ms-flex-align: end !important;
+          align-items: flex-end !important; }
+
+.u-orient-left {
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important; }
+
+.u-orient-center {
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important; }
+
+.u-orient-right {
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important; }
+
+/* ==========================================================================
+   #TEXT-ALIGN
+   ========================================================================== */
+/**
+ * generate text-align classes
+ *
+ *   <div class="u-text-center"></div>
+ */
+.u-text-left {
+  text-align: left !important; }
+
+.u-text-center {
+  text-align: center !important; }
+
+.u-text-right {
+  text-align: right !important; }
+
+/* ==========================================================================
+   #SHOW-MORE
+   ========================================================================== */
+/**
+ * Hide all list elements except the first five
+ */
+.u-show-more {
+  position: relative;
+  height: 84px;
+  overflow: hidden; }
+  .u-show-more:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 75%;
+    bottom: 0;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(45%), color-stop(85%, rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0)));
+    background-image: linear-gradient(to top, white, 45%, rgba(255, 255, 255, 0.1) 85%, rgba(255, 255, 255, 0)); }
+  .u-show-more--list {
+    overflow: visible;
+    height: auto; }
+    .u-show-more--list:after {
+      content: none; }
+    .u-show-more--list > li:nth-child(n + 6) {
+      display: none; }
+    .u-show-more--list.is-visible > li {
+      display: initial; }
+  .u-show-more.is-visible {
+    height: auto; }
+    .u-show-more.is-visible:after {
+      content: none; }
+
+.u-text-bold {
+  font-weight: 600; }
+
+.u-text-slim {
+  font-weight: 300; }
+
+.u-box-center {
+  margin-right: auto;
+  margin-left: auto; }
+
+.u-height-100 {
+  height: 100%; }
+
+.u-min-220 {
+  min-width: 220px; }
+
+.u-advent-sans {
+  font-family: "Advent Sans", Sans-Serif !important; }
+
+.u-roboto {
+  font-family: "Roboto", Sans-Serif !important; }
+
+.u-lead {
+  font-size: 16px !important;
+  font-size: 1.14286rem !important;
+  line-height: 1.3125 !important; }
+
+.u-default {
+  font-size: 14px !important;
+  font-size: 1rem !important;
+  line-height: 1.5 !important; }
+
+.u-small {
+  font-size: 12px !important;
+  font-size: 0.85714rem !important;
+  line-height: 1.2 !important; }
+
+.u-smaller {
+  font-size: 10px !important;
+  font-size: 0.71429rem !important;
+  line-height: 1.2 !important; }
+
+.u-white {
+  color: #fff; }
+
+.u-textmuted {
+  color: rgba(77, 77, 77, 0.45); }
+
+.u-muted {
+  opacity: .6; }
+
+.u-eclipse {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.u-spacer-top {
+  margin-top: 42px; }
+  @media (min-width: 46.25em) {
+    .u-spacer-top {
+      margin-top: 84px; } }
+
+.u-border-left {
+  border-left: 1px solid #e8e8e8; }
+
+.u-hover,
+.u-active {
+  margin-right: -5px;
+  margin-left: -5px;
+  border-radius: 3px;
+  padding-right: 5px;
+  padding-left: 5px; }
+
+.u-active {
+  background-color: rgba(57, 181, 74, 0.3); }
+
+.u-hover:hover {
+  background-color: rgba(0, 0, 0, 0.03); }
+  .u-hover:hover.u-active {
+    background-color: rgba(57, 181, 74, 0.5); }
+
+.u-transition {
+  -webkit-transition: 0.33333s;
+  transition: 0.33333s; }
+
+.u-h-responsive {
+  font-size: calc(1.5rem + .6vw); }
+
+.u-box-shadow {
+  -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2); }
+
+/* ==========================================================================
    #RESPONSIVE-SPACINGS
    ========================================================================== */
 /**
@@ -4099,353 +4559,6 @@ textarea {
     padding-bottom: 0 !important; } }
 /* stylelint-enable max-nesting-depth */
 /* ==========================================================================
-   #PRINT
-   ========================================================================== */
-/**
- * Very crude, reset-like styles taken from the HTML5 Boilerplate:
- * https://github.com/h5bp/html5-boilerplate/blob/5.3.0/dist/doc/css.md#print-styles
- * https://github.com/h5bp/html5-boilerplate/blob/master/dist/css/main.css#L205-L282
- */
-@media print {
-  /**
-   * 1. Black prints faster: http://www.sanbeiji.com/archives/953
-   */
-  *,
-  *:before,
-  *:after,
-  *:first-letter,
-  *:first-line {
-    background: transparent !important;
-    color: #000 !important;
-    /* [1] */
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
-    text-shadow: none !important; }
-
-  a,
-  a:visited {
-    text-decoration: underline; }
-
-  a[href]:after {
-    content: " (" attr(href) ")"; }
-
-  abbr[title]:after {
-    content: " (" attr(title) ")"; }
-
-  /**
-   * Don't show links that are fragment identifiers, or use the `javascript:`
-   * pseudo protocol.
-   */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: ""; }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid; }
-
-  /**
-   * Printing Tables: http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
-  thead {
-    display: table-header-group; }
-
-  tr,
-  img {
-    page-break-inside: avoid; }
-
-  img {
-    max-width: 100% !important; }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3; }
-
-  h2,
-  h3 {
-    page-break-after: avoid; } }
-/* ==========================================================================
-   #HIDE
-   ========================================================================== */
-/**
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
-.u-hidden-visually {
-  border: 0 !important;
-  clip: rect(0 0 0 0) !important;
-  -webkit-clip-path: inset(50%) !important;
-          clip-path: inset(50%) !important;
-  height: 1px !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  padding: 0 !important;
-  position: absolute !important;
-  white-space: nowrap !important;
-  width: 1px !important; }
-
-/**
- * Hide visually and from screen readers.
- */
-.u-hidden {
-  display: none !important; }
-
-/* ==========================================================================
-   #ANIMATION
-   ========================================================================== */
-/**
- * .u-ani
- * .u-ani--hover .u-ani--start .u-ani--infinite
- * .u-ani--zoom
- */
-.u-ani {
-  -webkit-transition: 0.33333s ease;
-  transition: 0.33333s ease; }
-  .u-ani--delay1 {
-    -webkit-transition: 0.33333s 150ms;
-    transition: 0.33333s 150ms; }
-  .u-ani--delay2 {
-    -webkit-transition: 0.33333s 300ms;
-    transition: 0.33333s 300ms; }
-  .u-ani--delay3 {
-    -webkit-transition: 0.33333s 450ms;
-    transition: 0.33333s 450ms; }
-
-/**
- * It is recommended to apply 'overflow: hidden;' to the parrent
- */
-.u-ani--zoom {
-  -webkit-transform: scale(1);
-          transform: scale(1); }
-  .u-ani--zoom.u-ani--start, .u-ani--zoom.u-ani--hover:hover {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05); }
-
-.u-ani--fade-in {
-  opacity: 0; }
-  .u-ani--fade-in.u-ani--start, .u-ani--fade-in.u-ani--hover:hover {
-    opacity: 1; }
-
-.u-ani--fade-out {
-  opacity: 1; }
-  .u-ani--fade-out.u-ani--start, .u-ani--fade-out.u-ani--hover:hover {
-    opacity: 0; }
-
-.u-ani--move-left {
-  -webkit-transform: translateX(30px);
-          transform: translateX(30px); }
-  .u-ani--move-left.u-ani--start, .u-ani--move-left.u-ani--hover:hover {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
-
-.u-ani--move-right {
-  -webkit-transform: translateX(-30px);
-          transform: translateX(-30px); }
-  .u-ani--move-right.u-ani--start, .u-ani--move-right.u-ani--hover:hover {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
-
-.u-ani--move-up {
-  -webkit-transform: translateY(30px);
-          transform: translateY(30px); }
-  .u-ani--move-up.u-ani--start, .u-ani--move-up.u-ani--hover:hover {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
-
-/* ==========================================================================
-   #ICONS
-   ========================================================================== */
-@font-face {
-  font-family: "icomoon";
-  src: url("../fonts/icomoon/fonts/icomoon.eot?nc6s1");
-  src: url("../fonts/icomoon/fonts/icomoon.eot?nc6s1#iefix") format("embedded-opentype"), url("../fonts/icomoon/fonts/icomoon.ttf?nc6s1") format("truetype"), url("../fonts/icomoon/fonts/icomoon.woff?nc6s1") format("woff"), url("../fonts/icomoon/fonts/icomoon.svg?nc6s1#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-[class^="u-ic-"],
-[class*=" u-ic-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  text-transform: none;
-  line-height: 1;
-  font-family: "icomoon" !important;
-  font-weight: normal;
-  font-style: normal;
-  font-variant: normal;
-  speak: none;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  vertical-align: -0.1em; }
-
-.u-ic-download:before {
-  content: "\e884"; }
-
-.u-ic-visibility:before {
-  content: "\e8f4"; }
-
-.u-ic-reply:before {
-  content: "\e15e"; }
-
-.u-ic-share:before {
-  content: "\e80d"; }
-
-.u-ic-folder:before {
-  content: "\e2c7"; }
-
-.u-ic-plus:before {
-  content: "\e145"; }
-
-.u-ic-minus:before {
-  content: "\e15b"; }
-
-.u-ic-checkbox:before {
-  content: "\e907"; }
-
-.u-ic-checkbox-checked:before {
-  content: "\e908"; }
-
-.u-ic-checkbox-indeterminate:before {
-  content: "\e901"; }
-
-.u-ic-mail:before {
-  content: "\e0e1"; }
-
-.u-ic-send:before {
-  content: "\e163"; }
-
-.u-ic-arrow-back:before {
-  content: "\e5c4"; }
-
-.u-ic-arrow-downward:before {
-  content: "\e5db"; }
-
-.u-ic-arrow-forward:before {
-  content: "\e5c8"; }
-
-.u-ic-arrow-upward:before {
-  content: "\e5d8"; }
-
-.u-ic-headset:before {
-  content: "\e310"; }
-
-.u-ic-keyboard-arrow-down:before {
-  content: "\e313"; }
-
-.u-ic-keyboard-arrow-left:before {
-  content: "\e314"; }
-
-.u-ic-keyboard-arrow-right:before {
-  content: "\e315"; }
-
-.u-ic-keyboard-arrow-up:before {
-  content: "\e316"; }
-
-.u-ic-menu:before {
-  content: "\e5d2"; }
-
-.u-ic-search:before {
-  content: "\e8b6"; }
-
-.u-ic-videocam:before {
-  content: "\e04b"; }
-
-.u-ic-facebook:before {
-  content: "\ea91"; }
-
-.u-ic-youtube:before {
-  content: "\ea9d"; }
-
-.u-ic-link:before {
-  content: "\e157"; }
-
-.u-ic-close:before {
-  content: "\e5cd"; }
-
-.u-ic-closed-caption:before {
-  content: "\e01c"; }
-
-.u-ic-creative-commons-sharealike:before {
-  content: "\e900"; }
-
-.u-ic-creative-commons-noncommercial-us:before {
-  content: "\e902"; }
-
-.u-ic-creative-commons-noncommercial-eu:before {
-  content: "\e903"; }
-
-.u-ic-creative-commons-noderivs:before {
-  content: "\e904"; }
-
-.u-ic-creative-commons-attribution:before {
-  content: "\e905"; }
-
-.u-ic-creative-commons:before {
-  content: "\e906"; }
-
-/* ==========================================================================
-   #ORIENTATIONS
-   ========================================================================== */
-/**
- * orient content of a block
- *
- *   <div class="u-orient u-orient--middle"></div>
- */
-[class^="u-orient"],
-[class*=" u-orient"] {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important; }
-
-.u-orient-top {
-  -webkit-box-align: start !important;
-      -ms-flex-align: start !important;
-          align-items: flex-start !important; }
-
-.u-orient-middle {
-  -webkit-box-align: center !important;
-      -ms-flex-align: center !important;
-          align-items: center !important; }
-
-.u-orient-bottom {
-  -webkit-box-align: end !important;
-      -ms-flex-align: end !important;
-          align-items: flex-end !important; }
-
-.u-orient-left {
-  -webkit-box-pack: start !important;
-      -ms-flex-pack: start !important;
-          justify-content: flex-start !important; }
-
-.u-orient-center {
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important; }
-
-.u-orient-right {
-  -webkit-box-pack: end !important;
-      -ms-flex-pack: end !important;
-          justify-content: flex-end !important; }
-
-/* ==========================================================================
-   #TEXT-ALIGN
-   ========================================================================== */
-/**
- * generate text-align classes
- *
- *   <div class="u-text-center"></div>
- */
-.u-text-left {
-  text-align: left !important; }
-
-.u-text-center {
-  text-align: center !important; }
-
-.u-text-right {
-  text-align: right !important; }
-
-/* ==========================================================================
    #RESPONSIVE HIDE
    ========================================================================== */
 /**
@@ -4485,127 +4598,11 @@ textarea {
   .u-hidden\@until-wide {
     display: none !important; } }
 
-/* ==========================================================================
-   #SHOW-MORE
-   ========================================================================== */
-/**
- * Hide all list elements except the first five
- */
-.u-show-more {
-  position: relative;
-  height: 84px;
-  overflow: hidden; }
-  .u-show-more:after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 75%;
-    bottom: 0;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(45%), color-stop(85%, rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0)));
-    background-image: linear-gradient(to top, white, 45%, rgba(255, 255, 255, 0.1) 85%, rgba(255, 255, 255, 0)); }
-  .u-show-more--list {
-    overflow: visible;
-    height: auto; }
-    .u-show-more--list:after {
-      content: none; }
-    .u-show-more--list > li:nth-child(n + 6) {
-      display: none; }
-    .u-show-more--list.is-visible > li {
-      display: initial; }
-  .u-show-more.is-visible {
-    height: auto; }
-    .u-show-more.is-visible:after {
-      content: none; }
+.u-break-wrapper {
+  margin-right: -21px;
+  margin-left: -21px; }
 
-.u-text-bold {
-  font-weight: 600; }
-
-.u-text-slim {
-  font-weight: 300; }
-
-.u-box-center {
-  margin-right: auto;
-  margin-left: auto; }
-
-.u-height-100 {
-  height: 100%; }
-
-.u-min-220 {
-  min-width: 220px; }
-
-.u-advent-sans {
-  font-family: "Advent Sans", Sans-Serif !important; }
-
-.u-roboto {
-  font-family: "Roboto", Sans-Serif !important; }
-
-.u-lead {
-  font-size: 16px !important;
-  font-size: 1.14286rem !important;
-  line-height: 1.3125 !important; }
-
-.u-default {
-  font-size: 14px !important;
-  font-size: 1rem !important;
-  line-height: 1.5 !important; }
-
-.u-small {
-  font-size: 12px !important;
-  font-size: 0.85714rem !important;
-  line-height: 1.2 !important; }
-
-.u-smaller {
-  font-size: 10px !important;
-  font-size: 0.71429rem !important;
-  line-height: 1.2 !important; }
-
-.u-white {
-  color: #fff; }
-
-.u-textmuted {
-  color: rgba(77, 77, 77, 0.45); }
-
-.u-muted {
-  opacity: .6; }
-
-.u-eclipse {
-  display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap; }
-
-.u-spacer-top {
-  margin-top: 42px; }
-  @media (min-width: 46.25em) {
-    .u-spacer-top {
-      margin-top: 84px; } }
-
-.u-border-left {
-  border-left: 1px solid #e8e8e8; }
-
-.u-hover,
-.u-active {
-  margin-right: -5px;
-  margin-left: -5px;
-  border-radius: 3px;
-  padding-right: 5px;
-  padding-left: 5px; }
-
-.u-active {
-  background-color: rgba(57, 181, 74, 0.3); }
-
-.u-hover:hover {
-  background-color: rgba(0, 0, 0, 0.03); }
-  .u-hover:hover.u-active {
-    background-color: rgba(57, 181, 74, 0.5); }
-
-.u-transition {
-  -webkit-transition: 0.33333s;
-  transition: 0.33333s; }
-
-.u-h-responsive {
-  font-size: calc(1.5rem + .6vw); }
-
-.u-box-shadow {
-  -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2); }
+@media (max-width: 46.24em) {
+  .u-break-wrapper\@until-tablet {
+    margin-right: -21px;
+    margin-left: -21px; } }

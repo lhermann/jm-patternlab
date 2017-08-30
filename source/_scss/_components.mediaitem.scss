@@ -19,14 +19,16 @@ $width-sprecher: (80px 80px);
 .c-mediaitem {
     display: flex; /* 1 */
     position: relative;
-    transform: translateY(0);
+    // transform: translateY(0);
+    transform: translate(0, 0);
     transition: $global-transition;
     border-radius: $global-radius;
     padding: $unit-small;
     align-items: center; /* 1 */
 
     &:hover {
-        transform: translateY(-2px);
+        // transform: translateY(-2px);
+        transform: translate(-1px, -4px);
         box-shadow: 0 5px 10px rgba(0, 0, 0, .08);
         background-color: rgba($c-black, .03);
     }

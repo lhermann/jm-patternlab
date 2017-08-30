@@ -153,156 +153,167 @@
             "btnClass": "c-btn--right"
         }
     ],
-    "medialist": [
-        {
-            "type": "thema",
-            "image": false,
-            "title": "Andachten",
-            "meta": [
-                {
-                    "label": "Keine Unterthemen",
-                    "url": false
-                },
-                {
-                    "label": "33 Videos",
-                    "url": false
-                }
-            ]
-        },
-        {
-            "type": "thema",
-            "image": false,
-            "title": "Altes Testament",
-            "meta": [
-                {
-                    "label": "19 Unterthemen",
-                    "url": false
-                },
-                {
-                    "label": "67 Videos",
-                    "url": false
-                }
-            ]
-        },
-        {
-            "type": "thema",
-            "image": false,
-            "title": "Cannstatt Study Hour",
-            "meta": [
-                {
-                    "label": "Keine Unterthemen",
-                    "url": false
-                },
-                {
-                    "label": "207 Videos",
-                    "url": false
-                }
-            ]
-        },
-        {
-            "type": "thema",
-            "image": false,
-            "title": "Evangelium",
-            "meta": [
-                {
-                    "label": "3 Unterthemen",
-                    "url": false
-                },
-                {
-                    "label": "98 Videos",
-                    "url": false
-                }
-            ]
-        },
-        {
-            "type": "thema",
-            "image": false,
-            "title": "Evangelistische Vorträge",
-            "meta": [
-                {
-                    "label": "Keine Unterthemen",
-                    "url": false
-                },
-                {
-                    "label": "103 Videos",
-                    "url": false
-                }
-            ]
-        },
-        {
-            "type": "thema",
-            "image": false,
-            "title": "Erweckungspredigten",
-            "meta": [
-                {
-                    "label": "Keine Unterthemen",
-                    "url": false
-                },
-                {
-                    "label": "33 Videos",
-                    "url": false
-                }
-            ]
-        },
-        {
-            "type": "thema",
-            "image": false,
-            "title": "Familie, Ehe und Erziehung",
-            "meta": [
-                {
-                    "label": "3 Unterthemen",
-                    "url": false
-                },
-                {
-                    "label": "27 Videos",
-                    "url": false
-                }
-            ]
-        },
-        {
-            "type": "thema",
-            "image": false,
-            "title": "Gesundheit",
-            "meta": [
-                {
-                    "label": "7 Unterthemen",
-                    "url": false
-                },
-                {
-                    "label": "51 Videos",
-                    "url": false
-                }
-            ]
-        },
-        {
-            "type": "thema",
-            "image": false,
-            "title": "Glaubenspunkte",
-            "meta": [
-                {
-                    "label": "12 Unterthemen",
-                    "url": false
-                },
-                {
-                    "label": "370 Videos",
-                    "url": false
-                }
-            ]
-        },
-        {
-            "type": "thema",
-            "image": false,
-            "title": "Neues Testament",
-            "meta": [
-                {
-                    "label": "13 Unterthemen",
-                    "url": false
-                },
-                {
-                    "label": "56 Videos",
-                    "url": false
-                }
-            ]
-        }
-    ]
+    "2columns?": true,
+    "medialist1": {
+        "title": false,
+        "medialist": [
+            {
+                "type": "thema",
+                "image": false,
+                "title": "Andachten",
+                "meta": [
+                    {
+                        "label": "Keine Unterthemen",
+                        "url": false
+                    },
+                    {
+                        "label": "33 Videos",
+                        "url": false
+                    }
+                ]
+            },
+            {
+                "type": "thema",
+                "image": false,
+                "title": "Altes Testament",
+                "meta": [
+                    {
+                        "label": "19 Unterthemen",
+                        "url": false
+                    },
+                    {
+                        "label": "67 Videos",
+                        "url": false
+                    }
+                ]
+            },
+            {
+                "type": "thema",
+                "image": false,
+                "title": "Cannstatt Study Hour",
+                "meta": [
+                    {
+                        "label": "Keine Unterthemen",
+                        "url": false
+                    },
+                    {
+                        "label": "207 Videos",
+                        "url": false
+                    }
+                ]
+            },
+            {
+                "type": "thema",
+                "image": false,
+                "title": "Evangelium",
+                "meta": [
+                    {
+                        "label": "3 Unterthemen",
+                        "url": false
+                    },
+                    {
+                        "label": "98 Videos",
+                        "url": false
+                    }
+                ]
+            },
+            {
+                "type": "thema",
+                "image": false,
+                "title": "Evangelistische Vorträge",
+                "meta": [
+                    {
+                        "label": "Keine Unterthemen",
+                        "url": false
+                    },
+                    {
+                        "label": "103 Videos",
+                        "url": false
+                    }
+                ]
+            }
+        ],
+        "button": false
+    },
+    "medialist2": {
+        "title": false,
+        "medialist": [
+            {
+                "type": "thema",
+                "image": false,
+                "title": "Erweckungspredigten",
+                "meta": [
+                    {
+                        "label": "Keine Unterthemen",
+                        "url": false
+                    },
+                    {
+                        "label": "33 Videos",
+                        "url": false
+                    }
+                ]
+            },
+            {
+                "type": "thema",
+                "image": false,
+                "title": "Familie, Ehe und Erziehung",
+                "meta": [
+                    {
+                        "label": "3 Unterthemen",
+                        "url": false
+                    },
+                    {
+                        "label": "27 Videos",
+                        "url": false
+                    }
+                ]
+            },
+            {
+                "type": "thema",
+                "image": false,
+                "title": "Gesundheit",
+                "meta": [
+                    {
+                        "label": "7 Unterthemen",
+                        "url": false
+                    },
+                    {
+                        "label": "51 Videos",
+                        "url": false
+                    }
+                ]
+            },
+            {
+                "type": "thema",
+                "image": false,
+                "title": "Glaubenspunkte",
+                "meta": [
+                    {
+                        "label": "12 Unterthemen",
+                        "url": false
+                    },
+                    {
+                        "label": "370 Videos",
+                        "url": false
+                    }
+                ]
+            },
+            {
+                "type": "thema",
+                "image": false,
+                "title": "Neues Testament",
+                "meta": [
+                    {
+                        "label": "13 Unterthemen",
+                        "url": false
+                    },
+                    {
+                        "label": "56 Videos",
+                        "url": false
+                    }
+                ]
+            }
+        ],
+        "button": false
+    }
 }

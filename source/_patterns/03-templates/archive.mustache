@@ -4,42 +4,14 @@
 
     <main role="main" class="o-wrapper">
 
-        {{> molecules-tabs:o-break-wrapper@until-tablet }}
+        {{> molecules-tabs:u-break-wrapper@until-tablet u-4/5@tablet u-3/4@desktop u-box-center }}
 
-        <section class="o-layout o-layout--flush u-mt o-break-wrapper@until-tablet">
-            <aside class="o-layout__item o-owl u-1/4 u-hidden@until-tablet">
+        <section class="o-layout o-layout--center u-mt">
 
-                <h2 class="u-ml u-mb+">Filter</h2>
-
-                <div class="o-owl o-owl--small u-border-left u-ph u-pr+@desktop">
-                    {{# filter1 }}
-                        {{> organisms-checklist }}
-                    {{/ filter1 }}
-                </div>
-
-                <div class="o-owl o-owl--small u-border-left u-ph u-pr+@desktop">
-                    {{# filter2 }}
-                        {{> organisms-checklist }}
-                    {{/ filter2 }}
-                </div>
-
-                <div class="o-owl o-owl--small u-border-left u-ph u-pr+@desktop">
-                    {{# filter3 }}
-                        {{> organisms-checklist }}
-                    {{/ filter3 }}
-                </div>
-
-                <div class="o-owl o-owl--small u-border-left u-ph u-pr+@desktop">
-                    {{# filter4 }}
-                        {{> organisms-checklist }}
-                    {{/ filter4 }}
-                </div>
-
-            </aside>
-            <div class="o-layout__item u-3/4@tablet">
+            <div class="o-layout__item u-4/5@tablet u-3/4@desktop">
 
 
-                <header class="u-pl u-mb+">
+                <header class="u-mb+">
                     <div class="o-pack o-pack--auto o-pack--middle">
                         <div class="o-pack__item">
                             <h2 class="u-mb0">{{title}}</h2>
@@ -47,27 +19,39 @@
                         <div class="o-pack__item u-text-right u-hidden@until-tablet">
                             {{> molecules-sorting }}
                         </div>
-                        <div class="o-pack__item u-text-right u-pr u-hidden@from-tablet">
-                            <button class="c-btn c-btn--secondary jsFlyinBtn"
-                                data-target="filterFlyin" data-action="open">
-                                Filter
-                            </button>
-                        </div>
                     </div>
 
                     {{> molecules-sorting-mobile:u-mt u-hidden@from-tablet }}
 
                 </header>
 
-                <div class="u-border-left u-ph">
-
-                    {{> organisms-medialist:c-medialist--notitle }}
-
-                    {{> molecules-pagination:u-mt+ }}
-
+                {{# 2columns? }}
+                <div class="o-layout o-layout--large">
+                    <div class="o-layout__item u-1/2@tablet">
+                        {{# medialist1 }}
+                        {{> organisms-medialist }}
+                        {{/ medialist1 }}
+                    </div>
+                    <div class="o-layout__item u-1/2@tablet">
+                        {{# medialist2 }}
+                        {{> organisms-medialist }}
+                        {{/ medialist2 }}
+                    </div>
                 </div>
+                {{/ 2columns? }}
+
+                {{^ 2columns? }}
+                    {{# medialist1 }}
+                    {{> organisms-medialist }}
+                    {{/ medialist1 }}
+                {{/ 2columns? }}
+
+                {{# pagination? }}
+                    {{> molecules-pagination:u-mt+ }}
+                {{/ pagination? }}
 
             </div>
+
         </section>
 
     </main>
@@ -79,33 +63,3 @@
 
 
 {{> organisms-mobile-nav-flyin }}
-
-<aside id="filterFlyin" class="c-flyin">
-
-    <div class="c-flyin__inner">
-
-        <header class="c-flyin__header">
-            <h2 class="c-flyin__title">Filter</h2>
-            <button class="c-btn c-btn--blocky c-btn--bigicon c-btn--square c-flyin__btn jsFlyinBtn"
-                data-target="filterFlyin" data-action="close">
-                <span class="u-ic-close"></span>
-            </button>
-        </header>
-
-        <div class="o-owl o-owl--small c-flyin__content">
-
-            {{> organisms-checklist }}
-
-            <hr class="o-break-wrapper u-mt">
-
-            {{> organisms-checklist }}
-
-            <hr class="o-break-wrapper u-mt">
-
-            {{> organisms-checklist }}
-
-        </div>
-
-    </div>
-
-</aside><!--end c-flyin-->

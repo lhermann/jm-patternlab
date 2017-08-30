@@ -191,18 +191,6 @@ hr {
     padding: $unit-small $unit;
 }
 
-.o-break-wrapper {
-    margin-right: -$unit;
-    margin-left: -$unit;
-}
-
-.o-break-wrapper\@until-tablet {
-    @include mq($until: tablet) {
-        margin-right: -$unit;
-        margin-left: -$unit;
-    }
-}
-
 .o-wrapper--no-padding {
     padding-right: 0;
     padding-left: 0;
@@ -297,14 +285,12 @@ $slide-duration: 3s;
 @import "../node_modules/inuitcss/utilities/utilities.clearfix";
 @import "../node_modules/inuitcss/utilities/utilities.widths";
 @import "../node_modules/inuitcss/utilities/utilities.headings";
-@import "utilities.responsive-spacings";
 @import "../node_modules/inuitcss/utilities/utilities.print";
 @import "../node_modules/inuitcss/utilities/utilities.hide";
 @import "utilities.animation";
 @import "utilities.icons";
 @import "utilities.orientation";
 @import "utilities.text-align";
-@import "utilities.responsive-hide";
 @import "utilities.show-more";
 
 .u-text-bold {
@@ -416,7 +402,18 @@ $slide-duration: 3s;
     box-shadow: $global-shadow;
 }
 
-// .u-anchor {
-//     position: relative;
-// }
+// RESPONSIVE UTILITIES
+@import "utilities.responsive-spacings";
+@import "utilities.responsive-hide";
 
+.u-break-wrapper {
+    margin-right: -$unit;
+    margin-left: -$unit;
+}
+
+.u-break-wrapper\@until-tablet {
+    @include mq($until: tablet) {
+        margin-right: -$unit;
+        margin-left: -$unit;
+    }
+}
