@@ -47,7 +47,8 @@
     "mediaitem": {
         "image": "/images/sample/video-2-192x108.jpg",
         "title": "Sola Veritas: 1. Funken im Dunkel (1482-1484)",
-        "length": "56:07"
+        "length": "56:07",
+        "url": "link.pages-video"
     },
     "medialist1": {
         "title": false,
@@ -57,37 +58,44 @@
             {
                 "image": "/images/sample/video-1-192x108.jpg",
                 "title": "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
-                "length": "56:07"
+                "length": "56:07",
+                "url": "link.pages-video"
             },
             {
                 "image": "/images/sample/video-2-192x108.jpg",
                 "title": "Sola Veritas: 11. Neue Wege (1506)",
-                "length": "48:20"
+                "length": "48:20",
+                "url": "link.pages-video"
             },
             {
                 "image": "/images/sample/video-3-192x108.jpg",
                 "title": "Offenbarung 17:9",
-                "length": "38:29"
+                "length": "38:29",
+                "url": "link.pages-video"
             },
             {
                 "image": "/images/sample/video-4-192x108.jpg",
                 "title": "Mit Gott leben – Apostelgeschichte 17:25b",
-                "length": "51:26"
+                "length": "51:26",
+                "url": "link.pages-video"
             },
             {
                 "image": "/images/sample/video-5-192x108.jpg",
                 "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
-                "length": "2:34"
+                "length": "2:34",
+                "url": "link.pages-video"
             },
             {
                 "image": "/images/sample/video-2-192x108.jpg",
                 "title": "Sola Veritas: 1. Funken im Dunkel (1482-1484)",
-                "length": "56:07"
+                "length": "56:07",
+                "url": "link.pages-video"
             },
             {
                 "image": "/images/sample/video-2-192x108.jpg",
                 "title": "Sola Veritas: 2. Prägende Ereignisse (1485-1487)",
-                "length": "48:20"
+                "length": "48:20",
+                "url": "link.pages-video"
             }
         ],
         "button": false

@@ -1858,21 +1858,19 @@ textarea {
   white-space: nowrap;
   /* 1 */ }
   .c-form__input-with-btn .c-form__input {
+    border-radius: 3px 0 0 3px;
     padding-right: 21px;
     max-width: calc(100% - 50px);
-    /* 2 */
-    border-radius: 3px 0 0 3px; }
+    /* 2 */ }
   .c-form__input-with-btn .c-form__btn {
+    display: inline-block;
     vertical-align: top;
-    line-height: 1.15;
-    display: inline-block; }
+    line-height: 1.15; }
 
-.c-form--large .c-form__input, .c-form--large
-.c-form__btn {
+.c-form--large .c-form__input {
+  padding: 10px 21px; }
+.c-form--large .c-form__btn {
   padding: 11px 21px; }
-.c-form--huge .c-form__input, .c-form--huge
-.c-form__btn {
-  padding: 21px 42px; }
 
 /* ==========================================================================
    #TABS

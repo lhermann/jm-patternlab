@@ -4,7 +4,7 @@
         "slides": [
             {
                 "id": 1,
-                "background": "../../images/sample/slide-bg1.png",
+                "background": "/images/sample/slide-bg7.png",
                 "url": "link.pages-homepage",
                 "joelmedia": true,
                 "heading": "Joel Media Ministry e.V.",
@@ -13,31 +13,37 @@
                 "button": "Erster Besuch? Hier geht's los",
                 "medialist": {
                     "title": "Neue Videos",
+                    "url": "link.pages-archive-videos",
                     "medialist": [
                         {
                             "image": "/images/sample/video-1-192x108.jpg",
                             "title": "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
-                            "length": "56:07"
+                            "length": "56:07",
+                            "url": "link.pages-video"
                         },
                         {
                             "image": "/images/sample/video-2-192x108.jpg",
                             "title": "Sola Veritas: 11. Neue Wege (1506)",
-                            "length": "48:20"
+                            "length": "48:20",
+                            "url": "link.pages-video"
                         },
                         {
                             "image": "/images/sample/video-3-192x108.jpg",
                             "title": "Offenbarung 17:9",
-                            "length": "38:29"
+                            "length": "38:29",
+                            "url": "link.pages-video"
                         },
                         {
                             "image": "/images/sample/video-4-192x108.jpg",
                             "title": "Mit Gott leben – Apostelgeschichte 17:25b",
-                            "length": "51:26"
+                            "length": "51:26",
+                            "url": "link.pages-video"
                         },
                         {
                             "image": "/images/sample/video-5-192x108.jpg",
                             "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
-                            "length": "2:34"
+                            "length": "2:34",
+                            "url": "link.pages-video"
                         }
                     ],
                     "button": false
@@ -202,68 +208,81 @@
     },
     "medialist": {
         "title": "Neue Videos",
+        "url": "link.pages-archive-videos",
         "medialist": [
             {
                 "image": "/images/sample/video-1-192x108.jpg",
                 "title": "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
-                "length": "56:07"
+                "length": "56:07",
+                "url": "link.pages-video"
             },
             {
                 "image": "/images/sample/video-2-192x108.jpg",
                 "title": "Sola Veritas: 11. Neue Wege (1506)",
-                "length": "48:20"
+                "length": "48:20",
+                "url": "link.pages-video"
             },
             {
                 "image": "/images/sample/video-3-192x108.jpg",
                 "title": "Offenbarung 17:9",
-                "length": "38:29"
+                "length": "38:29",
+                "url": "link.pages-video"
             },
             {
                 "image": "/images/sample/video-4-192x108.jpg",
                 "title": "Mit Gott leben – Apostelgeschichte 17:25b",
-                "length": "51:26"
+                "length": "51:26",
+                "url": "link.pages-video"
             },
             {
                 "image": "/images/sample/video-5-192x108.jpg",
                 "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
-                "length": "2:34"
+                "length": "2:34",
+                "url": "link.pages-video"
             }
         ],
         "button": false
     },
     "medialist1": {
         "title": "Beliebte Videos",
+        "url": "link.pages-archive-videos",
         "medialist": [
             {
                 "image": "/images/sample/video-1-192x108.jpg",
                 "title": "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
-                "length": "56:07"
+                "length": "56:07",
+                "url": "link.pages-video"
             },
             {
                 "image": "/images/sample/video-2-192x108.jpg",
                 "title": "Sola Veritas: 11. Neue Wege (1506)",
-                "length": "48:20"
+                "length": "48:20",
+                "url": "link.pages-video"
             },
             {
                 "image": "/images/sample/video-3-192x108.jpg",
                 "title": "Offenbarung 17:9",
-                "length": "38:29"
+                "length": "38:29",
+                "url": "link.pages-video"
             },
             {
                 "image": "/images/sample/video-4-192x108.jpg",
                 "title": "Mit Gott leben – Apostelgeschichte 17:25b",
-                "length": "51:26"
+                "length": "51:26",
+                "url": "link.pages-video"
             },
             {
                 "image": "/images/sample/video-5-192x108.jpg",
                 "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
-                "length": "2:34"
+                "length": "2:34",
+                "url": "link.pages-video"
             }
         ],
         "button": false
     },
     "medialist2": {
         "title": "Neue Serien",
+        "url": "link.pages-archive-serien",
         "medialist": [
             {
                 "type": "serie",
@@ -338,27 +357,32 @@
             {
                 "image": "/images/sample/video-4-192x108.jpg",
                 "title": "Mit Gott leben – Psalm 37:3",
-                "length": "56:07"
+                "length": "56:07",
+                "url": "link.pages-video"
             },
             {
                 "image": "/images/sample/video-4-192x108.jpg",
                 "title": "Mit Gott leben – Prediger 12:13",
-                "length": "48:20"
+                "length": "48:20",
+                "url": "link.pages-video"
             },
             {
                 "image": "/images/sample/video-4-192x108.jpg",
                 "title": "Mit Gott leben – Matthäus 25:23",
-                "length": "38:29"
+                "length": "38:29",
+                "url": "link.pages-video"
             },
             {
                 "image": "/images/sample/video-4-192x108.jpg",
                 "title": "Mit Gott leben – 1. Chronik 16:10",
-                "length": "51:26"
+                "length": "51:26",
+                "url": "link.pages-video"
             },
             {
                 "image": "/images/sample/video-4-192x108.jpg",
                 "title": "Mit Gott leben – Apostelgeschichte 17:25b",
-                "length": "2:34"
+                "length": "2:34",
+                "url": "link.pages-video"
             }
         ],
         "button": false
