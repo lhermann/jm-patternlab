@@ -28,7 +28,7 @@ $width-sprecher: (80px 80px);
 
     &:hover {
         // transform: translateY(-2px);
-        transform: translate(-1px, -4px);
+        transform: translate(-1px, -2px);
         box-shadow: 0 5px 10px rgba(0, 0, 0, .08);
         background-color: rgba($c-black, .03);
     }
@@ -129,8 +129,12 @@ $width-sprecher: (80px 80px);
             }
         }
 
-    .c-mediaitem__title {
-        color: $c-text;
+    .c-mediaitem__title, {
+        &,
+        &:hover,
+        &:focus {
+            color: $c-text;
+        }
     }
 
     .c-mediaitem__meta {

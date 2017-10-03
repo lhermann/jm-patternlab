@@ -2,9 +2,65 @@
 
     {{> organisms-header }}
 
-    <main role="main">
+    <main role="main" class="u-mb u-mb++@tablet">
 
+        <div class="o-wrapper">
+            <div class="u-box-center u-3/4@tablet u-2/3@desktop">
 
+                <header class="u-mt+">
+                    <h1>Blog</h1>
+                </header>
+
+                <div class="o-layout u-mv+@tablet">
+                    <div class="o-layout__item u-pb">
+                        <div class="o-ratio o-ratio--16:9">
+                            <div class="o-ratio__content">
+                                {{# article1 }}
+                                    {{> molecules-post-preview:c-post-preview--hero }}
+                                {{/ article1 }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="o-layout__item u-pb u-1/2@tablet">
+                        <div class="o-ratio o-ratio--16:9">
+                            <div class="o-ratio__content">
+                                {{# article2 }}
+                                    {{> molecules-post-preview: }}
+                                {{/ article2 }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="o-layout__item u-pb u-1/2@tablet">
+                        <div class="o-ratio o-ratio--16:9">
+                            <div class="o-ratio__content">
+                                {{# article3 }}
+                                    {{> molecules-post-preview }}
+                                {{/ article3 }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="o-layout__item u-pb u-1/2@tablet">
+                        <div class="o-ratio o-ratio--16:9">
+                            <div class="o-ratio__content">
+                                {{# article4 }}
+                                    {{> molecules-post-preview }}
+                                {{/ article4 }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="o-layout__item u-pb u-1/2@tablet">
+                        <div class="o-ratio o-ratio--16:9">
+                            <div class="o-ratio__content">
+                                {{# article5 }}
+                                    {{> molecules-post-preview }}
+                                {{/ article5 }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
     </main>
 

@@ -30,6 +30,9 @@
   vertical-align: -0.1em;
 }
 
+.u-ic-comment:before {
+  content: "\e8af";
+}
 .u-ic-download:before {
   content: "\e884";
 }
