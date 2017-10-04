@@ -30,6 +30,12 @@
   vertical-align: -0.1em;
 }
 
+.u-ic-schedule:before {
+  content: "\e8b5";
+}
+.u-ic-date:before {
+  content: "\e916";
+}
 .u-ic-comment:before {
   content: "\e8af";
 }

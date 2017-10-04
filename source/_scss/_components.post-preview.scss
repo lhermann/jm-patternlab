@@ -32,6 +32,12 @@
             }
         }
 
+        .c-post-preview__description {
+            @include mq($until: tablet) {
+                display: none;
+            }
+        }
+
         .c-post-preview__meta {
             margin: 0;
             opacity: .8;

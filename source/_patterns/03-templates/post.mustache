@@ -4,7 +4,52 @@
 
     <main role="main">
 
+        <div class="o-ratio o-ratio--2:1">
+            <div class="o-ratio__content u-center">
+                <img src="{{ image }}" class="u-1/1">
+            </div>
+        </div>
 
+        <div class="o-wrapper o-wrapper--slim u-mt+ u-mb++">
+
+            <header>
+                <ul class="o-list-inline u-lead u-textalt u-mb-">
+                    <li><a class="c-link c-link--alt" href="{{ category.url }}"><span class="u-ic-folder"></span> {{ category.name }}</li></a>
+                    <li><span class="u-ic-date"></span> 31.12.2012</li>
+                </ul>
+                <h1>{{ title }}</h1>
+            </header>
+
+            <div class="c-post">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed augue lacus viverra vitae. Justo eget magna fermentum iaculis eu non diam phasellus vestibulum. Vestibulum lorem sed risus ultricies tristique nulla. Non arcu risus quis varius quam quisque id. Nam aliquam sem et tortor consequat id porta nibh venenatis. In est ante in nibh mauris cursus mattis. Suspendisse potenti nullam ac tortor vitae purus faucibus. Rhoncus dolor purus non enim. Nunc pulvinar sapien et ligula ullamcorper. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Quam viverra orci sagittis eu. Felis eget velit aliquet sagittis id consectetur. At risus viverra adipiscing at in. Feugiat scelerisque varius morbi enim nunc.</p>
+                <p>Ipsum consequat nisl vel pretium. Iaculis at erat pellentesque adipiscing commodo elit. Sit amet dictum sit amet justo. Tristique nulla aliquet enim tortor at auctor. Diam maecenas sed enim ut sem viverra. A condimentum vitae sapien pellentesque habitant morbi tristique senectus. Curabitur gravida arcu ac tortor dignissim convallis aenean et. Et ligula ullamcorper malesuada proin</p>
+                <figure id="attachment_907" style="width: 1200px" class="wp-caption alignnone">
+                    <img class=" wp-image-907" title="Image Alignment 1200x400" alt="Image Alignment 1200x400" src="http://joeldev.dev/wp-content/uploads/2013/03/image-alignment-1200x4002.jpg" width="1200" height="400">
+                    <figcaption class="wp-caption-text">Massive image comment for your eyeballs.</figcaption>
+                </figure>
+                <p>Tristique nulla aliquet enim tortor at auctor urna nunc id. Non diam phasellus vestibulum lorem sed risus ultricies tristique. Maecenas accumsan lacus vel facilisis volutpat est. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in. Posuere ac ut consequat semper viverra nam libero justo. At erat pellentesque adipiscing commodo elit at imperdiet. Tristique nulla aliquet enim tortor at. Quam quisque id diam vel quam elementum pulvinar. Massa massa ultricies mi quis hendrerit dolor magna eget. Praesent semper feugiat nibh sed. Cras adipiscing enim eu turpis egestas pretium aenean pharetra magna. Nunc pulvinar sapien et ligula. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus. Nunc non blandit massa enim nec dui nunc. Vivamus at augue eget arcu. Tincidunt vitae semper quis lectus nulla.</p>
+                <p>Sed libero enim sed faucibus turpis in. Non curabitur gravida arcu ac tortor dignissim convallis. Auctor urna nunc id cursus metus aliquam eleifend mi. Molestie a iaculis at erat pellentesque adipiscing commodo elit. In metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Ipsum consequat nisl vel pretium lectus quam. Platea dictumst vestibulum rhoncus est pellentesque. At risus viverra adipiscing at in tellus. Mattis pellentesque id nibh tortor id aliquet. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. Bibendum neque egestas congue quisque egestas diam in arcu cursus. Nunc faucibus a pellentesque sit amet. Id ornare arcu odio ut sem nulla pharetra diam. Nunc vel risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                <p>Erat velit scelerisque in dictum non. Cursus sit amet dictum sit. Neque convallis a cras semper auctor neque vitae tempus. Ut diam quam nulla porttitor. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Velit euismod in pellentesque massa placerat duis ultricies lacus. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. Egestas dui id ornare arcu odio.</p>
+            </div>
+
+            <footer class="u-mt+">
+                <hr>
+                <div class="o-flag u-mv">
+                    <div class="o-flag__img">
+                        <img class="u-border-radius" src="{{ author.avatar }}" width="90">
+                    </div>
+                    <div class="o-flag__body u-small">
+                        <h4 class="u-lead u-roboto u-mb--">Verfast von <strong><a class="c-link c-link--dotted" href="{{ author.url }}">{{ author.name }}</a></strong></h4>
+                        <span class="u-textalt">Sabine arbeitet im Amt für Bildung in Freiburg und leitet die redaktionelle Arbeit bei Jeol Media Ministry e.V.</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="u-center u-mt++">
+                    <a class="c-btn c-btn--secondary" href="{{ link.pages-blog }}">Zur&uuml;ck zum Blog</a>
+                </div>
+            </footer>
+
+        </div>
 
     </main>
 

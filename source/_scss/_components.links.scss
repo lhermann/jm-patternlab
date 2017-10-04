@@ -68,6 +68,14 @@
     }
 }
 
+.c-link--alt {
+    color: $c-textalt;
+}
+
+.c-link--muted {
+    color: $c-textmuted;
+}
+
     .c-link__float-right {
         float: right;
         margin-top: -$inuit-global-line-height;

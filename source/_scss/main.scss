@@ -174,7 +174,7 @@ hr {
 @import "../node_modules/inuitcss/objects/objects.media";
 @import "../node_modules/inuitcss/objects/objects.flag";
 @import "../node_modules/inuitcss/objects/objects.list-bare";
-@import "../node_modules/inuitcss/objects/objects.list-inline";
+@import "objects.list-inline";
 @import "../node_modules/inuitcss/objects/objects.box";
 @import "../node_modules/inuitcss/objects/objects.block";
 @import "../node_modules/inuitcss/objects/objects.ratio";
@@ -182,6 +182,7 @@ hr {
 @import "../node_modules/inuitcss/objects/objects.pack";
 @import "objects.overflow";
 @import "objects.owl";
+@import "objects.grid";
 
 .o-layout--overflow {
     white-space: nowrap;
@@ -189,6 +190,10 @@ hr {
 
 .o-box--natural {
     padding: $unit-small $unit;
+}
+
+.o-wrapper--slim {
+  max-width: 800px;
 }
 
 .o-wrapper--no-padding {
@@ -245,10 +250,10 @@ $header-height: 56px;
 @import "components.medialist";
 @import "components.mediaitem";
 @import "components.media-promo";
-@import "components.article-grid";
-@import "components.media-article";
+// @import "components.media-article";
 @import "components.post-preview";
 @import "components.dropdowns";
+@import "components.posts";
 
 /* Keep in sync with slider.js */
 $slide-transition: .7s;
@@ -343,6 +348,10 @@ $slide-duration: 3s;
     color: $c-white;
 }
 
+.u-textalt {
+    color: $c-textalt;
+}
+
 .u-textmuted {
     color: $c-textmuted;
 }
@@ -418,4 +427,8 @@ $slide-duration: 3s;
         margin-right: -$unit;
         margin-left: -$unit;
     }
+}
+
+.u-border-radius {
+    border-radius: $global-radius;
 }

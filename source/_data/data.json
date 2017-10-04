@@ -19,6 +19,7 @@
     "image": "/images/fpo_16x9.png",
     "background": "/images/header.svg",
     "player": "/images/player-16x9.jpg",
+    "avatar": "/images/fpo_avatar.png",
     "label": "Lorem Ipsum",
     "class": "",
     "author": {
@@ -65,11 +66,9 @@
         "medium" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit iopa. (76 characters)"
     },
     "sectionTitle" : "Section Title",
-    "excerpt" : {
-        "short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-        "medium" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "long" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
+    "excerpt-short": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+    "excerpt-medium" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "excerpt-long" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "htmlText" : "<p>Wie bereits erwähnt, erteilt CC BY eine unbeschränkte Lizenz zur Nutzung des jeweiligen Inhalts. Wie der Inhalt genutzt wird, z. B. im Original oder in geänderter Form, von wem oder für welchen Zweck, ist ohne Belang. Gemäß Abschnitt 3a des Rechtstextes sind folgende Verpflichtungen einzuhalten: # Autor und zu nennende Dritte müssen so genannt werden, wie es der Lizenzgeber verlangt, sofern diese Form der Nennung angemessen ist.</p><ol><li>Sofern vom Lizenzgeber zur Verfügung gestellt, müssen Urheberrechtshinweise, ein Verweis auf die CC-Lizenz (vorzugsweise als Link auf die CC-Webseite), ein Verweis, der sich auf den Garantie- und Haftungsausschluss bezieht, und ein Link zur Originalquelle angegeben werden.</li><li>Wird das Werk in einer veränderten Version geteilt, muss angegeben werden, dass es sich um eine geänderte Version handelt. Bereits enthaltene Änderungshinweise müssen (wenn das Werk schon zuvor modifiziert wurde) beibehalten werden (siehe Abschnitt 3.a.1.B des Rechtstextes).</li><li>Soweit der Lizenzgeber dies fordert und es angemessen ist, ist der Nutzer verpflichtet, die unter Ziffer 2 genannten Informationen zu entfernen.</li><li>Der Lizenznehmer darf nicht den Eindruck erwecken, dass seine Nutzung vom Lizenzgeber oder einem Dritten, der Anspruch auf Namensnennung hat, in irgendeiner Weise unterstützt wird (siehe Abschnitt 2.a.6 des Rechtstextes).</li></ol>",
     "number" : "12",
     "primaryNav" : [
@@ -357,7 +356,8 @@
             "name": "Allgemein",
             "url": "#"
         },
-        "date": "7. März 2017"
+        "date": "7. März 2017",
+        "excerpt-short": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
     },
     "article2": {
         "title": "Joel Media Spezial 2017: „Franziskus, Trump und die Reformation“ am 25. Februar",
@@ -371,7 +371,8 @@
             "name": "Allgemein",
             "url": "#"
         },
-        "date": "7. März 2017"
+        "date": "7. März 2017",
+        "excerpt-short": false
     },
     "article3": {
         "title": "Ausblick auf ein geschichtsträchtiges Jahr",
@@ -385,7 +386,8 @@
             "name": "Allgemein",
             "url": "#"
         },
-        "date": "7. März 2017"
+        "date": "7. März 2017",
+        "excerpt-short": false
     },
     "article4": {
         "title": "Missionsprojekt Hacksaw Ridge",
@@ -399,7 +401,8 @@
             "name": "Allgemein",
             "url": "#"
         },
-        "date": "7. März 2017"
+        "date": "7. März 2017",
+        "excerpt-short": false
     },
     "article5": {
         "title": "„Weltengeschichte“ – die neue Vortragsreihe live ab dem 23. September",
@@ -413,7 +416,8 @@
             "name": "Allgemein",
             "url": "#"
         },
-        "date": "7. März 2017"
+        "date": "7. März 2017",
+        "excerpt-short": false
     },
     "pages": [
         {

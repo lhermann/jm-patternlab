@@ -1,37 +1,17 @@
-<div class="o-ratio c-article-grid {{ styleModifier }}">
-    <div class="o-ratio__content">
-        <div class="c-article-grid__col u-1/2@tablet u-1/1">
-            <div class="c-article-grid__item c-article-grid__item--hero u-1/1">
-                {{# article1 }}
-                    {{> molecules-media-article:c-media-article--large }}
-                {{/ article1 }}
-            </div>
-        </div>
-        <div class="c-article-grid__col u-1/2@tablet u-1/1">
-            <div class="c-article-grid__row">
-                <div class="c-article-grid__item u-1/2@mobile u-1/1">
-                    {{# article2 }}
-                        {{> molecules-media-article }}
-                    {{/ article2 }}
-                </div>
-                <div class="c-article-grid__item u-1/2@mobile u-1/1">
-                    {{# article3 }}
-                        {{> molecules-media-article }}
-                    {{/ article3 }}
-                </div>
-            </div>
-            <div class="c-article-grid__row">
-                <div class="c-article-grid__item u-1/2@mobile u-1/1 u-hidden@until-mobile">
-                    {{# article4 }}
-                        {{> molecules-media-article }}
-                    {{/ article4 }}
-                </div>
-                <div class="c-article-grid__item u-1/2@mobile u-1/1 u-hidden@until-mobile">
-                    {{# article5 }}
-                        {{> molecules-media-article }}
-                    {{/ article5 }}
-                </div>
-            </div>
-        </div>
-    </div><!-- o-ratio__content -->
-</div><!-- o-ratio c-article-grid -->
+<div class="o-grid o-grid--h50u {{ styleModifier }}">
+    <div class="o-grid__item o-grid__item--hero">
+        {{# article1 }}
+            {{> molecules-post-preview:c-post-preview--hero c-post-preview--description }}
+        {{/ article1 }}
+    </div>
+    <div class="o-grid__item">
+        {{# article2 }}
+            {{> molecules-post-preview }}
+        {{/ article2 }}
+    </div>
+    <div class="o-grid__item">
+        {{# article3 }}
+            {{> molecules-post-preview }}
+        {{/ article3 }}
+    </div>
+</div>
