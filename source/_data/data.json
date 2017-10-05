@@ -530,5 +530,75 @@
             }
         ]
     },
-    "share-button": true
+    "share-button": true,
+    "program": [
+        {
+            "week": "Di",
+            "date": "24. Okt",
+            "class": "is-today",
+            "events": [
+                {
+                    "time": "18:30 Uhr",
+                    "title": "Offenbarung Vers für Vers",
+                    "class": "is-now"
+                },
+                {
+                    "time": "20:15 Uhr",
+                    "title": "Der Ersehnte"
+                }
+            ]
+        },
+        {
+            "week": "Sa",
+            "date": "28. Okt",
+            "events": [
+                {
+                    "time": "10:30 Uhr",
+                    "title": "Predigt"
+                }
+            ]
+        },
+        {
+            "week": "Di",
+            "date": "31. Okt",
+            "events": [
+                {
+                    "time": "18:30 Uhr",
+                    "title": "Offenbarung Vers für Vers"
+                },
+                {
+                    "time": "20:15 Uhr",
+                    "title": "Der Ersehnte"
+                }
+            ]
+        },
+        {
+            "week": "Di",
+            "date": "7. Nov",
+            "events": [
+                {
+                    "time": "18:30 Uhr",
+                    "title": "Offenbarung Vers für Vers"
+                },
+                {
+                    "time": "20:15 Uhr",
+                    "title": "Der Ersehnte"
+                }
+            ]
+        },
+        {
+            "week": "Di",
+            "date": "14. Nov",
+            "events": [
+                {
+                    "time": "18:30 Uhr",
+                    "title": "Offenbarung Vers für Vers"
+                },
+                {
+                    "time": "20:15 Uhr",
+                    "title": "Der Ersehnte"
+                }
+            ]
+        }
+    ]
 }

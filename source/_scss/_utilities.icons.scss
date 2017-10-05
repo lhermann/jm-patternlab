@@ -30,6 +30,9 @@
   vertical-align: -0.1em;
 }
 
+.u-ic-warning:before {
+  content: "\e002";
+}
 .u-ic-schedule:before {
   content: "\e8b5";
 }
