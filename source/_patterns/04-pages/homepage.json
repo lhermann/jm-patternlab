@@ -8,16 +8,20 @@
                 "url": "link.pages-homepage",
                 "joelmedia": true,
                 "heading": "Joel Media Ministry e.V.",
-                "subheading": "... das ewige Evangelium für Stuttgart, Deutschland und die Welt",
-                "text": "Wöchentlich neue Videos über die Bibel,<br>Prophetie und Zeitgeschehen",
+                "subheading":
+                    "... das ewige Evangelium für Stuttgart, Deutschland und die Welt",
+                "text":
+                    "Wöchentlich neue Videos über die Bibel,<br>Prophetie und Zeitgeschehen",
                 "button": "Erster Besuch? Hier geht's los",
                 "medialist": {
                     "title": "Neue Videos",
+                    "titleClass": "u-pv- u-m0",
                     "url": "link.pages-archive-videos",
                     "medialist": [
                         {
                             "image": "/images/sample/video-1-192x108.jpg",
-                            "title": "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
+                            "title":
+                                "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
                             "length": "56:07",
                             "url": "link.pages-video"
                         },
@@ -35,13 +39,15 @@
                         },
                         {
                             "image": "/images/sample/video-4-192x108.jpg",
-                            "title": "Mit Gott leben – Apostelgeschichte 17:25b",
+                            "title":
+                                "Mit Gott leben – Apostelgeschichte 17:25b",
                             "length": "51:26",
                             "url": "link.pages-video"
                         },
                         {
                             "image": "/images/sample/video-5-192x108.jpg",
-                            "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
+                            "title":
+                                "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
                             "length": "2:34",
                             "url": "link.pages-video"
                         }
@@ -55,7 +61,8 @@
                 "styleModifier": "c-slide--left",
                 "url": "link.pages-homepage",
                 "heading": "Sola Vertias",
-                "text": "2017 ist das Jahr der Reformation. Wird sie fortgeführt oder begraben? Wie verhalten sich Luthers Erben und was wird aus seinen (Wieder)entdeckungen?",
+                "text":
+                    "2017 ist das Jahr der Reformation. Wird sie fortgeführt oder begraben? Wie verhalten sich Luthers Erben und was wird aus seinen (Wieder)entdeckungen?",
                 "button": "Serie ansehen"
             },
             {
@@ -63,7 +70,8 @@
                 "background": "../../images/sample/slide-bg3.jpg",
                 "url": "link.pages-homepage",
                 "heading": "Joel Media in Wittenberg",
-                "text": "Vor 500 Jahren begann Martin Luther in Wittenberg ein Werk, das die Gesellschaft durch Gottes Wirken vollkommen beeinflusste und bis heute noch prägt.",
+                "text":
+                    "Vor 500 Jahren begann Martin Luther in Wittenberg ein Werk, das die Gesellschaft durch Gottes Wirken vollkommen beeinflusste und bis heute noch prägt.",
                 "button": "Artikel lesen"
             }
         ]
@@ -115,96 +123,29 @@
         "slides": [
             {
                 "id": 1,
-                "quote": "An dieser Stelle möchte ich Ihnen Christopher Kramp herzlichst danken, aber vor allem unserem Herrn, dass ER immer noch junge Männer beruft in seinen Dienst und sie mit seinen Geistlichen Gaben ausrüstet.",
+                "quote":
+                    "An dieser Stelle möchte ich Ihnen Christopher Kramp herzlichst danken, aber vor allem unserem Herrn, dass ER immer noch junge Männer beruft in seinen Dienst und sie mit seinen Geistlichen Gaben ausrüstet.",
                 "credits": "Manfred Conzelmann"
             },
             {
                 "id": 2,
-                "quote": "Herzlichen Dank für das was ich durch Sie lernen durfte! Ich fiebere von einer Predigt zur anderen und das schon seit Jahren.",
+                "quote":
+                    "Herzlichen Dank für das was ich durch Sie lernen durfte! Ich fiebere von einer Predigt zur anderen und das schon seit Jahren.",
                 "credits": "Lothar Göbel"
             },
             {
                 "id": 3,
-                "quote": "Mein Hunger nach der Wahrheit und einem festen Fundament ist sehr groß und ich bin so froh das es euch gibt. [...] Ich verstehe endlich wie ich die Bibel lesen und verstehen kann.",
+                "quote":
+                    "Mein Hunger nach der Wahrheit und einem festen Fundament ist sehr groß und ich bin so froh das es euch gibt. [...] Ich verstehe endlich wie ich die Bibel lesen und verstehen kann.",
                 "credits": "Daniela Bremer"
             },
             {
                 "id": 4,
-                "quote": "Wir schätzen die Seite Joel Media Ministry wirklich überaus, auf welche wir hingeführt wurden: Sehr bereichernde und klärende Vorträge für eine ganz tiefe Bindung an den Schöpfer und seinen Sohn, am Ende der Offenbarungsprophetie.",
+                "quote":
+                    "Wir schätzen die Seite Joel Media Ministry wirklich überaus, auf welche wir hingeführt wurden: Sehr bereichernde und klärende Vorträge für eine ganz tiefe Bindung an den Schöpfer und seinen Sohn, am Ende der Offenbarungsprophetie.",
                 "credits": "Fam. Klempkow"
             }
-
         ]
-    },
-    "article1": {
-        "title": "„Sola Veritas“ – Die neue große Serie zur Geschichte der Reformation",
-        "url": "#",
-        "image": "/images/slide-gray.jpg",
-        "author": {
-            "name": "Christopher Kramp",
-            "url": "#"
-        },
-        "category": {
-            "name": "Allgemein",
-            "url": "#"
-        },
-        "date": "7. März 2017"
-    },
-    "article2": {
-        "title": "Joel Media Spezial 2017: „Franziskus, Trump und die Reformation“ am 25. Februar",
-        "url": "#",
-        "image": "/images/slide-gray.jpg",
-        "author": {
-            "name": "Christopher Kramp",
-            "url": "#"
-        },
-        "category": {
-            "name": "Allgemein",
-            "url": "#"
-        },
-        "date": "7. März 2017"
-    },
-    "article3": {
-        "title": "Ausblick auf ein geschichtsträchtiges Jahr",
-        "url": "#",
-        "image": "/images/slide-gray.jpg",
-        "author": {
-            "name": "Christopher Kramp",
-            "url": "#"
-        },
-        "category": {
-            "name": "Allgemein",
-            "url": "#"
-        },
-        "date": "7. März 2017"
-    },
-    "article4": {
-        "title": "Missionsprojekt Hacksaw Ridge",
-        "url": "#",
-        "image": "/images/slide-gray.jpg",
-        "author": {
-            "name": "Christopher Kramp",
-            "url": "#"
-        },
-        "category": {
-            "name": "Allgemein",
-            "url": "#"
-        },
-        "date": "7. März 2017"
-    },
-    "article5": {
-        "title": "„Weltengeschichte“ – die neue Vortragsreihe live ab dem 23. September",
-        "url": "#",
-        "image": "/images/slide-gray.jpg",
-        "author": {
-            "name": "Christopher Kramp",
-            "url": "#"
-        },
-        "category": {
-            "name": "Allgemein",
-            "url": "#"
-        },
-        "date": "7. März 2017"
     },
     "medialist": {
         "title": "Neue Videos",
@@ -212,7 +153,8 @@
         "medialist": [
             {
                 "image": "/images/sample/video-1-192x108.jpg",
-                "title": "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
+                "title":
+                    "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
                 "length": "56:07",
                 "url": "link.pages-video"
             },
@@ -236,7 +178,8 @@
             },
             {
                 "image": "/images/sample/video-5-192x108.jpg",
-                "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
+                "title":
+                    "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
                 "length": "2:34",
                 "url": "link.pages-video"
             }
@@ -249,7 +192,8 @@
         "medialist": [
             {
                 "image": "/images/sample/video-1-192x108.jpg",
-                "title": "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
+                "title":
+                    "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
                 "length": "56:07",
                 "url": "link.pages-video"
             },
@@ -273,7 +217,8 @@
             },
             {
                 "image": "/images/sample/video-5-192x108.jpg",
-                "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
+                "title":
+                    "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
                 "length": "2:34",
                 "url": "link.pages-video"
             }
@@ -388,8 +333,9 @@
         "button": false
     },
     "article1": {
-        "title": "„Sola Veritas“ – Die neue große Serie zur Geschichte der Reformation",
-        "url": "#",
+        "title":
+            "„Sola Veritas“ – Die neue große Serie zur Geschichte der Reformation",
+        "url": "link.pages-post",
         "image": "/images/sample/article4-1280x720.jpg",
         "author": {
             "name": "Christopher Kramp",
@@ -402,8 +348,9 @@
         "date": "7. März 2017"
     },
     "article2": {
-        "title": "Joel Media Spezial 2017: „Franziskus, Trump und die Reformation“ am 25. Februar",
-        "url": "#",
+        "title":
+            "Joel Media Spezial 2017: „Franziskus, Trump und die Reformation“ am 25. Februar",
+        "url": "link.pages-post",
         "image": "/images/sample/article2-1280x720.jpg",
         "author": {
             "name": "Christopher Kramp",
@@ -417,7 +364,7 @@
     },
     "article3": {
         "title": "Ausblick auf ein geschichtsträchtiges Jahr",
-        "url": "#",
+        "url": "link.pages-post",
         "image": "/images/sample/article3-1280x720.jpg",
         "author": {
             "name": "Christopher Kramp",
@@ -428,33 +375,5 @@
             "url": "#"
         },
         "date": "19. Januar 2017"
-    },
-    "article4": {
-        "title": "Missionsprojekt Hacksaw Ridge",
-        "url": "#",
-        "image": "/images/sample/article1-1280x720.jpg",
-        "author": {
-            "name": "Christopher Kramp",
-            "url": "#"
-        },
-        "category": {
-            "name": "Missionsprojekt",
-            "url": "#"
-        },
-        "date": "18. November 2016"
-    },
-    "article5": {
-        "title": "„Weltengeschichte“ – die neue Vortragsreihe live ab dem 23. September",
-        "url": "#",
-        "image": "/images/sample/article5-1280x720.jpg",
-        "author": {
-            "name": "Christopher Kramp",
-            "url": "#"
-        },
-        "category": {
-            "name": "Livestream, Vortragsreihe",
-            "url": "#"
-        },
-        "date": "4. September 2016"
     }
 }

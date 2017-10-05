@@ -110,33 +110,33 @@
     "mobileNav" : [
         {
             "label": "Blog",
-            "url": "link.pages-homepage"
+            "url": "link.pages-blog"
         },
         {
             "label": "Kontakt",
-            "url": "link.pages-homepage"
+            "url": "link.pages-page"
         },
         {
             "label": "Unser Team",
-            "url": "link.pages-homepage"
+            "url": "link.pages-page"
         }
     ],
     "footerNav" : [
         {
             "label": "About",
-            "url": "link.pages-about"
+            "url": "link.pages-page"
         },
         {
             "label": "Blog",
-            "url": "link.pages-blog-index"
+            "url": "link.pages-blog"
         },
         {
             "label": "Contact",
-            "url": "link.pages-contact"
+            "url": "link.pages-page"
         },
         {
             "label": "Login",
-            "url": "link.pages-login"
+            "url": "link.pages-page"
         }
     ],
     "tabs": [
@@ -346,7 +346,7 @@
     },
     "article1": {
         "title": "„Sola Veritas“ – Die neue große Serie zur Geschichte der Reformation",
-        "url": "#",
+        "url": "link.pages-post",
         "image": "/images/slide-gray.jpg",
         "author": {
             "name": "Christopher Kramp",
@@ -361,7 +361,7 @@
     },
     "article2": {
         "title": "Joel Media Spezial 2017: „Franziskus, Trump und die Reformation“ am 25. Februar",
-        "url": "#",
+        "url": "link.pages-post",
         "image": "/images/slide-gray.jpg",
         "author": {
             "name": "Christopher Kramp",
@@ -376,7 +376,7 @@
     },
     "article3": {
         "title": "Ausblick auf ein geschichtsträchtiges Jahr",
-        "url": "#",
+        "url": "link.pages-post",
         "image": "/images/slide-gray.jpg",
         "author": {
             "name": "Christopher Kramp",
@@ -391,7 +391,7 @@
     },
     "article4": {
         "title": "Missionsprojekt Hacksaw Ridge",
-        "url": "#",
+        "url": "link.pages-post",
         "image": "/images/slide-gray.jpg",
         "author": {
             "name": "Christopher Kramp",
@@ -406,7 +406,7 @@
     },
     "article5": {
         "title": "„Weltengeschichte“ – die neue Vortragsreihe live ab dem 23. September",
-        "url": "#",
+        "url": "link.pages-post",
         "image": "/images/slide-gray.jpg",
         "author": {
             "name": "Christopher Kramp",

@@ -18,7 +18,7 @@
     "article2": {
         "title":
             "Joel Media Spezial 2017: „Franziskus, Trump und die Reformation“ am 25. Februar",
-        "url": "#",
+        "url": "link.pages-post",
         "image": "/images/sample/article2-1280x720.jpg",
         "author": {
             "name": "Christopher Kramp",
@@ -33,7 +33,7 @@
     },
     "article3": {
         "title": "Ausblick auf ein geschichtsträchtiges Jahr",
-        "url": "#",
+        "url": "link.pages-post",
         "image": "/images/sample/article3-1280x720.jpg",
         "author": {
             "name": "Christopher Kramp",
@@ -48,7 +48,7 @@
     },
     "article4": {
         "title": "Missionsprojekt Hacksaw Ridge",
-        "url": "#",
+        "url": "link.pages-post",
         "image": "/images/sample/article4-1280x720.jpg",
         "author": {
             "name": "Christopher Kramp",
@@ -64,7 +64,7 @@
     "article5": {
         "title":
             "„Weltengeschichte“ – die neue Vortragsreihe live ab dem 23. September",
-        "url": "#",
+        "url": "link.pages-post",
         "image": "/images/sample/article5-1280x720.jpg",
         "author": {
             "name": "Christopher Kramp",
