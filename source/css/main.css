@@ -1973,10 +1973,8 @@ textarea {
 .c-program__item {
   position: relative;
   margin-bottom: 21px;
-  margin-left: 11px; }
-  @media (max-width: 46.24em) {
-    .c-program__item {
-      margin-right: 11px; } }
+  margin-left: 11px;
+  margin-right: 11px; }
 
 .c-program__box {
   position: relative;
@@ -1988,8 +1986,8 @@ textarea {
   line-height: 1.2; }
   @media (min-width: 46.25em) {
     .c-program__box {
-      width: 63px;
-      padding: 11px; } }
+      width: 84px;
+      padding: 11px 0; } }
   .is-today .c-program__box {
     border-color: #39b54a; }
   .c-program__box:after, .c-program__box:before {
@@ -2011,9 +2009,6 @@ textarea {
   font-size: 160%;
   font-weight: 600; }
 
-.c-program__date {
-  font-size: 80%; }
-
 @media (max-width: 46.24em) {
   .c-program__week,
   .c-program__date {
@@ -2021,7 +2016,7 @@ textarea {
     font-size: 130%;
     margin-right: 5px; } }
 .c-program__eventlist {
-  margin-left: 52.5px;
+  margin-left: 63px;
   list-style: none; }
 
 .c-program__event {

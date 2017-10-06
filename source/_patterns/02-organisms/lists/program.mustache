@@ -1,0 +1,22 @@
+<ul class="c-program {{ styleModifier }}">
+
+    {{# program }}
+    <li class="c-program__item {{ class }}">
+        <div class="c-program__box">
+            <div class="c-program__week">{{ week }}</div>
+            <div class="c-program__date">{{ date }}</div>
+        </div>
+        <ul class="c-program__eventlist">
+            {{# events }}
+                <li class="c-program__event {{ class }}">
+                    <div class="c-program__line"></div>
+                    <div class="c-program__dot"></div>
+                    <div class="c-program__time">{{ time }}</div>
+                    <div class="c-program__title">{{ title }}</div>
+                </li>
+            {{/ events }}
+        </ul>
+    </li>
+    {{/ program }}
+
+</li>
