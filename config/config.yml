@@ -1,13 +1,11 @@
 v: 2.6.0
 overrideConfig: q
-# ignore extensions
 ie:
     - DS_Store
     - less
     - scss
     - sh
     - swp
-# ignore directories
 id:
     - .git
     - .svn
