@@ -5,19 +5,19 @@
     <main role="main">
 
         {{# slider }}
-        <section>
+        <section class="c-section c-section--flush">
            {{> organisms-slider }}
         </section>
         {{/ slider }}
 
-        <section class="o-wrapper o-wrapper--no-padding u-mt">
+        <section class="o-wrapper o-wrapper--no-padding c-section u-mt">
             {{> organisms-promo-list:o-overflow--padding }}
         </section>
 
-        <section class="o-wrapper u-spacer-top">
+        <section class="o-wrapper c-section">
 
             {{# medialist }}
-                {{> organisms-medialist:u-hidden@from-tablet }}
+                {{> organisms-medialist:u-hidden-from@tablet }}
             {{/ medialist }}
 
             {{> organisms-medialist-3-columns }}
@@ -25,17 +25,17 @@
         </section>
 
         {{# quoteslider }}
-        <section class="c-section c-section--bg u-spacer-top">
+        <section class="c-section">
            {{> organisms-quote-slider }}
         </section>
         {{/ quoteslider }}
 
-        <section class="o-wrapper u-spacer-top">
+        <section class="o-wrapper c-section">
             <h2><a class="c-link c-link--dotted" href="#">Blog</a></h2>
             {{> organisms-article-grid }}
         </section>
 
-        <section class="c-section c-section--bg u-spacer-top">
+        <section class="c-section c-section--alt u-spacer-top">
            {{> organisms-newsletter-form }}
         </section>
 

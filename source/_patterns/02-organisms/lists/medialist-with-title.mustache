@@ -1,0 +1,10 @@
+<section class="{{ styleModifier }}">
+
+    <h2 class="{{ titleClass }}">
+        {{# url }}<a class="c-link c-link--dotted" href="{{ url }}">{{ title }}</a>{{/ url }}
+        {{^ url }}{{ title }}{{/ url }}
+    </h2>
+
+    {{> organisms-medialist }}
+
+</section>

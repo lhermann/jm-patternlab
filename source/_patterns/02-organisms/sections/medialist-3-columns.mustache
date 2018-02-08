@@ -1,19 +1,19 @@
 {{# newVideosList }}
-    {{> organisms-medialist:u-hidden@from-tablet }}
+    {{> organisms-medialist:u-hidden-from@tablet }}
 {{/ newVideosList }}
 
-<div class="o-layout o-layout--large u-hidden@until-tablet">
+<div class="o-layout o-layout--large u-hidden-until@tablet">
     <div class="o-layout__item u-1/3@desktop u-1/2@tablet u-1/1">
         {{# medialist1 }}
             {{> organisms-medialist }}
         {{/ medialist1 }}
     </div>
-    <div class="o-layout__item u-1/3@desktop u-1/2@tablet u-hidden@until-tablet">
+    <div class="o-layout__item u-1/3@desktop u-1/2@tablet u-hidden-until@tablet">
         {{# medialist2 }}
             {{> organisms-medialist }}
         {{/ medialist2 }}
     </div>
-    <div class="o-layout__item u-1/3 u-hidden@until-desktop">
+    <div class="o-layout__item u-1/3 u-hidden-until@desktop">
         {{# medialist3 }}
             {{> organisms-medialist }}
         {{/ medialist3 }}

@@ -1,17 +1,17 @@
-<button id="{{ id }}" class="c-btn c-btn--dropdown {{ class }} jsDropdownBtn"
+<button id="{{ id }}" class="c-btn c-btn--dropdown {{ styleModifier }} jsDropdownBtn"
     aria-haspopup="true" aria-expanded="false">
     {{{ label }}}
 </button>
 
-<ul class="c-dropdown c-dropdown--round u-hidden {{ styleModifier }} jsDropdown"
+<ul class="c-dropdown c-dropdown--round u-hidden jsDropdown"
     aria-labelledby="{{ id }}" {{# placement }}data-placement="{{ placement }}"{{/ placement }}>
 
-    {{# dropdown }}
+    {{# dropdown-items }}
     <li class="c-dropdown__item {{ class }}">
         {{# url }}<a class="c-link c-link--block c-link--secondary" href="{{ url }}">{{/ url }}
             {{{ label }}}
         {{# url }}</a>{{/ url }}
     </li>
-    {{/ dropdown }}
+    {{/ dropdown-items }}
 
 </ul>

@@ -11,6 +11,7 @@
     "btnIcon": "u-ic-mail",
     "placeholder": "christian@beispiel.de",
     "progress" : true,
+    "sorting-dropdown": true,
     "max" : "100",
     "progressValue" : "85",
     "alertText" : "An alert is messaging that tells the user some information. Alerts can be error, warning, success, or info messages",
@@ -24,7 +25,37 @@
     "class": "",
     "author": {
         "name": "Christopher Kramp",
-        "url": "#"
+        "url": "#",
+        "img": "../../images/fpo_avatar.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+    },
+    "speaker": {
+        "name": "Christopher Kramp",
+        "url": "#",
+        "img": "../../images/fpo_avatar.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+        "count": 120,
+        "website": {
+            "title": "Joel Media Ministry e.V.",
+            "url": "https://www.joelmediatv.de/"
+        }
+    },
+    "series": {
+        "name": "Ausweg 2012",
+        "url": "#",
+        "img": "../../images/fpo_16x9.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+        "count": 24,
+        "speaker": [
+            {
+                "name": "Christopher Kramp",
+                "url": "#"
+            },
+            {
+                "name": "Lukas Hermann",
+                "url": "#"
+            }
+        ]
     },
     "category": {
         "name": "Allgemein",
@@ -36,30 +67,9 @@
     },
     "date": "7. März 2017",
     "img": {
-        "landscape-4x3": {
-            "src": "../../images/fpo_4x3.png",
-            "alt": "4x3 Image"
-        },
-        "landscape-16x9": {
-            "src": "../../images/fpo_hero.png",
-            "alt": "16x9 Image"
-        },
-        "avatar" : {
-            "src" : "../../images/fpo_avatar.png",
-            "alt" : "Person Name"
-        }
-    },
-    "imgSquare" : {
-        "src": "../../images/fpo_square.png",
-        "alt": "Square Image"
-    },
-    "imgHero" : {
-        "src": "../../images/fpo_hero.png",
-        "alt": "Hero Image"
-    },
-    "imgLandscape" : {
-        "src": "../../images/fpo_16x9.png",
-        "alt": "Landscape Image"
+        "avatar": "../../images/fpo_avatar.png",
+        "hero": "../../images/fpo_hero.png",
+        "landscape": "../../images/fpo_16x9.png"
     },
     "headline" : {
         "short" : "Lorem ipsum dolor sit (37 characters)",
@@ -440,17 +450,19 @@
             "number": 23
         }
     ],
-    "sortOptions": [
+    "sorting": [
         {
-            "label": "Lorem",
-            "direction": "down",
-            "btnClass": "c-btn--left is-active",
-            "mobile": true
+            "label": "Alphabetisch (A-Z)"
         },
         {
-            "label": "Ipsum",
-            "btnClass": "c-btn--right",
-            "mobile": true
+            "label": "Alphabetisch (Z-A)"
+        },
+        {
+            "label": "Neue zuerst",
+            "active": true
+        },
+        {
+            "label": "Beliebte zuerst"
         }
     ],
     "items": [
@@ -499,37 +511,26 @@
             "url": false
         }
     ],
-    "dropdown": [
+    "dropdown-items": [
         {
-            "label": "Some link",
-            "url": "#",
-            "class": false
+            "label": "Alphabetisch (A-Z)",
+            "url": "#"
         },
         {
-            "label": "Another longer link",
+            "label": "Alphabetisch (Z-A)",
+            "url": "#"
+        },
+        {
+            "label": "Neue zuerst",
             "url": "#",
-            "class": false
+            "class": "is-active"
+        },
+        {
+            "label": "Beliebte zuerst",
+            "url": "#"
         }
     ],
-    "download-button": {
-        "label": "<span class=\"u-ic-download\"></span> Download",
-        "id": "download-button",
-        "class": "c-btn--small c-btn--secondary",
-        "dropdown": [
-            {
-                "label": "<span class=\"u-ic-videocam\"><span> <strong>HD</strong> 307 MB <small class=\"u-muted\">– MP4 720p</small>"
-            },
-            {
-                "label": "<span class=\"u-ic-videocam\"><span> <strong>SD</strong> 127 MB <small class=\"u-muted\">– MP4 360p</small>"
-            },
-            {
-                "label": "<span class=\"u-ic-headset\"><span> <strong>HQ</strong> 36 MB <small class=\"u-muted\">– MP3 56kb/s</small>"
-            },
-            {
-                "label": "<span class=\"u-ic-headset\"><span> <strong>LQ</strong> 16 MB <small class=\"u-muted\">– MP3 32kb/s</small>"
-            }
-        ]
-    },
+    "download-button": true,
     "share-button": true,
     "program": [
         {

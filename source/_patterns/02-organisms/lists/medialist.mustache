@@ -1,20 +1,7 @@
-<section class="c-medialist {{ styleModifier }}">
-    {{# title }}
-    <h2 class="c-medialist__title {{ titleClass }}">
-        {{# url }}<a class="c-link c-link--dotted" href="{{ url }}">{{ title }}</a>{{/ url }}
-        {{^ url }}{{ title }}{{/ url }}
-    </h2>
-    {{/ title }}
-
-    <ul class="c-medialist__list">
-        {{# medialist }}
-        <li class="c-medialist__item">
-            {{> molecules-mediaitem }}
-        </li>
-        {{/ medialist }}
-    </ul>
-
-    {{# button }}
-    <a class="c-btn c-btn--ghost c-btn--secondary c-btn--tiny u-mt {{ class }}" href="{{ url }}">{{ label }}</a>
-    {{/ button }}
-</section>
+<ul class="c-medialist {{ styleModifier }}">
+    {{# medialist }}
+    <li class="c-medialist__item">
+        {{> molecules-mediaitem }}
+    </li>
+    {{/ medialist }}
+</ul>

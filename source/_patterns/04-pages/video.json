@@ -5,23 +5,26 @@
     "download-button": {
         "label": "<span class=\"u-ic-download\"></span> Download",
         "id": "download-button",
-        "class": "c-btn--small c-btn--secondary",
         "placement": "bottom-end",
-        "dropdown": [
+        "dropdown-items": [
             {
-                "label": "<span class=\"u-ic-videocam\"><span> <strong>HD</strong> 307 MB <small class=\"u-muted\">– MP4 720p</small>",
+                "label":
+                    "<span class=\"u-ic-videocam\"><span> <strong>HD</strong> 307 MB <small class=\"u-muted\">– MP4 720p</small>",
                 "class": false
             },
             {
-                "label": "<span class=\"u-ic-videocam\"><span> <strong>SD</strong> 127 MB <small class=\"u-muted\">– MP4 360p</small>",
+                "label":
+                    "<span class=\"u-ic-videocam\"><span> <strong>SD</strong> 127 MB <small class=\"u-muted\">– MP4 360p</small>",
                 "class": false
             },
             {
-                "label": "<span class=\"u-ic-headset\"><span> <strong>HQ</strong> 36 MB <small class=\"u-muted\">– MP3 56kb/s</small>",
+                "label":
+                    "<span class=\"u-ic-headset\"><span> <strong>HQ</strong> 36 MB <small class=\"u-muted\">– MP3 56kb/s</small>",
                 "class": false
             },
             {
-                "label": "<span class=\"u-ic-headset\"><span> <strong>LQ</strong> 16 MB <small class=\"u-muted\">– MP3 32kb/s</small>",
+                "label":
+                    "<span class=\"u-ic-headset\"><span> <strong>LQ</strong> 16 MB <small class=\"u-muted\">– MP3 32kb/s</small>",
                 "class": false
             }
         ]
@@ -29,16 +32,16 @@
     "share-button": {
         "label": "<span class=\"u-ic-share\"></span> Teilen",
         "id": "share-button",
-        "class": "c-btn--small c-btn--secondary",
         "placement": "bottom-end",
-        "dropdown": [
+        "dropdown-items": [
             {
                 "label": "Auf Facebook teilen",
                 "url": "http://www.facebook.com/sharer/sharer.php?u=#",
                 "class": false
             },
             {
-                "label": "<p class=\"u-mb--\">Video-Player in die eigene Website einbetten:</p><input class=\"u-1/1\" type=\"text\" value=\"<iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://embed.joelmediatv.de/16245&quot; frameborder=&quot;0&quot; allowfullscreen></iframe>\" onclick=\"this.select()\" readonly=\"readonly\">",
+                "label":
+                    "<p class=\"u-mb--\">Video-Player in die eigene Website einbetten:</p><input class=\"u-1/1\" type=\"text\" value=\"<iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://embed.joelmediatv.de/16245&quot; frameborder=&quot;0&quot; allowfullscreen></iframe>\" onclick=\"this.select()\" readonly=\"readonly\">",
                 "url": false,
                 "class": "u-ph u-pv-"
             }
@@ -57,7 +60,8 @@
         "medialist": [
             {
                 "image": "/images/sample/video-1-192x108.jpg",
-                "title": "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
+                "title":
+                    "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
                 "length": "56:07",
                 "url": "link.pages-video"
             },
@@ -81,7 +85,8 @@
             },
             {
                 "image": "/images/sample/video-5-192x108.jpg",
-                "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
+                "title":
+                    "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
                 "length": "2:34",
                 "url": "link.pages-video"
             },
@@ -107,7 +112,8 @@
         "medialist": [
             {
                 "image": "/images/sample/video-1-192x108.jpg",
-                "title": "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
+                "title":
+                    "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
                 "length": "56:07"
             },
             {
@@ -127,7 +133,8 @@
             },
             {
                 "image": "/images/sample/video-5-192x108.jpg",
-                "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
+                "title":
+                    "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
                 "length": "2:34"
             }
         ],

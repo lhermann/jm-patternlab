@@ -10,16 +10,16 @@
                 {{# signal }}
                     <span class="c-primary-nav__signal"></span>
                 {{/ signal }}
-                <span class="u-hidden@until-desktop">{{ label }}</span>
-                <span class="u-hidden@from-desktop">{{ shortLabel }}</span>
-                {{# hasDropdown }}<span class="u-ic-keyboard-arrow-down"></span>{{/ hasDropdown }}
+                <span class="u-hidden-until@desktop">{{ label }}</span>
+                <span class="u-hidden-from@desktop">{{ shortLabel }}</span>
+                {{# hasDropdown }}<span class="u-ic-keyboard_arrow_down"></span>{{/ hasDropdown }}
             </a>
 
             {{# hasDropdown }}
             <ul class="c-primary-nav__dropdown">
                 {{# dropdown }}
                 <li class="c-primary-nav__dropdown__item u-text-center">
-                    <a class="c-link c-link--block c-link--primary u-eclipse {{ class }}" href="{{ url }}">
+                    <a class="c-link c-link--block c-link--primary u-truncate {{ class }}" href="{{ url }}">
                         {{ label }}
                     </a>
                 </li>

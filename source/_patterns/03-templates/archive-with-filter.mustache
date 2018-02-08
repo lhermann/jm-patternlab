@@ -7,7 +7,7 @@
         {{> molecules-tabs:u-break-wrapper@until-tablet }}
 
         <section class="o-layout o-layout--flush u-mt u-break-wrapper@until-tablet">
-            <aside class="o-layout__item o-owl u-1/4 u-hidden@until-tablet">
+            <aside class="o-layout__item o-owl u-1/4 u-hidden-until@tablet">
 
                 <h2 class="u-ml u-mb+">Filter</h2>
 
@@ -44,10 +44,10 @@
                         <div class="o-pack__item">
                             <h2 class="u-mb0">{{title}}</h2>
                         </div>
-                        <div class="o-pack__item u-text-right u-hidden@until-tablet">
+                        <div class="o-pack__item u-text-right u-hidden-until@tablet">
                             {{> molecules-sorting }}
                         </div>
-                        <div class="o-pack__item u-text-right u-pr u-hidden@from-tablet">
+                        <div class="o-pack__item u-text-right u-pr u-hidden-from@tablet">
                             <button class="c-btn c-btn--secondary jsFlyinBtn"
                                 data-target="filterFlyin" data-action="open">
                                 Filter
@@ -55,7 +55,7 @@
                         </div>
                     </div>
 
-                    {{> molecules-sorting-mobile:u-mt u-hidden@from-tablet }}
+                    {{> molecules-sorting-mobile:u-mt u-hidden-from@tablet }}
 
                 </header>
 

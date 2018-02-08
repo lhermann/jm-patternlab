@@ -1,0 +1,26 @@
+{
+    "sorting-dropdown": {
+        "id": "sorting",
+        "placement": "bottom",
+        "label": "Neue zuerst",
+        "items": [
+            {
+                "label": "Alphabetisch (A-Z)",
+                "url": "#"
+            },
+            {
+                "label": "Alphabetisch (Z-A)",
+                "url": "#"
+            },
+            {
+                "label": "Neue zuerst",
+                "url": "#",
+                "class": "is-active"
+            },
+            {
+                "label": "Beliebte zuerst",
+                "url": "#"
+            }
+        ]
+    }
+}

@@ -1,0 +1,36 @@
+<div id="siteWrapper" class="c-site-wrapper">
+
+    {{> organisms-header }}
+
+    <main role="main" class="u-mb u-mb++@tablet">
+
+        <div id="background-box" class="c-header-bg u-white u-pv++" style="background-image: url('{{background}}');">
+            <div class="o-wrapper">
+                <div class="u-box-center u-3/4@tablet u-2/3@desktop">
+
+                    {{> molecules-speaker }}
+
+                </div>
+            </div>
+        </div>
+
+        <div class="o-wrapper u-mt">
+            <div class="u-box-center u-3/4@tablet u-2/3@desktop">
+
+                {{> organisms-sorting:u-text-right}}
+
+                {{# medialist1 }}
+                    {{> organisms-medialist:u-mt }}
+                {{/ medialist1 }}
+
+            </div>
+        </div>
+
+    </main>
+
+    {{> organisms-footer }}
+
+</div><!-- .c-site-wrapper -->
+
+
+{{> organisms-mobile-nav-flyin }}

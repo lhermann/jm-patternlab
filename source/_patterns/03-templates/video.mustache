@@ -4,7 +4,7 @@
 
     <main role="main" class="u-mb u-mb++@tablet">
 
-        <div id="background-box" class="c-header-bg u-pt+" style="background-image: url('{{background}}');">
+        <div id="background-box" class="c-header-bg c-header-bg--offset u-pt+" style="background-image: url('{{background}}');">
             <div class="o-wrapper">
                 <div class="u-box-center u-3/4@tablet u-2/3@desktop">
                     <header class="u-white u-mb u-mb+@tablet">
@@ -22,19 +22,19 @@
 
                 <div class="o-pack o-pack--middle o-pack--auto u-mv">
                     <div class="o-pack__item">
-                        <span class="u-hidden@until-desktop">Veröffentlicht am</span> <strong>29. Mai 2017</strong>
+                        <span class="u-hidden-until@desktop">Veröffentlicht am</span> <strong>29. Mai 2017</strong>
                     </div>
                     <div class="o-pack__item">
-                        <span class="u-ic-visibility"></span> 297 <span class="u-hidden@until-mobile">Klicks</span>
+                        <span class="u-ic-visibility"></span> 297 <span class="u-hidden-until@mobile">Klicks</span>
                     </div>
                     <div class="o-pack__item u-text-right">
                         {{# download-button }}
-                            {{> molecules-dropdown-button:u-text-left }}
+                            {{> molecules-dropdown:c-btn--small c-btn--secondary}}
                         {{/ download-button }}
                     </div>
-                    <div class="o-pack__item u-text-right u-hidden@until-tablet">
+                    <div class="o-pack__item u-text-right u-hidden-until@tablet">
                         {{# share-button }}
-                            {{> molecules-dropdown-button:u-text-left }}
+                            {{> molecules-dropdown:c-btn--small c-btn--secondary}}
                         {{/ share-button }}
                     </div>
                 </div>
@@ -63,10 +63,9 @@
 
                 <hr class="u-mv+"/>
 
-                <h2 class="u-h5">
-                    <span style="vertical-align: middle;">Nächstes Video</span>
-                    <a class="c-btn c-btn--ghost c-btn--secondary c-btn--tiny u-default u-ml-" href="#">Ganze Serie anzeigen</a>
-                </h2>
+                <h2 class="u-h5 u-mb--">Nächstes Video</h2>
+
+                <p class="u-small u-muted">Serie: <a class="c-link c-link--dotted u-ml--" href="#">Sola Veritas – Die Wahre Chronik der Reformation</a></p>
 
                 {{# mediaitem }}
                     {{> molecules-mediaitem:c-mediaitem--standalone }}

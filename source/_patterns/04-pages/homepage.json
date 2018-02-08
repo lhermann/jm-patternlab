@@ -80,41 +80,36 @@
         {
             "title": "Prophetie<br>&amp; Zeitgeschehen",
             "url:": "#",
-            "imgLandscape": {
-                "src": "/images/sample/promo-prophecy-480x270.jpg",
-                "alt": ""
+            "img": {
+                "landscape": "/images/sample/promo-prophecy-480x270.jpg"
             }
         },
         {
             "title": "Erweckung<br>&amp; Evangelium",
             "url:": "#",
-            "imgLandscape": {
-                "src": "/images/sample/promo-health-480x270.jpg",
-                "alt": ""
+            "img": {
+                "landscape": "/images/sample/promo-health-480x270.jpg"
             }
         },
         {
             "title": "Gesundheit<br>&amp; Familie",
             "url:": "#",
-            "imgLandscape": {
-                "src": "/images/sample/promo-family-480x270.jpg",
-                "alt": ""
+            "img": {
+                "landscape": "/images/sample/promo-family-480x270.jpg"
             }
         },
         {
             "title": "T&auml;gliche<br> Andachten",
             "url:": "#",
-            "imgLandscape": {
-                "src": "/images/sample/promo-devotional-480x270.jpg",
-                "alt": ""
+            "img": {
+                "landscape": "/images/sample/promo-devotional-480x270.jpg"
             }
         },
         {
             "title": "Fragen<br> zur Bibel",
             "url:": "#",
-            "imgLandscape": {
-                "src": "/images/sample/promo-bible-480x270.jpg",
-                "alt": ""
+            "img": {
+                "landscape": "/images/sample/promo-bible-480x270.jpg"
             }
         }
     ],
