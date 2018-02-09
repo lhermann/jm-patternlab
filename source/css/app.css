@@ -4289,10 +4289,6 @@ textarea {
 .u-transition {
   transition: 0.33333s; }
 
-.u-h-responsive {
-  font-size: 1.5em;
-  font-size: calc(1.5rem + .6vw); }
-
 /* ==========================================================================
    #RESPONSIVE-SPACINGS
    ========================================================================== */
@@ -5345,6 +5341,17 @@ textarea {
 @media (max-width: 81.24em) {
   .u-hidden-until\@wide {
     display: none !important; } }
+
+/* ==========================================================================
+   #RESPONSIVE HEADINGS
+   ========================================================================== */
+@media (max-width: 46.24em) {
+  h1.u-responsive {
+    font-size: calc(21.6px + 1.3vw); } }
+
+@media (max-width: 46.24em) {
+  h2.u-responsive {
+    font-size: calc(18.76px + 0.75vw); } }
 
 .u-break-wrapper {
   margin-right: -21px;

@@ -6,7 +6,8 @@
     "scripts": {
         "dev": "php core/console --server --with-watch",
         "prod": "composer install && php core/console --generate",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "npm run dev"
     },
     "dependencies": {},
     "devDependencies": {},
