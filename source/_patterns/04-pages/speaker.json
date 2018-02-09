@@ -7,6 +7,16 @@
         "description":
             "Christopher Kramp, geboren 1985, ist Evangelist und Vorsitzender von Joel Media Ministry e.V. Er studierte Orchesterdirigieren an der Musikhochschule Stuttgart und absolvierte in England eine Schule für Bibelarbeiter. Zur Zeit arbeitet er als Missionar für seine Gemeinde in Stuttgart/Bad-Cannstatt. Vorträge und Seminare führten ihn in viele Teile Deutschlands, sowie nach England, Polen, Italien, Norwegen, Slowakei, Österreich, Schweiz, China, Ghana, Malaysia und die USA. Er ist glücklich verheiratet mit Rabea."
     },
+    "buttons": [
+        {
+            "label": "Videos",
+            "class": "c-btn--left is-active"
+        },
+        {
+            "label": "Serien",
+            "class": "c-btn--right"
+        }
+    ],
     "sorting-dropdown": {
         "label": "Alphabetisch (A-Z)",
         "id": "sorting",

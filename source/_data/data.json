@@ -429,6 +429,16 @@
         "date": "7. März 2017",
         "excerpt-short": false
     },
+    "buttons": [
+        {
+            "label": "Button 1",
+            "class": "c-btn--left is-active"
+        },
+        {
+            "label": "Button 2",
+            "class": "c-btn--right"
+        }
+    ],
     "pages": [
         {
             "number": 1,

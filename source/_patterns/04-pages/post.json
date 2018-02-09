@@ -1,6 +1,9 @@
 {
     "title": "Erweckungssabbat am 27.05.2017 mit Eric Flickinger",
     "image": "/images/sample/article3-1280x720.jpg",
+    "img": {
+        "hero": "/images/sample/serie-1-1280x720.jpg"
+    },
     "author": {
         "name": "Sabine Suschinski",
         "url": "#",

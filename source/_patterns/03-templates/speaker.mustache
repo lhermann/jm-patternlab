@@ -4,11 +4,15 @@
 
     <main role="main" class="u-mb u-mb++@tablet">
 
-        <div id="background-box" class="c-header-bg u-white u-pv++" style="background-image: url('{{background}}');">
+        <div id="background-box" class="c-header-bg u-white u-pt+ u-pb++" style="background-image: url('{{background}}');">
             <div class="o-wrapper">
                 <div class="u-box-center u-3/4@tablet u-2/3@desktop">
 
-                    {{> molecules-speaker }}
+                    <a class="c-link c-link--dotted c-link--white" href="{{link.pages-archive-sprecher}}">
+                        <span class="u-ic-arrow_back"></span> Alle Sprecher anzeigen
+                    </a>
+
+                    {{> molecules-speaker:u-mt }}
 
                 </div>
             </div>
@@ -17,11 +21,20 @@
         <div class="o-wrapper u-mt">
             <div class="u-box-center u-3/4@tablet u-2/3@desktop">
 
-                {{> organisms-sorting:u-text-right}}
+                <div class="o-layout o-layout--middle">
+                    <div class="o-layout__item u-1/2@tablet u-mb u-mb0@tablet">
+                        {{> molecules-button-group}}
+                    </div>
+                    <div class="o-layout__item u-1/2@tablet u-text-right">
+                        {{> organisms-sorting}}
+                    </div>
+                </div>
 
                 {{# medialist1 }}
                     {{> organisms-medialist:u-mt }}
                 {{/ medialist1 }}
+
+                {{> molecules-pagination:u-mt+ }}
 
             </div>
         </div>

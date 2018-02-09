@@ -1,26 +1,28 @@
-<div class="o-flag o-flag--large">
-    <div class="o-flag__img u-hidden-until@tablet">
-        <img class="u-rounded u-box-shadow u-320" src="{{ series.img }}" alt="series" />
+<div class="{{ styleModifier }}">
+    <div class="o-flag o-flag--large">
+        <div class="o-flag__img u-hidden-until@tablet">
+            <img class="u-rounded u-box-shadow u-320" src="{{ series.img }}" alt="series" />
+        </div>
+        <div class="o-flag__body">
+            <h1 class="u-responsive">{{ series.name }}</h1>
+        </div>
     </div>
-    <div class="o-flag__body">
-        <h1 class="u-responsive">{{ series.name }}</h1>
+
+    <div class="u-mt u-hidden-from@tablet">
+        <img class="u-rounded u-box-shadow u-1/1" src="{{ series.img }}" alt="series" />
     </div>
+
+    <p class="u-mt">{{ series.description }}</p>
+
+    <ul class="o-list-inline o-list-inline--large o-list-inline--nowrap">
+        <li>
+            <span class="u-ic-videocam"></span> <strong>{{ series.count }}</strong> Videos
+        </li>
+        <li class="">
+            Sprecher:
+            {{#series.speaker}}
+            <a class="c-link c-link--dotted c-link--white" href="{{ url }}">{{ name }}</a>,
+            {{/series.speaker}}
+        </li>
+    </ul>
 </div>
-
-<div class="u-mt u-hidden-from@tablet">
-    <img class="u-rounded u-box-shadow u-1/1" src="{{ series.img }}" alt="series" />
-</div>
-
-<p class="u-mt">{{ series.description }}</p>
-
-<ul class="o-list-inline o-list-inline--large o-list-inline--nowrap">
-    <li>
-        <span class="u-ic-videocam"></span> <strong>{{ series.count }}</strong> Videos
-    </li>
-    <li class="">
-        Sprecher:
-        {{#series.speaker}}
-        <a class="c-link c-link--dotted c-link--white" href="{{ url }}">{{ name }}</a>,
-        {{/series.speaker}}
-    </li>
-</ul>

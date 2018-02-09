@@ -1252,7 +1252,7 @@ textarea {
  * The list-inline object simply displays a list of items in one line.
  */
 .o-list-inline {
-  margin-left: 0;
+  margin: 0;
   list-style: none; }
   .o-list-inline > li {
     display: inline-block;
@@ -1264,12 +1264,17 @@ textarea {
 .o-list-inline--large > li {
   margin-right: 21px; }
 
-.o-list-inline--flush {
+.o-list-inline--flush,
+.o-list-inline--1px {
   font-size: 0; }
-  .o-list-inline--flush > li {
+  .o-list-inline--flush > li,
+  .o-list-inline--1px > li {
     font-size: 14px;
     font-size: 1rem;
     margin-right: 0; }
+
+.o-list-inline--1px > li {
+  margin-right: 1px; }
 
 /* ==========================================================================
    #BOX
@@ -1703,6 +1708,8 @@ textarea {
   .c-btn > [class^="u-ic-"],
   .c-btn > [class*=" u-ic-"] {
     vertical-align: -2px; }
+  .c-btn:disabled {
+    cursor: default; }
 
 /* Style variants
 ========================================================================== */
@@ -1723,6 +1730,9 @@ textarea {
   .c-btn--secondary.is-active, .c-btn--secondary:hover, .c-btn--secondary:focus {
     background-color: #4d4d4d;
     color: #fff; }
+  .c-btn--secondary:disabled {
+    background-color: #f0f0f0;
+    color: #999999; }
 
 .c-btn--tertiary {
   background-color: rgba(0, 0, 0, 0.5); }
@@ -2822,6 +2832,30 @@ textarea {
  * ****************************/
 .c-header-bg--offset {
   background-position: center bottom 30px; }
+
+/* ==========================================================================
+   #button-group
+   ========================================================================== */
+/**
+ * The list-inline object simply displays a list of items in one line.
+ */
+.c-button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin: 0;
+  list-style: none; }
+
+@media (max-width: 46.24em) {
+  .c-button-group--stretch\@tablet > .c-button-group__item {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  .c-button-group--stretch\@tablet .c-btn {
+    width: 100%; } }
 
 /* Keep in sync with slider.js */
 /* ==========================================================================
