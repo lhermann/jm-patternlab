@@ -11,7 +11,30 @@
     "btnIcon": "u-ic-mail",
     "placeholder": "christian@beispiel.de",
     "progress" : true,
-    "sorting-dropdown": true,
+    "sorting-dropdown": {
+        "label": "Alphabetisch (A-Z)",
+        "id": "sorting",
+        "placement": "bottom",
+        "dropdown-items": [
+            {
+                "label": "Alphabetisch (A-Z)",
+                "url": "#",
+                "class": "is-active"
+            },
+            {
+                "label": "Alphabetisch (Z-A)",
+                "url": "#"
+            },
+            {
+                "label": "Neue zuerst",
+                "url": "#"
+            },
+            {
+                "label": "Beliebte zuerst",
+                "url": "#"
+            }
+        ]
+    },
     "max" : "100",
     "progressValue" : "85",
     "alertText" : "An alert is messaging that tells the user some information. Alerts can be error, warning, success, or info messages",
@@ -31,9 +54,9 @@
     },
     "speaker": {
         "name": "Christopher Kramp",
-        "url": "#",
-        "img": "../../images/fpo_avatar.png",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+        "img": "../../images/sample/sprecher-1-320x320.jpg",
+        "description":
+            "Christopher Kramp, geboren 1985, ist Evangelist und Vorsitzender von Joel Media Ministry e.V. Er studierte Orchesterdirigieren an der Musikhochschule Stuttgart und absolvierte in England eine Schule für Bibelarbeiter. Zur Zeit arbeitet er als Missionar für seine Gemeinde in Stuttgart/Bad-Cannstatt. Vorträge und Seminare führten ihn in viele Teile Deutschlands, sowie nach England, Polen, Italien, Norwegen, Slowakei, Österreich, Schweiz, China, Ghana, Malaysia und die USA. Er ist glücklich verheiratet mit Rabea.",
         "count": 120,
         "website": {
             "title": "Joel Media Ministry e.V.",
@@ -41,10 +64,10 @@
         }
     },
     "series": {
-        "name": "Ausweg 2012",
-        "url": "#",
-        "img": "../../images/fpo_16x9.png",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+        "name": "Haushalterschaft – Motive des Herzens (CSH 2018 Q1)",
+        "img": "../../images/sample/serie-1-640x360.jpg",
+        "description":
+            "Im ersten Quartal dieses Jahres nehmen die Studienhefte der Standard- und EUD-Edition das Thema Haushalterschaft unter die Lupe. „Wir sind Haushalter Gottes. Er hat uns Zeit und Möglichkeiten, Fähigkeiten und Besitz, den Ertrag der Erde und ihre Güter anvertraut. Für einen vernünftigen Umgang damit sind wir Gott verantwortlich. Wir erkennen Gott als Eigentümer an, wenn wir ihm und den Mitmenschen treu dienen, ihm den Zehnten und Gaben darbringen, um die Verkündigung seines Evangeliums und das Wachstum seiner Gemeinde zu fördern. Mit der Haushalterschaft gibt uns Gott eine Möglichkeit, in der Liebe zu wachsen und Selbstsucht und Habgier zu überwinden. Haushalter freuen sich über den Segen, den andere durch ihre Treue empfangen“ (Glaubensüberzeugungen der STA, Art. 21).",
         "count": 24,
         "speaker": [
             {
@@ -56,6 +79,10 @@
                 "url": "#"
             }
         ]
+    },
+    "topic": {
+        "name": "Grundlehren der Bibel",
+        "count": 96
     },
     "category": {
         "name": "Allgemein",
@@ -95,15 +122,15 @@
                 },
                 {
                     "label": "Serien",
-                    "url": "link.pages-archive-serien"
+                    "url": "link.pages-archive-series"
                 },
                 {
                     "label": "Sprecher",
-                    "url": "link.pages-archive-sprecher"
+                    "url": "link.pages-archive-speaker"
                 },
                 {
                     "label": "Themen",
-                    "url": "link.pages-archive-themen"
+                    "url": "link.pages-archive-topics"
                 }
             ]
         },
@@ -214,17 +241,55 @@
         }
     ],
     "mediaitem": true,
+    "medialist": [
+        {
+            "image": "/images/sample/video-1-192x108.jpg",
+            "title": "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
+            "length": "56:07",
+            "url": "link.pages-video"
+        },
+        {
+            "image": "/images/sample/video-2-192x108.jpg",
+            "title": "Sola Veritas: 11. Neue Wege (1506)",
+            "length": "48:20",
+            "url": "link.pages-video"
+        },
+        {
+            "image": "/images/sample/video-3-192x108.jpg",
+            "title": "Offenbarung 17:9",
+            "length": "38:29",
+            "url": "link.pages-video"
+        },
+        {
+            "image": "/images/sample/video-4-192x108.jpg",
+            "title": "Mit Gott leben – Apostelgeschichte 17:25b",
+            "length": "51:26",
+            "url": "link.pages-video"
+        },
+        {
+            "image": "/images/sample/video-5-192x108.jpg",
+            "title":
+                "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
+            "length": "2:34",
+            "url": "link.pages-video"
+        },
+        {
+            "image": "/images/sample/video-2-192x108.jpg",
+            "title": "Sola Veritas: 1. Funken im Dunkel (1482-1484)",
+            "length": "56:07",
+            "url": "link.pages-video"
+        },
+        {
+            "image": "/images/sample/video-2-192x108.jpg",
+            "title": "Sola Veritas: 2. Prägende Ereignisse (1485-1487)",
+            "length": "48:20",
+            "url": "link.pages-video"
+        }
+    ],
     "medialist1": true,
     "medialist2": true,
     "medialist3": true,
     "medialist4": true,
-    "medialist": [
-        {},
-        {},
-        {},
-        {},
-        {}
-    ],
     "mediaListLong": [
         {
             "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",

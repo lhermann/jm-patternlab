@@ -1,5 +1,5 @@
 {
-    "primaryNav" : [
+    "primaryNav": [
         {
             "signal": false,
             "label": "Videoarchiv",
@@ -15,17 +15,17 @@
                 },
                 {
                     "label": "Serien",
-                    "url": "link.pages-archive-serien",
+                    "url": "link.pages-archive-series",
                     "class": "is-active"
                 },
                 {
                     "label": "Sprecher",
-                    "url": "link.pages-archive-sprecher",
+                    "url": "link.pages-archive-speaker",
                     "class": ""
                 },
                 {
                     "label": "Themen",
-                    "url": "link.pages-archive-themen",
+                    "url": "link.pages-archive-topics",
                     "class": ""
                 }
             ]
@@ -47,16 +47,16 @@
         },
         {
             "label": "Serien",
-            "url": "link.pages-archive-serien",
+            "url": "link.pages-archive-series",
             "state": "is-active"
         },
         {
             "label": "Sprecher",
-            "url": "link.pages-archive-sprecher"
+            "url": "link.pages-archive-speaker"
         },
         {
             "label": "Themen",
-            "url": "link.pages-archive-themen"
+            "url": "link.pages-archive-topics"
         }
     ],
     "title": "Serien",
@@ -219,6 +219,7 @@
                 "image": "/images/sample/serie-6-256x144.jpg",
                 "title": "Schafft Wissen schaft Wissen?",
                 "length": "<strong class=\"u-default\">3</strong> Videos",
+                "url": "link.pages-series",
                 "meta": [
                     {
                         "label": "3 Videos",
@@ -235,6 +236,7 @@
                 "image": "/images/sample/serie-7-256x144.jpg",
                 "title": "Auswerg 2012",
                 "length": "<strong class=\"u-default\">27</strong> Videos",
+                "url": "link.pages-series",
                 "meta": [
                     {
                         "label": "27 Videos",
@@ -251,6 +253,7 @@
                 "image": "/images/sample/serie-8-256x144.jpg",
                 "title": "Belebe uns neu",
                 "length": "<strong class=\"u-default\">12</strong> Videos",
+                "url": "link.pages-series",
                 "meta": [
                     {
                         "label": "12 Videos",
@@ -267,6 +270,7 @@
                 "image": "/images/sample/serie-1-256x144.jpg",
                 "title": "Der Ersehnte",
                 "length": "<strong class=\"u-default\">56</strong> Videos",
+                "url": "link.pages-series",
                 "meta": [
                     {
                         "label": "56 Videos",
@@ -283,6 +287,7 @@
                 "image": "/images/sample/serie-2-256x144.jpg",
                 "title": "Mit Gott leben",
                 "length": "<strong class=\"u-default\">129</strong> Videos",
+                "url": "link.pages-series",
                 "meta": [
                     {
                         "label": "129 Videos",
@@ -299,6 +304,7 @@
                 "image": "/images/sample/serie-3-256x144.jpg",
                 "title": "Offenbarung Vers für Vers",
                 "length": "<strong class=\"u-default\">187</strong> Videos",
+                "url": "link.pages-series",
                 "meta": [
                     {
                         "label": "187 Videos",
@@ -315,6 +321,7 @@
                 "image": "/images/sample/serie-4-256x144.jpg",
                 "title": "Sola Veritas",
                 "length": "<strong class=\"u-default\">36</strong> Videos",
+                "url": "link.pages-series",
                 "meta": [
                     {
                         "label": "36 Videos",
@@ -331,6 +338,7 @@
                 "image": "/images/sample/serie-6-256x144.jpg",
                 "title": "Schafft Wissen schaft Wissen?",
                 "length": "<strong class=\"u-default\">3</strong> Videos",
+                "url": "link.pages-series",
                 "meta": [
                     {
                         "label": "3 Videos",
@@ -347,6 +355,7 @@
                 "image": "/images/sample/serie-7-256x144.jpg",
                 "title": "Auswerg 2012",
                 "length": "<strong class=\"u-default\">27</strong> Videos",
+                "url": "link.pages-series",
                 "meta": [
                     {
                         "label": "27 Videos",
@@ -363,6 +372,7 @@
                 "image": "/images/sample/serie-8-256x144.jpg",
                 "title": "Belebe uns neu",
                 "length": "<strong class=\"u-default\">12</strong> Videos",
+                "url": "link.pages-series",
                 "meta": [
                     {
                         "label": "12 Videos",
@@ -379,6 +389,7 @@
                 "image": "/images/sample/serie-1-256x144.jpg",
                 "title": "Der Ersehnte",
                 "length": "<strong class=\"u-default\">56</strong> Videos",
+                "url": "link.pages-series",
                 "meta": [
                     {
                         "label": "56 Videos",
@@ -401,6 +412,7 @@
                 "image": "/images/sample/serie-1-256x144.jpg",
                 "title": "Der Ersehnte",
                 "length": "<strong class=\"u-default\">56</strong> Videos",
+                "url": "link.pages-series",
                 "meta": [
                     {
                         "label": "56 Videos",
@@ -417,6 +429,7 @@
                 "image": "/images/sample/serie-2-256x144.jpg",
                 "title": "Mit Gott leben",
                 "length": "<strong class=\"u-default\">129</strong> Videos",
+                "url": "link.pages-series",
                 "meta": [
                     {
                         "label": "129 Videos",
@@ -433,6 +446,7 @@
                 "image": "/images/sample/serie-3-256x144.jpg",
                 "title": "Offenbarung Vers für Vers",
                 "length": "<strong class=\"u-default\">187</strong> Videos",
+                "url": "link.pages-series",
                 "meta": [
                     {
                         "label": "187 Videos",
@@ -449,6 +463,7 @@
                 "image": "/images/sample/serie-4-256x144.jpg",
                 "title": "Sola Veritas",
                 "length": "<strong class=\"u-default\">36</strong> Videos",
+                "url": "link.pages-series",
                 "meta": [
                     {
                         "label": "36 Videos",
@@ -465,6 +480,7 @@
                 "image": "/images/sample/serie-6-256x144.jpg",
                 "title": "Schafft Wissen schaft Wissen?",
                 "length": "<strong class=\"u-default\">3</strong> Videos",
+                "url": "link.pages-series",
                 "meta": [
                     {
                         "label": "3 Videos",
@@ -481,6 +497,7 @@
                 "image": "/images/sample/serie-7-256x144.jpg",
                 "title": "Auswerg 2012",
                 "length": "<strong class=\"u-default\">27</strong> Videos",
+                "url": "link.pages-series",
                 "meta": [
                     {
                         "label": "27 Videos",
@@ -497,6 +514,7 @@
                 "image": "/images/sample/serie-8-256x144.jpg",
                 "title": "Belebe uns neu",
                 "length": "<strong class=\"u-default\">12</strong> Videos",
+                "url": "link.pages-series",
                 "meta": [
                     {
                         "label": "12 Videos",
@@ -513,6 +531,7 @@
                 "image": "/images/sample/serie-1-256x144.jpg",
                 "title": "Der Ersehnte",
                 "length": "<strong class=\"u-default\">56</strong> Videos",
+                "url": "link.pages-series",
                 "meta": [
                     {
                         "label": "56 Videos",
@@ -529,6 +548,7 @@
                 "image": "/images/sample/serie-2-256x144.jpg",
                 "title": "Mit Gott leben",
                 "length": "<strong class=\"u-default\">129</strong> Videos",
+                "url": "link.pages-series",
                 "meta": [
                     {
                         "label": "129 Videos",
@@ -545,6 +565,7 @@
                 "image": "/images/sample/serie-3-256x144.jpg",
                 "title": "Offenbarung Vers für Vers",
                 "length": "<strong class=\"u-default\">187</strong> Videos",
+                "url": "link.pages-series",
                 "meta": [
                     {
                         "label": "187 Videos",
@@ -561,6 +582,7 @@
                 "image": "/images/sample/serie-4-256x144.jpg",
                 "title": "Sola Veritas",
                 "length": "<strong class=\"u-default\">36</strong> Videos",
+                "url": "link.pages-series",
                 "meta": [
                     {
                         "label": "36 Videos",

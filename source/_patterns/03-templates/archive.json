@@ -15,17 +15,17 @@
                 },
                 {
                     "label": "Serien",
-                    "url": "link.pages-archive-serien",
+                    "url": "link.pages-archive-series",
                     "class": ""
                 },
                 {
                     "label": "Sprecher",
-                    "url": "link.pages-archive-sprecher",
+                    "url": "link.pages-archive-speaker",
                     "class": ""
                 },
                 {
                     "label": "Themen",
-                    "url": "link.pages-archive-themen",
+                    "url": "link.pages-archive-topics",
                     "class": ""
                 }
             ]

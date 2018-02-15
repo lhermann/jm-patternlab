@@ -222,7 +222,7 @@
     },
     "medialist2": {
         "title": "Neue Serien",
-        "url": "link.pages-archive-serien",
+        "url": "link.pages-archive-series",
         "medialist": [
             {
                 "type": "serie",

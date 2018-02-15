@@ -1,0 +1,32 @@
+<div class="{{ styleModifier }}">
+    <div class="o-media">
+        <div class="o-media__img u-hidden-until@tablet">
+            <span class="u-ic-folder u-ic--huge"></span>
+        </div>
+        <div class="o-media__body u-pt-">
+            <h1 class="u-responsive u-mb0">{{ topic.name }}</h1>
+            <ul class="o-list-inline o-list-inline--large o-list-inline--nowrap">
+                <li class="u-bolder u-muted">
+                    Thema
+                </li>
+                <li>
+                    <span class="u-ic-videocam"></span> <strong>{{ topic.count }}</strong> Videos
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="u-mt+">
+        <h2 class="u-h5 u-mb-">
+            <a href="{{link.pages-topic}}" class="c-btn c-btn--light c-btn--ghost c-btn--small c-btn--square u-mr-"><span class="u-ic-arrow_back"></span></a>
+            Unterthemen
+        </h2>
+
+        {{# subtopics }}
+            {{> organisms-medialist:c-medialist--white c-medialist--inline }}
+        {{/ subtopics }}
+    </div>
+
+</div>

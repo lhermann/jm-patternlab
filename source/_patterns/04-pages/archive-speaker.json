@@ -1,5 +1,5 @@
 {
-    "primaryNav" : [
+    "primaryNav": [
         {
             "signal": false,
             "label": "Videoarchiv",
@@ -15,17 +15,17 @@
                 },
                 {
                     "label": "Serien",
-                    "url": "link.pages-archive-serien",
+                    "url": "link.pages-archive-series",
                     "class": ""
                 },
                 {
                     "label": "Sprecher",
-                    "url": "link.pages-archive-sprecher",
+                    "url": "link.pages-archive-speaker",
                     "class": "is-active"
                 },
                 {
                     "label": "Themen",
-                    "url": "link.pages-archive-themen",
+                    "url": "link.pages-archive-topics",
                     "class": ""
                 }
             ]
@@ -47,17 +47,17 @@
         },
         {
             "label": "Serien",
-            "url": "link.pages-archive-serien",
+            "url": "link.pages-archive-series",
             "state": ""
         },
         {
             "label": "Sprecher",
-            "url": "link.pages-archive-sprecher",
+            "url": "link.pages-archive-speaker",
             "state": "is-active"
         },
         {
             "label": "Themen",
-            "url": "link.pages-archive-themen"
+            "url": "link.pages-archive-topics"
         }
     ],
     "title": "Sprecher",
@@ -154,6 +154,7 @@
                 "type": "sprecher",
                 "image": "/images/sample/sprecher-1-160x160.jpg",
                 "title": "Christopher Kramp",
+                "url": "link.pages-speaker",
                 "length": false,
                 "meta": [
                     {
@@ -170,6 +171,7 @@
                 "type": "sprecher",
                 "image": "/images/sample/sprecher-2-160x160.jpg",
                 "title": "Eric Flickenger",
+                "url": "link.pages-speaker",
                 "length": false,
                 "meta": [
                     {
@@ -186,6 +188,7 @@
                 "type": "sprecher",
                 "image": "/images/sample/sprecher-3-160x160.jpg",
                 "title": "Laura Fantasia",
+                "url": "link.pages-speaker",
                 "length": false,
                 "meta": [
                     {
@@ -202,6 +205,7 @@
                 "type": "sprecher",
                 "image": "/images/sample/sprecher-4-160x160.jpg",
                 "title": "Ronny Schreiber",
+                "url": "link.pages-speaker",
                 "length": false,
                 "meta": [
                     {
@@ -218,6 +222,7 @@
                 "type": "sprecher",
                 "image": "/images/sample/sprecher-5-160x160.jpg",
                 "title": "Steven Bohr",
+                "url": "link.pages-speaker",
                 "length": false,
                 "meta": [
                     {
@@ -234,6 +239,7 @@
                 "type": "sprecher",
                 "image": "/images/sample/sprecher-1-160x160.jpg",
                 "title": "Christopher Kramp",
+                "url": "link.pages-speaker",
                 "length": false,
                 "meta": [
                     {
@@ -250,6 +256,7 @@
                 "type": "sprecher",
                 "image": "/images/sample/sprecher-2-160x160.jpg",
                 "title": "Eric Flickenger",
+                "url": "link.pages-speaker",
                 "length": false,
                 "meta": [
                     {
@@ -266,6 +273,7 @@
                 "type": "sprecher",
                 "image": "/images/sample/sprecher-3-160x160.jpg",
                 "title": "Laura Fantasia",
+                "url": "link.pages-speaker",
                 "length": false,
                 "meta": [
                     {
@@ -282,6 +290,7 @@
                 "type": "sprecher",
                 "image": "/images/sample/sprecher-4-160x160.jpg",
                 "title": "Ronny Schreiber",
+                "url": "link.pages-speaker",
                 "length": false,
                 "meta": [
                     {
@@ -298,6 +307,7 @@
                 "type": "sprecher",
                 "image": "/images/sample/sprecher-5-160x160.jpg",
                 "title": "Steven Bohr",
+                "url": "link.pages-speaker",
                 "length": false,
                 "meta": [
                     {
@@ -320,6 +330,7 @@
                 "type": "sprecher",
                 "image": "/images/sample/sprecher-3-160x160.jpg",
                 "title": "Laura Fantasia",
+                "url": "link.pages-speaker",
                 "length": false,
                 "meta": [
                     {
@@ -336,6 +347,7 @@
                 "type": "sprecher",
                 "image": "/images/sample/sprecher-4-160x160.jpg",
                 "title": "Ronny Schreiber",
+                "url": "link.pages-speaker",
                 "length": false,
                 "meta": [
                     {
@@ -352,6 +364,7 @@
                 "type": "sprecher",
                 "image": "/images/sample/sprecher-5-160x160.jpg",
                 "title": "Steven Bohr",
+                "url": "link.pages-speaker",
                 "length": false,
                 "meta": [
                     {
@@ -368,6 +381,7 @@
                 "type": "sprecher",
                 "image": "/images/sample/sprecher-1-160x160.jpg",
                 "title": "Christopher Kramp",
+                "url": "link.pages-speaker",
                 "length": false,
                 "meta": [
                     {
@@ -384,6 +398,7 @@
                 "type": "sprecher",
                 "image": "/images/sample/sprecher-2-160x160.jpg",
                 "title": "Eric Flickenger",
+                "url": "link.pages-speaker",
                 "length": false,
                 "meta": [
                     {
@@ -400,6 +415,7 @@
                 "type": "sprecher",
                 "image": "/images/sample/sprecher-3-160x160.jpg",
                 "title": "Laura Fantasia",
+                "url": "link.pages-speaker",
                 "length": false,
                 "meta": [
                     {
@@ -416,6 +432,7 @@
                 "type": "sprecher",
                 "image": "/images/sample/sprecher-4-160x160.jpg",
                 "title": "Ronny Schreiber",
+                "url": "link.pages-speaker",
                 "length": false,
                 "meta": [
                     {
@@ -432,6 +449,7 @@
                 "type": "sprecher",
                 "image": "/images/sample/sprecher-5-160x160.jpg",
                 "title": "Steven Bohr",
+                "url": "link.pages-speaker",
                 "length": false,
                 "meta": [
                     {
@@ -448,6 +466,7 @@
                 "type": "sprecher",
                 "image": "/images/sample/sprecher-1-160x160.jpg",
                 "title": "Christopher Kramp",
+                "url": "link.pages-speaker",
                 "length": false,
                 "meta": [
                     {
@@ -464,6 +483,7 @@
                 "type": "sprecher",
                 "image": "/images/sample/sprecher-2-160x160.jpg",
                 "title": "Eric Flickenger",
+                "url": "link.pages-speaker",
                 "length": false,
                 "meta": [
                     {

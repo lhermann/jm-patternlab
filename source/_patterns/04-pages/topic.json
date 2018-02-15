@@ -1,0 +1,58 @@
+{
+    "background": "/images/header-blue.svg",
+    "subtopics": {
+        "medialist": [
+            {
+                "type": "thema",
+                "image": false,
+                "class": "c-mediaitem--simple",
+                "title": "Erweckungspredigten",
+                "url": "link.pages-topic",
+                "meta": [
+                    {
+                        "label": "Keine Unterthemen",
+                        "url": false
+                    },
+                    {
+                        "label": "33 Videos",
+                        "url": false
+                    }
+                ]
+            },
+            {
+                "type": "thema",
+                "image": false,
+                "class": "c-mediaitem--simple",
+                "title": "Familie, Ehe und Erziehung",
+                "url": "link.pages-topic",
+                "meta": [
+                    {
+                        "label": "3 Unterthemen",
+                        "url": false
+                    },
+                    {
+                        "label": "27 Videos",
+                        "url": false
+                    }
+                ]
+            },
+            {
+                "type": "thema",
+                "image": false,
+                "class": "c-mediaitem--simple",
+                "title": "Gesundheit",
+                "url": "link.pages-topic",
+                "meta": [
+                    {
+                        "label": "7 Unterthemen",
+                        "url": false
+                    },
+                    {
+                        "label": "51 Videos",
+                        "url": false
+                    }
+                ]
+            }
+        ]
+    }
+}

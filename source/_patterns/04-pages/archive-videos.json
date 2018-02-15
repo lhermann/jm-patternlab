@@ -1,5 +1,5 @@
 {
-    "primaryNav" : [
+    "primaryNav": [
         {
             "signal": false,
             "label": "Videoarchiv",
@@ -15,17 +15,17 @@
                 },
                 {
                     "label": "Serien",
-                    "url": "link.pages-archive-serien",
+                    "url": "link.pages-archive-series",
                     "class": ""
                 },
                 {
                     "label": "Sprecher",
-                    "url": "link.pages-archive-sprecher",
+                    "url": "link.pages-archive-speaker",
                     "class": ""
                 },
                 {
                     "label": "Themen",
-                    "url": "link.pages-archive-themen",
+                    "url": "link.pages-archive-topics",
                     "class": ""
                 }
             ]
@@ -47,17 +47,17 @@
         },
         {
             "label": "Serien",
-            "url": "link.pages-archive-serien",
+            "url": "link.pages-archive-series",
             "state": ""
         },
         {
             "label": "Sprecher",
-            "url": "link.pages-archive-sprecher",
+            "url": "link.pages-archive-speaker",
             "state": ""
         },
         {
             "label": "Themen",
-            "url": "link.pages-archive-themen",
+            "url": "link.pages-archive-topics",
             "state": ""
         }
     ],
@@ -271,7 +271,9 @@
         "medialist": [
             {
                 "image": "/images/sample/video-1-192x108.jpg",
-                "title": "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
+                "title":
+                    "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
+                "url": "link.pages-video",
                 "length": "56:07",
                 "meta": [
                     {
@@ -287,7 +289,8 @@
                         "url": false
                     },
                     {
-                        "label": "Serie: Erster und zweiter Petrusbrief (CSH 2017 Q2)",
+                        "label":
+                            "Serie: Erster und zweiter Petrusbrief (CSH 2017 Q2)",
                         "url": "#"
                     }
                 ]
@@ -295,6 +298,7 @@
             {
                 "image": "/images/sample/video-2-192x108.jpg",
                 "title": "Sola Veritas: 11. Neue Wege (1506)",
+                "url": "link.pages-video",
                 "length": "48:20",
                 "meta": [
                     {
@@ -318,6 +322,7 @@
             {
                 "image": "/images/sample/video-3-192x108.jpg",
                 "title": "Offenbarung 17:9",
+                "url": "link.pages-video",
                 "length": "38:29",
                 "meta": [
                     {
@@ -341,6 +346,7 @@
             {
                 "image": "/images/sample/video-4-192x108.jpg",
                 "title": "Mit Gott leben – Apostelgeschichte 17:25b",
+                "url": "link.pages-video",
                 "length": "51:26",
                 "meta": [
                     {
@@ -363,7 +369,9 @@
             },
             {
                 "image": "/images/sample/video-5-192x108.jpg",
-                "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
+                "title":
+                    "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
+                "url": "link.pages-video",
                 "length": "2:34",
                 "meta": [
                     {
@@ -386,7 +394,9 @@
             },
             {
                 "image": "/images/sample/video-1-192x108.jpg",
-                "title": "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
+                "title":
+                    "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
+                "url": "link.pages-video",
                 "length": "56:07",
                 "meta": [
                     {
@@ -402,7 +412,8 @@
                         "url": false
                     },
                     {
-                        "label": "Serie: Erster und zweiter Petrusbrief (CSH 2017 Q2)",
+                        "label":
+                            "Serie: Erster und zweiter Petrusbrief (CSH 2017 Q2)",
                         "url": "#"
                     }
                 ]
@@ -410,6 +421,7 @@
             {
                 "image": "/images/sample/video-2-192x108.jpg",
                 "title": "Sola Veritas: 11. Neue Wege (1506)",
+                "url": "link.pages-video",
                 "length": "48:20",
                 "meta": [
                     {
@@ -433,6 +445,7 @@
             {
                 "image": "/images/sample/video-3-192x108.jpg",
                 "title": "Offenbarung 17:9",
+                "url": "link.pages-video",
                 "length": "38:29",
                 "meta": [
                     {
@@ -456,6 +469,7 @@
             {
                 "image": "/images/sample/video-4-192x108.jpg",
                 "title": "Mit Gott leben – Apostelgeschichte 17:25b",
+                "url": "link.pages-video",
                 "length": "51:26",
                 "meta": [
                     {
@@ -478,7 +492,9 @@
             },
             {
                 "image": "/images/sample/video-5-192x108.jpg",
-                "title": "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
+                "title":
+                    "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
+                "url": "link.pages-video",
                 "length": "2:34",
                 "meta": [
                     {

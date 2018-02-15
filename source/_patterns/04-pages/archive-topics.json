@@ -1,5 +1,5 @@
 {
-    "primaryNav" : [
+    "primaryNav": [
         {
             "signal": false,
             "label": "Videoarchiv",
@@ -15,17 +15,17 @@
                 },
                 {
                     "label": "Serien",
-                    "url": "link.pages-archive-serien",
+                    "url": "link.pages-archive-series",
                     "class": ""
                 },
                 {
                     "label": "Sprecher",
-                    "url": "link.pages-archive-sprecher",
+                    "url": "link.pages-archive-speaker",
                     "class": ""
                 },
                 {
                     "label": "Themen",
-                    "url": "link.pages-archive-themen",
+                    "url": "link.pages-archive-topics",
                     "class": "is-active"
                 }
             ]
@@ -47,17 +47,17 @@
         },
         {
             "label": "Serien",
-            "url": "link.pages-archive-serien",
+            "url": "link.pages-archive-series",
             "state": ""
         },
         {
             "label": "Sprecher",
-            "url": "link.pages-archive-sprecher",
+            "url": "link.pages-archive-speaker",
             "state": ""
         },
         {
             "label": "Themen",
-            "url": "link.pages-archive-themen",
+            "url": "link.pages-archive-topics",
             "state": "is-active"
         }
     ],
@@ -161,6 +161,7 @@
                 "type": "thema",
                 "image": false,
                 "title": "Andachten",
+                "url": "link.pages-topic",
                 "meta": [
                     {
                         "label": "Keine Unterthemen",
@@ -176,6 +177,7 @@
                 "type": "thema",
                 "image": false,
                 "title": "Altes Testament",
+                "url": "link.pages-topic",
                 "meta": [
                     {
                         "label": "19 Unterthemen",
@@ -191,6 +193,7 @@
                 "type": "thema",
                 "image": false,
                 "title": "Cannstatt Study Hour",
+                "url": "link.pages-topic",
                 "meta": [
                     {
                         "label": "Keine Unterthemen",
@@ -206,6 +209,7 @@
                 "type": "thema",
                 "image": false,
                 "title": "Evangelium",
+                "url": "link.pages-topic",
                 "meta": [
                     {
                         "label": "3 Unterthemen",
@@ -221,6 +225,7 @@
                 "type": "thema",
                 "image": false,
                 "title": "Evangelistische Vorträge",
+                "url": "link.pages-topic",
                 "meta": [
                     {
                         "label": "Keine Unterthemen",
@@ -242,6 +247,7 @@
                 "type": "thema",
                 "image": false,
                 "title": "Erweckungspredigten",
+                "url": "link.pages-topic",
                 "meta": [
                     {
                         "label": "Keine Unterthemen",
@@ -257,6 +263,7 @@
                 "type": "thema",
                 "image": false,
                 "title": "Familie, Ehe und Erziehung",
+                "url": "link.pages-topic",
                 "meta": [
                     {
                         "label": "3 Unterthemen",
@@ -272,6 +279,7 @@
                 "type": "thema",
                 "image": false,
                 "title": "Gesundheit",
+                "url": "link.pages-topic",
                 "meta": [
                     {
                         "label": "7 Unterthemen",
@@ -287,6 +295,7 @@
                 "type": "thema",
                 "image": false,
                 "title": "Glaubenspunkte",
+                "url": "link.pages-topic",
                 "meta": [
                     {
                         "label": "12 Unterthemen",
@@ -302,6 +311,7 @@
                 "type": "thema",
                 "image": false,
                 "title": "Neues Testament",
+                "url": "link.pages-topic",
                 "meta": [
                     {
                         "label": "13 Unterthemen",
