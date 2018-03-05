@@ -32,17 +32,35 @@
 
         <li id="{{slider.id}}Slide{{id}}" class="c-slider__item">
 
-            {{# joelmedia }}
-                {{> molecules-slide-joelmedia }}
-            {{/ joelmedia }}
-            {{^ joelmedia }}
-                {{> molecules-slide }}
-            {{/ joelmedia }}
+            {{> molecules-slide }}
 
         </li>
 
         {{/ slider.slides }}
 
     </ul>
+
+    <div class="c-slider__teaser-container u-hidden-until@tablet">
+        <div class="o-wrapper u-h-100">
+            <div id="collapse-teaser" class="c-slider__teaser c-collapsible">
+                <div class="c-collapsible__header">
+                    <div class="c-collapsible__title u-h5">
+                        Neuste Videos
+                    </div>
+                    <div class="c-collapsible__btn">
+                        <button class="c-btn c-btn--blocky c-btn--square jsToggle"
+                            data-target="#collapse-teaser"
+                            data-class="is-collapsed">
+                            <span class="u-ic-unfold_less"></span>
+                            <span class="u-ic-unfold_more u-hidden"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="c-collapsible__body u-center">
+                    {{> organisms-medialist:u-1/1 }}
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>

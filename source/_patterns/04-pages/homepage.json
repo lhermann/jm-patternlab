@@ -3,59 +3,21 @@
         "id": "mainSlider",
         "slides": [
             {
+                "type": "teaser",
                 "id": 1,
+                "css": "c-slide--white",
                 "background": "/images/sample/slide-bg7.png",
                 "url": "link.pages-homepage",
-                "joelmedia": true,
+                "teaser": true,
                 "heading": "Joel Media Ministry e.V.",
                 "subheading":
                     "... das ewige Evangelium für Stuttgart, Deutschland und die Welt",
                 "text":
                     "Wöchentlich neue Videos über die Bibel,<br>Prophetie und Zeitgeschehen",
-                "button": "Erster Besuch? Hier geht's los",
-                "medialist": {
-                    "title": "Neue Videos",
-                    "titleClass": "u-pv- u-m0",
-                    "url": "link.pages-archive-videos",
-                    "medialist": [
-                        {
-                            "image": "/images/sample/video-1-192x108.jpg",
-                            "title":
-                                "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
-                            "length": "56:07",
-                            "url": "link.pages-video"
-                        },
-                        {
-                            "image": "/images/sample/video-2-192x108.jpg",
-                            "title": "Sola Veritas: 11. Neue Wege (1506)",
-                            "length": "48:20",
-                            "url": "link.pages-video"
-                        },
-                        {
-                            "image": "/images/sample/video-3-192x108.jpg",
-                            "title": "Offenbarung 17:9",
-                            "length": "38:29",
-                            "url": "link.pages-video"
-                        },
-                        {
-                            "image": "/images/sample/video-4-192x108.jpg",
-                            "title":
-                                "Mit Gott leben – Apostelgeschichte 17:25b",
-                            "length": "51:26",
-                            "url": "link.pages-video"
-                        },
-                        {
-                            "image": "/images/sample/video-5-192x108.jpg",
-                            "title":
-                                "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
-                            "length": "2:34",
-                            "url": "link.pages-video"
-                        }
-                    ],
-                    "button": false
-                }
+                "button": "Erster Besuch? Hier geht's los"
             },
             {
+                "type": "text-left",
                 "id": 2,
                 "background": "../../images/sample/slide-bg2.jpg",
                 "styleModifier": "c-slide--left",
@@ -66,6 +28,7 @@
                 "button": "Serie ansehen"
             },
             {
+                "type": "text-center",
                 "id": 3,
                 "background": "../../images/sample/slide-bg3.jpg",
                 "url": "link.pages-homepage",
@@ -141,45 +104,6 @@
                 "credits": "Fam. Klempkow"
             }
         ]
-    },
-    "medialist": {
-        "title": "Neue Videos",
-        "url": "link.pages-archive-videos",
-        "medialist": [
-            {
-                "image": "/images/sample/video-1-192x108.jpg",
-                "title":
-                    "Weltengeschichte - Episode 1: Die Strahlen der Ewigkeit",
-                "length": "56:07",
-                "url": "link.pages-video"
-            },
-            {
-                "image": "/images/sample/video-2-192x108.jpg",
-                "title": "Sola Veritas: 11. Neue Wege (1506)",
-                "length": "48:20",
-                "url": "link.pages-video"
-            },
-            {
-                "image": "/images/sample/video-3-192x108.jpg",
-                "title": "Offenbarung 17:9",
-                "length": "38:29",
-                "url": "link.pages-video"
-            },
-            {
-                "image": "/images/sample/video-4-192x108.jpg",
-                "title": "Mit Gott leben – Apostelgeschichte 17:25b",
-                "length": "51:26",
-                "url": "link.pages-video"
-            },
-            {
-                "image": "/images/sample/video-5-192x108.jpg",
-                "title":
-                    "\"Weide meine Schafe\" Erster und zweiter Petrusbrief (CSH 2017 Q2): 11. Falsche Lehrer",
-                "length": "2:34",
-                "url": "link.pages-video"
-            }
-        ],
-        "button": false
     },
     "medialist1": {
         "title": "Beliebte Videos",

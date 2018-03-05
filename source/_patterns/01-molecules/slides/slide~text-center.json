@@ -1,0 +1,11 @@
+{
+    "type": "text-center",
+    "id": 1,
+    "css": "c-slide--white",
+    "background": "../../images/slide-gray.jpg",
+    "url": "link.pages-homepage",
+    "heading": "Slide Text Center",
+    "text":
+        "Quo aut sapiente laboriosam laboriosam voluptatem qui minima quia.",
+    "button": "Button"
+}

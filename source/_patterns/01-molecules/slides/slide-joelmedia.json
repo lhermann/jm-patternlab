@@ -3,7 +3,10 @@
     "background": "../../images/slide-blue1.png",
     "url": "link.pages-homepage",
     "heading": "Joel Media Ministry e.V.",
-    "subheading": "... das ewige Evangelium für Stuttgart, Deutschland und die Welt",
-    "text": "Wöchentlich neue Videos über die Bibel,<br>Prophetie und Zeitgeschehen",
-    "button": "Erster Besuch? Hier geht's los"
+    "subheading":
+        "... das ewige Evangelium für Stuttgart, Deutschland und die Welt",
+    "text":
+        "Wöchentlich neue Videos über die Bibel,<br>Prophetie und Zeitgeschehen",
+    "button": "Erster Besuch? Hier geht's los",
+    "medialist": true
 }

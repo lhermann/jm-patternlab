@@ -1,16 +1,28 @@
-<div class="c-slide {{ styleModifier }}" style="background-image: url('{{background}}')">
+<div class="c-slide c-slide--{{type}} {{css}} {{styleModifier}}" style="background-image: url('{{background}}')">
     <a href="{{url}}" class="c-slide__link"></a>
 
-        <div class="o-wrapper c-slide--wrapper">
+    <div class="o-wrapper c-slide__wrapper">
 
-            <div class="c-slide__body">
+        <div class="c-slide__body u-1/2@tablet u-1/1">
 
-                <h1 class="u-mb-">{{ heading }}</h1>
-                <p class="u-lead u-muted">{{{ text }}}</p>
-                <button class="c-btn c-btn--dark c-slide__btn">{{ button }} <span class="u-ic-arrow_forward"></span></button>
-
-            </div>
+            <h1 class="u-mb-">{{ heading }}</h1>
+            <p class="u-lead u-muted">{{{ text }}}</p>
+            <a class="c-btn c-btn--dark c-slide__btn" href="{{url}}">
+                {{ button }} <span class="u-ic-arrow_forward"></span>
+            </a>
 
         </div>
+
+        {{# media }}
+        <div class="c-slide__media u-1/2@tablet u-hidden-until@tablet">
+            <div class="o-ratio o-ratio--16:9">
+                <a class="o-ratio__content" href="{{url}}">
+                    <img src="{{img.16x9}}">
+                </a>
+            </div>
+        </div>
+        {{/ media }}
+
+    </div>
 
 </div>

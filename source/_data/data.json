@@ -96,7 +96,8 @@
     "img": {
         "avatar": "../../images/fpo_avatar.png",
         "hero": "../../images/fpo_hero.png",
-        "landscape": "../../images/fpo_16x9.png"
+        "landscape": "../../images/fpo_16x9.png",
+        "16x9": "../../images/fpo_16x9.png"
     },
     "headline" : {
         "short" : "Lorem ipsum dolor sit (37 characters)",

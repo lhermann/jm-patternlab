@@ -1,12 +1,12 @@
 <div class="c-slide c-slide--joel c-slide--white {{ styleModifier }}" style="background-image: url('{{background}}')">
     <a href="{{url}}" class="c-slide__link"></a>
 
-        <div class="o-wrapper c-slide__hero u-h-100">
+        <div class="o-wrapper c-slide__wrapper">
             <div class="o-layout o-layout--large u-h-100">
                 <div class="o-layout__item u-1/2@tablet u-2/3@desktop u-1/1 u-h-100">
 
                     <div class="u-center u-h-100">
-                        <div class="c-slide__hero__body">
+                        <div class="c-slide__body">
 
                             {{> atoms-logo-white:c-logo--hero }}
                             <h1 class="u-mb0 u-mt-">{{ heading }}</h1>
@@ -25,9 +25,7 @@
 
                     <div class="c-slide__hero__medialist u-orient u-orient-middle u-h-100">
 
-                        {{# medialist }}
-                            {{> organisms-medialist }}
-                        {{/ medialist }}
+                        {{> organisms-medialist }}
 
                     </div>
 
