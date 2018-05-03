@@ -16,11 +16,25 @@
 
         <section class="o-wrapper c-section">
 
-            {{# medialist }}
-                {{> organisms-medialist:u-hidden-from@tablet }}
-            {{/ medialist }}
+            {{> organisms-medialist:u-hidden-from@tablet }}
 
-            {{> organisms-medialist-3-columns }}
+            <div class="o-layout o-layout--large u-hidden-until@tablet">
+                <div class="o-layout__item u-1/3@desktop u-1/2@tablet u-1/1">
+                    {{# medialist1 }}
+                        {{> organisms-medialist-with-title }}
+                    {{/ medialist1 }}
+                </div>
+                <div class="o-layout__item u-1/3@desktop u-1/2@tablet u-hidden-until@tablet">
+                    {{# medialist2 }}
+                        {{> organisms-medialist-with-title }}
+                    {{/ medialist2 }}
+                </div>
+                <div class="o-layout__item u-1/3 u-hidden-until@desktop">
+                    {{# medialist3 }}
+                        {{> organisms-medialist-with-title }}
+                    {{/ medialist3 }}
+                </div>
+            </div>
 
         </section>
 
